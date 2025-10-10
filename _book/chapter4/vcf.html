@@ -1,0 +1,866 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Data Type for Alleles and Population · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../chapter5/introduction.html" />
+    
+    
+    <link rel="prev" href="linkage-NGS.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../getting-started.html">
+            
+                <a href="../getting-started.html">
+            
+                    
+                    Getting started
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 1. The Human Genome Project and NGS</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../chapter1/introduction.html">
+            
+                <a href="../chapter1/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../chapter1/human-genome-project.html">
+            
+                <a href="../chapter1/human-genome-project.html">
+            
+                    
+                    The Human Genome Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../chapter1/t2tgenome.html">
+            
+                <a href="../chapter1/t2tgenome.html">
+            
+                    
+                    T2T Genome Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../chapter1/chm13.html">
+            
+                <a href="../chapter1/chm13.html">
+            
+                    
+                    CHM13 Cell Line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../chapter1/pangenome.html">
+            
+                <a href="../chapter1/pangenome.html">
+            
+                    
+                    Human Pangenome Reference Consortium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../chapter1/ngs.html">
+            
+                <a href="../chapter1/ngs.html">
+            
+                    
+                    Next-Generation Sequencing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../chapter1/ngs-application.html">
+            
+                <a href="../chapter1/ngs-application.html">
+            
+                    
+                    NGS Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../chapter1/annotation-database.html">
+            
+                <a href="../chapter1/annotation-database.html">
+            
+                    
+                    Annotation & Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 2. Mendelian Genetics in NGS</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../chapter2/introduction.html">
+            
+                <a href="../chapter2/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../chapter2/genetic-variant.html">
+            
+                <a href="../chapter2/genetic-variant.html">
+            
+                    
+                    Genetic Variant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../chapter2/transmission.html">
+            
+                <a href="../chapter2/transmission.html">
+            
+                    
+                    Transmission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../chapter2/dominant-allele.html">
+            
+                <a href="../chapter2/dominant-allele.html">
+            
+                    
+                    Dominant Allele
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../chapter2/haploinsufficiency.html">
+            
+                <a href="../chapter2/haploinsufficiency.html">
+            
+                    
+                    Haploinsufficiency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../chapter2/recessive-allele.html">
+            
+                <a href="../chapter2/recessive-allele.html">
+            
+                    
+                    Recessive Allele
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../chapter2/sv.html">
+            
+                <a href="../chapter2/sv.html">
+            
+                    
+                    Structural Variation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 3. Polygenic and Genetic Architecture</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../chapter3/introduction.html">
+            
+                <a href="../chapter3/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../chapter3/additive.html">
+            
+                <a href="../chapter3/additive.html">
+            
+                    
+                    Additive and Dominant Allele
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../chapter3/polygenic.html">
+            
+                <a href="../chapter3/polygenic.html">
+            
+                    
+                    Polygenic Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../chapter3/heritability.html">
+            
+                <a href="../chapter3/heritability.html">
+            
+                    
+                    Heritability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../chapter3/partioned-variance.html">
+            
+                <a href="../chapter3/partioned-variance.html">
+            
+                    
+                    Partioned Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../chapter3/gwas.html">
+            
+                <a href="../chapter3/gwas.html">
+            
+                    
+                    GWAS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../chapter3/genetic-architecture.html">
+            
+                <a href="../chapter3/genetic-architecture.html">
+            
+                    
+                    Genetic Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 4. Recombination, Linkage and Population</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="allele-freq.html">
+            
+                <a href="allele-freq.html">
+            
+                    
+                    Allele Frequency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="pop-struct.html">
+            
+                <a href="pop-struct.html">
+            
+                    
+                    Population Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="linkage-Morgan.html">
+            
+                <a href="linkage-Morgan.html">
+            
+                    
+                    Discovery of Linkage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="linkage-NGS.html">
+            
+                <a href="linkage-NGS.html">
+            
+                    
+                    Linkage in NGS era
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.6" data-path="vcf.html">
+            
+                <a href="vcf.html">
+            
+                    
+                    Data Type for Alleles and Population
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 5. Variant to System</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../chapter5/introduction.html">
+            
+                <a href="../chapter5/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../chapter5/forward-genetics.html">
+            
+                <a href="../chapter5/forward-genetics.html">
+            
+                    
+                    Forward Genetics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../chapter5/reverse-genetics.html">
+            
+                <a href="../chapter5/reverse-genetics.html">
+            
+                    
+                    Reverse Genetics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../chapter5/crispra-scn2a.html">
+            
+                <a href="../chapter5/crispra-scn2a.html">
+            
+                    
+                    CRISPRa in human disorder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../chapter5/gene-regulation.html">
+            
+                <a href="../chapter5/gene-regulation.html">
+            
+                    
+                    Gene Regulation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../chapter5/qtl.html">
+            
+                <a href="../chapter5/qtl.html">
+            
+                    
+                    QTL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Data Type for Alleles and Population</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="data-type-for-alleles-and-population">Data Type for Alleles and Population</h1>
+<p>Here's a question that might not seem obvious at first: how do you turn a genome into data?</p>
+<p>When you sequence someone's DNA, you get billions of short reads—fragments of sequence, each maybe 100-150 bases long. Those reads need to be assembled, aligned to a reference genome, and compared to figure out where this person's DNA differs from the reference. Once you've identified all those differences—the SNPs, the small insertions and deletions, maybe some larger variants—how do you write them down? How do you store them in a file that computers can read, that other scientists can use, that databases can search?</p>
+<p>The answer is a standardized file format called <strong>VCF (Variant Call Format)</strong>. It's the universal language for describing genetic variation. Every variant caller—the software that finds differences between your sequence and the reference—outputs VCF files. Every genetic database stores data in VCF or a closely related format. Every analysis tool that works with variants expects VCF as input.</p>
+<p>Understanding VCF is essential for modern genomics. It's how we turn biological variation—the actual differences in DNA molecules—into structured data that can be analyzed, compared, and shared across the world. Let's see how it works.</p>
+<hr></hr>
+<h2 id="from-sequencing-to-variant-calling">From Sequencing to Variant Calling</h2>
+<p>The path from DNA sample to variant list goes through several steps. First, you extract DNA and sequence it using a technology like Illumina. That gives you millions or billions of short reads—raw sequence fragments. </p>
+<p>Next, you align those reads to a <strong>reference genome</strong>. For humans, that's usually GRCh38, the current standard reference assembly. Alignment means figuring out where each read came from in the genome. You use software like BWA or Bowtie2 to match each read to its best location. The output is a BAM file (or its more compressed version, CRAM)—essentially a sorted list of all your reads and where they map.</p>
+<p>Now comes <strong>variant calling</strong>. You compare the aligned reads to the reference genome and identify positions where your sample differs. If the reference has an "A" at position 12345 on chromosome 1, but your sample's reads consistently show a "T" instead, you've found a variant—an A→T substitution.</p>
+<p>Variant calling software (like GATK, DeepVariant, or FreeBayes) scans through every position in your BAM file, looks at the reads covering that position, and decides: is this a variant or not? It considers read quality, mapping quality, strand bias, and other factors to make that call. The output? A VCF file—a text file listing every detected variant.</p>
+<hr></hr>
+<h2 id="what-is-a-vcf-file">What Is a VCF File?</h2>
+<p>A VCF file is surprisingly simple in concept, though it can get complex in practice. It's a plain text file with one line per variant. Each line describes where the variant is, what the reference allele is, what the alternate allele is, and how confident we are about it.</p>
+<p>Let's break down what information each VCF line contains. Think of it like a recipe card, but for genetic variants.</p>
+<p><strong>CHROM</strong> tells you which chromosome the variant is on. Could be "chr1", "chrX", "chrM" (mitochondrial), or whatever naming scheme your reference genome uses.</p>
+<p><strong>POS</strong> is the genomic position—the exact base pair coordinate where the variant occurs. This is a 1-based coordinate, meaning the first base of a chromosome is position 1 (not position 0 like in some programming languages).</p>
+<p><strong>ID</strong> is an optional identifier. If this variant has been seen before and catalogued in a database like dbSNP, it gets an "rs" number—something like "rs12345678". If it's novel, this field is usually just a dot (.).</p>
+<p><strong>REF</strong> is the reference allele—what the reference genome has at this position. Usually a single base (A, T, G, or C) for SNPs, but could be longer for insertions and deletions.</p>
+<p><strong>ALT</strong> is the alternate allele—what your sample has instead. Again, usually a single base for SNPs, but can be longer or even represent multiple possible alternates separated by commas.</p>
+<p><strong>QUAL</strong> is a quality score. Higher numbers mean more confidence that this variant is real and not just a sequencing error. A QUAL of 30 means roughly 99.9% confidence. A QUAL of 10 means 90% confidence.</p>
+<p><strong>FILTER</strong> indicates whether the variant passed quality filters. "PASS" is good—it means the variant looks legit. Other values like "LowQual" or "StrandBias" suggest potential problems.</p>
+<p><strong>INFO</strong> is where things get interesting. This field holds all sorts of metadata about the variant: how many reads support it, what the allele frequency is in the sample or population, functional annotations, and more. It's a semicolon-separated list of key=value pairs.</p>
+<p><strong>FORMAT</strong> describes the structure of the per-sample data that comes next. It's a colon-separated list of field names, like "GT:DP:AD", telling you what information appears for each individual.</p>
+<p><strong>Sample columns</strong> come after FORMAT. If you're analyzing one person, there's one sample column. If you're analyzing 1,000 people, there are 1,000 sample columns. Each one gives that person's genotype and related metrics at this variant site.</p>
+<p>Here's a concrete example:</p>
+<pre><code>chr1  1234567  rs12345  A  T  99.0  PASS  AC=3;AN=6;AF=0.5  GT:DP  0/1:32
+</code></pre><p>This says: On chromosome 1 at position 1,234,567, the reference genome has an A, but we've found a T variant (rs12345). We're very confident about it (quality 99). It passed filters. In our sample or samples, there are 3 alternate alleles out of 6 total alleles (50% frequency). The sample we're showing has genotype 0/1 (heterozygous) with 32 reads covering this site.</p>
+<hr></hr>
+<h2 id="decoding-the-info-field">Decoding the INFO Field</h2>
+<p>The INFO field is where population-level statistics live. Let's unpack what those cryptic abbreviations mean.</p>
+<p><strong>AC (Allele Count)</strong> tells you how many copies of the alternate allele were found across all your samples. If you sequenced 100 people (200 alleles, since humans are diploid), and 10 of those alleles are the alternate, AC=10.</p>
+<p><strong>AN (Allele Number)</strong> is the total number of alleles successfully called at this site. Ideally, this is 2 × number of samples. But sometimes sequencing quality is poor for some individuals at some sites, so those samples get marked as "missing" (./.), and AN is reduced.</p>
+<p><strong>AF (Allele Frequency)</strong> is simply AC ÷ AN. It's the proportion of alternate alleles. If AC=10 and AN=200, then AF=0.05 (5%). This is the same allele frequency concept we learned about in the first section of this chapter—just computed directly from the genotype data.</p>
+<p>These three fields are fundamental for population genetics. They tell you how common a variant is, which helps determine whether it's likely pathogenic (rare variants in disease genes often are) or benign (common variants usually are).</p>
+<hr></hr>
+<h2 id="the-format-field-and-per-sample-data">The FORMAT Field and Per-Sample Data</h2>
+<p>After the INFO field comes FORMAT, which defines what information appears for each sample. The most common FORMAT fields are:</p>
+<p><strong>GT (Genotype)</strong> is the individual's allele combination. It's coded as numbers separated by "/" (unphased) or "|" (phased). The numbers refer to alleles: 0 means the reference allele, 1 means the first alternate, 2 means the second alternate (if there are multiple), and so on.</p>
+<p>Here's what the genotype codes mean:</p>
+<p><strong>0/0</strong> is homozygous reference. Both of your alleles match the reference genome. At this position, you don't have the variant.</p>
+<p><strong>0/1</strong> is heterozygous. You have one reference allele and one alternate allele. You're a carrier of the variant.</p>
+<p><strong>1/1</strong> is homozygous alternate. Both of your alleles carry the variant. This is the strongest form—you definitely have this genetic change.</p>
+<p><strong>./.</strong> is missing or no-call. The genotype couldn't be determined at this position, usually because sequencing coverage was too low or read quality was poor. If only 2-3 reads cover a site, the variant caller might not have enough evidence to confidently call a genotype, so it marks it as missing instead of guessing.</p>
+<p>If there are multiple alternate alleles listed (for example, REF=A, ALT=T,G), then you might see genotypes like 0/2 (reference + second alternate), 1/2 (first alternate + second alternate), or 2/2 (both second alternate).</p>
+<p><strong>DP (Depth)</strong> is read depth—how many sequencing reads covered this position for this sample. Higher is generally better because it means more evidence. If DP is only 5, you might not trust the genotype call much. If DP is 30 or higher, you can be more confident.</p>
+<p><strong>AD (Allelic Depth)</strong> breaks down the read depth by allele. If DP=30 and AD=15,15, that means 15 reads support the reference allele and 15 support the alternate. That's a balanced heterozygote—exactly what you'd expect for 0/1. If AD=30,0, all reads support the reference, consistent with 0/0. If AD=0,30, all support the alternate, consistent with 1/1.</p>
+<p>Let's look at a concrete example:</p>
+<pre><code>chr1  1003215  .  A  T  99  PASS  .  GT:DP:AD  0/1:32:16,16
+</code></pre><p>This sample is heterozygous (0/1), with 32 total reads, split evenly between the A reference allele (16 reads) and the T alternate allele (16 reads). That balanced ratio supports the heterozygous call.</p>
+<hr></hr>
+<h2 id="multi-sample-vcf-bringing-populations-together">Multi-Sample VCF: Bringing Populations Together</h2>
+<p>So far, we've mostly talked about single-sample VCFs—one person's variants. But the real power of VCF comes when you analyze multiple samples together in a <strong>multi-sample VCF (msVCF)</strong>.</p>
+<p>In an msVCF, each variant site is one row, and each sample is one column. The INFO field summarizes population-level statistics, while each sample column gives that individual's genotype.</p>
+<p>Imagine we've sequenced three people—Alice, Bob, and Carol. At position chr1:1234567, the reference is A and we've found a T variant. Here's what the VCF line might look like:</p>
+<pre><code>#CHROM  POS      ID       REF  ALT  QUAL  FILTER  INFO               FORMAT  SAMPLE001  SAMPLE002  SAMPLE003
+chr1    1234567  rs12345  A    T    99    PASS    AC=3;AN=6;AF=0.5   GT      0/1        1/1        0/0
+</code></pre><p>Let's read this:</p>
+<ul>
+<li>SAMPLE001 (Alice) has genotype <strong>0/1</strong> (heterozygous): one A, one T</li>
+<li>SAMPLE002 (Bob) has genotype <strong>1/1</strong> (homozygous alternate): both alleles are T</li>
+<li>SAMPLE003 (Carol) has genotype <strong>0/0</strong> (homozygous reference): both alleles are A</li>
+</ul>
+<p>Now look at the population statistics in INFO:</p>
+<ul>
+<li><strong>AC=3</strong>: Alice contributes 1 T allele, Bob contributes 2 T alleles, Carol contributes 0. Total: 3 T alleles.</li>
+<li><strong>AN=6</strong>: Three people, two alleles each = 6 total alleles</li>
+<li><strong>AF=0.5</strong>: 3 ÷ 6 = 50% allele frequency</li>
+</ul>
+<p>The key insight is that <strong>variant</strong> and <strong>genotype</strong> are different concepts. A <strong>variant</strong> is a site where an alternate allele exists in the population—"there's a T at this position in some people." A <strong>genotype</strong> is an individual's allele combination—"Alice has one A and one T."</p>
+<p>One variant, many genotypes. The variant is population-level. The genotypes are individual-level.</p>
+<hr></hr>
+<h2 id="joint-genotyping-making-sure-everyones-on-the-same-page">Joint Genotyping: Making Sure Everyone's on the Same Page</h2>
+<p>When you analyze multiple samples, you could call variants on each sample independently and then merge the VCFs. But that creates a problem: sites that are variant in one person but reference in another might not be recorded consistently. You'd end up with missing data and inaccurate allele frequencies.</p>
+<p><strong>Joint genotyping</strong> solves this. Instead of analyzing each sample separately, you analyze all samples together, simultaneously. The variant caller looks at reads from everyone at once and makes genotype calls for every sample at every site—even sites where most people are homozygous reference.</p>
+<p>Think of it like taking attendance. If you call out names individually and only write down who answered "present," you won't know who's absent. But if you have a roster and mark everyone as either present or absent, you have complete information.</p>
+<p>Joint genotyping ensures that every site in the VCF has a genotype entry for every sample. If Alice is 0/1, Bob is 1/1, and Carol is 0/0, all three genotypes appear in the file. That way, when you calculate AC and AN, you're using complete data.</p>
+<p>For example, without joint genotyping, Carol's 0/0 genotype might not be recorded, and you'd think the allele frequency is 100% (3 alternate alleles out of... 3? 4? We don't know!). With joint genotyping, Carol's 0/0 is explicit, so you correctly calculate AF=0.5 (3 out of 6 alleles).</p>
+<p>Joint genotyping is standard practice for population-scale sequencing projects like gnomAD, UK Biobank, and All of Us. It's how we ensure accurate population statistics.</p>
+<hr></hr>
+<h2 id="dense-vs-sparse-the-storage-challenge">Dense vs. Sparse: The Storage Challenge</h2>
+<p>Here's a practical problem: as sequencing projects grow to hundreds of thousands of genomes, VCF files become enormous. The UK Biobank has sequenced about 500,000 people. If you store every variant site for every person, that's billions of lines, each with 500,000 genotype columns. The file size is staggering.</p>
+<p>Most of those genotypes are 0/0—homozygous reference. They don't carry the variant. For rare variants (which are the majority), maybe 499,990 people are 0/0 and only 10 are 0/1 or 1/1. Storing 499,990 "0/0" entries is wasteful.</p>
+<p>This led to two VCF formats:</p>
+<p><strong>Dense VCF</strong> stores every genotype for every sample at every site. It's like a phone book that lists every person in the city, even if most entries are identical. This works fine for small projects (tens to hundreds of samples), but becomes impractical at biobank scale.</p>
+<p><strong>Sparse VCF</strong> stores only non-reference genotypes. If you're 0/0, your entry is omitted. If you're 0/1 or 1/1, your genotype is recorded. It's like a phone book that only lists people with phone numbers—if you don't have a phone, you're not in the book, but we can still infer your existence from the total population count.</p>
+<p>Sparse formats drastically reduce file size. A variant present in 10 people out of 500,000 only needs 10 genotype entries instead of 500,000. You still store the population statistics (AC, AN, AF) in the INFO field, so you don't lose information—you just avoid redundancy.</p>
+<p>Modern biobanks use sparse formats. GATK has a format called gVCF (genomic VCF) that stores both variant and non-variant sites for each individual, which can then be combined into a sparse multi-sample VCF. BCFtools has sparse VCF options. These formats make large-scale genomics computationally feasible.</p>
+<hr></hr>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Let's review what we've learned about how genetic variation becomes data.</p>
+<p><strong>Variant calling</strong> is the process of identifying sequence differences between your sample and the reference genome. You start with aligned reads (BAM/CRAM files) and use variant calling software to detect SNPs, indels, and other changes. The output is a VCF file.</p>
+<p><strong>VCF (Variant Call Format)</strong> is the standard format for storing variants. Each line represents one variant site. Key columns include CHROM (chromosome), POS (position), REF (reference allele), ALT (alternate allele), QUAL (quality), FILTER (pass/fail), INFO (population statistics), FORMAT (data structure), and sample columns (individual genotypes).</p>
+<p><strong>Genotypes</strong> are coded as numbers: <strong>0/0</strong> for homozygous reference, <strong>0/1</strong> for heterozygous, <strong>1/1</strong> for homozygous alternate. These codes tell you which alleles an individual carries. The numbers refer to the order in the REF/ALT fields (0=reference, 1=first alternate, etc.).</p>
+<p><strong>INFO field</strong> statistics like <strong>AC</strong> (allele count), <strong>AN</strong> (allele number), and <strong>AF</strong> (allele frequency) summarize the variant across all samples. These are population-level measures.</p>
+<p><strong>FORMAT field</strong> defines per-sample data. Common fields include <strong>GT</strong> (genotype), <strong>DP</strong> (read depth), and <strong>AD</strong> (allelic depth). These are individual-level measures.</p>
+<p><strong>Multi-sample VCF</strong> combines data from many individuals into one file. Each sample gets its own column. This enables population genetics analysis—you can see who carries which variants and calculate allele frequencies.</p>
+<p><strong>Joint genotyping</strong> ensures that every sample has a genotype call at every variant site, even if that genotype is 0/0. This prevents missing data and enables accurate population statistics.</p>
+<p><strong>Dense vs. sparse formats</strong> represent different storage strategies. Dense VCF stores all genotypes, including 0/0. Sparse VCF stores only non-reference genotypes, saving enormous space for large cohorts. Both preserve the essential information.</p>
+<hr></hr>
+<h2 id="why-vcf-matters">Why VCF Matters</h2>
+<p>VCF is more than just a file format. It's the data structure that makes modern genomics possible.</p>
+<p>Before VCF, every lab and every tool had its own way of representing variants. Comparing data across studies was a nightmare. Sharing data required custom converters. Reproducibility was hard.</p>
+<p>VCF standardized variant representation. Now, a variant called in one lab can be directly compared to variants from another lab, even if they used different sequencing technologies or variant callers. Databases like gnomAD and ClinVar use VCF to distribute millions of variants to researchers worldwide. Clinical labs use VCF to report results. Every major analysis tool accepts VCF as input.</p>
+<p>VCF also scales. The same format that works for one person's exome works for a million people's whole genomes. The logic is identical—just more lines, more columns, and sparse storage tricks.</p>
+<p>Understanding VCF is essential for anyone working with genetic data. When you read a paper that says "we identified a rare variant in gene X," that variant came from a VCF file. When you see allele frequencies in gnomAD, those came from VCF INFO fields. When you run a GWAS or do variant annotation, you're manipulating VCF files.</p>
+<p>The VCF file is how genomes become data—how biological molecules become numbers that computers can process, compare, and analyze. From a single "A→T" change to biobank-scale datasets with millions of variants across hundreds of thousands of people, VCF is the language we use to describe variation.</p>
+<p>It's a simple text file. But it encodes something profound: the genetic diversity of our species, written in a compact digital language of <strong>0/0</strong>, <strong>0/1</strong>, and <strong>1/1</strong>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="linkage-NGS.html" class="navigation navigation-prev " aria-label="Previous page: Linkage in NGS era">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../chapter5/introduction.html" class="navigation navigation-next " aria-label="Next page: Introduction">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Data Type for Alleles and Population","level":"5.6","depth":1,"next":{"title":"Introduction","level":"6.1","depth":1,"path":"chapter5/introduction.md","ref":"chapter5/introduction.md","articles":[]},"previous":{"title":"Linkage in NGS era","level":"5.5","depth":1,"path":"chapter4/linkage-NGS.md","ref":"chapter4/linkage-NGS.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4/vcf.md","mtime":"2025-10-09T12:38:10.845Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-10-10T12:28:42.328Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

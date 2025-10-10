@@ -1,0 +1,846 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Polygenic Model · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="heritability.html" />
+    
+    
+    <link rel="prev" href="additive.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../getting-started.html">
+            
+                <a href="../getting-started.html">
+            
+                    
+                    Getting started
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 1. The Human Genome Project and NGS</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../chapter1/introduction.html">
+            
+                <a href="../chapter1/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../chapter1/human-genome-project.html">
+            
+                <a href="../chapter1/human-genome-project.html">
+            
+                    
+                    The Human Genome Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../chapter1/t2tgenome.html">
+            
+                <a href="../chapter1/t2tgenome.html">
+            
+                    
+                    T2T Genome Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../chapter1/chm13.html">
+            
+                <a href="../chapter1/chm13.html">
+            
+                    
+                    CHM13 Cell Line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../chapter1/pangenome.html">
+            
+                <a href="../chapter1/pangenome.html">
+            
+                    
+                    Human Pangenome Reference Consortium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../chapter1/ngs.html">
+            
+                <a href="../chapter1/ngs.html">
+            
+                    
+                    Next-Generation Sequencing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../chapter1/ngs-application.html">
+            
+                <a href="../chapter1/ngs-application.html">
+            
+                    
+                    NGS Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../chapter1/annotation-database.html">
+            
+                <a href="../chapter1/annotation-database.html">
+            
+                    
+                    Annotation & Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 2. Mendelian Genetics in NGS</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../chapter2/introduction.html">
+            
+                <a href="../chapter2/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../chapter2/genetic-variant.html">
+            
+                <a href="../chapter2/genetic-variant.html">
+            
+                    
+                    Genetic Variant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../chapter2/transmission.html">
+            
+                <a href="../chapter2/transmission.html">
+            
+                    
+                    Transmission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../chapter2/dominant-allele.html">
+            
+                <a href="../chapter2/dominant-allele.html">
+            
+                    
+                    Dominant Allele
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../chapter2/haploinsufficiency.html">
+            
+                <a href="../chapter2/haploinsufficiency.html">
+            
+                    
+                    Haploinsufficiency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../chapter2/recessive-allele.html">
+            
+                <a href="../chapter2/recessive-allele.html">
+            
+                    
+                    Recessive Allele
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../chapter2/sv.html">
+            
+                <a href="../chapter2/sv.html">
+            
+                    
+                    Structural Variation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 3. Polygenic and Genetic Architecture</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="additive.html">
+            
+                <a href="additive.html">
+            
+                    
+                    Additive and Dominant Allele
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.3" data-path="polygenic.html">
+            
+                <a href="polygenic.html">
+            
+                    
+                    Polygenic Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="heritability.html">
+            
+                <a href="heritability.html">
+            
+                    
+                    Heritability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="partioned-variance.html">
+            
+                <a href="partioned-variance.html">
+            
+                    
+                    Partioned Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="gwas.html">
+            
+                <a href="gwas.html">
+            
+                    
+                    GWAS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="genetic-architecture.html">
+            
+                <a href="genetic-architecture.html">
+            
+                    
+                    Genetic Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 4. Recombination, Linkage and Population</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../chapter4/introduction.html">
+            
+                <a href="../chapter4/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../chapter4/allele-freq.html">
+            
+                <a href="../chapter4/allele-freq.html">
+            
+                    
+                    Allele Frequency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../chapter4/pop-struct.html">
+            
+                <a href="../chapter4/pop-struct.html">
+            
+                    
+                    Population Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../chapter4/linkage-Morgan.html">
+            
+                <a href="../chapter4/linkage-Morgan.html">
+            
+                    
+                    Discovery of Linkage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../chapter4/linkage-NGS.html">
+            
+                <a href="../chapter4/linkage-NGS.html">
+            
+                    
+                    Linkage in NGS era
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../chapter4/vcf.html">
+            
+                <a href="../chapter4/vcf.html">
+            
+                    
+                    Data Type for Alleles and Population
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 5. Variant to System</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../chapter5/introduction.html">
+            
+                <a href="../chapter5/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../chapter5/forward-genetics.html">
+            
+                <a href="../chapter5/forward-genetics.html">
+            
+                    
+                    Forward Genetics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../chapter5/reverse-genetics.html">
+            
+                <a href="../chapter5/reverse-genetics.html">
+            
+                    
+                    Reverse Genetics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../chapter5/crispra-scn2a.html">
+            
+                <a href="../chapter5/crispra-scn2a.html">
+            
+                    
+                    CRISPRa in human disorder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../chapter5/gene-regulation.html">
+            
+                <a href="../chapter5/gene-regulation.html">
+            
+                    
+                    Gene Regulation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../chapter5/qtl.html">
+            
+                <a href="../chapter5/qtl.html">
+            
+                    
+                    QTL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Polygenic Model</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="polygenic-model-in-traits">Polygenic Model in Traits</h1>
+<p>In the last section, we saw how dominant alleles like those causing achondroplasia and Marfan syndrome can dramatically alter height with just one mutated copy. But we also learned that most people's height comes from thousands of additive alleles, each nudging the trait up or down by tiny amounts.</p>
+<p>Now let's zoom out and ask: Is height unusual, or do most human traits work this way? And how do scientists actually measure whether a trait is shaped more by additive effects or dominant effects?</p>
+<p>To answer these questions, we'll look at a massive study from the <strong>UK Biobank</strong> by Palmer and colleagues (2023, <em>Science</em>). They analyzed over 1,000 different human traits—everything from height and weight to disease risks—in more than 360,000 people. Their findings confirm what we suspected: most traits are influenced by many genetic variants acting additively, while dominant effects are surprisingly rare.</p>
+<hr></hr>
+<h2 id="most-traits-are-influenced-by-additive-alleles">Most Traits Are Influenced by Additive Alleles</h2>
+<p>Let's start with a quick refresher on how additive alleles work. Imagine you have a genetic variant with two versions: allele A and allele B. Since you inherit one copy from each parent, you can have three possible genotypes: AA, AB, or BB.</p>
+<p>With <strong>additive alleles</strong>, each B allele adds a consistent small effect. Let's use height as an example:</p>
+<ul>
+<li>If you have <strong>AA</strong>, that's your baseline height—let's say 170 cm.</li>
+<li>If you have <strong>AB</strong> (one copy of B), you might be 170.5 cm—half a centimeter taller.</li>
+<li>If you have <strong>BB</strong> (two copies of B), you'd be 171 cm—a full centimeter taller than AA.</li>
+</ul>
+<p>Notice the pattern: each additional B allele adds the same amount (0.5 cm). That's what makes it additive. It's like stacking blocks—each block adds the same height.</p>
+<p>Now, here's the key finding from the UK Biobank study. Palmer and colleagues examined <strong>361,194 individuals</strong> across <strong>1,060 different traits</strong>—physical measurements like height and BMI, blood biomarkers, disease outcomes, you name it. They tested 13.7 million genetic variants to see which traits showed additive versus dominant effects (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10345642/" target="_blank">Palmer et al. 2023, Science</a>).</p>
+<p>The result? About <strong>700 of the 1,060 traits</strong> showed detectable additive heritability. In other words, for roughly two-thirds of the traits they looked at, genetic variation could be explained by additive alleles acting together. This confirms that most human traits are <strong>polygenic</strong>—shaped by many small-effect variants rather than one or two big ones.</p>
+<p>But what about dominant effects? Remember, <strong>dominant alleles</strong> have a strong impact with just one copy. We've seen this with achondroplasia (FGFR3) and Marfan syndrome (FBN1), where a single mutated allele overrides the normal one and causes extreme changes.</p>
+<p>Palmer's team found <strong>183 genomic loci</strong> with detectable dominant effects. One example is <strong>MC1R</strong>, a gene affecting hair color—having just one copy of certain MC1R variants is enough to influence your hair color noticeably. But here's the kicker: even though they found 183 loci, dominant effects explained only about <strong>0.5% of the additive genetic variance</strong> on average. They're there, but they're rare and weak compared to the cumulative power of additive effects.</p>
+<hr></hr>
+<h2 id="how-scientists-measure-additive-and-dominant-effects">How Scientists Measure Additive and Dominant Effects</h2>
+<p>The UK Biobank is one of the largest genetic datasets in existence. It includes genetic information and health records for over 500,000 people in the United Kingdom. Palmer and colleagues used <strong>361,194 participants</strong> and examined <strong>13.7 million genetic variants</strong> to understand how these variants influence traits.</p>
+<p>Their approach builds on a method called <strong>linkage disequilibrium score regression (LDSC)</strong>. LDSC is a statistical technique that estimates how much of a trait's variation comes from genetics, without needing to identify every single causal variant. Palmer extended this method to separately measure <strong>additive</strong> and <strong>dominance</strong> components of heritability. They called their new method <strong>dominance LDSC (d-LDSC)</strong>, and it allowed them to tease apart how much extra variation dominance effects add beyond what additive effects already explain.</p>
+<p>Let's break down how they measured each type of effect.</p>
+<hr></hr>
+<h3 id="measuring-additive-effects">Measuring Additive Effects</h3>
+<p>Measuring additive effects is pretty straightforward. You look at how the trait changes as you go from AA to AB to BB. If the trait increases in a steady, predictable way, that's additive.</p>
+<p>Let's use a concrete example. Suppose we're measuring height:</p>
+<ul>
+<li><strong>AA genotype</strong>: You have two copies of allele A. Let's call this your baseline—170 cm.</li>
+<li><strong>AB genotype</strong>: You have one A and one B. If B is a height-increasing allele, you might be 170.5 cm.</li>
+<li><strong>BB genotype</strong>: You have two copies of B. You'd be 171 cm.</li>
+</ul>
+<p>We can encode this numerically as 0, 1, 2—counting the number of B alleles. AA gets 0, AB gets 1, BB gets 2. If the trait value increases proportionally (0 → 1 → 2), the effect is additive.</p>
+<p>Palmer and colleagues found that for most traits, this additive pattern captures nearly all the measurable genetic influence. The trait value scales smoothly with the number of effect alleles you carry.</p>
+<hr></hr>
+<h3 id="measuring-dominant-effects">Measuring Dominant Effects</h3>
+<p>Dominance is trickier to measure. By definition, dominance means that having one copy of a variant (AB) is enough to produce a noticeable effect—you don't need two copies.</p>
+<p>Let's think about what complete dominance looks like. Imagine a trait where the B allele is completely dominant over A:</p>
+<ul>
+<li><strong>AA</strong>: Baseline trait value—let's say 0.</li>
+<li><strong>AB</strong>: The trait changes—let's say to 1.</li>
+<li><strong>BB</strong>: The trait stays at 1 (same as AB).</li>
+</ul>
+<p>So the pattern is 0–1–1. Having one B is enough; a second B doesn't add anything extra.</p>
+<p>But here's the problem: this 0–1–1 pattern overlaps with the additive pattern 0–1–2. When you look at AB, you can't immediately tell whether it's following a dominant pattern or just the halfway point of an additive pattern. The AB genotype could be showing dominance, or it could just be intermediate between AA and BB.</p>
+<p>To separate these two possibilities, Palmer and colleagues used a trick called <strong>orthogonalized dominance encoding</strong>. This mathematical technique isolates the heterozygote effect so it doesn't overlap with the additive signal.</p>
+<p>Here's how it works in practice:</p>
+<ul>
+<li><strong>Additive encoding</strong>: AA = 0, AB = 1, BB = 2 (the steady increase)</li>
+<li><strong>Orthogonalized dominance encoding</strong>: AA = 0, AB = 1, BB = 0 (the special heterozygote effect)</li>
+</ul>
+<p>Notice the dominance encoding: it's 0–1–0. This captures whether being a heterozygote (AB) gives you something special—something that can't be explained by simply counting alleles. If AB deviates from the linear trend between AA and BB, that's dominance.</p>
+<p>The key word here is "orthogonalized." In math, orthogonal means "independent" or "perpendicular"—two things that don't overlap. By orthogonalizing the dominance encoding, Palmer made sure the additive and dominance effects are statistically independent. Each one captures its own unique contribution to the trait.</p>
+<hr></hr>
+<h3 id="explaining-orthogonalized-dominance-without-math">Explaining "Orthogonalized Dominance" Without Math</h3>
+<p>Okay, that probably still sounds abstract. Let's try a different analogy.</p>
+<p>Imagine you're listening to music through headphones with an equalizer. The equalizer has two controls:</p>
+<ul>
+<li><strong>Volume slider</strong>: This is like the additive effect. Turn it up, and everything gets louder. The change is smooth and predictable.</li>
+<li><strong>Bass boost button</strong>: This is like the dominance effect. It adds a special quality—extra bass—that you can't get by just turning up the volume.</li>
+</ul>
+<p>If you adjust both controls at once, it's hard to tell how much of the sound change is from volume versus bass boost. So you need to separate them. You set the volume to a baseline level, then test the bass boost independently.</p>
+<p>That's what orthogonalization does. It removes the overlap between additive (volume) and dominance (bass boost) so you can measure each one separately.</p>
+<p>In genetic terms:</p>
+<ul>
+<li>The <strong>additive effect</strong> measures the steady increase as you go from 0 to 1 to 2 copies of an allele.</li>
+<li>The <strong>dominance effect</strong> measures the special boost you get from being a heterozygote (AB), after accounting for the additive trend.</li>
+</ul>
+<p>So when Palmer and colleagues use orthogonalized dominance encoding (0–1–0), they're asking: "Does being AB give you something extra that can't be explained by just having one B allele?" If yes, that's dominance.</p>
+<hr></hr>
+<h3 id="measuring-the-overall-contribution-to-traits">Measuring the Overall Contribution to Traits</h3>
+<p>Using <strong>additive LDSC</strong> and <strong>dominance LDSC (d-LDSC)</strong>, Palmer and colleagues quantified how much of each trait's variation comes from additive versus dominant effects.</p>
+<p>Here's what they found:</p>
+<ul>
+<li>The <strong>additive component</strong> explained a detectable proportion of variance in about <strong>700 of the 1,060 traits</strong>. For most traits, additive effects accounted for a substantial chunk of the genetic influence.</li>
+<li>The <strong>dominance component</strong> was detected at <strong>183 genomic loci</strong>, but it accounted for only about <strong>0.5% of the additive variance</strong> on average.</li>
+</ul>
+<p>In other words, dominance effects are real—they exist—but they're rare and weak compared to additive effects. For the vast majority of traits, what matters is the cumulative sum of thousands of small additive variants, not a handful of dominant ones.</p>
+<p>One more thing: the additive and dominance components were <strong>orthogonal</strong>—statistically independent. This means they captured genuinely different aspects of genetic architecture. Additive effects tell you how many effect alleles you carry. Dominance effects tell you whether being a heterozygote gives you something special.</p>
+<hr></hr>
+<h3 id="why-additive-effects-dominate">Why Additive Effects Dominate</h3>
+<p>So why do additive alleles explain most genetic variation, while dominant effects are so rare?</p>
+<p>There are a few reasons. First, additive effects accumulate. Even if each individual variant has a tiny effect, thousands of them together can explain a lot of variation. It's like compound interest—small amounts add up over time (or in this case, across the genome).</p>
+<p>Second, dominant effects require a very specific genetic architecture: the heterozygote has to deviate from the additive expectation. This is less common than simple additive effects, where each allele contributes independently.</p>
+<p>Third, evolution plays a role. Strongly dominant variants—especially harmful ones—tend to get weeded out by natural selection. If having one copy of a variant is enough to cause a problem, that variant won't stick around in the population for long. The exceptions are dominant disease alleles that arise frequently by new mutation (like the FGFR3 mutation causing achondroplasia) or that have late-onset effects (like Huntington's disease), which selection can't remove efficiently.</p>
+<p>What we're left with is a genome full of small-effect additive variants. These variants shape the continuous variation we see in traits like height, BMI, and disease risk. Dominant effects exist—Palmer found 183 of them—but they're the exception, not the rule.</p>
+<hr></hr>
+<p>This study from the UK Biobank gives us a powerful confirmation: <strong>most human traits are polygenic</strong>, shaped by many additive alleles acting together. Dominant effects are rare and weak. When you look at someone's height, or their risk of diabetes, or their cholesterol levels, you're seeing the cumulative result of thousands of tiny genetic nudges—not one or two big switches.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="additive.html" class="navigation navigation-prev " aria-label="Previous page: Additive and Dominant Allele">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="heritability.html" class="navigation navigation-next " aria-label="Next page: Heritability">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Polygenic Model","level":"4.3","depth":1,"next":{"title":"Heritability","level":"4.4","depth":1,"path":"chapter3/heritability.md","ref":"chapter3/heritability.md","articles":[]},"previous":{"title":"Additive and Dominant Allele","level":"4.2","depth":1,"path":"chapter3/additive.md","ref":"chapter3/additive.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/polygenic.md","mtime":"2025-10-09T08:19:28.649Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-10-10T12:28:42.328Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

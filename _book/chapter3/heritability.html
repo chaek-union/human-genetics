@@ -1,0 +1,865 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Heritability · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="partioned-variance.html" />
+    
+    
+    <link rel="prev" href="polygenic.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../getting-started.html">
+            
+                <a href="../getting-started.html">
+            
+                    
+                    Getting started
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 1. The Human Genome Project and NGS</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../chapter1/introduction.html">
+            
+                <a href="../chapter1/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../chapter1/human-genome-project.html">
+            
+                <a href="../chapter1/human-genome-project.html">
+            
+                    
+                    The Human Genome Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../chapter1/t2tgenome.html">
+            
+                <a href="../chapter1/t2tgenome.html">
+            
+                    
+                    T2T Genome Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../chapter1/chm13.html">
+            
+                <a href="../chapter1/chm13.html">
+            
+                    
+                    CHM13 Cell Line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../chapter1/pangenome.html">
+            
+                <a href="../chapter1/pangenome.html">
+            
+                    
+                    Human Pangenome Reference Consortium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../chapter1/ngs.html">
+            
+                <a href="../chapter1/ngs.html">
+            
+                    
+                    Next-Generation Sequencing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../chapter1/ngs-application.html">
+            
+                <a href="../chapter1/ngs-application.html">
+            
+                    
+                    NGS Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../chapter1/annotation-database.html">
+            
+                <a href="../chapter1/annotation-database.html">
+            
+                    
+                    Annotation & Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 2. Mendelian Genetics in NGS</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../chapter2/introduction.html">
+            
+                <a href="../chapter2/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../chapter2/genetic-variant.html">
+            
+                <a href="../chapter2/genetic-variant.html">
+            
+                    
+                    Genetic Variant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../chapter2/transmission.html">
+            
+                <a href="../chapter2/transmission.html">
+            
+                    
+                    Transmission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../chapter2/dominant-allele.html">
+            
+                <a href="../chapter2/dominant-allele.html">
+            
+                    
+                    Dominant Allele
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../chapter2/haploinsufficiency.html">
+            
+                <a href="../chapter2/haploinsufficiency.html">
+            
+                    
+                    Haploinsufficiency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../chapter2/recessive-allele.html">
+            
+                <a href="../chapter2/recessive-allele.html">
+            
+                    
+                    Recessive Allele
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../chapter2/sv.html">
+            
+                <a href="../chapter2/sv.html">
+            
+                    
+                    Structural Variation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 3. Polygenic and Genetic Architecture</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="additive.html">
+            
+                <a href="additive.html">
+            
+                    
+                    Additive and Dominant Allele
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="polygenic.html">
+            
+                <a href="polygenic.html">
+            
+                    
+                    Polygenic Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.4" data-path="heritability.html">
+            
+                <a href="heritability.html">
+            
+                    
+                    Heritability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="partioned-variance.html">
+            
+                <a href="partioned-variance.html">
+            
+                    
+                    Partioned Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="gwas.html">
+            
+                <a href="gwas.html">
+            
+                    
+                    GWAS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="genetic-architecture.html">
+            
+                <a href="genetic-architecture.html">
+            
+                    
+                    Genetic Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 4. Recombination, Linkage and Population</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../chapter4/introduction.html">
+            
+                <a href="../chapter4/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../chapter4/allele-freq.html">
+            
+                <a href="../chapter4/allele-freq.html">
+            
+                    
+                    Allele Frequency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../chapter4/pop-struct.html">
+            
+                <a href="../chapter4/pop-struct.html">
+            
+                    
+                    Population Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../chapter4/linkage-Morgan.html">
+            
+                <a href="../chapter4/linkage-Morgan.html">
+            
+                    
+                    Discovery of Linkage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../chapter4/linkage-NGS.html">
+            
+                <a href="../chapter4/linkage-NGS.html">
+            
+                    
+                    Linkage in NGS era
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../chapter4/vcf.html">
+            
+                <a href="../chapter4/vcf.html">
+            
+                    
+                    Data Type for Alleles and Population
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 5. Variant to System</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../chapter5/introduction.html">
+            
+                <a href="../chapter5/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../chapter5/forward-genetics.html">
+            
+                <a href="../chapter5/forward-genetics.html">
+            
+                    
+                    Forward Genetics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../chapter5/reverse-genetics.html">
+            
+                <a href="../chapter5/reverse-genetics.html">
+            
+                    
+                    Reverse Genetics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../chapter5/crispra-scn2a.html">
+            
+                <a href="../chapter5/crispra-scn2a.html">
+            
+                    
+                    CRISPRa in human disorder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../chapter5/gene-regulation.html">
+            
+                <a href="../chapter5/gene-regulation.html">
+            
+                    
+                    Gene Regulation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../chapter5/qtl.html">
+            
+                <a href="../chapter5/qtl.html">
+            
+                    
+                    QTL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Heritability</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="heritability">Heritability</h1>
+<p>We've been talking about how thousands of genetic variants shape traits like height. Each variant nudges the trait up or down by a tiny amount, and the cumulative effect determines where you land on the spectrum. But here's a question: if we add up all these genetic effects, how much of the variation we see between people is actually due to genetics versus environment?</p>
+<p>This question leads us to one of the most important—and most misunderstood—concepts in genetics: <strong>heritability</strong>. It's a number that tells us what proportion of trait variation in a population comes from genetic differences. But it doesn't tell us whether a trait is "fixed" by genes or how much environment matters. We'll get to why that distinction is so important.</p>
+<p>To understand heritability, we need to go back over a century to 1918, when a statistician named R.A. Fisher figured out how to connect Mendel's discrete genetic laws with the continuous variation we see in traits like height. Fisher's framework—called the <strong>polygenic model</strong>—is still the foundation of modern genetics. We'll explore his insights and then connect them to recent studies on human height, BMI, and disease risk, drawing especially on work by Visscher and colleagues (2019, <em>Genetics</em>).</p>
+<hr></hr>
+<h2 id="fishers-1918-paper-and-the-polygenic-model">Fisher's 1918 Paper and the Polygenic Model</h2>
+<h3 id="fishers-unification-of-mendel-and-biometry">Fisher's Unification of Mendel and Biometry</h3>
+<p>In the early 1900s, biology had a problem. Two groups of scientists were arguing about how traits are inherited, and they couldn't agree.</p>
+<p>On one side were the <strong>Mendelians</strong>. They studied traits that come in discrete categories—like the pea plants Mendel worked with. Round or wrinkled seeds. Tall or short stems. These traits seemed to follow simple rules: you inherit one allele from each parent, and the trait appears in a predictable way.</p>
+<p>On the other side were the <strong>biometricians</strong>. They measured traits like human height or weight, which don't come in neat categories. Instead, these traits show continuous variation—a smooth spectrum from short to tall, light to heavy. The biometricians argued that Mendelian laws couldn't explain continuous traits. They thought something else must be going on.</p>
+<p>In 1918, R.A. Fisher figured out that both groups were right. His insight was simple but profound: continuous variation can arise from the combined small effects of many Mendelian genes.</p>
+<p>Think of it like baking a cake. Each ingredient—flour, sugar, eggs, butter—contributes a little bit to the final taste. No single ingredient determines whether the cake is good or bad. But together, in the right proportions, they create something complex. That's how genes work for traits like height. Hundreds or thousands of genes, each following Mendel's rules, combine to produce the continuous variation we observe.</p>
+<p>Fisher's paper laid the foundation for <strong>quantitative genetics</strong>, the field that studies complex traits without needing to know the specific genes involved (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6456325/" target="_blank">Visscher et al. 2019, Genetics</a>). His framework is still used today, from twin studies to genome-wide association studies (GWAS) to polygenic risk scores.</p>
+<hr></hr>
+<h3 id="partitioning-phenotypic-variance">Partitioning Phenotypic Variance</h3>
+<p>Fisher's next move was to mathematically break down trait variation into components. He asked: if we measure a trait like height in a population, where does all that variation come from?</p>
+<p>He showed that total trait variation—what we call <strong>phenotypic variance (VP)</strong>—can be split into several pieces:</p>
+<p><strong>VP = A + D + E + Environment</strong></p>
+<p>Let's unpack each component:</p>
+<p><strong>A (Additive variance)</strong> is the variation due to additive alleles—the kind we've been talking about throughout this chapter. Each allele contributes a small, independent effect. If you have more height-increasing alleles, you're taller. If you have fewer, you're shorter. Additive variance is the major source of heritable variation in most human traits.</p>
+<p><strong>D (Dominance variance)</strong> captures the extra variation that comes from dominance—when having one copy of an allele (AB) produces an effect that's not simply halfway between AA and BB. We saw in the last section that dominance effects are rare and weak in most traits. They contribute a bit of variance, but it's usually small.</p>
+<p><strong>E (Epistatic variance)</strong> refers to gene-gene interactions—when the effect of one gene depends on which alleles you have at another gene. Epistasis definitely exists, but at the population level, it explains very little of the variance in most traits. Fisher recognized this early on.</p>
+<p><strong>Environment</strong> is everything non-genetic. Nutrition, lifestyle, chance events during development—all the factors that make you different from someone else even if you have identical genomes. For height, environment includes childhood nutrition, illnesses, and other factors that affect bone growth.</p>
+<p>Fisher emphasized that <strong>additive genetic variance (A)</strong> is the key component. Why? Because additive effects determine how much a trait can respond to selection (evolution) and how well we can predict offspring traits from parent traits. Most of the heritability we measure today reflects additive variance.</p>
+<p>And here's the cool part: modern studies confirm Fisher's model. Remember the 2022 GWAS on height? Researchers found <strong>12,111 SNPs</strong> spread across <strong>7,209 genomic segments</strong>, almost all with additive effects (Yengo et al. 2022, <em>Nature</em>). That's Fisher's model in action, nearly 100 years later.</p>
+<hr></hr>
+<h3 id="additive-alleles-and-the-no-dominance-assumption">Additive Alleles and the No-Dominance Assumption</h3>
+<p>Fisher made a simplifying assumption that turned out to be surprisingly accurate: he assumed that most alleles act additively, without dominance. Each additional copy of an allele adds a fixed amount to the trait value.</p>
+<p>Let's use height again. Imagine you have an allele called B that increases height. Under the no-dominance assumption:</p>
+<ul>
+<li>If you have <strong>AA</strong> (no B alleles), that's your baseline height—let's say 170 cm.</li>
+<li>If you have <strong>AB</strong> (one B allele), you gain 0.5 cm—now you're 170.5 cm.</li>
+<li>If you have <strong>BB</strong> (two B alleles), you gain another 0.5 cm—now you're 171 cm.</li>
+</ul>
+<p>Notice that the effect is linear. Each B allele adds exactly 0.5 cm, regardless of how many you already have. There's no dominance—AB is exactly halfway between AA and BB.</p>
+<p>Fisher knew this was a simplification. Dominance and epistasis do exist. But at the population level, their contributions to overall variance are small. The no-dominance assumption captures most of what's going on, which is why it's still used in many genetic models today.</p>
+<hr></hr>
+<h2 id="understanding-heritability">Understanding Heritability</h2>
+<h3 id="what-heritability-means-and-doesnt-mean">What Heritability Means (and Doesn't Mean)</h3>
+<p>Now we're ready to define <strong>heritability (h²)</strong>. It's the proportion of phenotypic variance in a population that can be attributed to genetic differences.</p>
+<p>For example, if height has an h² of 0.68, that means <strong>68% of the variation in height among people</strong> is explained by genetic differences. The other 32% comes from environmental differences—nutrition, health, and so on.</p>
+<p>But here's the critical part, and it's where most people get confused: <strong>heritability describes variation within a population, not how fixed or predetermined a trait is for an individual.</strong></p>
+<p>Let me illustrate with an example. Imagine you plant 100 seeds from the same plant variety in two different fields. Field A has rich, well-watered soil. Field B has poor, dry soil. </p>
+<p>In Field A, the plants grow to different heights—some are 150 cm, others are 180 cm. Because all the plants get the same excellent conditions, most of that variation is due to genetic differences between seeds. You'd calculate a high heritability—say, h² = 0.80.</p>
+<p>In Field B, the plants also vary in height, but they're all shorter overall—maybe 100 to 130 cm. Again, because they all experience the same poor conditions, most of the variation within Field B is genetic. You'd calculate a similar h² = 0.80.</p>
+<p>Now here's the key insight: even though heritability is high in both fields, the <strong>difference between the two fields is entirely environmental</strong>. The plants in Field A aren't genetically superior—they just had better soil. Heritability tells you nothing about why Field A plants are taller on average. It only tells you why plants within each field differ from each other.</p>
+<p>This is why heritability doesn't mean a trait is "fixed" or that environment doesn't matter. High heritability just means that <strong>within the specific environment you're studying</strong>, most of the remaining variation between individuals comes from genetic differences. Change the environment, and heritability can change too.</p>
+<p>For human height, h² ≈ 0.68 in modern populations with good nutrition. But if we compared populations with vastly different access to food, environmental variance would increase, and heritability would drop—even though the genes haven't changed at all.</p>
+<hr></hr>
+<h3 id="narrow-sense-and-broad-sense-heritability">Narrow-Sense and Broad-Sense Heritability</h3>
+<p>There are actually two types of heritability, and it's worth knowing the difference.</p>
+<p><strong>Narrow-sense heritability (h²)</strong> measures the fraction of variance due to additive genetic effects. It's calculated as:</p>
+<p>h² = VA / VP</p>
+<p>where VA is additive variance and VP is total phenotypic variance. Narrow-sense heritability is what matters for predicting resemblance between parents and offspring. If you want to know how tall your children will be based on your height, narrow-sense heritability is the relevant number.</p>
+<p><strong>Broad-sense heritability (H²)</strong> includes all genetic effects—additive, dominance, and epistatic. It's calculated as:</p>
+<p>H² = (VA + VD + VE) / VP</p>
+<p>Broad-sense heritability captures the total genetic influence on a trait, but it's less useful for prediction. Why? Because dominance and epistatic effects don't reliably pass from parent to offspring. When you make a baby, you're shuffling alleles and creating new combinations. Additive effects pass on predictably, but dominance and epistatic effects get scrambled.</p>
+<p>In practice, most studies focus on narrow-sense heritability because it's more informative for understanding inheritance and evolution.</p>
+<hr></hr>
+<h2 id="how-heritability-is-estimated">How Heritability Is Estimated</h2>
+<p>So how do scientists actually calculate heritability? There are several methods, but they all rely on the same basic idea: <strong>closer relatives share more genes and thus have more similar traits</strong>.</p>
+<h3 id="covariance-and-relatedness">Covariance and Relatedness</h3>
+<p>The key concept here is <strong>covariance between relatives</strong>. Covariance is a statistical measure of how two things vary together. If you and your sibling are both tall, or both short, your heights covary. If one is tall and the other is short, there's less covariance.</p>
+<p>Genetic relatives share DNA, so their traits tend to covary. The more DNA they share, the stronger the covariance. Here's what that looks like in practice:</p>
+<p><strong>Identical twins</strong> share about 100% of their DNA (they're genetic clones). If you measure height in identical twins, you'll find they're very similar—not exactly the same, because environment still plays a role, but very close.</p>
+<p><strong>Siblings</strong> share about 50% of their DNA on average. Each sibling inherits a random half of each parent's genome. Siblings are more similar in height than unrelated people, but less similar than identical twins.</p>
+<p><strong>First cousins</strong> share about 12.5% of their DNA. They're more similar than strangers, but much less similar than siblings.</p>
+<p>The pattern is clear: <strong>closer relatives, stronger covariance</strong>. This relationship forms the mathematical basis for estimating heritability. If you know how much DNA two relatives share and how similar their traits are, you can work backward to estimate how much of the trait variation is due to genetics.</p>
+<h3 id="twin-studies">Twin Studies</h3>
+<p>Twin studies are one of the classic methods for estimating heritability. The idea is to compare two types of twins:</p>
+<p><strong>Monozygotic (MZ) twins</strong>—also called identical twins—share about 100% of their DNA. They come from a single fertilized egg that split into two embryos.</p>
+<p><strong>Dizygotic (DZ) twins</strong>—also called fraternal twins—share about 50% of their DNA, just like regular siblings. They come from two separate fertilized eggs.</p>
+<p>Here's the logic: if MZ twins are more similar in a trait than DZ twins, the difference reflects genetic influence. If MZ and DZ twins are equally similar, environment must be the main factor.</p>
+<p>For height, MZ twins are much more similar than DZ twins. This gives an h² estimate of about 0.80 for height from twin studies—pretty high, meaning genetics plays a strong role.</p>
+<p>But there's a caveat. Twins, especially MZ twins, often share very similar environments. They grow up in the same household, eat the same food, and may even be dressed alike. This shared environment can make them appear more similar, slightly inflating heritability estimates. Modern studies try to account for this by comparing twins raised together versus twins raised apart, but such cases are rare.</p>
+<h3 id="snp-based-heritability">SNP-Based Heritability</h3>
+<p>Modern genetics offers a more direct approach: estimate heritability from genetic data itself. Instead of inferring shared DNA from pedigrees, we can now sequence people's genomes and measure how genetically similar they are at millions of SNPs.</p>
+<p>Here's how it works. Take a large sample of unrelated individuals—say, 50,000 people. Measure a trait like height. Then compare genetic similarity (based on SNPs) to trait similarity. If people who are slightly more genetically similar also tend to have more similar heights, that tells you genetics influences the trait.</p>
+<p>One popular method is <strong>LDSC (linkage disequilibrium score regression)</strong>, which we encountered in the previous section. LDSC estimates heritability by looking at how strongly trait-associated SNPs correlate with nearby SNPs due to linkage disequilibrium.</p>
+<p>For height, SNP-based heritability comes out to about <strong>h² ≈ 0.68</strong>. That's a bit lower than the twin-study estimate of 0.80, and there are a few reasons why. SNP-based heritability typically uses common SNPs (MAF &gt; 1%), so it misses some rare variants. Also, it doesn't capture structural variants or other genetic differences that SNP chips don't detect well.</p>
+<p>Interestingly, when researchers include rare variants, the estimate goes up. A 2022 study using whole-genome sequencing found that rare variants in low linkage disequilibrium contribute about 0.31 of the phenotypic variance in height (Wainschtein et al. 2022, <em>Nat Genet</em>). Add that to the common SNP component, and you're getting closer to the twin-study estimate.</p>
+<hr></hr>
+<h2 id="why-heritability-changes-across-traits-and-environments">Why Heritability Changes Across Traits and Environments</h2>
+<p>Heritability is not a fixed property of a trait. It can differ across populations, time periods, or environments. Here's why.</p>
+<p>Remember the formula: h² = VA / VP. Heritability depends on both the numerator (genetic variance) and the denominator (total phenotypic variance). If environmental variance changes, the denominator changes, and so does heritability—even if genetic variance stays the same.</p>
+<p>Let's look at a few examples:</p>
+<p><strong>Height</strong> has an h² of about 0.68 in well-nourished populations. Why not higher? Because even in genetically similar people, environmental factors like childhood nutrition, illness, and growth conditions create variation. But in populations with severe malnutrition, environmental variance would be much larger, and heritability would drop.</p>
+<p><strong>BMI (body mass index)</strong> has an h² of about 0.30—much lower than height. Why? Because BMI is strongly influenced by diet, exercise, and lifestyle. Genetic differences still matter, but environmental differences dominate. If you took the same population and put everyone on identical diets and exercise routines (which you can't do in real life, but imagine), environmental variance would shrink and heritability would appear to increase.</p>
+<p><strong>Blood pressure</strong> has an h² of about 0.25, also relatively low. Diet, stress, physical activity, and medication all have large effects. Genetic differences contribute, but environment is a major player.</p>
+<p>Here's the key takeaway: <strong>high heritability does not mean environment is unimportant</strong>. It simply means genetic differences explain most of the remaining variation within that specific population and environment. Change the environment, and the picture can shift dramatically.</p>
+<hr></hr>
+<h2 id="fishers-model-in-modern-context">Fisher's Model in Modern Context</h2>
+<p>More than a century after Fisher's 1918 paper, his framework is still the backbone of modern genetics. Let's see how recent findings fit with his model.</p>
+<p><strong>Thousands of common SNPs contribute small additive effects.</strong> The 2022 GWAS on height found 12,111 SNPs spread across 7,209 genomic regions (Yengo et al. 2022, <em>Nature</em>). Almost all of these effects are additive, just as Fisher predicted. Each SNP nudges height up or down by a fraction of a centimeter, and together they explain most of the genetic variance.</p>
+<p><strong>Dominance effects are rare and weak.</strong> The 2023 UK Biobank study found dominance effects at 183 loci, but they explained less than 1% of the additive variance on average (Palmer et al. 2023, <em>Science</em>). Fisher was right to focus on additive variance—it's where most of the action is.</p>
+<p><strong>Epistasis exists but contributes little to population-level variation.</strong> Visscher and colleagues emphasize this point in their 2019 review. Gene-gene interactions happen, but they don't explain much of the trait variance we observe across populations. Additive effects dominate.</p>
+<p>Fisher's model has proven remarkably robust. It underlies everything from <strong>twin studies</strong> to <strong>GWAS</strong> to <strong>polygenic risk scores</strong>—those scores that combine information from thousands of SNPs to predict traits or disease risks.</p>
+<p>As Visscher noted in his 2019 review, Fisher's 1918 framework still guides how we study genetic architecture today. It explains <strong>trait variation</strong>, not individual destiny. And that's an important distinction. Knowing that height has high heritability doesn't tell you how tall <em>you</em> will be—it tells you why people in a population differ from each other.</p>
+<hr></hr>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Let's recap what we've learned about heritability:</p>
+<p>Fisher unified Mendelian genetics with continuous trait variation back in 1918. He showed that many genes, each with small additive effects, could produce the smooth variation we see in traits like height. His insight gave birth to quantitative genetics.</p>
+<p>Phenotypic variance can be partitioned into components: <strong>Additive (A)</strong> + <strong>Dominance (D)</strong> + <strong>Epistatic (E)</strong> + <strong>Environment</strong>. Additive variance drives most heritability and evolutionary response. Dominance and epistasis exist, but they explain little variance at the population level.</p>
+<p><strong>Heritability (h²)</strong> measures variation within a population, not genetic "determination" of individuals. An h² of 0.68 for height means 68% of the differences among people come from genetic differences, not that your height is 68% genetic. Your height is 100% the product of genes and environment working together.</p>
+<p>Heritability depends on environmental conditions and can change over time. If nutrition improves and everyone gets adequate food, environmental variance shrinks, and heritability can appear to increase—even though genes haven't changed. Heritability is a snapshot of a specific population in a specific environment.</p>
+<p>We estimate heritability through <strong>covariance</strong> between relatives. Twin studies compare identical and fraternal twins. SNP-based studies measure genetic similarity directly. Both approaches confirm that traits like height have substantial genetic influence, while traits like BMI and blood pressure show stronger environmental effects.</p>
+<p>Fisher's model still underlies modern GWAS and polygenic prediction. More than 100 years later, his framework remains the foundation for understanding complex traits. The details have gotten more sophisticated—we can now identify specific SNPs and measure their effects—but the basic model is Fisher's.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="polygenic.html" class="navigation navigation-prev " aria-label="Previous page: Polygenic Model">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="partioned-variance.html" class="navigation navigation-next " aria-label="Next page: Partioned Variance">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Heritability","level":"4.4","depth":1,"next":{"title":"Partioned Variance","level":"4.5","depth":1,"path":"chapter3/partioned-variance.md","ref":"chapter3/partioned-variance.md","articles":[]},"previous":{"title":"Polygenic Model","level":"4.3","depth":1,"path":"chapter3/polygenic.md","ref":"chapter3/polygenic.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/heritability.md","mtime":"2025-10-09T08:21:57.082Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-10-10T12:28:42.328Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,869 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Population Structure · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="linkage-Morgan.html" />
+    
+    
+    <link rel="prev" href="allele-freq.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../getting-started.html">
+            
+                <a href="../getting-started.html">
+            
+                    
+                    Getting started
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 1. The Human Genome Project and NGS</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../chapter1/introduction.html">
+            
+                <a href="../chapter1/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../chapter1/human-genome-project.html">
+            
+                <a href="../chapter1/human-genome-project.html">
+            
+                    
+                    The Human Genome Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../chapter1/t2tgenome.html">
+            
+                <a href="../chapter1/t2tgenome.html">
+            
+                    
+                    T2T Genome Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../chapter1/chm13.html">
+            
+                <a href="../chapter1/chm13.html">
+            
+                    
+                    CHM13 Cell Line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../chapter1/pangenome.html">
+            
+                <a href="../chapter1/pangenome.html">
+            
+                    
+                    Human Pangenome Reference Consortium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../chapter1/ngs.html">
+            
+                <a href="../chapter1/ngs.html">
+            
+                    
+                    Next-Generation Sequencing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../chapter1/ngs-application.html">
+            
+                <a href="../chapter1/ngs-application.html">
+            
+                    
+                    NGS Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../chapter1/annotation-database.html">
+            
+                <a href="../chapter1/annotation-database.html">
+            
+                    
+                    Annotation & Database
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 2. Mendelian Genetics in NGS</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../chapter2/introduction.html">
+            
+                <a href="../chapter2/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../chapter2/genetic-variant.html">
+            
+                <a href="../chapter2/genetic-variant.html">
+            
+                    
+                    Genetic Variant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../chapter2/transmission.html">
+            
+                <a href="../chapter2/transmission.html">
+            
+                    
+                    Transmission
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../chapter2/dominant-allele.html">
+            
+                <a href="../chapter2/dominant-allele.html">
+            
+                    
+                    Dominant Allele
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../chapter2/haploinsufficiency.html">
+            
+                <a href="../chapter2/haploinsufficiency.html">
+            
+                    
+                    Haploinsufficiency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../chapter2/recessive-allele.html">
+            
+                <a href="../chapter2/recessive-allele.html">
+            
+                    
+                    Recessive Allele
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../chapter2/sv.html">
+            
+                <a href="../chapter2/sv.html">
+            
+                    
+                    Structural Variation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 3. Polygenic and Genetic Architecture</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../chapter3/introduction.html">
+            
+                <a href="../chapter3/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../chapter3/additive.html">
+            
+                <a href="../chapter3/additive.html">
+            
+                    
+                    Additive and Dominant Allele
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../chapter3/polygenic.html">
+            
+                <a href="../chapter3/polygenic.html">
+            
+                    
+                    Polygenic Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../chapter3/heritability.html">
+            
+                <a href="../chapter3/heritability.html">
+            
+                    
+                    Heritability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../chapter3/partioned-variance.html">
+            
+                <a href="../chapter3/partioned-variance.html">
+            
+                    
+                    Partioned Variance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../chapter3/gwas.html">
+            
+                <a href="../chapter3/gwas.html">
+            
+                    
+                    GWAS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../chapter3/genetic-architecture.html">
+            
+                <a href="../chapter3/genetic-architecture.html">
+            
+                    
+                    Genetic Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 4. Recombination, Linkage and Population</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="allele-freq.html">
+            
+                <a href="allele-freq.html">
+            
+                    
+                    Allele Frequency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.3" data-path="pop-struct.html">
+            
+                <a href="pop-struct.html">
+            
+                    
+                    Population Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="linkage-Morgan.html">
+            
+                <a href="linkage-Morgan.html">
+            
+                    
+                    Discovery of Linkage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="linkage-NGS.html">
+            
+                <a href="linkage-NGS.html">
+            
+                    
+                    Linkage in NGS era
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="vcf.html">
+            
+                <a href="vcf.html">
+            
+                    
+                    Data Type for Alleles and Population
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 5. Variant to System</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../chapter5/introduction.html">
+            
+                <a href="../chapter5/introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../chapter5/forward-genetics.html">
+            
+                <a href="../chapter5/forward-genetics.html">
+            
+                    
+                    Forward Genetics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../chapter5/reverse-genetics.html">
+            
+                <a href="../chapter5/reverse-genetics.html">
+            
+                    
+                    Reverse Genetics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../chapter5/crispra-scn2a.html">
+            
+                <a href="../chapter5/crispra-scn2a.html">
+            
+                    
+                    CRISPRa in human disorder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../chapter5/gene-regulation.html">
+            
+                <a href="../chapter5/gene-regulation.html">
+            
+                    
+                    Gene Regulation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../chapter5/qtl.html">
+            
+                <a href="../chapter5/qtl.html">
+            
+                    
+                    QTL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Population Structure</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="population-structure">Population Structure</h1>
+<p>Imagine you're standing in a busy airport, watching people from all over the world walk by. You notice that some people look similar to each other—maybe they share certain facial features, skin tones, or body builds. Without knowing anything about where they're from, you might guess that people who look similar probably come from the same region or share common ancestry.</p>
+<p>Genetics tells a similar but much more precise story. When we look at DNA instead of physical appearance, we see that people from the same geographic region tend to share certain genetic variants more often than people from distant regions. These patterns aren't sharp boundaries—they're gradual gradients, like colors blending into each other on a map. But they're measurable, and they tell us about human history: ancient migrations, population bottlenecks, and the mixing of groups over thousands of years.</p>
+<p>This is what geneticists call <strong>population structure</strong>—systematic differences in allele frequencies among groups. It's not about dividing humans into categories. It's about recognizing that genetic variation isn't randomly distributed. History has left traces in our genomes, and we can read those traces.</p>
+<p>Understanding population structure matters for both scientific and ethical reasons. Scientifically, we need to account for it in genetic studies to avoid false conclusions. If a variant is common in one population and rare in another, and you're studying a disease that's also more common in that first population, you might mistakenly think the variant causes the disease when it's just correlated with ancestry. Ethically, we need to be clear that genetic differences among populations are subtle gradients, not fundamental divisions—and that the concept of biological "races" has no basis in genetics.</p>
+<p>Let's explore how population structure arises, how we detect it, and why it matters.</p>
+<hr></hr>
+<h2 id="what-is-population-structure">What Is Population Structure?</h2>
+<p><strong>Population structure</strong> refers to the presence of subgroups within a species that differ in their allele frequencies. In humans, we see small frequency differences between continental groups—African, European, East Asian, South Asian, and so on. These differences aren't huge—most genetic variation exists <em>within</em> populations, not between them—but they're detectable and meaningful.</p>
+<p>How did these differences arise? The answer is history.</p>
+<p>Humans evolved in Africa and began migrating out roughly 60,000 to 100,000 years ago. As groups moved to different continents, they became partially isolated from each other. Geographic distance, mountains, oceans, and deserts limited gene flow—the exchange of genetic material through reproduction. When gene flow is restricted, populations accumulate differences over time through several mechanisms:</p>
+<p><strong>Genetic drift</strong>: Random fluctuations in allele frequency from generation to generation. In small populations, drift can be strong. An allele might increase or decrease in frequency just by chance—who happens to have more children, who survives, who doesn't. Over many generations, drift causes populations to diverge even if they start out identical.</p>
+<p><strong>Mutation</strong>: New variants arise randomly in each population. Most mutations are neutral or slightly deleterious and stay rare. But occasionally, a new variant drifts to moderate frequency in one population while remaining absent in others. This creates population-specific variants.</p>
+<p><strong>Natural selection</strong>: Different environments favor different alleles. If you live at high altitude, variants that help you use oxygen efficiently might be beneficial. If you live where malaria is common, variants that protect against the parasite might be favored. Selection can drive allele frequency differences between populations.</p>
+<p>The result is that populations separated by geography and time develop distinct—but overlapping—patterns of allele frequencies. These patterns form subtle genetic gradients across the globe. There are no sharp boundaries. If you sample people along a transect from West Africa through the Middle East to Europe, you see smooth changes in allele frequencies, not sudden jumps.</p>
+<p>This is why geneticists emphasize that <strong>population structure does not reflect biological "races."</strong> Race is a social category based on visible traits like skin color. Genetically, human variation is continuous. Populations blend into each other. Any attempt to draw sharp lines is arbitrary.</p>
+<hr></hr>
+<h2 id="race-ethnicity-ancestry-and-population—different-concepts">Race, Ethnicity, Ancestry, and Population—Different Concepts</h2>
+<p>In everyday conversation, people use words like "race," "ethnicity," and "ancestry" interchangeably. But in genetics, these terms have distinct meanings, and it's essential to keep them separate.</p>
+<p><strong>Race</strong> is a socially defined category based on perceived physical traits—skin color, facial features, hair texture. Terms like "Black," "White," or "Asian" are context-dependent labels that vary across cultures and time. From a biological perspective, race has no precise definition. There's no set of genes that cleanly separates humans into racial groups. Skin color, for example, is controlled by a handful of genes that vary continuously across populations. Two people classified as "White" in the United States might be more genetically different from each other than either is from someone classified as "Black." Because of this imprecision—and because racial categories have been misused historically to justify discrimination—geneticists avoid using race as a biological concept.</p>
+<p><strong>Ethnicity</strong> is a cultural identity shared by a group, often including language, nationality, religion, or traditions. For example, Han Chinese, Yoruba, French, or Navajo are ethnic groups. Ethnicity may correlate weakly with ancestry—if your family has lived in one region for many generations, you probably share some genetic background with others from that region. But ethnicity is primarily about culture, not DNA. You can be ethnically French without having French ancestry, or vice versa.</p>
+<p><strong>Ancestry</strong> refers to genetic lineage—where your ancestors lived and how populations migrated over time. Ancestry is a biological and historical concept. If we say someone has "West African ancestry," we mean their DNA shows patterns consistent with people whose ancestors lived in West Africa. Ancestry is probabilistic, not categorical. You might have 50% European ancestry and 50% East Asian ancestry, or 23% West African and 77% European. These percentages reflect which populations contributed to your genetic makeup.</p>
+<p><strong>Population</strong>, in genetics, is a group of individuals who interbreed more frequently with each other than with outsiders, forming a shared gene pool. For example, "European population" or "East Asian population" describes people who share more recent common ancestry with each other than with people from other continents. Populations are defined by patterns of mating and gene flow, not by social categories. They're useful for analyzing allele frequency patterns and evolutionary history.</p>
+<p>Modern human genetics focuses on <strong>ancestry</strong> and <strong>population</strong>, not race or ethnicity. This distinction matters both scientifically and ethically. Populations are continuous along gradients of allele frequency. Ancestry is a probabilistic description of where your DNA comes from, not a box you fit into. Understanding this helps researchers correct for ancestry-related bias in genetic studies and appreciate human diversity as a product of shared evolutionary history, not rigid divisions.</p>
+<hr></hr>
+<h2 id="how-population-structure-arises">How Population Structure Arises</h2>
+<p>Let's look at the specific mechanisms that create population structure in more detail.</p>
+<p><strong>Geographic isolation</strong> is the simplest cause. When populations live far apart—separated by oceans, deserts, or mountain ranges—gene flow between them is limited. Over time, genetic drift and mutation cause their allele frequencies to diverge. Even if the populations start out genetically identical, isolation ensures they'll become different. The longer they're separated, the more different they become.</p>
+<p><strong>Founder effects</strong> happen when a new population is established by a small number of individuals. Imagine a group of 50 people migrating to an isolated island. Those 50 people carry only a fraction of the genetic diversity from their original population. Some alleles might be overrepresented by chance, others might be missing entirely. As the island population grows, it retains this reduced diversity. Founder effects explain why some populations—like Ashkenazi Jews or Finns—have higher frequencies of certain genetic variants than others.</p>
+<p><strong>Population bottlenecks</strong> occur when a population's size drops sharply—due to disease, famine, or migration—and then recovers. During the bottleneck, rare alleles are lost just by chance, because only a few individuals survive to reproduce. The recovered population has less genetic diversity than before. Bottlenecks leave signatures in the genome: fewer rare variants, longer stretches of linkage disequilibrium, and reduced overall diversity.</p>
+<p><strong>Admixture</strong> is the mixing of previously separated populations. When two groups that have been isolated for thousands of years start interbreeding, their offspring inherit a mosaic of alleles from both ancestries. Admixture creates individuals with "mixed" ancestry patterns. For example, many African Americans have both West African and European ancestry due to historical admixture. Latino populations often show a mix of Indigenous American, European, and African ancestries. Admixture is common in human history—populations have been mixing and splitting for millennia.</p>
+<p><strong>Selection and local adaptation</strong> also shape population structure. If different environments favor different alleles, selection can drive frequency differences between regions. For example, variants in the <em>LCT</em> gene allow adults to digest lactose (milk sugar). These variants are common in European populations, where dairy farming has been practiced for thousands of years, but rare in East Asian populations, where dairy was historically less common. The difference reflects selection for lactose tolerance in populations with dairy-heavy diets.</p>
+<p>Each of these processes changes allele frequencies over time, creating the subtle but detectable structure we observe today.</p>
+<hr></hr>
+<h2 id="detecting-population-structure">Detecting Population Structure</h2>
+<p>We know populations differ in allele frequencies, but how do we actually measure and visualize those differences? This is where things get interesting—and a bit mathematical. But stick with me; the intuition is simple even if the details are complex.</p>
+<h3 id="the-idea-of-distance-and-similarity">The Idea of Distance and Similarity</h3>
+<p>Start by imagining we're comparing two people's genomes. We look at millions of SNPs across their chromosomes and count how many alleles they share. If they share most of their alleles—if they're similar at most positions—they're genetically close. If they differ at many positions, they're genetically distant.</p>
+<p>This "distance" isn't physical. You're not measuring how far apart they live. You're measuring how different their DNA is. Think of it like comparing two recipes. If two recipes call for the same ingredients in the same amounts, they're similar. If they use completely different ingredients, they're distant.</p>
+<p>Now scale this up. In a dataset like gnomAD, you have <strong>141,456 people</strong> and millions of SNPs. You can calculate the genetic distance between every pair of people. That gives you a massive matrix of distances—141,456 × 141,456 numbers. People from the same population (high gene flow, shared ancestry) will be close together. People from different continents will be farther apart.</p>
+<p>But here's the problem: you can't visualize millions of dimensions. Each SNP is like a dimension in space. If you have 1 million SNPs, you're working in 1-million-dimensional space. We need a way to simplify this—to collapse all those dimensions down to two or three so we can plot them and see patterns.</p>
+<p>That's where dimensionality reduction comes in.</p>
+<h3 id="what-is-pca">What Is PCA?</h3>
+<p><strong>Principal Component Analysis (PCA)</strong> is a mathematical trick for simplifying high-dimensional data. It finds new axes—called <strong>principal components (PCs)</strong>—that capture the largest sources of variation in the data.</p>
+<p>Let me use an analogy. Imagine you're photographing a crowd of people standing in a plaza. If you stand at ground level, you see some people but others are hidden behind them. If you climb to a rooftop and look down, you see everyone clearly—the view from above reveals the most information.</p>
+<p>PCA is like finding the best vantage points. It identifies angles from which you can see the most variation. The first principal component (PC1) is the direction that shows the biggest differences. The second (PC2) is the next biggest, independent of the first. And so on.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/GaussianScatterPCA.svg" alt="PCA visualization"></img></p>
+<p><strong>Figure. How PCA finds new axes.</strong> This simple example shows data points scattered in 2D space. The original axes are horizontal (x) and vertical (y). But notice the data doesn't spread evenly along these axes—it follows a diagonal pattern. The red arrow shows PC1, the direction of maximum variance (where the data spreads most). The green arrow shows PC2, perpendicular to PC1, capturing the remaining variance. By rotating to these new axes, we can see the data's true structure more clearly. If we wanted to reduce this to 1D, projecting onto PC1 (red arrow) would preserve much more information than projecting onto either original axis. (Image: Wikimedia Commons, CC BY 4.0)</p>
+<p>In genetics, PC1 might separate African from non-African ancestry because that's the biggest split in human history (the out-of-Africa migration). PC2 might separate European from East Asian ancestry. PC3 might capture finer substructure within continents. Each PC is a weighted combination of many SNPs.</p>
+<p>When you plot individuals on PC1 vs PC2, you get a scatterplot. Each dot is a person. People with similar ancestry cluster together. People with different ancestry are far apart. The axes (PC1, PC2) aren't directly interpretable as "amount of European ancestry"—they're mathematical constructs—but they correlate with ancestry because ancestry is what drives most genetic variation.</p>
+<p>Here's the key insight: instead of tracking 1 million SNPs separately, PCA condenses the information into a few PCs (often 10-20 are enough). You've gone from a million dimensions to a handful. That's why it's called dimensionality reduction.</p>
+<h3 id="what-is-umap">What Is UMAP?</h3>
+<p>PCA works well, but it's linear. It finds straight-line directions that capture variance. Sometimes the structure in your data isn't linear—it might have curves or complex shapes.</p>
+<p><strong>UMAP (Uniform Manifold Approximation and Projection)</strong> is a more flexible method. It preserves both global structure (large-scale patterns, like continents) and local structure (fine-scale patterns, like subpopulations within continents). UMAP maps your high-dimensional data into 2D or 3D space in a way that keeps nearby points close and distant points far.</p>
+<p>Think of it like making a map. A globe shows Earth's true shape, but it's hard to see detail. A flat map (like Mercator projection) distorts shapes but lets you see everything at once. UMAP is like choosing a projection that preserves the relationships you care about—genetic similarity.</p>
+<p>When you apply UMAP to genetic data, each point represents one person. Points close together have similar allele frequencies. Points far apart are genetically different. You end up with clusters corresponding to ancestral groups.</p>
+<h3 id="the-gnomad-example">The gnomAD Example</h3>
+<p>The gnomAD project sequenced 141,456 people from diverse backgrounds: African/African American, Latino/Admixed American, East Asian, South Asian, European (Finnish and non-Finnish), Middle Eastern, and more. When they ran UMAP on millions of SNPs, they got a beautiful map of human genetic diversity.</p>
+<p><img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41586-020-2308-7/MediaObjects/41586_2020_2308_Fig1_HTML.png" alt="Figure 1A from Karczewski et al. 2020, Nature"></img></p>
+<p><strong>Figure. Mapping human genetic diversity.</strong> Over 140,000 dots, each representing one person's genome, plotted in 2D space using UMAP. Nearby dots belong to people with similar allele frequencies. The clusters reflect major ancestral groups: African/African American (purple), European (blue), East Asian (pink), South Asian (green), Latino (orange), and others. Notice there are no sharp boundaries—populations blend into each other. The continuous gradients show that human genetic variation is smooth, not categorical. This is population structure visualized.</p>
+<p>Look at the clusters. They're distinct but not isolated. There's overlap at the edges—people of mixed ancestry sit between clusters. The Latino cluster, for example, spreads between European, African, and Indigenous American (not fully shown but implied by the distribution). That's admixture in action.</p>
+<p>The shape of each cluster also tells a story. The African cluster is the most diverse (spread out) because African populations are the oldest and have had more time to accumulate variation. The other clusters are tighter because they descend from small founder populations that left Africa. That's the signature of the out-of-Africa bottleneck.</p>
+<h3 id="why-this-matters">Why This Matters</h3>
+<p>PCA and UMAP are powerful because they make genetic relationships visible. Without them, you'd be staring at millions of numbers. With them, you see patterns: how populations relate to each other, how admixture creates intermediate genomes, how diversity varies across the world.</p>
+<p>These tools also let researchers correct for population structure in genetic studies. If you're doing a GWAS and you don't account for ancestry differences between cases and controls, you'll get false positives. By including PCs as covariates in your analysis, you adjust for ancestry-related allele frequency differences and focus on true disease associations.</p>
+<p>They also demonstrate something philosophically important: <strong>human genetic variation is continuous, not categorical</strong>. The clusters in the UMAP plot aren't rigid boxes. They're fuzzy regions that blend into each other. There's no line where "European" ends and "Middle Eastern" begins. It's all gradients.</p>
+<hr></hr>
+<h2 id="allele-frequency-differences-among-populations">Allele Frequency Differences Among Populations</h2>
+<p>Let's look at some concrete examples of how allele frequencies differ between populations.</p>
+<p><strong>Lactose tolerance</strong>: The <em>LCT</em> gene produces lactase, the enzyme that digests lactose. In most mammals, lactase production shuts down after weaning. But in some human populations—especially those with a long history of dairy farming—a variant keeps lactase production going into adulthood. This variant is common in Europeans (frequencies around 70-90% in Northern Europe) but rare in East Asians (under 10%). The difference reflects natural selection favoring lactose tolerance in populations that relied on dairy for calories.</p>
+<p><strong>Malaria resistance</strong>: Certain variants in the <em>HBB</em> gene (hemoglobin beta) confer resistance to malaria. The sickle cell allele (HbS) is one example. It's common in sub-Saharan Africa, parts of the Middle East, and India—regions where malaria has been endemic. In heterozygotes (people with one normal and one sickle allele), the variant provides protection against malaria with minimal downside. In homozygotes, it causes sickle cell disease, a serious condition. The allele is nearly absent in populations where malaria isn't present because the protection isn't needed, and the homozygous disease is harmful.</p>
+<p><strong>Population-specific rare variants</strong>: Many rare and private variants discovered in large-scale sequencing are population-specific. A variant that appears in just one or two people out of 141,456 might be found only in, say, Finnish individuals or only in people of West African ancestry. These variants are recent—they arose in that population within the last few thousand years and haven't spread elsewhere because gene flow between populations is still limited. As we sequence more people, we find more of these population-specific variants, enriching our understanding of recent human evolution.</p>
+<p>These frequency differences aren't evidence of biological superiority or inferiority. They're just the result of different evolutionary pressures—diet, disease, climate—acting on populations in different environments. They reflect history, not hierarchy.</p>
+<hr></hr>
+<h2 id="quantifying-genetic-differentiation-fst">Quantifying Genetic Differentiation: FST</h2>
+<p>How do we measure how different two populations are? One widely used statistic is <strong>FST</strong> (the Fixation Index). It quantifies how much allele frequencies differ between populations relative to the total variation.</p>
+<p>Here's the logic. Take a genetic variant and measure its frequency in two populations. If the frequencies are identical, the populations aren't differentiated at that locus. If the frequencies are completely different—say, 0% in one and 100% in the other—they're maximally differentiated.</p>
+<p>FST ranges from 0 to 1:</p>
+<ul>
+<li><strong>FST = 0</strong> means the populations have identical allele frequencies. They're not differentiated at all.</li>
+<li><strong>FST = 1</strong> means the populations are completely different. They share no variation.</li>
+</ul>
+<p>In reality, FST for human populations is typically low—around 0.05 to 0.15 between major continental groups. What does this mean?</p>
+<p>It means that about <strong>85-95% of human genetic variation exists within populations, not between them</strong>. If you randomly pick two people from the same population—say, two Italians—they'll differ at millions of SNPs. If you pick two people from different continents—say, an Italian and a Korean—they'll differ at only slightly more SNPs. Most of the variation you see within Italy also exists in Korea, just at different frequencies.</p>
+<p>This is a striking finding. It tells us that humans are genetically very similar despite visible diversity. The differences we perceive—skin color, facial features—are controlled by a tiny fraction of the genome. The vast majority of our DNA is shared.</p>
+<p>FST also varies across the genome. Some regions have low FST (those regions are similar across populations), while others have high FST (those regions differ more). High-FST regions often point to local adaptation—selection acting differently in different environments. For example, genes involved in skin pigmentation show high FST between African and European populations because skin color adapted to different levels of UV radiation.</p>
+<hr></hr>
+<h2 id="population-structure-and-natural-selection">Population Structure and Natural Selection</h2>
+<p>Population structure and natural selection interact in interesting ways. When environmental pressures differ between regions, selection can drive allele frequency differences that reinforce population structure.</p>
+<p><strong>High-altitude adaptation</strong>: Tibetan populations live at elevations above 4,000 meters, where oxygen is scarce. Variants in the <em>EPAS1</em> gene, which regulates red blood cell production and oxygen sensing, are strongly enriched in Tibetans compared to lowland populations. These variants help Tibetans maintain stable hemoglobin levels at high altitude, avoiding the problems (like polycythemia) that lowlanders experience when they move to high elevations. This is a clear case of local adaptation—selection acting on a specific population in a specific environment.</p>
+<p><strong>Skin pigmentation</strong>: Variants near <em>SLC24A5</em> and <em>MC1R</em> influence skin color. They show some of the highest FST values in the genome, reflecting strong selection as humans migrated to different latitudes. In regions with intense UV radiation (near the equator), darker skin protects against DNA damage and folate depletion. In regions with less sunlight (higher latitudes), lighter skin allows more vitamin D synthesis. The allele frequency differences we see today are the result of tens of thousands of years of selection balancing these trade-offs.</p>
+<p><strong>Pathogen resistance</strong>: Besides malaria resistance, other disease-related variants show population structure. For example, variants in the <em>CCR5</em> gene affect HIV susceptibility and show frequency differences between populations. Variants in <em>HLA</em> genes (immune system) are highly diverse and differ markedly between populations, likely due to selection from different pathogens over evolutionary time.</p>
+<p>Natural selection can both create and reinforce population structure. When selection is strong and local, it drives allele frequency differences faster than drift alone would. This is why some genomic regions show much more differentiation than others—those are the regions where different environments favored different alleles.</p>
+<hr></hr>
+<h2 id="why-population-structure-matters">Why Population Structure Matters</h2>
+<p>Understanding population structure isn't just an academic exercise. It has real implications for genetics research and medicine.</p>
+<p><strong>Correcting confounding in association studies</strong>: This is the biggest practical concern. Imagine you're running a GWAS to find variants associated with type 2 diabetes. You collect cases (people with diabetes) and controls (people without). If your cases happen to include more people of one ancestry than your controls, any variant that differs in frequency between ancestries will show up as "associated" with diabetes—even if it has nothing to do with the disease. It's a false positive caused by population structure. To avoid this, researchers include principal components (PCs) as covariates in their analysis. This adjusts for ancestry-related allele frequency differences and focuses on true disease associations. Without this correction, GWAS results would be full of spurious findings.</p>
+<p><strong>Tracing human history</strong>: Genetic patterns reveal migration routes, admixture events, and ancient population splits. By comparing allele frequencies and genomic segments, researchers can reconstruct who migrated where and when. For example, genetic studies have shown that modern humans left Africa in waves, that there was interbreeding with Neanderthals and Denisovans (archaic hominins), and that populations in the Americas descend from migrations across the Bering land bridge. Population structure is a record of human history written in DNA.</p>
+<p><strong>Improving medical genetics</strong>: Allele frequencies determine which variants are likely pathogenic versus benign. A variant that's common in healthy individuals of one ancestry is probably benign, even if it's rare overall. But a variant that's rare in all populations might be pathogenic. Knowing population-specific background frequencies prevents false clinical interpretations. For example, the <em>APOL1</em> kidney disease risk variants are common in people of West African ancestry but rare elsewhere. If you don't account for ancestry, you might misinterpret these variants.</p>
+<p><strong>Ensuring diversity in research</strong>: Most early GWAS and sequencing studies focused on people of European ancestry. This creates two problems. First, polygenic scores and genetic risk predictions trained on European data don't work well in other populations. Second, it's inequitable—people of non-European ancestry don't benefit equally from genomic medicine. Expanding to multi-ancestry cohorts improves both accuracy and equity. It also helps discover variants that are rare or absent in Europeans but common elsewhere.</p>
+<p>Population structure is fundamental to modern human genetics. It explains patterns of variation, guides study design, connects genetics to history, and shapes clinical interpretation. Understanding it is essential for anyone working with genomic data.</p>
+<hr></hr>
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Let's recap the key ideas about population structure.</p>
+<p><strong>Population structure</strong> refers to systematic differences in allele frequencies among subgroups within a species. In humans, these differences are small but detectable, reflecting our history of migration, isolation, and admixture.</p>
+<p>The structure arises through several mechanisms: <strong>geographic isolation</strong> limits gene flow; <strong>founder effects</strong> reduce diversity in new populations; <strong>bottlenecks</strong> eliminate rare variants; <strong>admixture</strong> creates mosaic ancestries; and <strong>natural selection</strong> favors different alleles in different environments.</p>
+<p>We detect structure using tools like <strong>PCA</strong> and <strong>UMAP</strong>, which reduce millions of SNPs down to a few dimensions we can visualize. These methods show that human genetic variation is continuous, forming gradients rather than discrete categories.</p>
+<p>Allele frequencies differ between populations—sometimes dramatically, as with lactose tolerance or malaria resistance—but most variation (85-95%) exists within populations, not between them. <strong>FST</strong> quantifies these differences and typically ranges from 0.05 to 0.15 for major human groups.</p>
+<p>Population structure interacts with natural selection, creating genomic regions with high differentiation where local adaptation has occurred.</p>
+<p>Understanding structure matters because it affects how we design studies (we must correct for ancestry to avoid false associations), how we interpret clinical variants (population-specific frequencies guide pathogenicity assessment), and how we ensure equity in genomic medicine (multi-ancestry research benefits everyone).</p>
+<p>Population structure reminds us that evolution isn't a static snapshot—it's a dynamic process. Mutation, migration, drift, and selection have all shaped human genetic diversity, operating on the foundation of allele frequency. The patterns we see today are a living record of where we've been and how we got here.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="allele-freq.html" class="navigation navigation-prev " aria-label="Previous page: Allele Frequency">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="linkage-Morgan.html" class="navigation navigation-next " aria-label="Next page: Discovery of Linkage">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Population Structure","level":"5.3","depth":1,"next":{"title":"Discovery of Linkage","level":"5.4","depth":1,"path":"chapter4/linkage-Morgan.md","ref":"chapter4/linkage-Morgan.md","articles":[]},"previous":{"title":"Allele Frequency","level":"5.2","depth":1,"path":"chapter4/allele-freq.md","ref":"chapter4/allele-freq.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4/pop-struct.md","mtime":"2025-10-09T12:21:20.073Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-10-10T12:28:42.328Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
