@@ -2,3 +2,5 @@
 _book
 node_modules
 /papers
+.DS_Store
+*/.DS_Store
