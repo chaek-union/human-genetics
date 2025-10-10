@@ -13,6 +13,10 @@ This digital textbook introduces the foundations and frontiers of **human geneti
 
 **Please note that the chapters are currently under writing and improvement. The full version is expected to be completed around January next year.**
 
+
+![Front Cover](../assets/front-cover.png)
+
+
 ---
 
 ## Table of Contents
