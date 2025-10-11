@@ -1,6 +1,6 @@
-# Part 1. The Human Genome Project and Next-Generation Sequencing: A Genomic Revolution
+# Part 1. The Human Genome Project and Next-Generation Sequencing: A Revolution in Modern Biology
 
-## Introduction: From Invisible Factors to Readable Genomes
+## From Invisible Factors to Readable Genomes
 
 In the 1860s, Gregor Mendel discovered something remarkable by studying pea plants. Traits like flower color didn't blend when plants were crossed—they remained discrete, passing from generation to generation as distinct units. Mendel called these units **"factors."** He couldn't see them, couldn't isolate them, couldn't measure them. But by carefully counting offspring and analyzing patterns, he deduced that these invisible factors must follow specific rules: they segregate during reproduction, they assort independently, and they determine observable traits.
 
@@ -65,11 +65,9 @@ This is fundamentally different from Mendel's approach, but it's studying the sa
 
 ## Why This Matters: The Democratization of Genomics
 
-In 2001, when the first draft of the human genome was announced, sequencing a single person's genome cost about $100 million and took months. In 2024, it costs about $600-$1,000 and takes days.
+![NGS Price Drop Down](../assets/part1/cheap-ngs.png)
 
-![NGS Price Drop Down](../../assets/chapter1/cheap-ngs.png)
-
-This 100,000-fold cost reduction—far faster than Moore's Law in computing—has transformed genomics from an elite research endeavor into a clinical tool. Today, genome sequencing is used to:
+In 2001, when the first draft of the human genome was announced, sequencing a single person's genome cost about $100 million and took months. In 2024, it costs about $600-$1,000 and takes days. This 100,000-fold cost reduction—far faster than Moore's Law in computing—has transformed genomics from an elite research endeavor into a clinical tool. Today, genome sequencing is used to:
 
 **Diagnose rare genetic diseases**: A child with developmental delays can have their genome sequenced to identify the genetic cause, ending years of uncertainty and guiding treatment.
 
