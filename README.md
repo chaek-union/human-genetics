@@ -9,13 +9,15 @@ Version: Draft (Under Construction)
 
 ## About This Book
 
-This digital textbook introduces the foundations and frontiers of **human genetics** — from Mendel’s early concept of *heritable factors* to the era of genome sequencing and large-scale cohort-based discovery. It is designed for undergraduate biology and biomedical students who wish to understand not only the facts of genetics, but the evolving **perspectives** that have shaped the field.  
+This textbook introduces the foundation and cutting edge of human genetics — from Mendel's early concept of *heritable factors* to the modern era of genome sequencing and large-scale cohort discovery. It is designed for undergraduate students in biology and biomedical sciences, particularly those interested in pursuing careers as data scientists in large-scale genomics for human disorders.
 
-**Please note that the chapters are currently under writing and improvement. The full version is expected to be completed around January next year.**
+The field of genetics has been rapidly transformed by next-generation sequencing, large-scale biobank cohorts, and international data sharing initiatives. These advances now allow us to revisit traditional genetic concepts with fresh perspectives and test long-standing models and principles against comprehensive empirical evidence. This textbook takes a broad approach to cover the essential topics that undergraduate students need to master, integrating classical genetic theory with contemporary discoveries and methodologies.
 
+Rather than focusing primarily on model organisms or molecular genetics from a molecular biology perspective, this book centers on the key concepts and emerging insights specific to human genetics. Students will not only learn the facts of genetics, but also develop the evolving perspectives that have shaped — and continue to reshape — our understanding of human heredity and disease.
 
-![Front Cover](../assets/front-cover.png)
+**Please note that chapters are currently being written and improved. The complete version is expected to be finished by January 2026.**
 
+![Front Cover](assets/front-cover.png)
 
 ---
 
