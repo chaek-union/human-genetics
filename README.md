@@ -1,4 +1,4 @@
-# Human Genetics
+# Introduction
 
 ![Front Cover](assets/front-cover.png)
 
