@@ -1,3 +1,7 @@
+아, 인코딩 문제네요! UTF-8 변환 오류로 em dash(—)가 "â€"" 같은 이상한 문자로 표시되고 있습니다. 깨끗하게 수정하겠습니다.
+
+---
+
 # Chapter 23. Recombination, Linkage, and Haplotype
 
 Here's a question you've probably wondered about: why do siblings look different? You and your sister both got half your DNA from your mom and half from your dad, just like everyone else. So why don't all siblings look identical?
@@ -18,7 +22,7 @@ When geneticists first studied recombination, they focused on **cross-overs (COs
 
 Think of cross-overs like this: imagine two ropes, one red and one blue, lying side by side. You cut both ropes at the same position and swap the cut ends. Now you have one rope that's red on the left and blue on the right, and another that's blue on the left and red on the right. That's a cross-over—a clean exchange of large DNA segments.
 
-But in 2025, a team led by Palsson published something remarkable. By analyzing whole-genome sequences from over **5,000 Icelandic families**, they discovered that cross-overs are just part of the story. There's another type of recombination that's been hiding in plain sight: **non-cross-overs (NCOs)**, also called **gene conversion** ([Palsson et al. 2025, Nature](https://www.nature.com/articles/s41586-024-08450-5)).
+But in 2025, something remarkable was published. By analyzing whole-genome sequences from over **5,000 Icelandic families**, it was discovered that cross-overs are just part of the story. There's another type of recombination that's been hiding in plain sight: **non-cross-overs (NCOs)**, also called **gene conversion** ([Palsson et al. 2025, Nature](https://www.nature.com/articles/s41586-024-08450-5)).
 
 Non-cross-overs work differently. Instead of swapping large segments, a small stretch of DNA—typically just a few hundred to a few thousand base pairs—gets copied from one chromosome to the other. It's like patching a small section of the red rope with blue thread, but leaving everything else red. The overall structure doesn't change much, but locally, you've altered the sequence.
 
@@ -28,15 +32,15 @@ Both types of recombination start the same way: with a **double-strand break (DS
 
 ---
 
-## What Palsson's Study Revealed
+## What the Study Revealed
 
-Palsson and colleagues created the **first complete human recombination map** that includes both cross-overs and non-cross-overs. Previous maps only tracked COs, so they were missing most of the action. By sequencing entire families—parents, children, and often grandparents—they could trace which DNA segments came from which grandparent and spot every place where the pattern switched.
+The **first complete human recombination map** that includes both cross-overs and non-cross-overs was created. Previous maps only tracked COs, so they were missing most of the action. By sequencing entire families—parents, children, and often grandparents—it was possible to trace which DNA segments came from which grandparent and spot every place where the pattern switched ([Palsson et al. 2025, Nature](https://www.nature.com/articles/s41586-024-08450-5)).
 
-Their findings are striking:
+The findings are striking:
 
 **Non-cross-overs vastly outnumber cross-overs.** On average, each meiosis produces about 40-60 cross-overs across all 23 chromosome pairs. But it also produces several hundred non-cross-overs. That's an order of magnitude more events, and they'd been largely invisible until now.
 
-**Mothers and fathers recombine differently.** This has been known for cross-overs—maternal meiosis produces more COs than paternal meiosis. But Palsson's team found that mothers also produce **longer NCOs** than fathers. A typical maternal NCO might convert 1,000-2,000 base pairs, while a paternal NCO might convert only 300-500 base pairs. Why? We don't know yet, but it suggests that the molecular machinery works differently in eggs versus sperm.
+**Mothers and fathers recombine differently.** This has been known for cross-overs—maternal meiosis produces more COs than paternal meiosis. But the study found that mothers also produce **longer NCOs** than fathers. A typical maternal NCO might convert 1,000-2,000 base pairs, while a paternal NCO might convert only 300-500 base pairs. Why? We don't know yet, but it suggests that the molecular machinery works differently in eggs versus sperm.
 
 **Maternal age increases non-cross-overs.** As women age, the number of NCOs in their eggs goes up, especially outside the programmed recombination hotspots. This is different from cross-overs, which don't increase much with age. The extra NCOs might be compensatory—a way to ensure that chromosomes pair correctly even when the normal CO machinery becomes less efficient with age.
 
@@ -60,9 +64,9 @@ Now the cell has a choice. How does it resolve this structure?
 
 Why does the cell sometimes choose one path and sometimes the other? That's one of the big mysteries in meiosis research. There seem to be proteins that promote one outcome versus the other, and the local chromatin context (how tightly the DNA is packaged) probably matters too.
 
-![Figure 1. Meiosis and types of recombination](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-024-08450-5/MediaObjects/41586_2024_8450_Fig1_HTML.png)
+![Palsson et al. 2025, Nature - Figure 1](../assets/figures/Palsson2025-Nature-Fig1.png)
 
-**Figure. How one break leads to two outcomes**. *The Figure A shows the molecular steps of meiotic recombination (red = one chromosome, blue = homologous chromosome). Left: A double-strand break (DSB) is made and processed, creating a single-stranded tail. Middle: The tail invades the blue chromosome, searching for the matching sequence. Right: Two pathways diverge from here. The top pathway (second strand invasion → dHJ formation) can produce either a cross-over (CO) or non-cross-over (NCO) depending on how the double Holliday junction is resolved. The bottom pathway (SDSA = synthesis-dependent strand annealing) produces only non-cross-overs—the invading strand copies a short stretch of information, then pulls back and re-anneals to its red partner. Both pathways repair the original break, but with different consequences: SDSA creates small local changes, while the dHJ pathway can swap large flanking regions. (Part a from Palsson et al. 2025, Nature)*
+**Figure: From DNA breaks to recombination maps—how the study detected and analyzed recombination events**. *Panel (a) illustrates the molecular mechanism of meiotic recombination. Red and blue represent the two homologous chromosomes (one from each grandparent). The process begins when a double-strand break (DSB) is deliberately made in one chromosome (red). The broken end is processed to create a single-stranded tail, which then invades the partner chromosome (blue) to search for the matching DNA sequence. From this point, two different pathways can occur. In the top pathway, a second strand also invades, forming a structure called a double Holliday junction (dHJ), which can be resolved to produce either a cross-over (CO) or a non-cross-over (NCO). In the bottom pathway, called synthesis-dependent strand annealing (SDSA), the invading strand copies a small segment of information from the blue chromosome, then pulls back and rejoins its original red partner—this always produces an NCO. Panel (b) shows how recombination events were detected in real family data. The top shows parental genotypes marked as red and blue dots (representing DNA variants from each grandparent). Below are examples of detected events: (i) a simple NCO where a short stretch switches from red to blue, (ii) a complex NCO with multiple switches in a small region, and (iii) a complex CO involving larger-scale exchanges. Panel (c) outlines the computational pipeline used to identify and characterize these events across thousands of families, ultimately producing complete recombination maps and revealing patterns like sex differences and maternal age effects. Source: Palsson, B. et al. (2025). Meiotic recombination shapes the landscape of genome variation. Nature. https://www.nature.com/articles/s41586-024-08450-5. License: CC-BY-NC-ND 4.0.*
 
 ---
 
@@ -82,7 +86,7 @@ The smaller the recombination rate, the stronger the linkage. Two SNPs that are 
 
 Linkage is why genetic mapping works. If a disease gene is located near a particular DNA marker, that marker will often be inherited along with the disease allele. By tracking which markers co-segregate with the disease in families, you can narrow down where the disease gene must be. This principle underlies **linkage analysis** for Mendelian diseases and, in a modified form, **genome-wide association studies (GWAS)** for complex traits.
 
-Palsson's study improved our understanding of linkage in two ways. First, by including NCOs in their recombination map, they captured the full picture of how often alleles get separated. NCOs can break linkage too, even if they don't swap large segments. Second, they showed that recombination rates vary by sex and age, which affects how strong linkage is depending on whether you're tracing maternal or paternal transmission.
+The study improved our understanding of linkage in two ways. First, by including NCOs in the recombination map, it captured the full picture of how often alleles get separated. NCOs can break linkage too, even if they don't swap large segments. Second, it showed that recombination rates vary by sex and age, which affects how strong linkage is depending on whether you're tracing maternal or paternal transmission ([Palsson et al. 2025, Nature](https://www.nature.com/articles/s41586-024-08450-5)).
 
 ---
 
@@ -100,11 +104,12 @@ Let's look at the patterns:
 
 Interestingly, hotspot locations vary between populations. A hotspot active in Europeans might be inactive in East Asians, and vice versa. This is because PRDM9 itself is highly variable—different versions recognize different DNA motifs. Over evolutionary time, hotspots can move around the genome as PRDM9 variants spread through populations.
 
-![Figure 2. Distribution of recombination events along chromosomes](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-024-08450-5/MediaObjects/41586_2024_8450_Fig2_HTML.png)
+![Palsson et al. 2025, Nature - Figure 2](../assets/figures/Palsson2025-Nature-Fig2.png)
 
-**Figure. Recombination patterns reveal sex differences, regional biases, and maternal aging effects**. *Using chromosome 19 as an example: (a) NCO rates vary along the chromosome, with paternal (blue) showing higher rates near chromosome ends and maternal (red) showing different patterns. The centromere region (gray bar) shows distinct behavior. (b) The ΔcsB metric measures CO/NCO balance—positive values indicate more CO-like events, negative values more NCO-like. Maternal meiosis tends toward CO-like (positive), while paternal tends NCO-like (negative). (c-d)Near telomeres (chromosome ends), paternal NCO rates are especially high, and the sex difference is pronounced. (e-f) Near centromeres (chromosome centers), NCO rates are more uniform between sexes, but the CO/NCO balance still differs. (g-h) The maternal age effect is striking: older mothers produce significantly more NCOs per meiosis (g), and their recombination shifts toward more CO-like patterns (h). Each decade of maternal age adds about 20 NCOs and increases ΔcsB by 0.11. These patterns show that recombination is highly regulated, varies by sex, and changes with age. (From Palsson et al. 2025, Nature)*
+**Figure: Recombination shows clear patterns: it differs between moms and dads, varies across the chromosome, and changes with maternal age**. *This figure uses chromosome 19 to illustrate key patterns in recombination. Panel (a) shows how frequently non-cross-overs (NCOs) occur at different positions along the chromosome. Notice that paternal NCOs (blue line) are much more frequent near the chromosome ends, while maternal NCOs (red line) show lower overall rates. The gray bar marks the centromere location. Panel (b) displays a metric called ΔcsB that indicates whether recombination events resemble cross-overs (positive values) or non-cross-overs (negative values). Maternal meiosis tends to produce more CO-like events (red line above zero), while paternal meiosis produces more NCO-like events (blue line below zero). Panels (c-d) zoom in on regions near telomeres (chromosome ends): paternal meiosis produces many more NCOs here than maternal meiosis, and this sex difference is especially pronounced. Panels (e-f) examine regions near the centromere (chromosome center): here the NCO rates are more similar between sexes, though the CO/NCO balance still differs. Panels (g-h) reveal a striking maternal age effect: as mothers get older, they produce significantly more NCOs per meiosis (about 20 additional NCOs per decade of age), and their recombination pattern shifts to become more CO-like. These findings demonstrate that recombination is tightly regulated and influenced by sex, chromosomal location, and age. Source: Palsson, B. et al. (2025). Meiotic recombination shapes the landscape of genome variation. Nature. https://www.nature.com/articles/s41586-024-08450-5. License: CC-BY-NC-ND 4.0.*
 
-Palsson's study also revealed age-related changes. As women age, their eggs accumulate extra NCOs, particularly outside the normal hotspots. This suggests that when the programmed hotspot machinery starts to fail (which happens with aging), a backup mechanism kicks in to ensure some recombination still happens. It's not perfect—these extra NCOs might contribute to age-related increases in chromosomal abnormalities—but it's better than nothing.
+
+The study also revealed age-related changes. As women age, their eggs accumulate extra NCOs, particularly outside the normal hotspots. This suggests that when the programmed hotspot machinery starts to fail (which happens with aging), a backup mechanism kicks in to ensure some recombination still happens. It's not perfect—these extra NCOs might contribute to age-related increases in chromosomal abnormalities—but it's better than nothing ([Palsson et al. 2025, Nature](https://www.nature.com/articles/s41586-024-08450-5)).
 
 ---
 
@@ -124,7 +129,7 @@ Suppose you sequence a child and both parents and grandparents. You look at a re
 
 If the switch is large—the child has grandma's pattern for millions of base pairs on one side and grandpa's pattern for millions on the other side—it's likely a cross-over. If the switch is small—just a few thousand base pairs change before switching back—it's likely a non-cross-over (gene conversion).
 
-Palsson and colleagues used exactly this logic to identify tens of thousands of CO and NCO events across Icelandic families. By comparing children to all four grandparents, they could spot every place where haplotypes changed and classify it as CO or NCO based on the size of the changed region.
+Exactly this logic was used to identify tens of thousands of CO and NCO events across Icelandic families. By comparing children to all four grandparents, every place where haplotypes changed could be spotted and classified as CO or NCO based on the size of the changed region ([Palsson et al. 2025, Nature](https://www.nature.com/articles/s41586-024-08450-5)).
 
 ---
 
@@ -134,7 +139,7 @@ Recombination isn't just an abstract molecular process. It has real consequences
 
 **Genetic diversity.** Recombination is one of the main engines of diversity in sexually reproducing organisms. Without it, each chromosome would be passed down intact through generations. Beneficial alleles on one chromosome and beneficial alleles on another could never be combined in the same individual. With recombination, new combinations form every generation, giving evolution more raw material to work with.
 
-**Disease genetics.** Understanding recombination helps us find disease genes. If we know where recombination hotspots are, we can interpret linkage patterns more accurately. If we know that NCOs can break linkage too, we'll build better maps. Palsson's complete recombination map improves the resolution of genetic studies, helping researchers pinpoint causal variants more precisely.
+**Disease genetics.** Understanding recombination helps us find disease genes. If we know where recombination hotspots are, we can interpret linkage patterns more accurately. If we know that NCOs can break linkage too, we'll build better maps. The complete recombination map improves the resolution of genetic studies, helping researchers pinpoint causal variants more precisely.
 
 **Reproductive health.** Errors in recombination cause problems. If cross-overs don't happen where they should, chromosomes might not segregate properly, leading to aneuploidy—an egg or sperm with the wrong number of chromosomes. This is a major cause of miscarriage and disorders like Down syndrome (trisomy 21). Understanding how recombination is regulated, and how it changes with age, could lead to interventions that improve fertility outcomes.
 
@@ -148,7 +153,7 @@ Let's tie together the three concepts in this chapter: recombination, linkage, a
 
 **Recombination** is the process that breaks and reshapes haplotypes. It happens during meiosis when homologous chromosomes exchange DNA. There are two types: cross-overs, which swap large segments, and non-cross-overs, which copy small patches. Non-cross-overs are much more common than we used to think. Maternal recombination differs from paternal recombination, and maternal age increases NCO frequency.
 
-**Linkage** describes how tightly alleles stay together before being separated by recombination. The closer two variants are on a chromosome, the lower their recombination rate, and the stronger their linkage. Linkage is quantified by the recombination fraction (r), which ranges from 0 (complete linkage) to 0.5 (independent assortment). Linkage is the basis for genetic mapping and GWAS. Palsson's complete recombination map, which includes both CO and NCO, gives us the most accurate picture yet of linkage across the human genome.
+**Linkage** describes how tightly alleles stay together before being separated by recombination. The closer two variants are on a chromosome, the lower their recombination rate, and the stronger their linkage. Linkage is quantified by the recombination fraction (r), which ranges from 0 (complete linkage) to 0.5 (independent assortment). Linkage is the basis for genetic mapping and GWAS. The complete recombination map, which includes both CO and NCO, gives us the most accurate picture yet of linkage across the human genome.
 
 **Haplotypes** are blocks of alleles inherited together from one parent. They're the footprints of past recombination events. Long haplotype blocks indicate low recombination or recent origin. Short blocks indicate high recombination or old age. By tracing haplotypes through families, we can detect every recombination event and classify it as CO or NCO. Haplotypes also carry information about population history, natural selection, and disease risk.
 

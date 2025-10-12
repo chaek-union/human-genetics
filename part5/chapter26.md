@@ -34,7 +34,7 @@ The simplest reverse genetic experiment is to remove a gene and see what breaks.
 
 **Knock-down** means reducing (but not eliminating) gene expression, often using RNA interference (RNAi). Small RNA molecules bind to the gene's mRNA and trigger its degradation, so less protein gets made. Knock-down is useful when complete knock-out is lethal, or when you want to test partial loss of function.
 
-For example, if you knock out *SCN2A* in mouse neurons, the cells can't generate sodium currents and fail to fire action potentials. That tells you SCN2A encodes a sodium channel required for neuronal excitability.
+For example, *SCN2A* knock-out in mouse neurons eliminates sodium currents and prevents action potential generation, revealing that SCN2A encodes a sodium channel required for neuronal excitability.
 
 ### Gain of function: what happens when you add more?
 
@@ -60,9 +60,13 @@ These tools have been workhorses of mouse genetics for 30 years. They're still w
 
 ## CRISPR: a unified platform for reverse genetics
 
-CRISPR changed everything. Instead of needing different tools for different tasks—one system for knock-outs, another for overexpression, another for epigenetic modification—CRISPR provides a single, programmable platform that can do all of it.
+CRISPR changed everything. Instead of needing different tools for different tasks—one system for knock-outs, another for overexpression, another for epigenetic modification—CRISPR provides a single, programmable platform that can do all of it ([Zhang et al 2025, Genomics Proteomics & Bioinformatics](https://doi.org/10.1093/gpbjnl/qzaf034)).
 
 The core mechanism is simple: a guide RNA directs a Cas protein to a specific DNA sequence. What happens next depends on which version of Cas you use.
+
+![Zhang2025-GenProtBio-Figure2.jpeg](../assets/figures/Zhang2025-GenProtBio-Figure2.jpeg)
+
+**Figure: Overview of CRISPR-Cas system technological innovations**. *The CRISPR toolkit has expanded dramatically beyond simple DNA cutting. Base editors use catalytically inactive Cas9 (nCas9) fused to deaminase enzymes to directly convert specific nucleotide bases without creating double-strand breaks. Prime editors combine nCas9 with reverse transcriptase to enable precise insertions, deletions, or base substitutions using a specialized guide RNA template. For epigenome editing, catalytically dead Cas9 (dCas9) is fused to DNA methylases or histone-modifying enzymes to alter gene expression without changing the DNA sequence itself—enabling both gene silencing (CRISPRoff) and activation (CRISPRon). CRISPRi and CRISPRa systems use dCas9 fused to transcriptional repressors (like KRAB domain) or activators (like VP64 domain) to reversibly control gene expression. Finally, RNA-targeting Cas13 systems enable direct editing of RNA sequences, providing transient modifications without permanent genomic changes. Together, these tools provide unprecedented precision in manipulating genetic information at multiple levels. Source: Zhang, X. et al. (2025). CRISPR Technology and Its Emerging Applications. Genomics, Proteomics & Bioinformatics. https://doi.org/10.1093/gpbjnl/qzaf034. License: CC-BY 4.0.*
 
 ### CRISPR knock-outs: cutting DNA
 
@@ -70,7 +74,7 @@ The original CRISPR application uses **Cas9**, which cuts both strands of DNA at
 
 This is now the standard way to create knock-outs in human cells. You design a guide RNA targeting your gene of interest, deliver it along with Cas9, and wait a few days. Most cells will have frameshift mutations, and you can select the ones where the gene is fully inactivated.
 
-For example, researchers knocked out *SCN2A* in human iPSC-derived neurons using CRISPR and confirmed that the cells lost sodium current—just like the mouse experiments predicted.
+For example, *SCN2A* knock-out in human iPSC-derived neurons using CRISPR confirmed loss of sodium current—validating the mouse experiments.
 
 ### Base editing and prime editing: precision changes
 
@@ -129,7 +133,11 @@ Pooled screens tell you *which* genes affect a phenotype, but not *how*. Enter *
 
 Here's the workflow: knock out thousands of genes using a pooled CRISPR library, then do single-cell RNA-seq on the entire population. Each cell's transcriptome tells you (1) which gene was knocked out (because the guide RNA is barcoded) and (2) how the knockout changed the cell's gene expression program.
 
-This is reverse genetics at scale. You can see not just whether knocking out a gene affects a phenotype, but which downstream genes and pathways are affected. For instance, if knocking out a transcription factor causes 500 genes to change expression, you've just mapped its regulatory network.
+![Santinha2023-Nature-Figure1.png](../assets/figures/Santinha2023-Nature-Figure1.png)
+
+**Figure: In vivo AAV-Perturb-seq experimental design**. *AAV-Perturb-seq enables direct in vivo CRISPR screening by combining viral delivery with single-nucleus RNA sequencing. The workflow begins with systemic injection of AAV particles carrying pooled gRNA libraries into mice expressing Cas9 or dCas9-KRAB. After allowing time for viral transduction and gene perturbation, brain tissue is harvested and nuclei are isolated. Single-nucleus RNA-seq is then performed using a specialized 5' capture method that simultaneously sequences both the cellular transcriptome and the gRNA identity. This approach reveals which gene was perturbed in each cell while capturing the resulting transcriptional changes. The key innovation is the ability to perform multiplexed genetic screens directly in complex tissues like the adult brain, avoiding the limitations of in vitro systems or developmental-stage restrictions of lentiviral methods. By pairing perturbation identity with phenotypic readout at single-cell resolution, Perturb-seq enables systematic mapping of genotype-phenotype relationships in vivo. Source: Santinha, A.J. et al. (2023). Transcriptional linkage analysis with in vivo AAV-Perturb-seq. Nature. https://doi.org/10.1038/s41586-023-06570-y.*
+
+This is reverse genetics at scale. You can see not just whether knocking out a gene affects a phenotype, but which downstream genes and pathways are affected. For instance, if knocking out a transcription factor causes 500 genes to change expression, you've just mapped its regulatory network ([Santinha et al 2023, Nature](https://doi.org/10.1038/s41586-023-06570-y)).
 
 ### MPRA: testing regulatory sequences
 
@@ -137,7 +145,11 @@ CRISPR screens focus on genes. But what about the 98% of the genome that doesn't
 
 **Massively parallel reporter assays (MPRA)** let you test thousands of DNA sequences simultaneously. You synthesize a library of short DNA fragments—each one containing a different variant or regulatory element—and clone them upstream of a reporter gene (like GFP or a barcode). Transfect the library into cells, measure reporter expression, and you can see which sequences drive high or low expression.
 
-For example, if a GWAS identifies a variant in an enhancer near a diabetes-risk gene, you can use MPRA to test whether the risk allele increases or decreases enhancer activity. This connects non-coding variants to functional effects.
+![Agarwal2025-Nature-Figure1.png](../assets/figures/Agarwal2025-Nature-Figure1.png)
+
+**Figure: Large-scale lentiMPRA experimental strategy**. *Massively parallel reporter assays enable functional testing of thousands of regulatory sequences simultaneously. The process starts with designing a library of 230-nucleotide oligonucleotides representing candidate regulatory elements (cCREs) including both promoters and enhancers. Through PCR amplification, each sequence is linked to a minimal promoter and tagged with random barcodes. These constructs are cloned into a lentiviral vector containing a reporter gene (EGFP). The element-barcode associations are determined by deep sequencing before viral packaging. Cells are then infected with the lentiviral library, allowing genomic integration of the reporter constructs. After three days of culture, both DNA and RNA are extracted from the cells and barcodes are sequenced. By comparing RNA barcode counts (reflecting transcriptional activity) to DNA barcode counts (reflecting integration efficiency), researchers can calculate normalized activity scores for each regulatory element. This "in-genome" lentiviral approach provides more physiologically relevant measurements than transient transfection-based assays and enables testing of regulatory sequences in difficult-to-transfect cell types. Source: Agarwal, V. et al. (2025). Massively parallel characterization of transcriptional regulatory elements. Nature. https://doi.org/10.1038/s41586-024-08430-9.*
+
+For example, if a GWAS identifies a variant in an enhancer near a diabetes-risk gene, you can use MPRA to test whether the risk allele increases or decreases enhancer activity. This connects non-coding variants to functional effects ([Agarwal et al 2025, Nature](https://doi.org/10.1038/s41586-024-08430-9)).
 
 ---
 

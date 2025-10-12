@@ -68,4 +68,5 @@ Rather than focusing primarily on model organisms or molecular genetics from a m
 * [Chapter 26. Reverse Genetics](part5/chapter26.md)
 * [Chapter 27. CRISPRa in human disorder](part5/chapter27.md)
 * [Chapter 28. Gene Regulation](part5/chapter28.md)
-* [Chapter 29. QTL](part5/chapter29.md)
+* [Chapter 29. Methods and Applications](part5/chapter29.md)
+* [Chapter 30. QTL](part5/chapter30.md)
