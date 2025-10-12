@@ -101,9 +101,9 @@ However, these variants represent **less than 0.01% of the genome**. For compari
 
 So while CHM13 isn't perfectly homozygous, it's close enough—the assembly is simplified by more than 99.99% compared to a typical diploid genome, which was exactly what the T2T project needed to resolve repetitive regions.
 
-![Miga et al. 2020, Nature - Extended Data Fig. 1: CHM13 Karyotype](https://media.springernature.com/full/springer-static/esm/art%3A10.1038%2Fs41586-020-2547-7/MediaObjects/41586_2020_2547_Fig4_ESM.jpg)
+![Miga et al. 2020, Nature - Extended Data Figure 1](../assets/figures/Miga2020-Nature-ExtFig1.png)
 
-**Figure. Karyotyping of CHM13**. *The image shows two types of chromosome analysis: (a) spectral karyotyping (SKY), where each chromosome type is labeled with a different fluorescent color, and (b) G-banding, which reveals chromosome structure through staining patterns. Both confirm that CHM13 has a normal 46,XX karyotype with no structural abnormalities such as translocations, deletions, or duplications. The chromosomes are properly paired and show no evidence of chromosomal instability.*
+**Figure: Karyotyping of CHM13**. *The image shows two types of chromosome analysis: (a) Spectral karyotyping (SKY), where each chromosome type is labeled with a different fluorescent color, and (b) G-banding, which reveals chromosome structure through staining patterns. Both confirm that CHM13 has a normal 46,XX karyotype with no structural abnormalities such as translocations, deletions, or duplications. Source: Miga, K.H. et al. (2020). Telomere-to-telomere assembly of a complete human X chromosome. Nature, 585, 79-84. https://doi.org/10.1038/s41586-020-2547-7. License: CC-BY 4.0.*
 
 ### Why This Is Perfect for Sequencing
 
@@ -234,9 +234,9 @@ This stability is crucial for creating a reference genome. If the cells were acc
 
 The CHM13 genome doesn't represent all of humanity—it comes from a single source of DNA (one father's duplicated genome). Genetic ancestry analysis was performed using **maximum likelihood admixture analysis** to understand the genetic background of CHM13.
 
-![Miga et al. 2020, Nature - Extended Data Fig. 2: Admixture Analysis](https://media.springernature.com/full/springer-static/esm/art%3A10.1038%2Fs41586-020-2547-7/MediaObjects/41586_2020_2547_Fig5_ESM.jpg)
+![Miga et al. 2020, Nature - Extended Data Figure 2](../assets/figures/Miga2020-Nature-ExtFig2.png)
 
-**Figure. Ancestry Composition of CHM13**. *Maximum likelihood admixture analysis shows that CHM13 has primarily European genetic ancestry (approximately 70-80% of the genome), with small contributions from other populations (possible South Asian, East Asian, or Native American ancestry). This ancestry information is important for understanding potential reference bias, though the primary value of CHM13 is its homozygous genome structure rather than its specific variants.*
+**Figure: Genetic Ancestry Analysis of CHM13**. *Admixture analysis reveals the genetic ancestry composition of the CHM13 cell line. The analysis shows CHM13 has predominantly European ancestry, with smaller contributions from other ancestral populations. This ancestry information is important for understanding potential biases in using CHM13 as a reference genome and for comparative genomic studies across diverse human populations. Source: Miga, K.H. et al. (2020). Telomere-to-telomere assembly of a complete human X chromosome. Nature, 585, 79-84. https://doi.org/10.1038/s41586-020-2547-7. License: CC-BY 4.0.*
 
 The analysis revealed:
 - **Primarily European ancestry** (approximately 70-80% of the genome)

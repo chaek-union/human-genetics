@@ -26,7 +26,7 @@ Before GWAS became possible in the mid-2000s, genetic research mostly focused on
 
 A typical GWAS tests **hundreds of thousands to millions of SNPs**. Modern genotyping arrays can measure around 500,000 to 1 million SNPs directly, and statistical methods called imputation can infer several million more based on patterns of linkage disequilibrium.
 
-For each SNP, the researchers run a statistical test to see whether it's associated with the trait. The output is a **p-value**—a number between 0 and 1 that tells you how surprising the result would be if the SNP had no real effect.
+For each SNP, a statistical test is run to see whether it's associated with the trait. The output is a **p-value**—a number between 0 and 1 that tells you how surprising the result would be if the SNP had no real effect.
 
 Let's unpack what that means, because p-values confuse a lot of people.
 
@@ -46,7 +46,13 @@ But here's the catch: "rejecting H₀" does **not** prove causation. It just mea
 
 Now imagine you're doing a GWAS that tests 1 million SNPs. If you use the standard significance threshold of p < 0.05 (which is common in many sciences), you'd expect about **50,000 false positives** just by chance. That's a disaster—you'd have no idea which findings are real.
 
-To prevent this, GWAS uses a much more stringent threshold: **p < 5 × 10⁻⁸** (that's 0.00000005, or 5 in 100 million). This is roughly equivalent to a Bonferroni correction for one million independent tests. It's conservative, but it keeps the false positive rate low.
+To prevent this, GWAS uses a much more stringent threshold: 
+
+```
+p < 5 × 10⁻⁸
+```
+
+(that's 0.00000005, or 5 in 100 million). This is roughly equivalent to a Bonferroni correction for one million independent tests. It's conservative, but it keeps the false positive rate low.
 
 So when you see a GWAS result with p < 5 × 10⁻⁸, you can be fairly confident it's a real association, not just noise.
 
@@ -54,27 +60,27 @@ So when you see a GWAS result with p < 5 × 10⁻⁸, you can be fairly confiden
 
 ## Visualizing GWAS Results: Manhattan and QQ Plots
 
-GWAS generates millions of p-values—one for each SNP. How do you make sense of all that data? Researchers use two types of plots: Manhattan plots and QQ plots.
+GWAS generates millions of p-values—one for each SNP. How do you make sense of all that data? Two types of plots are used: Manhattan plots and QQ plots.
 
 ### Manhattan Plot
 
-A **Manhattan plot** is the iconic visualization of GWAS results. It's called a Manhattan plot because the peaks look like the skyscrapers of the Manhattan skyline. Each dot represents a SNP, arranged along the x-axis by chromosomal position (chromosome 1, then 2, then 3, and so on). The y-axis shows the statistical significance as **–log₁₀(p-value)**.
+A **Manhattan plot** is the iconic visualization of GWAS results. It's called a Manhattan plot because the peaks look like the skyscrapers of the Manhattan skyline. Each dot represents a SNP, arranged along the x-axis by chromosomal position (chromosome 1, then 2, then 3, and so on). The y-axis shows the statistical significance as **−log₁₀(p-value)**.
 
-Why –log₁₀? Because p-values are tiny numbers like 0.000001, and it's easier to work with them on a log scale. A p-value of 0.05 becomes –log₁₀(0.05) ≈ 1.3. A genome-wide significant p-value of 5 × 10⁻⁸ becomes –log₁₀(5 × 10⁻⁸) ≈ 7.3. Bigger numbers on the y-axis mean more significant associations.
+Why −log₁₀? Because p-values are tiny numbers like 0.000001, and it's easier to work with them on a log scale. A p-value of 0.05 becomes −log₁₀(0.05) ≈ 1.3. A genome-wide significant p-value of 5 × 10⁻⁸ becomes −log₁₀(5 × 10⁻⁸) ≈ 7.3. Bigger numbers on the y-axis mean more significant associations.
 
 The horizontal dashed line at y ≈ 7.3 marks the genome-wide significance threshold. SNPs above this line are worth paying attention to. They're the "skyscrapers" that stand out from the background noise.
 
-Let's look at a real example. In a large GWAS of dilated cardiomyopathy (DCM)—a heart condition where the heart muscle becomes weak and enlarged—researchers analyzed **14,256 cases** and **1,199,156 controls** ([Zheng et al. 2024, Nature Genetics](https://pmc.ncbi.nlm.nih.gov/articles/PMC11631752/)). They identified **80 genomic loci** associated with DCM. Many of these loci clustered near genes like **MAP3K7**, **NEDD4L**, and **SSPN**, which are involved in heart muscle function.
+Let's look at a real example. In a large GWAS of dilated cardiomyopathy (DCM)—a heart condition where the heart muscle becomes weak and enlarged—**14,256 cases** and **1,199,156 controls** were analyzed. The study identified **80 genomic loci** associated with DCM. Many of these loci clustered near genes like **MAP3K7**, **NEDD4L**, and **SSPN**, which are involved in heart muscle function ([Zheng et al. 2024, Nat Genet](https://pmc.ncbi.nlm.nih.gov/articles/PMC11631752/)).
 
-![Manhattan plot of DCM GWAS and DCM MTAG identifying novel (red) and previously reported (orange) genomic loci associated with DCM.](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/98bc/11631752/4db777ed66df/41588_2024_1952_Fig2_HTML.jpg)  
+![Zheng2024-NatGenet-Fig2](../assets/figures/Zheng2024-NatGenet-Fig2.png)
 
-**Figure. Finding heart disease genes across the genome.** Each dot is a SNP. The y-axis shows –log₁₀(p-value)—higher dots mean stronger associations. Red peaks mark newly discovered loci, while orange peaks show loci that were already known. Notice how the significant signals cluster at specific chromosomal regions. These clusters often contain genes involved in the same biological pathways, like muscle structure or cell adhesion.
+**Figure: Manhattan plot of DCM GWAS identifying novel and previously reported genomic loci**. *Each dot represents a SNP. The y-axis shows −log₁₀(p-value)—higher dots indicate stronger associations. Red peaks mark newly discovered loci, while orange peaks show previously known loci. The significant signals cluster at specific chromosomal regions. These clusters often contain genes involved in the same biological pathways, like muscle structure or cell adhesion. This visualization immediately shows where in the genome the strongest disease associations are located. Source: Zheng, S.L. et al. (2024). Multi-ancestry genome-wide association study of dilated cardiomyopathy. Nature Genetics. https://www.nature.com/articles/s41588-024-01952-y. License: Creative Commons.*
 
 ### Quantile-Quantile (QQ) Plot
 
 The **QQ plot** is a quality-control tool. It checks whether the distribution of observed p-values matches what you'd expect under the null hypothesis.
 
-Here's how it works. If none of the SNPs had real effects, all the p-values would follow a uniform distribution—equal numbers of p-values at every level from 0 to 1. On a QQ plot, you plot the **expected –log₁₀(p)** (what you'd see if all SNPs were null) on the x-axis and the **observed –log₁₀(p)** (what you actually see) on the y-axis.
+Here's how it works. If none of the SNPs had real effects, all the p-values would follow a uniform distribution—equal numbers of p-values at every level from 0 to 1. On a QQ plot, you plot the **expected −log₁₀(p)** (what you'd see if all SNPs were null) on the x-axis and the **observed −log₁₀(p)** (what you actually see) on the y-axis.
 
 If everything is null, the points fall on a diagonal line (y = x). If there are true associations, you'll see upward deviation at the right tail—the most significant SNPs are more significant than you'd expect by chance. That's good. It means you found real signals.
 
@@ -90,7 +96,7 @@ Together, the Manhattan plot tells you *where* the associations are, and the QQ 
 
 Finding 80 associated loci is exciting, but what does it mean biologically? How do all these scattered SNPs across the genome contribute to heart disease?
 
-This is where **pathway enrichment analysis** and **cell-type analysis** come in. Zheng and colleagues prioritized **62 candidate genes** near their 80 DCM-associated loci and asked: Do these genes share common functions?
+This is where **pathway enrichment analysis** and **cell-type analysis** come in. The DCM study prioritized **62 candidate genes** near the 80 DCM-associated loci and asked: Do these genes share common functions?
 
 The answer was yes. The 62 genes were enriched in pathways related to:
 - **Muscle structure** (sarcomeres, the contractile units of muscle cells)
@@ -99,13 +105,13 @@ The answer was yes. The 62 genes were enriched in pathways related to:
 
 All of these are core components of heart muscle integrity. If the ECM is weak, or if cells can't adhere properly, the heart can't contract efficiently—leading to DCM.
 
-The researchers also used **single-nucleus RNA sequencing** to see which cell types express these genes. They found that several risk genes are highly expressed in specific **cardiomyocyte states** (the muscle cells of the heart) and **fibroblasts** (cells that produce ECM). This cell-type specificity tells you *where* in the heart the genetic risk plays out.
+Single-nucleus RNA sequencing was also used to see which cell types express these genes. The analysis found that several risk genes are highly expressed in specific **cardiomyocyte states** (the muscle cells of the heart) and **fibroblasts** (cells that produce ECM). This cell-type specificity tells you *where* in the heart the genetic risk plays out.
 
 This is an example of **functional convergence**. Even though the 80 loci are scattered across the genome, they participate in shared biological pathways. It's like having 80 different entry points into the same building—they all lead to the same place.
 
-![Figure 5. Enrichment of prioritized DCM genes across pathways and cell types.](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/98bc/11631752/0242cbdc7301/41588_2024_1952_Fig5_HTML.jpg)  
+![Zheng2024-NatGenet-Fig5](../assets/figures/Zheng2024-NatGenet-Fig5.png)
 
-**Figure. Many genes, shared pathways.** This figure shows which biological pathways and cell types are enriched for DCM candidate genes. Pathways related to cardiac structure and ECM dominate, and specific cardiomyocyte and fibroblast states light up. Despite the complexity—many loci, many genes—the biological story is coherent: these genes converge on mechanisms that maintain heart muscle structure. That's how a polygenic trait produces a unified disease phenotype.
+**Figure: Enrichment of prioritized DCM genes across pathways and cell types**. *This figure shows which biological pathways and cell types are enriched for DCM candidate genes. Pathways related to cardiac structure and ECM dominate, and specific cardiomyocyte and fibroblast states light up. Despite the complexity—many loci, many genes—the biological story is coherent: these genes converge on mechanisms that maintain heart muscle structure. That's how a polygenic trait produces a unified disease phenotype. Source: Zheng, S.L. et al. (2024). Multi-ancestry genome-wide association study of dilated cardiomyopathy. Nature Genetics. https://www.nature.com/articles/s41588-024-01952-y. License: Creative Commons.*
 
 ---
 
@@ -121,9 +127,9 @@ Polygenic scores are especially valuable for complex traits, where no single mut
 
 ### Example: Dilated Cardiomyopathy (DCM)
 
-In the Zheng et al. study, the researchers calculated a **PGS for DCM** using their 80 significant loci. Then they tested the score in the UK Biobank—a huge dataset of about 500,000 people with genetic and health records.
+In the DCM study, a **PGS for DCM** was calculated using the 80 significant loci. Then the score was tested in the UK Biobank—a huge dataset of about 500,000 people with genetic and health records.
 
-Here's what they found:
+Here's what was found:
 
 Individuals in the **top 10%** of PGS had a **2.8-fold higher risk** of developing DCM compared to those in the lowest 10%. That's nearly three times the risk, just from common genetic variants.
 
@@ -133,9 +139,9 @@ But here's the really interesting part: among people who *do* carry pathogenic v
 
 This shows that polygenic background modifies penetrance. Having a rare mutation doesn't guarantee you'll get the disease. Your polygenic score acts as a modifier, tipping you toward or away from clinical disease.
 
-![Figure 6. DCM PGS is associated with DCM disease status in the UK Biobank, including carriers of pathogenic variants.](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/98bc/11631752/7b4890ff1e28/41588_2024_1952_Fig6_HTML.jpg)  
+![Zheng2024-NatGenet-Fig6](../assets/figures/Zheng2024-NatGenet-Fig6.png)
 
-**Figure. Polygenic score predicts disease risk.** The prevalence of DCM increases steadily as you move from the lowest PGS decile (left) to the highest (right). People in the top 10% have about **2.8 times the risk** of those in the bottom 10%. The dark bars represent carriers of rare pathogenic variants, while lighter bars represent non-carriers. Notice that even among pathogenic variant carriers, higher PGS predicts higher disease prevalence. This demonstrates that polygenic background affects penetrance—even in what we used to think of as "monogenic" diseases.
+**Figure: DCM PGS is associated with DCM disease status in the UK Biobank**. *The prevalence of DCM increases steadily as you move from the lowest PGS decile (left) to the highest (right). People in the top 10% have about **2.8 times the risk** of those in the bottom 10%. The dark bars represent carriers of rare pathogenic variants, while lighter bars represent non-carriers. Notice that even among pathogenic variant carriers, higher PGS predicts higher disease prevalence. This demonstrates that polygenic background affects penetrance—even in what we used to think of as "monogenic" diseases. Source: Zheng, S.L. et al. (2024). Multi-ancestry genome-wide association study of dilated cardiomyopathy. Nature Genetics. https://www.nature.com/articles/s41588-024-01952-y. License: Creative Commons.*
 
 ---
 
@@ -147,7 +153,7 @@ Polygenic scores are moving from research tools to clinical applications. Here a
 
 **Precision medicine.** Combining PGS with rare variant data gives a more complete picture of genetic risk. If you carry a pathogenic mutation *and* have a high PGS, your doctor knows you're at especially high risk and can adjust treatment accordingly. Genetic counselors can use this information to give more accurate risk estimates.
 
-**Population research.** PGS lets researchers study how genetic architecture varies across populations. For example, does the genetic basis of height differ between Europeans and East Asians? How do genetic risk factors interact with environmental exposures like diet or pollution? PGS provides a quantitative measure of genetic liability that can be compared across groups.
+**Population research.** PGS lets studies investigate how genetic architecture varies across populations. For example, does the genetic basis of height differ between Europeans and East Asians? How do genetic risk factors interact with environmental exposures like diet or pollution? PGS provides a quantitative measure of genetic liability that can be compared across groups.
 
 **Drug discovery.** Genes contributing to polygenic risk often point to biological pathways that could be targeted with drugs. If many DCM risk genes are involved in ECM organization, maybe drugs that strengthen the ECM could help. GWAS and PGS can guide where to look for new therapies.
 

@@ -31,9 +31,9 @@ In 2023, the **Human Pangenome Reference Consortium (HPRC)** released the first 
 
 Because humans are diploid (we have two copies of each chromosome—one from each parent), these 47 individuals provide **94 haplotypes**—94 distinct chromosome sequences.
 
-![Liao et al. 2023, Nature - Figure 1: HPRC Sample Diversity](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-023-05896-x/MediaObjects/41586_2023_5896_Fig1_HTML.png)
+![Liao et al. 2023, Nature - Figure 1a](../assets/figures/Liao2023-Nature-Figure1.png)
 
-**Figure: Genetic Diversity in the HPRC Pangenome**. *(Panel a only)*. *Each dot represents one individual, positioned based on genetic similarity. Dots closer together are more genetically similar. The distribution shows that the pangenome samples were carefully selected to represent major human populations: African (51%), American (34%), Asian (13%), and European (2%).*
+**Figure: Genetic Diversity in the HPRC Pangenome**. *(See Figure 1a) Each dot represents one individual, positioned based on genetic similarity. Dots closer together are more genetically similar. The distribution shows that the pangenome samples were carefully selected to represent major human populations: African (51%), American (34%), Asian (13%), and European (2%). Source: Liao, W.W. et al. (2023). A draft human pangenome reference. Nature, 617, 312-324. https://doi.org/10.1038/s41586-023-05896-x. License: CC-BY 4.0.*
 
 
 ---
@@ -55,9 +55,9 @@ About **90 million base pairs** of this new sequence comes from structural varia
 
 One of the most important findings was the discovery of **1,115 gene duplications** that vary between individuals. Some people have multiple copies of certain genes, while others have just one or two.
 
-![Liao et al. 2023, Nature - Figure 2b,c: Gene Copy Number Variation](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-023-05896-x/MediaObjects/41586_2023_5896_Fig2_HTML.png)
+![Liao et al. 2023, Nature - Figure 2b,c](../assets/figures/Liao2023-Nature-Figure2.png)
 
-**Figure: Gene Copy Number Variation in the Pangenome**. *(Panel b) Most genes exist in 1-2 copies, but some genes have many more copies—up to 20+ in some individuals. (Panel c) Different populations show different patterns of gene duplication. Each bar represents one genome, colored by ancestry: AMR (American, red), AFR (African, blue), EAS (East Asian, teal), SAS (South Asian, purple), and CHM13 (pink). The number and diversity of duplicated genes varies across populations, revealing variation that was invisible in single reference genomes.*
+**Figure: Gene Copy Number Variation in the Pangenome**. *(See panels b and c) Panel b shows most genes exist in 1-2 copies, but some genes have many more copies—up to 20+ in some individuals. Panel c shows different populations display different patterns of gene duplication. Each bar represents one genome, colored by ancestry: AMR (American, red), AFR (African, blue), EAS (East Asian, teal), SAS (South Asian, purple), and CHM13 (pink). The number and diversity of duplicated genes varies across populations, revealing variation that was invisible in single reference genomes. Source: Liao, W.W. et al. (2023). A draft human pangenome reference. Nature, 617, 312-324. https://doi.org/10.1038/s41586-023-05896-x. License: CC-BY 4.0.*
 
 **Why does copy number matter?** Having more copies of a gene typically means more of its protein product gets made. This can affect:
 

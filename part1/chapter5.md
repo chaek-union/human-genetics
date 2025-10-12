@@ -8,7 +8,7 @@ The method used was **Sanger sequencing**, developed in the 1970s by Frederick S
 
 ![Sanger sequencing](https://microbenotes.com/wp-content/uploads/2023/02/Sanger-Sequencing.jpg)
 
-**Figure: Sanger sequencing**. *This diagram illustrates how Sanger sequencing works. Source: [MicrobeNotes](https://microbenotes.com/illumina-sequencing/)*
+**Figure: Sanger sequencing**. *This diagram illustrates how Sanger sequencing works. Source: [Microbe Notes](https://microbenotes.com/illumina-sequencing/)*
 
 Imagine you're trying to transcribe a million books, but you can only read and copy one sentence at a time before moving to the next. That's essentially what Sanger sequencing does. For the Human Genome Project, this meant reading 3 billion letters of DNA code one fragment at a time. Even with hundreds of sequencing machines running 24/7, it took years.
 
@@ -102,7 +102,7 @@ This happens simultaneously for millions of clusters, generating billions of bas
 
 ![Illumina Sequencing Principle](https://microbenotes.com/wp-content/uploads/2024/11/Illumina-Sequencing-Steps.jpeg)
 
-**Figure: Illumina Sequencing by Synthesis (SBS)**. *This diagram illustrates how Illumina sequencing works. (Top) DNA fragments are attached to a flow cell surface and amplified into clusters through bridge amplification. (Middle) During sequencing, fluorescently labeled nucleotides are added one at a time, and a camera captures the color signal from each cluster. (Bottom) The fluorescent tag is cleaved off, allowing the next nucleotide to be added. This cycle repeats to build up the complete sequence. Source: [MicrobeNotes](https://microbenotes.com/illumina-sequencing/)*
+**Figure: Illumina Sequencing by Synthesis (SBS)**. *This diagram illustrates how Illumina sequencing works. (Top) DNA fragments are attached to a flow cell surface and amplified into clusters through bridge amplification. (Middle) During sequencing, fluorescently labeled nucleotides are added one at a time, and a camera captures the color signal from each cluster. (Bottom) The fluorescent tag is cleaved off, allowing the next nucleotide to be added. This cycle repeats to build up the complete sequence. Source: [Microbe Notes](https://microbenotes.com/illumina-sequencing/)*
 
 **Strengths:**
 - **High throughput**: Can generate hundreds of billions of bases per run
@@ -133,7 +133,7 @@ Here's the concept:
 
 ![PacBio SMRT Sequencing Principle](https://microbenotes.com/wp-content/uploads/2024/07/Principle-of-PacBio-Sequencing.jpeg)
 
-**Figure: PacBio Single-Molecule Real-Time (SMRT) Sequencing**. *This diagram shows the key components of PacBio sequencing. A DNA polymerase is fixed at the bottom of a zero-mode waveguide (ZMW)—a tiny well that allows detection of just the molecules at the bottom. As the polymerase incorporates fluorescently labeled nucleotides into the growing DNA strand, brief flashes of light are detected and recorded in real time. The circular DNA template (SMRTbell) allows the polymerase to sequence the same molecule multiple times, improving accuracy. Source: [MicrobeNotes](https://microbenotes.com/pacbio-sequencing/)*
+**Figure: PacBio Single-Molecule Real-Time (SMRT) Sequencing**. *This diagram shows the key components of PacBio sequencing. A DNA polymerase is fixed at the bottom of a zero-mode waveguide (ZMW)—a tiny well that allows detection of just the molecules at the bottom. As the polymerase incorporates fluorescently labeled nucleotides into the growing DNA strand, brief flashes of light are detected and recorded in real time. The circular DNA template (SMRTbell) allows the polymerase to sequence the same molecule multiple times, improving accuracy. Source: [Microbe Notes](https://microbenotes.com/pacbio-sequencing/)*
 
 The newest PacBio system, **Revio** (released in 2022), contains 25 million ZMWs per chip—25 million DNA molecules being sequenced simultaneously. The system uses improved chemistry (called SPRQ) that requires less starting DNA and achieves higher accuracy.
 
@@ -170,7 +170,7 @@ The concept:
 
 ![Oxford Nanopore Sequencing Principle](https://microbenotes.com/wp-content/uploads/2024/08/Principle-of-Oxford-Nanopore-Sequencing.jpeg)
 
-**Figure: Oxford Nanopore Sequencing Technology**. *This illustration shows how nanopore sequencing works. (Left) A nanopore protein is embedded in a membrane with an electrical current flowing across it. Motor proteins (shown in purple) control the movement of a DNA strand through the nanopore. (Right) As different nucleotides pass through the nanopore, they cause characteristic disruptions to the electrical current. These current changes (shown as different colored signals) are measured in real time and decoded by software to determine the DNA sequence. Source: [MicrobeNotes](https://microbenotes.com/oxford-nanopore-sequencing/)*
+**Figure: Oxford Nanopore Sequencing Technology**. *This illustration shows how nanopore sequencing works. (Left) A nanopore protein is embedded in a membrane with an electrical current flowing across it. Motor proteins (shown in purple) control the movement of a DNA strand through the nanopore. (Right) As different nucleotides pass through the nanopore, they cause characteristic disruptions to the electrical current. These current changes (shown as different colored signals) are measured in real time and decoded by software to determine the DNA sequence. Source: [Microbe Notes](https://microbenotes.com/oxford-nanopore-sequencing/)*
 
 **Strengths:**
 - **Ultra-long reads**: Can produce reads exceeding 1 million base pairs—the longest of any sequencing technology

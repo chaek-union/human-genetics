@@ -1,465 +1,446 @@
 # Chapter 9. Transmission: How Variants Pass Through Generations
 
-## Where Do Your Variants Come From?
+## Two Sources of Your Variants
 
-When you were conceived, you received approximately 3.2 billion base pairs of DNA—half from your mother and half from your father. Within that DNA are about 4-5 million variants that make you genetically different from the reference genome, and millions more that make you different from your siblings.
+When you were conceived, you received ~3.2 billion base pairs of DNA—half from each parent. Within that DNA are ~4-5 million variants that differ from the reference genome.
 
-But where did those variants come from?
+Where did they come from?
 
-Most of them—the overwhelming majority—were inherited. They were already present in your parents' genomes and were passed to you through sperm and egg. These are **inherited variants**, and they've been traveling through human populations for generations, perhaps thousands or even millions of years.
+**Two sources:**
 
-But not all of your variants came from your parents. About 50-100 of your variants are brand new—mutations that occurred for the first time in you. Neither your mother nor your father carries them. These are **de novo variants** (Latin for "from new"), and they represent the raw material of evolution—new genetic variation entering the population.
+1. **Inherited variants** (~99.98%): Already in your parents' genomes, passed through sperm and egg, traveling through populations for generations
 
-This chapter explores both types: the variants you inherited and the variants that arose spontaneously in you. Understanding this distinction is crucial for genetics, medicine, and evolutionary biology.
+2. **De novo variants** (~0.02%): Brand new mutations—occurred for the first time in you, not present in either parent
+
+Understanding this distinction is crucial for genetics, medicine, and evolution. This chapter explores both.
 
 ---
 
-## Part 1: Inherited Variants - The Genetic Legacy
+## Part 1: Inherited Variants
 
-### The Basics: 50% From Each Parent
+### Mendelian Segregation at the DNA Level
 
-This might sound obvious, but let's be precise about what it means. You have two copies of each chromosome (except sex chromosomes if you're male):
-- One copy came from your mother's egg
-- One copy came from your father's sperm
+You received one chromosome copy from each parent at every position. At heterozygous sites (where a parent has two different alleles), you randomly got one or the other.
 
-For every position in your genome where your parents differ—where Mom has one allele and Dad has another—you got one or the other, but not both to the same chromosome.
+**Example—CFTR gene position:**
 
-**Example:**
-
-At position chr7:117,559,593 (a location in the CFTR gene):
-- Your mother has: A/G (heterozygous—one chromosome with A, one with G)
-- Your father has: G/G (homozygous—both chromosomes have G)
-
-You received:
-- One chromosome from Mom (either her A or her G—50% chance of each)
-- One chromosome from Dad (definitely his G, since that's all he has)
+```
+Mother: A/G (heterozygous)    You inherit: Either A or G (50% each)
+Father: G/G (homozygous)      You inherit: G (100%)
 
 Your possible genotypes:
-- A/G (if you got Mom's A chromosome) - 50% probability
-- G/G (if you got Mom's G chromosome) - 50% probability
+→ A/G (50% chance)
+→ G/G (50% chance)
+```
 
-This is **Mendelian segregation** in action, now visible at the DNA level.
+This is **Mendelian segregation** directly observable in DNA sequences.
 
-### Identity by Descent (IBD): The Same DNA, Not Just Similar
+### Identity by Descent (IBD): Relatedness in DNA
 
-When we say you inherited a DNA segment from a parent, we mean you have an exact copy—**identity by descent (IBD)**. Not just the same sequence, but literally a copy of that specific piece of their DNA.
+When you inherit a DNA segment, you get an exact copy—**identity by descent (IBD)**. This reveals relationships:
 
-Think of it like this: your parent's DNA was replicated, and you received one of the copies. Barring any replication errors (which are rare), every base in that segment is identical to your parent's.
+| Relationship | % IBD Shared | Why |
+|--------------|--------------|-----|
+| Parent-child | 50% | You got one chromosome copy from them at every position |
+| Siblings | ~50% (varies) | Each randomly got one of two parental chromosomes |
+| Grandparent-grandchild | ~25% | Two generations of 50% transmission |
+| First cousins | ~12.5% | Four generations from common ancestor |
 
-**Why this matters:**
+**Sibling variation explained:**
 
-IBD is crucial for several reasons:
+At each position, you and a sibling each randomly received one parental chromosome:
+- 25%: Same from both parents (identical)
+- 50%: Same from one parent (half-identical)  
+- 25%: Different from both (non-identical)
 
-1. **Family-based genetic studies**: By tracking which DNA segments siblings share IBD, we can map disease genes
+Average: 50% IBD, but actual sharing varies (45-55% typical range)
 
-2. **Relatedness testing**: The amount of DNA you share IBD with someone reveals your relationship:
-   - Parents/children: 50% IBD (you share one chromosome copy at every position)
-   - Siblings: ~50% IBD on average (varies due to random segregation)
-   - Grandparents/grandchildren: ~25% IBD
-   - First cousins: ~12.5% IBD
+### Recombination: Shuffling Between Generations
 
-3. **Population genetics**: IBD segments between unrelated individuals reveal recent shared ancestry
+Chromosomes don't pass intact. During meiosis, **recombination** (crossing over) exchanges segments between the two parental chromosomes before transmission.
 
-### The Randomness of Inheritance
+**Result:** Your mother's chromosome 1 is a mosaic:
+```
+Position 1-50 Mb:    From maternal grandmother
+Position 50-200 Mb:  From maternal grandfather
+Position 200-250 Mb: From maternal grandmother
+```
 
-Here's something remarkable: if your parents could have another child (same parents, just a different conception), that sibling would share only about 50% of their DNA with you—the same as you share with each parent.
-
-**Why only 50% with a sibling?**
-
-At each chromosomal position, you and your sibling each randomly received one of the two parental chromosomes:
-
-- 25% chance: You both got the same chromosome from Mom AND the same from Dad (identical at that position)
-- 50% chance: You got different chromosomes from one parent but the same from the other (half-identical)
-- 25% chance: You got different chromosomes from both parents (non-identical)
-
-Average it out: (25% × 2 + 50% × 1) / 100% = 50% IBD
-
-This is why siblings can look quite different despite having the same parents. You're shuffled differently.
-
-### Recombination: Shuffling the Deck
-
-There's one complication: chromosomes don't pass intact from grandparent to parent to child. During meiosis (the cell division that makes sperm and eggs), **recombination** (also called crossing over) occurs.
-
-**What happens:**
-
-Before egg or sperm formation, the two copies of each chromosome (one from your grandmother, one from your grandfather) pair up and exchange segments. This shuffles the grandparental DNA.
-
-**Result:**
-
-The chromosome your mother passes to you isn't purely from your maternal grandmother or grandfather—it's a mosaic of both, with 1-2 crossover points per chromosome on average.
-
-**Example:**
-
-Your mother's chromosome 1:
-- First 50 million bases: from your maternal grandmother
-- Next 150 million bases: from your maternal grandfather  
-- Last 50 million bases: from your maternal grandmother
-
-When she passes this to you, you get this specific mosaic—a novel combination that didn't exist before.
-
-**Evolutionary significance:**
-
-Recombination creates new combinations of variants, increasing genetic diversity beyond what mutation alone could produce. It's why siblings can be so different—each inherits a different shuffled version of the parental chromosomes.
+**Impact:**
+- Creates novel allele combinations
+- Explains sibling diversity
+- ~1-2 crossovers per chromosome per generation
 
 ### Common vs. Rare Inherited Variants
 
-Not all inherited variants are equally interesting for genetics research:
-
-**Common variants (>1% frequency):**
-- Present in many people
-- Usually ancient—arose thousands to millions of years ago
-- Passed through many generations
-- Generally benign (if they caused severe disease, natural selection would have eliminated them)
-- Useful for studying complex traits influenced by many genes
-
-**Rare variants (<1% frequency):**
-- Present in few people or families
-- Usually more recent—arose hundreds to thousands of years ago
-- May still be increasing or decreasing in frequency
-- More likely to be deleterious (haven't had time to be eliminated by selection)
-- Often cause Mendelian diseases
-
-**Example:**
-
-- The **ApoE4 allele** (associated with Alzheimer's risk) is common (~15% frequency in Europeans). It's ancient and has complex effects—slightly harmful in old age but may have been beneficial earlier in life or in ancestral environments.
-
-- A **nonsense mutation in BRCA1** causing breast cancer might be found in only one family. It arose recently (perhaps a few generations ago) and will likely be eliminated by selection eventually, but it persists because selection against late-onset diseases is weak.
+| Feature | Common Variants (>1%) | Rare Variants (<1%) |
+|---------|---------------------|-------------------|
+| **Age** | Ancient (thousands-millions of years) | Recent (hundreds-thousands of years) |
+| **Selection** | Survived selection → usually benign | May be deleterious, not yet eliminated |
+| **Clinical** | Complex trait risk factors | Often cause Mendelian diseases |
+| **Example** | ApoE4 (~15% frequency, Alzheimer's risk) | Family-specific BRCA1 nonsense mutations |
 
 ---
 
-## Part 2: De Novo Variants - New Mutations
+## Part 2: De Novo Variants
 
-### What Are De Novo Variants?
+### What Are They?
 
-A **de novo variant** is a mutation that occurred for the first time in you. It wasn't in your mother's genome. It wasn't in your father's genome. It's new.
+**De novo variants** are mutations that occurred for the first time in you—not present in either parent.
 
-**Where do they arise?**
+**Where they arise:**
+- **Mostly in gametogenesis:** During sperm/egg formation
+- **Sometimes postzygotic:** In early embryonic divisions (→ mosaicism)
 
-Most de novo variants arise during **gametogenesis**—the formation of sperm or eggs:
+**How many:** ~50-200 per person, depending on sequencing technology and what's counted
 
-- In your father's testes, cells divide many times to produce sperm throughout his life
-- Each cell division requires DNA replication
-- DNA polymerase (the enzyme that copies DNA) occasionally makes mistakes
-- Most mistakes are corrected, but some slip through—these become de novo mutations
+### Why They Matter
 
-Less commonly, de novo mutations arise after fertilization, in early embryonic cell divisions. These are called **postzygotic mutations** and might be present in only some of your cells (mosaicism).
+**1. Source of new genetic variation**  
+All diversity started as de novo mutations. Evolution in action.
 
-**How many do you have?**
+**2. Cause genetic diseases**  
+Many severe developmental disorders:
+- Autism (often de novo in neurodevelopmental genes)
+- Achondroplasia (almost always de novo—affected individuals rarely reproduce)
+- Schizophrenia (increased risk with older fathers)
 
-Based on recent studies, each person carries approximately 50-100 de novo mutations that weren't in either parent. Most are harmless, but occasionally one causes disease.
-
-### Why De Novo Mutations Matter
-
-De novo variants are critically important for several reasons:
-
-**1. They're the ultimate source of new genetic variation**
-
-All genetic diversity started as de novo mutations. The SNPs that make you different from your neighbor? They were de novo mutations in someone's ancestors, thousands of years ago. De novo variants are evolution in action.
-
-**2. They cause genetic diseases**
-
-Many severe developmental disorders are caused by de novo mutations:
-- Severe autism often involves de novo variants in neurodevelopmental genes
-- Schizophrenia shows increased rates in children of older fathers (more mutations)
-- Achondroplasia (a form of dwarfism) is almost always de novo—affected individuals rarely reproduce, so the mutations don't become inherited
-
-**3. They reveal how DNA replication works**
-
-By studying where de novo mutations occur and in which parent they originate, we learn about the biology of DNA replication, repair, and gametogenesis.
+**3. Reveal DNA replication biology**  
+Studying where and when mutations occur teaches us about replication errors and repair mechanisms.
 
 ---
 
-## The Paternal Age Effect: Why Father's Age Matters
+## The Paternal Age Effect
 
-One of the most striking findings in human genetics is that **the number of de novo mutations in a child increases with the father's age at conception**. Mother's age has little effect, but father's age has a huge effect.
+**Key finding:** Father's age at conception is the dominant factor in de novo mutation rate.
 
-Why?
+### The Biology
 
-### The Biology Behind the Paternal Age Effect
+**Why males contribute more mutations:**
 
-**In females (oogenesis):**
-- All eggs are formed before birth
-- They arrest in a paused state
-- At ovulation, one egg completes division
-- **Total cell divisions:** ~22-23 divisions before birth, plus 1 at ovulation
-- This number doesn't change with maternal age
-
-**In males (spermatogenesis):**
-- Sperm production begins at puberty
-- Continues throughout life
-- Sperm stem cells divide every ~16 days
-- **Total cell divisions:** Increases continuously with age
+| Female (Oogenesis) | Male (Spermatogenesis) |
+|-------------------|----------------------|
+| All eggs formed before birth | Sperm production starts at puberty |
+| Cells arrested until ovulation | Continuous production throughout life |
+| ~23 cell divisions total | Divisions every ~16 days |
+| **Minimal age effect** | **Strong age-dependent effect** |
 
 **The math:**
+- Father age 20: ~150 sperm cell divisions
+- Father age 30: ~230 divisions  
+- Father age 40: ~330 divisions
+- Father age 50: ~430 divisions
 
-At father's age 20: ~150 cell divisions have occurred in the sperm lineage  
-At father's age 30: ~230 divisions  
-At father's age 40: ~330 divisions  
-At father's age 50: ~430 divisions
-
-Each cell division is an opportunity for replication errors. More divisions = more mutations.
-
-### The Evidence: Three Landmark Studies
-
-Let's trace how scientists discovered and quantified the paternal age effect, from early hypotheses to modern genome sequencing.
+Each division = opportunity for replication errors.
 
 ---
 
-### Study 1: Crow (1997) - The Early Hypothesis
+## Quantifying the Effect: Landmark Studies from Iceland
 
-**Background:**
+### Kong et al. (2012): The First Direct Measurement
 
-In 1997, before the Human Genome Project was complete and before NGS existed, James Crow wrote a provocative paper asking: *"Is the high spontaneous mutation rate a health risk?"*
+Direct mutation counting in 78 Icelandic families revealed fundamental insights into human mutation rates ([Kong et al. 2012, Nature](https://doi.org/10.1038/nature11396)).
 
-**What he argued:**
+**Core findings:**
 
-Drawing on indirect evidence (mostly from studies of genetic diseases and model organisms like Drosophila), Crow proposed:
+1. **Mutation rate:** 1.20 × 10⁻⁸ per base per generation
+   - Translates to ~63 de novo SNVs per child (father age ~30)
 
-1. **Humans have a high mutation rate**: About 100-200 new mutations per generation, though he couldn't measure this directly
+2. **Paternal age effect:** **+2 mutations per year of father's age**
+   ```
+   Father age 20: ~55 mutations
+   Father age 30: ~75 mutations
+   Father age 40: ~95 mutations
+   Father age 50: ~115 mutations
+   ```
 
-2. **Males contribute more mutations**: Because of continuous sperm production with many cell divisions
+3. **Parent-of-origin ratio:** 4:1 (father:mother)
+   - Father: ~55.4 mutations
+   - Mother: ~14.2 mutations (appeared age-independent in this study)
 
-3. **Paternal age matters**: Older fathers have more cell divisions in their sperm lineage, thus more mutations
+4. **Mutation spectrum:**
+   - CpG sites: 18× higher mutation rate
+   - Transitions (A↔G, C↔T): 67.8%
+   - Transversions: 32.2%
 
-4. **Most mutations are slightly deleterious**: Not immediately lethal, but subtly harmful
+5. **Disease associations:**
+   - Schizophrenia risk ↑ with paternal age (P = 2×10⁻⁵)
+   - Autism risk ↑ with paternal age (P = 5.4×10⁻⁴)
 
-**Historical context:**
+### Jónsson et al. (2017): Expanded Analysis with 1,548 Families
 
-Crow built on observations going back to the 1910s-1950s:
-- Wilhelm Weinberg noticed certain diseases (like achondroplasia) occurred more often in children of older fathers
-- J.B.S. Haldane connected this to mutation rates in the male germline
-- H.J. Muller discussed the genetic load of mutations
+A more comprehensive study from the same Icelandic research group analyzed **1,548 parent-child trios** (20-fold larger than Kong 2012), identifying 108,778 de novo mutations ([Jónsson et al. 2017, Nature](https://doi.org/10.1038/nature24018)). This larger dataset confirmed the paternal age effect and revealed important new findings about maternal contributions.
 
-**Why it mattered:**
+**Updated findings:**
 
-This was prescient—Crow predicted the paternal age effect and high mutation rate years before anyone could measure them directly. He also raised concerns about population health as people delayed reproduction (increasing average paternal age).
+1. **Paternal mutations:** +1.51 per year of father's age (95% CI 1.45–1.57)
+   - Slightly lower than Kong 2012's estimate of +2 per year, but consistent within confidence intervals
 
-**Limitation:**
+2. **Maternal mutations:** +0.37 per year of mother's age (95% CI 0.32–0.43)
+   - **Important discovery:** Maternal age effect exists but is ~4× weaker than paternal effect
+   - Kong 2012 reported maternal mutations as age-independent, but this larger study revealed a small but significant maternal age effect
 
-Without genome sequencing, Crow relied on indirect estimates and models. He couldn't count actual mutations.
+3. **Mutation spectrum changes with maternal age:**
+   - CpG>TpG mutations: decrease by 0.26% per year of maternal age
+   - C>G mutations: increase by 0.33% per year of maternal age
+   - These spectral changes are not uniform across the genome
 
----
+4. **Regional variation:**
+   - A 20 Mb region on chromosome 8p shows up to **50-fold higher maternal C>G mutation rate**
+   - Similar enrichment found on chromosomes 2p, 7p, 9p, 16p, and 16q
+   - This regional pattern is not limited to specific genes but affects entire chromosomal regions
 
-### Study 2: Kong et al. (2012) - Direct Measurement in Iceland
+5. **Parent-of-origin ratio:** 75-81% paternal (3-4:1 ratio, consistent with Kong 2012)
 
-**The breakthrough:**
+**For a visual comparison of paternal vs. maternal age effects across all mutation types, see Figure 1e in Jónsson et al. (2017).**
 
-In 2012, Kári Stefánsson's group in Iceland used whole-genome sequencing to directly count de novo mutations in 78 parent-child trios. This was the first large-scale direct measurement of the human mutation rate.
+**Key implications:**
 
-**Key findings:**
+The discovery of maternal age effects and regional mutation hotspots fundamentally changed our understanding of human mutation. While paternal age remains the dominant factor (due to continuous cell divisions in spermatogenesis), maternal age also contributes—particularly for certain mutation types and in specific genomic regions. The regional C>G enrichment suggests distinctive mutational processes in aging oocytes, possibly related to double-strand break repair mechanisms.
 
-#### 1. The Mutation Rate
+### Porubsky et al. (2025): Long-Read Revolution
 
-**Average: 1.20 × 10⁻⁸ mutations per base per generation**
+Recent study measured the most accurate rate of de novo variants (including all variant types) using long read sequencing technologies ([Porubsky et al. 2025, Nature](https://www.nature.com/articles/s41586-025-08922-2)).
 
-What does this mean? Take any random base in your genome. The probability it mutated when you were conceived is 1.2 in 100 million.
 
-Multiply this by 3.2 billion bases in the genome:
-3.2 × 10⁹ × 1.2 × 10⁻⁸ = **~63 de novo mutations per child** (for fathers averaging 29.7 years old)
+**New findings:**
 
-This matched Crow's prediction remarkably well!
+1. **Higher total count:** 98-206 mutations/child
+   - 74.5 SNVs in unique DNA
+   - 65.3 mutations in repetitive DNA (previously invisible)
+   - 7.4 small indels
+   - 12.4 Y chromosome mutations (per male)
 
-#### 2. The Paternal Age Effect (Quantified)
+2. **75-81% paternal contribution** (confirmed with more precision)
 
-The researchers found a clear, strong relationship between father's age and mutation count:
+3. **16% postzygotic mutations** (arose after fertilization)
+   - No parent-of-origin bias
+   - Can cause mosaicism
 
-**~2 additional mutations per year of father's age**
+4. **Mutation hotspots:** 32 specific regions with recurrent mutations
+   - Tandem repeats (polymerase slippage)
+   - Centromeres (satellite DNA)
+   - Segmental duplications
 
-Let's make this concrete:
+5. **No recombination-mutation link** (independent processes)
 
-- Father age 20: ~55 de novo mutations
-- Father age 30: ~75 de novo mutations  
-- Father age 40: ~95 de novo mutations
-- Father age 50: ~115 de novo mutations
+![Porubsky et al. 2025, Nature - Figure 2](../assets/figures/Porubsky2025-Nature-Fig2.png)
 
-![De Novo Mutations vs. Father's Age](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/0791/3548427/0f974c89bf9e/nihms391279f2.jpg)
-
-**Figure: Paternal Age Effect in Iceland Study**. This graph shows data from 78 families, plotting the number of de novo mutations found in each child (y-axis) against the father's age when the child was conceived (x-axis). Each point represents one child. The solid black line shows the linear trend: about 2 more mutations per year of father's age. The dashed red curve shows an exponential model, suggesting mutations increase faster as fathers get older. The dashed blue curve assumes mothers contribute a constant 14.2 mutations (independent of age), while fathers' contributions grow with age. Different symbols indicate special cases: ♦ = child with autism, ● = child with schizophrenia, ▲ = parent of a child with autism, □ = others. Notice how the scatter increases at higher ages—older fathers show more variation in mutation counts. Source: Kong et al. 2012, Nature
-
-#### 3. Parent-of-Origin: It's Mostly Dad
-
-When the researchers could determine which parent contributed each mutation (using data from grandparents), they found:
-
-**Father: 55.4 mutations on average**  
-**Mother: 14.2 mutations on average**
-
-**Ratio: ~4:1 (father:mother)**
-
-This confirmed the biological expectation—males contribute more mutations because of continuous sperm production.
-
-**But there's variation:** Some children had many more paternal mutations than expected (the scatter in the graph), and some had unusually high maternal mutations, suggesting individual variation in mutation rates.
-
-#### 4. Mutation Hotspots
-
-Not all mutations are created equal:
-
-**CpG sites are mutation hotspots:**
-- CpG = a C followed by a G in the DNA sequence
-- These are often methylated (a chemical modification)
-- Methylated Cs often deaminate, changing to T
-- This makes C→T mutations at CpG sites 18× more common than elsewhere
-
-**Transitions vs. transversions:**
-- Transitions (purine↔purine or pyrimidine↔pyrimidine): A↔G or C↔T - 67.8% of mutations
-- Transversions (purine↔pyrimidine): all other changes - 32.2%
-
-This matches what we know about DNA chemistry—certain types of errors are more likely.
-
-#### 5. Disease Associations
-
-This is where it gets clinically important. The researchers found:
-
-**Schizophrenia risk increases with paternal age** (P = 2×10⁻⁵)  
-**Autism risk increases with paternal age** (P = 5.4×10⁻⁴)
-
-They even identified specific de novo mutations in affected individuals:
-- A child with schizophrenia had a de novo mutation in **NRXN1** (neurexin 1, involved in synapse formation)
-- A child with autism had a de novo mutation in **CUL3** (involved in protein degradation)
-
-**Population-level implications:**
-
-Iceland's demographic history provided a natural experiment. Average paternal age varied over the 20th century:
-- 1900: 34.9 years (high)
-- 1980: 27.9 years (low)
-- 2011: 33.0 years (rising again)
-
-When average paternal age increases, the population-wide mutation rate increases. This could contribute (along with better diagnosis) to rising rates of neurodevelopmental disorders.
+**Figure: De novo mutations in CEPH 1463 pedigree**. *The figure shows: (a) Number of de novo germline mutations, postzygotic mutations (PZMs), and indels in G2 parents and G3 children, (b) Allele balance comparison showing germline SNVs cluster near 0.50 while postzygotic SNVs show lower allele balance (<0.25), (c) Strong paternal age effect for germline de novo SNVs (+1.55 DNMs per year) but not for PZMs, (d) Estimated SNV DNM rates by genomic region, showing significant excess in repetitive regions including centromeres and segmental duplications. Source: Porubsky, D. et al. (2025). Human de novo mutation rates from a four-generation pedigree reference. Nature. https://doi.org/10.1038/s41586-025-08922-2. License: CC-BY 4.0.*
 
 ---
 
-### Study 3: Porubsky et al. (2025) - Long-Read Sequencing and Repetitive DNA
+## Clinical Implications
 
-**The advance:**
+### For Genetic Counseling
 
-By 2025, sequencing technology had advanced dramatically. This study used **long-read sequencing** (PacBio HiFi, Oxford Nanopore) to analyze a large, multi-generation family (the CEPH 1463 pedigree: 28 individuals across 4 generations).
+**Paternal age considerations:**
 
-**Why long reads matter:**
+| Father's Age | Additional Risk |
+|--------------|----------------|
+| <30 | Baseline mutation rate |
+| 30-40 | +20 mutations (~35% increase) |
+| 40-50 | +40 mutations (~70% increase) |
+| >50 | +60+ mutations (>100% increase) |
 
-Remember that ~50% of the human genome is repetitive sequences—regions where the same DNA pattern repeats many times. Short-read sequencing (Illumina) struggles with these regions. Long reads can span entire repetitive arrays, revealing mutations that were previously invisible.
+**Most mutations are harmless**, but risk of specific conditions increases in certain disorders.
 
-**Key findings:**
+### For Clinical Diagnosis
 
-#### 1. The Full Mutation Spectrum
+**When a child has a disorder not present in parents:**
 
-Using five different sequencing technologies, the researchers could count all types of mutations:
+**1. Look for de novo mutations:**
+```
+Sequence trio (child + both parents)
+         ↓
+Identify variants in child absent from both parents
+         ↓
+Prioritize: LoF or damaging missense in disease genes
+         ↓
+Validate: Check for mosaicism in parents
+```
 
-**Per child, on average:**
-- **74.5 single-nucleotide variants (SNVs)**: The classic point mutations
-- **7.4 small indels in non-repetitive DNA**: Insertions/deletions of a few bases
-- **65.3 mutations in repetitive DNA**: Changes in tandem repeats, transposable elements, etc.
-- **4.4 centromeric mutations**: Changes in the highly repetitive centromeres
-- **12.4 Y chromosome mutations** (per male generation): The Y has lots of repetitive DNA
+**2. Consider sequencing technology:**
+- Short-read (Illumina): Misses repetitive regions
+- Long-read: Comprehensive, includes centromeres, tandem repeats
 
-**Total: 98-206 de novo mutations per child**, depending on the technology and inclusion criteria.
-
-This is higher than the Iceland study's ~63, mainly because the new technology could see mutations in repetitive DNA that were invisible before.
-
-#### 2. Refined Paternal Contribution
-
-**75-81% of mutations come from fathers**, consistent with previous findings but with more precision.
-
-**But:** 16% of SNVs are **postzygotic**—they arose after fertilization, in early embryonic divisions. These show no parent-of-origin bias (equal from egg and sperm contributions).
-
-This was a new finding: not all de novo mutations arise in gametes. Some happen in the embryo.
-
-#### 3. Mutation Hotspots in Repetitive DNA
-
-**32 specific genomic regions** showed recurrent de novo mutations across multiple individuals in the pedigree. These are mutation hotspots.
-
-**Why?**
-
-- **Tandem repeats**: Regions where a short sequence repeats many times (e.g., CAGCAGCAGCAG...) are prone to polymerase slippage—the enzyme can lose count
-- **Segmental duplications**: Large duplicated regions can misalign during replication
-- **Centromeres**: Satellite DNA with thousands of repeats mutates frequently
-
-**Mutation rate variation:** Up to **10-fold differences** in mutation rate depending on sequence context, repeat type, and length.
-
-#### 4. No Link to Recombination
-
-Interestingly, there was **no correlation between recombination and mutation rates**. This suggests these are independent processes—crossover doesn't cause mutations, and vice versa.
-
-**Why this matters:**
-
-Some theories suggested recombination might induce mutations. This study argues against that, showing they're separate molecular mechanisms.
-
-#### 5. Y Chromosome Mutation Rate
-
-The **Y chromosome has a higher mutation rate** than autosomes: ~12.4 mutations per generation.
-
-**Why?**
-
-- The Y is always in males, always experiencing male mutation rates
-- It has lots of repetitive DNA prone to errors
-- Parts of the Y form palindromes (sequences that read the same forward and backward), which can cause replication errors
+**3. Check for mosaicism:**
+- Low-level parental mosaicism can explain apparent de novo variants
+- Important for recurrence risk counseling
 
 ---
 
-## Putting It Together: What We've Learned
+## Identifying De Novo Variants: The Trio Approach
 
-### The Big Picture
+**Standard workflow:**
 
-1. **Each person has 50-200 de novo mutations**, most harmless but occasionally disease-causing
+### Trio Sequencing Strategy
 
-2. **Father's age is the main factor**: ~2 mutations per year of paternal age (for SNVs), with maternal age having minimal effect
+```
+Sequence:
+- Proband (affected child)
+- Mother  
+- Father
 
-3. **Males contribute 75-81% of mutations** due to continuous sperm production
+Compare:
+- Variants in child
+- Variants in parents
 
-4. **Mutation rates vary by genomic region**: Repetitive DNA mutates more frequently, CpG sites are hotspots
+De novo candidates:
+- Present in child
+- Absent in BOTH parents
+- Pass quality filters
+```
 
-5. **About 16% of mutations arise after fertilization**, in early embryonic development
+### Quality Control Steps
 
-6. **Long-read sequencing reveals hidden mutations** in repetitive regions that short reads miss
+**Challenge:** Sequencing errors can look like de novo mutations.
 
-### Clinical Implications
+**Filters applied:**
 
-**Genetic counseling:**
+| Filter | Purpose | Typical Threshold |
+|--------|---------|------------------|
+| Read depth | Ensure reliable calls | >20× coverage |
+| Allele balance | Check heterozygous ratio | 30-70% variant reads |
+| Mapping quality | Avoid mismapped reads | MAPQ >30 |
+| Parental absence | Confirm not inherited | 0 variant reads in parents |
+| Validation | Confirm by Sanger or PCR | For clinical variants |
 
-When parents ask about risks of genetic disease:
-- Advanced paternal age (>40) is associated with increased risk of de novo mutations
-- Each additional year of father's age adds ~2 mutations
-- Most are harmless, but risk of certain conditions (autism, schizophrenia) increases
-
-**Diagnosis:**
-
-When a child has a genetic disorder not present in parents:
-- Look for de novo mutations in disease genes
-- Consider both coding and repetitive regions (need long-read sequencing for the latter)
-- Check for mosaicism (mutation in only some cells)
-
-**Evolutionary medicine:**
-
-As populations delay reproduction (older parents), population-wide mutation rates increase. This could have long-term health effects, though the magnitude and significance are debated.
-
----
-
-## Summary: Two Sources of Genetic Variation
-
-Your genome contains variants from two sources:
-
-**Inherited variants:**
-- Passed from parents through Mendelian segregation
-- Each parent contributes 50% of your chromosomes
-- Recombination shuffles grandparental DNA, creating novel combinations
-- Variants may be common (polymorphisms) or rare
-- These are the "old" variants—present for many generations
-
-**De novo variants:**
-- New mutations arising in you
-- Mostly from errors during gametogenesis (especially in father's sperm)
-- About 50-200 per person
-- Increase with paternal age (~2 per year)
-- These are the "new" variants—entering the population for the first time
-
-Together, inherited and de novo variants create the genetic diversity that Mendel studied but couldn't see. Now, with NGS, we can count them, trace their origins, and understand their effects—connecting Mendelian genetics to molecular biology and evolution.
+**False positive sources:**
+- Sequencing errors (especially at low coverage)
+- Parental mosaicism (mutation in some parental cells)
+- Poor reference alignment in complex regions
 
 ---
 
-## Looking Ahead
+## Evolutionary Perspective
 
-In the next sections, we'll explore:
-- How variants segregate in families and follow Mendelian inheritance patterns
-- How we use family data to map disease genes
-- How variants differ between populations
-- How natural selection shapes variant frequencies over evolutionary time
+### Mutation as the Engine of Evolution
 
-All of this builds on understanding where variants come from—either inherited from the past or arising anew in each generation.
+**Short-term (per generation):**
+- Each person: ~50-200 new mutations
+- Most neutral or slightly deleterious
+- Rare beneficial mutations
+
+**Long-term (over millennia):**
+- Beneficial mutations increase in frequency (positive selection)
+- Deleterious mutations decrease (negative selection)  
+- Neutral mutations drift randomly
+
+**Today's polymorphisms = Yesterday's de novo mutations**
+
+The common SNPs distinguishing populations were once de novo mutations in individuals thousands of years ago.
+
+### Population-Level Effects
+
+**As average paternal age increases:**
+
+```
+1900s Iceland: Average father age = 34.9 years
+1980s Iceland: Average father age = 27.9 years  
+2010s Iceland: Average father age = 33.0 years
+```
+
+**Consequence:** Population-wide mutation rate fluctuates with demographics.
+
+**Debate:** Does delayed reproduction increase disease burden? 
+- Pro: More mutations → more genetic disease
+- Con: Most mutations harmless; modern medicine compensates
+
+---
+
+## Summary Table: Inherited vs. De Novo
+
+| Feature | Inherited Variants | De Novo Variants |
+|---------|-------------------|------------------|
+| **Frequency** | ~4-5 million per genome | ~50-200 per genome |
+| **Source** | Parents' genomes | New mutations during reproduction |
+| **Age** | Can be ancient (millions of years) | Brand new (this generation) |
+| **Detection** | Standard variant calling | Trio sequencing required |
+| **Inheritance** | Follow Mendelian segregation | Not inherited (absent in parents) |
+| **Clinical** | Common → complex traits<br>Rare → Mendelian diseases | Severe developmental disorders<br>Dominant de novo conditions |
+| **Selection** | Already filtered by selection | Haven't faced selection yet |
+
+---
+
+## Key Takeaways
+
+1. **Two sources of variants:** Inherited (from parents, following Mendel's laws) and de novo (new mutations in you)
+
+2. **Paternal age effect dominates:** Father's age is the main determinant of de novo mutation rate (~1.5 mutations/year), though maternal age also contributes (~0.4 mutations/year)
+
+3. **Males contribute more:** 75-81% of mutations due to continuous sperm production with repeated cell divisions
+
+4. **Maternal mutations have unique patterns:** Mutation spectrum changes with maternal age, with regional hotspots showing up to 50-fold enrichment
+
+5. **Technology matters:** Long-read sequencing reveals mutations in repetitive DNA invisible to short reads, nearly doubling the total mutation count
+
+6. **Clinical importance:** De novo mutations cause many severe developmental disorders; trio sequencing identifies them
+
+7. **Evolutionary engine:** All genetic diversity started as de novo mutations; today's polymorphisms were once new mutations
+
+---
+
+## Beyond Individual Mutations: An Evolutionary Perspective
+
+We've focused on de novo variants in individuals, but these mutations are also the raw material for evolution. Over long timescales, individual mutations accumulate to create species differences and even entirely new genes.
+
+### From Individuals to Species: Time Scales
+
+| Scale | Timeframe | Example |
+|-------|-----------|---------|
+| Individual | This generation | Your ~50-200 de novo variants |
+| Population | 100-10,000 generations | ABO blood types, lactose tolerance |
+| Species | 100,000+ generations | Human-chimp fixed differences (~35M SNVs) |
+| New genes | 1-10 million years | Gene duplications, de novo gene birth |
+
+### Three Mechanisms Drive Long-Term Evolution
+
+**1. Accumulation of point mutations**
+
+The same replication errors causing your de novo variants, accumulated over millions of years, create species boundaries ([Montañés et al. 2023, Molecular Biology and Evolution](https://doi.org/10.1093/molbev/msad098)). Humans and chimpanzees differ by ~35 million single-nucleotide changes, each starting as a de novo mutation in some ancestor.
+
+**2. Gene duplication creating new functions**
+
+Genes can be duplicated by unequal crossing-over or retrotransposition. Usually the duplicate copy degrades, but occasionally it evolves a new function. Classic example: the globin gene family (myoglobin, α-globin, β-globin, fetal γ-globin) all arose from ancient duplications of a single ancestral gene. Each duplication allowed functional specialization—fetal hemoglobin has higher oxygen affinity for placental transfer, while adult hemoglobin optimizes oxygen delivery to tissues.
+
+**3. De novo gene birth from non-coding DNA**
+
+Entirely new genes can emerge from previously non-coding sequences. Recent comparative genomics studies show many species-specific genes arose this way, though most (~80%) are rapidly lost. Survivors start small and gradually acquire function under selection (Montañés et al., 2023, Molecular Biology and Evolution).
+
+### Case Study: FOXP2 and Speech Evolution
+
+The **FOXP2** gene illustrates how point mutations can drive major phenotypic changes. Discovered in a British family with severe speech disorder, FOXP2 encodes a transcription factor critical for speech motor control ([Atkinson et al. 2018, Cell](ttps://doi.org/10.1016/j.cell.2018.06.048)). 
+
+Human FOXP2 differs from chimpanzee by only two amino acids (at positions 303 and 325). Originally thought to be a recent selective sweep enabling modern human language, genomic studies revealed these changes were already present in Neanderthals, indicating an older origin (>300,000 years ago). While no evidence exists for recent selection, these ancient changes likely contributed to vocal motor learning in the human lineage (Atkinson et al., 2018, Cell).
+
+Recent work identified additional speech-related genes (CHD3, SETD1A, WDR5) through whole-genome sequencing of children with speech disorders, revealing that speech acquisition involves a regulatory network of genes co-expressed in the developing brain.
+
+### The Connection: Micro to Macro
+
+**Your de novo mutations:**
+- ~50-200 new changes this generation
+- Most neutral or slightly harmful
+- Will likely disappear within a few generations
+
+**Your ancestors' de novo mutations:**
+- Some accumulated to distinguish humans from other primates
+- Some created new genes through duplication
+- Some enabled uniquely human traits like speech
+
+The DNA replication errors adding ~1.5 mutations per year of your father's age (and ~0.4 per year of your mother's age) are the same molecular process that, over evolutionary time, created all genetic diversity—from individual differences to the origin of new species.
+
+---
+
+## Looking Ahead: From Transmission to Pattern
+
+You now understand where variants come from—inherited or arising de novo—and how they connect to evolution across all timescales. The next chapters explore:
+
+**Chapter 10—Dominant Inheritance:** Why does one mutant copy sometimes cause disease? You'll see three molecular mechanisms explaining dominance.
+
+**Chapter 11—Haploinsufficiency:** Why are some genes sensitive to losing one copy? Population-scale metrics predict gene constraint.
+
+**Chapter 12—Recessive Inheritance:** What happens when both copies are mutated? How does family structure reveal recessive alleles?
+
+Understanding transmission is the foundation. Now we examine the patterns those transmitted variants create—the dominant and recessive inheritance that Mendel observed, now explained at the molecular level.
+

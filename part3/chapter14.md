@@ -31,21 +31,21 @@ Achondroplasia is caused by mutations in a gene called **FGFR3**, which sits on 
 
 Now here's the kicker: nearly everyone with achondroplasia has the exact same mutation. It's a single amino acid swap—glycine gets replaced by arginine at position 380 of the protein. Scientists write this as **p.Gly380Arg** (or G380R for short). This one-letter change in the genetic code shows up in achondroplasia patients across different populations worldwide. It's like finding the same typo in books printed on different continents—it tells us this particular mutation is the main troublemaker.
 
-![Figure – Mutational spectrum of FGFR3 in achondroplasia](https://ars.els-cdn.com/content/image/1-s2.0-S2352304224002332-gr1_lrg.jpg)
+![Sobreira2024-HealthMed-Fig1](../assets/figures/Sobreira2024-HealthMed-Fig1.jpg)
 
-**Figure. Where the mutation hits.** The FGFR3 receptor spans the cell membrane. Outside the cell, you've got the extracellular domain (ECD) with three immunoglobulin-like regions (I, II, III) that can bind to growth factors and heparan sulfate (HS). The transmembrane domain (TM) anchors the receptor in the membrane—and this is where the G380R mutation lives. Inside the cell, the intracellular domain (ICD) contains tyrosine kinase (TK) regions that send signals when the receptor is activated. Most achondroplasia mutations cluster in that TM region, right where G380R sits.
+**Figure: FGFR3 receptor structure and achondroplasia mutation sites**. *The FGFR3 receptor spans the cell membrane. Outside the cell, the extracellular domain (ECD) contains three immunoglobulin-like regions (I, II, III) that can bind to growth factors and heparan sulfate (HS). The transmembrane domain (TM) anchors the receptor in the membrane—this is where the G380R mutation is located. Inside the cell, the intracellular domain (ICD) contains tyrosine kinase (TK) regions that send signals when the receptor is activated. Most achondroplasia mutations cluster in the TM region, right where G380R sits. Source: Sobreira, N. et al. (2024). Achondroplasia. HealthMedicine. https://www.sciencedirect.com/science/article/pii/S2352304224002332. License: Creative Commons.*
 
 ### Why This Mutation Causes Problems
 
 Normally, FGFR3 acts like a brake on bone growth. When growth factors bind to the receptor, two receptor molecules come together (dimerize), activate each other, and send a signal into the cell saying "slow down bone growth." This is actually healthy—it prevents your bones from growing too much.
 
-But the G380R mutation changes everything. This mutation sits in the transmembrane domain—the part of the receptor buried in the cell membrane. The swap from glycine (a small, flexible amino acid) to arginine (a much larger one with a bulky side chain) makes the receptor behave differently. It promotes dimerization even when no growth factor is around ([Hartl et al., 2022](https://www.biorxiv.org/content/10.1101/2022.04.11.487861v1.full)). 
+But the G380R mutation changes everything. This mutation sits in the transmembrane domain—the part of the receptor buried in the cell membrane. The swap from glycine (a small, flexible amino acid) to arginine (a much larger one with a bulky side chain) makes the receptor behave differently. It promotes dimerization even when no growth factor is around ([Hartl et al. 2022, bioRxiv](https://www.biorxiv.org/content/10.1101/2022.04.11.487861v1.full)). 
 
 Think of it like a car alarm that goes off even when nobody's trying to break in. The receptor is stuck in the "on" position, constantly telling growth plate chondrocytes to slow down—even when they should be growing normally. The receptor activates signaling pathways (MAPK and STAT1) that suppress chondrocyte proliferation and maturation. Fewer dividing chondrocytes and less cartilage production means less bone growth, especially in the long bones.
 
-![FGFR3 variants compared by GRB2 recruitment](https://www.biorxiv.org/content/biorxiv/early/2022/04/11/2022.04.11.487861/F4.large.jpg)
+![Hartl2022-bioRxiv-Fig4](../assets/figures/Hartl2022-bioRxiv-Fig3.jpg)
 
-**Figure. The G380R mutation cranks up the signal.** This graph shows how strongly different FGFR3 variants activate downstream signaling, measured by how much GRB2 (an adaptor protein) they recruit. Higher bars mean more signaling. Look at G380R—it shows elevated activation even without adding FGF ligand. The receptor is signaling all by itself, which shouldn't happen with the normal version. That's why one mutated copy is enough to cause achondroplasia.
+**Figure: G380R mutation increases FGFR3 signaling activity**. *This graph shows how strongly different FGFR3 variants activate downstream signaling, measured by GRB2 (an adaptor protein) recruitment. Higher bars indicate stronger signaling. The G380R variant shows elevated activation even without adding FGF ligand—the receptor signals constitutively, which doesn't occur with the wild-type receptor. This ligand-independent activation explains why one mutated copy is sufficient to cause achondroplasia. Source: Hartl, D. et al. (2022). Molecular mechanisms underlying pathogenic FGFR3 mutations. bioRxiv. https://www.biorxiv.org/content/10.1101/2022.04.11.487861v1.full License: CC-BY-NC-ND 4.0.*
 
 ### Why It's Dominant
 
@@ -60,17 +60,16 @@ But tall stature is just one piece of the puzzle. Marfan syndrome comes with a d
 - Lens dislocation in the eye (ectopia lentis)—the lens can slip out of place
 - A predisposition to thoracic aortic aneurysms—dangerous bulges in the body's main artery that can rupture
 
-Unlike achondroplasia, which shortens the limbs while keeping the trunk normal, Marfan syndrome elongates body proportions overall ([Sakai et al. 2016, Gene](https://pmc.ncbi.nlm.nih.gov/articles/PMC6639799/)).
+Unlike achondroplasia, which shortens the limbs while keeping the trunk normal, Marfan syndrome elongates body proportions overall ([Sakai et al. 2016, Genes](https://pmc.ncbi.nlm.nih.gov/articles/PMC6639799/)).
 
 ### The Genetic Culprit: FBN1
 
 Marfan syndrome is caused by mutations in the **FBN1** gene on chromosome 15. FBN1 encodes a protein called **fibrillin-1**, which is a structural protein. Think of fibrillin-1 as microscopic ropes that form the scaffolding of connective tissue. These "ropes" (microfibrils) provide strength and elasticity to tissues like the aorta, the ligaments that hold your eye lens in place, and the connective tissue in your bones.
 
-Unlike achondroplasia—where nearly everyone has the same mutation—Marfan syndrome is caused by over **1,000 different mutations** in FBN1. These include missense mutations (amino acid swaps), nonsense mutations (premature stop signals), splice-site mutations (errors in how the gene is processed), and small insertions or deletions. Many of these mutations hit either the **calcium-binding EGF-like domains** or the **8-cysteine domains** of fibrillin-1, disrupting the protein's structure or how it folds ([Learn.Genetics](https://learn.genetics.utah.edu/content/genetics/marfan/)).
+Unlike achondroplasia—where nearly everyone has the same mutation—Marfan syndrome is caused by over **1,000 different mutations** in FBN1. These include missense mutations (amino acid swaps), nonsense mutations (premature stop signals), splice-site mutations (errors in how the gene is processed), and small insertions or deletions. Many of these mutations hit either the **calcium-binding EGF-like domains** or the **8-cysteine domains** of fibrillin-1, disrupting the protein's structure or how it folds ([Learn.Genetics Utah](https://learn.genetics.utah.edu/content/genetics/marfan/)).
 
-![FBN1 on Marfan Syndrome](https://learn-genetics.b-cdn.net/genetics/marfan/images/marfan-gene.jpg)
 
-**Figure. Fibrillin-1 as connective tissue scaffolding.** Fibrillin-1 proteins assemble into long, strong fibers that reinforce connective tissue throughout your body. When you have too little fibrillin-1, or when the protein is misshapen, the scaffolding is weak. That's what happens in Marfan syndrome. (Source: Learn.Genetics)
+**See Figure: [Fibrillin-1 structure from Learn.Genetics Utah](https://learn.genetics.utah.edu/content/genetics/marfan/)**. Fibrillin-1 proteins assemble into long, strong fibers that reinforce connective tissue throughout the body. When there is insufficient fibrillin-1, or when the protein is misshapen, the scaffolding is weak—this is what happens in Marfan syndrome.
 
 ### Why FBN1 Mutations Cause Tall Stature
 
@@ -80,9 +79,9 @@ It turns out fibrillin-1 has a second job beyond structural support: it regulate
 
 Excessive TGF-β signaling promotes abnormal growth in connective tissues, including bones. It drives long bone elongation beyond normal limits, resulting in the tall stature and elongated limbs characteristic of Marfan syndrome. So even though you have one normal FBN1 copy, the defective copy disrupts the scaffolding and unleashes too much TGF-β—enough to override the normal copy's function. That's why it's dominant.
 
-![FBN1 on Marfan Syndrome](https://ars.els-cdn.com/content/image/1-s2.0-S217420492030115X-gr4.jpg)
+![Coelho2020-CellSignal-Fig4](../assets/figures/Coelho2020-CellSignal-Fig4.jpg)
 
-**Figure. TGF-β goes rogue in Marfan syndrome.** On the left: In healthy tissue, fibrillin-1 microfibrils sequester TGF-β by binding to latency-associated peptide (LAP) and latent TGF-β binding protein (LTBP). This keeps TGF-β signaling in check. On the right: When microfibrils are deficient (as in Marfan syndrome), TGF-β is released and activates its receptors. This triggers excessive signaling through Smad proteins and transcription factors, driving abnormal tissue growth. (Adapted from [Ramirez et al. 2007](https://www.sciencedirect.com/science/article/pii/S0959437X07000718); [Coehlo et al. 2020](https://www.sciencedirect.com/science/article/pii/S217420492030115X)).
+**Figure: TGF-β dysregulation in Marfan syndrome**. *Left: In healthy tissue, fibrillin-1 microfibrils sequester TGF-β by binding to latency-associated peptide (LAP) and latent TGF-β binding protein (LTBP), keeping TGF-β signaling in check. Right: When microfibrils are deficient (as in Marfan syndrome), TGF-β is released and activates its receptors. This triggers excessive signaling through Smad proteins and transcription factors, driving abnormal tissue growth and the skeletal features of Marfan syndrome. Source: Coelho, S.G. & Almeida, A.G. (2020). Marfan syndrome revisited: From genetics to the clinic. Cellular Signalling. https://www.sciencedirect.com/science/article/pii/S217420492030115X. License: Creative Commons.*
 
 ## Additive Alleles and Normal Variation in Human Height
 
@@ -94,11 +93,11 @@ Instead of one mutation flipping a switch, imagine thousands of little dials all
 
 Let's look at some numbers to appreciate just how polygenic (literally "many genes") height really is.
 
-A massive genome-wide association study (GWAS) analyzed **5.4 million people** from diverse ancestries ([Yengo et al. 2022, Nature](https://pmc.ncbi.nlm.nih.gov/articles/PMC9605867/)). The researchers identified **12,111 independent single-nucleotide polymorphisms (SNPs)**—single-letter DNA variants—associated with height. Almost all of these SNPs are **common variants**, meaning they appear in more than 1% of the population (we abbreviate this as MAF > 1%, where MAF stands for "minor allele frequency").
+A massive genome-wide association study (GWAS) analyzed **5.4 million people** from diverse ancestries ([Yengo et al. 2022, Nature](https://pmc.ncbi.nlm.nih.gov/articles/PMC9605867/)). The study identified **12,111 independent single-nucleotide polymorphisms (SNPs)**—single-letter DNA variants—associated with height. Almost all of these SNPs are **common variants**, meaning they appear in more than 1% of the population (we abbreviate this as MAF > 1%, where MAF stands for "minor allele frequency").
 
 These 12,111 SNPs are scattered across **7,209 different genomic regions**, covering about 21% of the entire genome. Together, they explain most of the height variation we can detect using common SNPs. Interestingly, genes like **FGFR3** and **FBN1** show up in this list—but as common variants with subtle effects, not the severe mutations causing achondroplasia or Marfan syndrome. Other genes in the list regulate growth-plate function and connective-tissue development, just like the Mendelian examples.
 
-But common variants aren't the whole story. A complementary study used whole-genome sequencing on **25,465 unrelated Europeans** to explore the role of **rare variants**—those with frequencies below 0.1% ([Wainschtein et al. 2022, Nat Genet](https://pmc.ncbi.nlm.nih.gov/articles/PMC9119698/)). They estimated SNP-based heritability of height at **0.68** (with a standard error of 0.10), meaning about 68% of height variation can be attributed to genetic differences.
+But common variants aren't the whole story. A complementary study used whole-genome sequencing on **25,465 unrelated Europeans** to explore the role of **rare variants**—those with frequencies below 0.1% ([Wainschtein et al. 2022, Nat Genet](https://pmc.ncbi.nlm.nih.gov/articles/PMC9119698/)). SNP-based heritability of height was estimated at **0.68** (with a standard error of 0.10), meaning about 68% of height variation can be attributed to genetic differences.
 
 Here's where it gets interesting. Rare variants contribute substantially, but how they contribute depends on something called **linkage disequilibrium (LD)**. LD measures how tightly linked a variant is to nearby variants. **Low-LD rare variants**—those that aren't correlated with nearby common variants—accounted for **0.31** (31%) of the phenotypic variance. In contrast, **high-LD rare variants**—those tightly linked to common variants already captured by GWAS—contributed only **0.03** (3%).
 

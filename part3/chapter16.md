@@ -4,7 +4,7 @@ We've been talking about how thousands of genetic variants shape traits like hei
 
 This question leads us to one of the most important—and most misunderstood—concepts in genetics: **heritability**. It's a number that tells us what proportion of trait variation in a population comes from genetic differences. But it doesn't tell us whether a trait is "fixed" by genes or how much environment matters. We'll get to why that distinction is so important.
 
-To understand heritability, we need to go back over a century to 1918, when a statistician named R.A. Fisher figured out how to connect Mendel's discrete genetic laws with the continuous variation we see in traits like height. Fisher's framework—called the **polygenic model**—is still the foundation of modern genetics. We'll explore his insights and then connect them to recent studies on human height, BMI, and disease risk, drawing especially on work by Visscher and colleagues (2019, *Genetics*).
+To understand heritability, we need to go back over a century to 1918, when a statistician named R.A. Fisher figured out how to connect Mendel's discrete genetic laws with the continuous variation we see in traits like height. Fisher's framework—called the **polygenic model**—is still the foundation of modern genetics. We'll explore his insights and then connect them to recent studies on human height, BMI, and disease risk.
 
 ---
 
@@ -22,7 +22,7 @@ In 1918, R.A. Fisher figured out that both groups were right. His insight was si
 
 Think of it like baking a cake. Each ingredient—flour, sugar, eggs, butter—contributes a little bit to the final taste. No single ingredient determines whether the cake is good or bad. But together, in the right proportions, they create something complex. That's how genes work for traits like height. Hundreds or thousands of genes, each following Mendel's rules, combine to produce the continuous variation we observe.
 
-Fisher's paper laid the foundation for **quantitative genetics**, the field that studies complex traits without needing to know the specific genes involved ([Visscher et al. 2019, Genetics](https://pmc.ncbi.nlm.nih.gov/articles/PMC6456325/)). His framework is still used today, from twin studies to genome-wide association studies (GWAS) to polygenic risk scores.
+This 1918 paper laid the foundation for **quantitative genetics**, the field that studies complex traits without needing to know the specific genes involved ([Visscher et al. 2019, Genetics](https://pmc.ncbi.nlm.nih.gov/articles/PMC6456325/)). Fisher's framework is still used today, from twin studies to genome-wide association studies (GWAS) to polygenic risk scores.
 
 ---
 
@@ -32,21 +32,23 @@ Fisher's next move was to mathematically break down trait variation into compone
 
 He showed that total trait variation—what we call **phenotypic variance (VP)**—can be split into several pieces:
 
-**VP = A + D + E + Environment**
+```
+VP = VA + VD + VE + VEnvironment
+```
 
 Let's unpack each component:
 
-**A (Additive variance)** is the variation due to additive alleles—the kind we've been talking about throughout this chapter. Each allele contributes a small, independent effect. If you have more height-increasing alleles, you're taller. If you have fewer, you're shorter. Additive variance is the major source of heritable variation in most human traits.
+**VA (Additive variance)** is the variation due to additive alleles—the kind we've been talking about throughout this chapter. Each allele contributes a small, independent effect. If you have more height-increasing alleles, you're taller. If you have fewer, you're shorter. Additive variance is the major source of heritable variation in most human traits.
 
-**D (Dominance variance)** captures the extra variation that comes from dominance—when having one copy of an allele (AB) produces an effect that's not simply halfway between AA and BB. We saw in the last section that dominance effects are rare and weak in most traits. They contribute a bit of variance, but it's usually small.
+**VD (Dominance variance)** captures the extra variation that comes from dominance—when having one copy of an allele (AB) produces an effect that's not simply halfway between AA and BB. We saw in the last section that dominance effects are rare and weak in most traits. They contribute a bit of variance, but it's usually small.
 
-**E (Epistatic variance)** refers to gene-gene interactions—when the effect of one gene depends on which alleles you have at another gene. Epistasis definitely exists, but at the population level, it explains very little of the variance in most traits. Fisher recognized this early on.
+**VE (Epistatic variance)** refers to gene-gene interactions—when the effect of one gene depends on which alleles you have at another gene. Epistasis definitely exists, but at the population level, it explains very little of the variance in most traits. Fisher recognized this early on.
 
-**Environment** is everything non-genetic. Nutrition, lifestyle, chance events during development—all the factors that make you different from someone else even if you have identical genomes. For height, environment includes childhood nutrition, illnesses, and other factors that affect bone growth.
+**VEnvironment** is everything non-genetic. Nutrition, lifestyle, chance events during development—all the factors that make you different from someone else even if you have identical genomes. For height, environment includes childhood nutrition, illnesses, and other factors that affect bone growth.
 
-Fisher emphasized that **additive genetic variance (A)** is the key component. Why? Because additive effects determine how much a trait can respond to selection (evolution) and how well we can predict offspring traits from parent traits. Most of the heritability we measure today reflects additive variance.
+Fisher emphasized that **additive genetic variance (VA)** is the key component. Why? Because additive effects determine how much a trait can respond to selection (evolution) and how well we can predict offspring traits from parent traits. Most of the heritability we measure today reflects additive variance.
 
-And here's the cool part: modern studies confirm Fisher's model. Remember the 2022 GWAS on height? Researchers found **12,111 SNPs** spread across **7,209 genomic segments**, almost all with additive effects (Yengo et al. 2022, *Nature*). That's Fisher's model in action, nearly 100 years later.
+And here's the cool part: modern studies confirm Fisher's model. Remember the 2022 GWAS on height? The study found **12,111 SNPs** spread across **7,209 genomic segments**, almost all with additive effects ([Yengo et al. 2022, Nature](https://pmc.ncbi.nlm.nih.gov/articles/PMC9605867/)). That's Fisher's model in action, nearly 100 years later.
 
 ---
 
@@ -95,13 +97,17 @@ There are actually two types of heritability, and it's worth knowing the differe
 
 **Narrow-sense heritability (h²)** measures the fraction of variance due to additive genetic effects. It's calculated as:
 
+```
 h² = VA / VP
+```
 
 where VA is additive variance and VP is total phenotypic variance. Narrow-sense heritability is what matters for predicting resemblance between parents and offspring. If you want to know how tall your children will be based on your height, narrow-sense heritability is the relevant number.
 
 **Broad-sense heritability (H²)** includes all genetic effects—additive, dominance, and epistatic. It's calculated as:
 
+```
 H² = (VA + VD + VE) / VP
+```
 
 Broad-sense heritability captures the total genetic influence on a trait, but it's less useful for prediction. Why? Because dominance and epistatic effects don't reliably pass from parent to offspring. When you make a baby, you're shuffling alleles and creating new combinations. Additive effects pass on predictably, but dominance and epistatic effects get scrambled.
 
@@ -151,7 +157,7 @@ One popular method is **LDSC (linkage disequilibrium score regression)**, which 
 
 For height, SNP-based heritability comes out to about **h² ≈ 0.68**. That's a bit lower than the twin-study estimate of 0.80, and there are a few reasons why. SNP-based heritability typically uses common SNPs (MAF > 1%), so it misses some rare variants. Also, it doesn't capture structural variants or other genetic differences that SNP chips don't detect well.
 
-Interestingly, when researchers include rare variants, the estimate goes up. A 2022 study using whole-genome sequencing found that rare variants in low linkage disequilibrium contribute about 0.31 of the phenotypic variance in height (Wainschtein et al. 2022, *Nat Genet*). Add that to the common SNP component, and you're getting closer to the twin-study estimate.
+Interestingly, when rare variants are included, the estimate goes up. A 2022 study using whole-genome sequencing found that rare variants in low linkage disequilibrium contribute about 0.31 of the phenotypic variance in height ([Wainschtein et al. 2022, Nat Genet](https://pmc.ncbi.nlm.nih.gov/articles/PMC9119698/)). Add that to the common SNP component, and you're getting closer to the twin-study estimate.
 
 ---
 
@@ -159,7 +165,13 @@ Interestingly, when researchers include rare variants, the estimate goes up. A 2
 
 Heritability is not a fixed property of a trait. It can differ across populations, time periods, or environments. Here's why.
 
-Remember the formula: h² = VA / VP. Heritability depends on both the numerator (genetic variance) and the denominator (total phenotypic variance). If environmental variance changes, the denominator changes, and so does heritability—even if genetic variance stays the same.
+Remember the formula:
+
+```
+h² = VA / VP
+```
+
+Heritability depends on both the numerator (genetic variance) and the denominator (total phenotypic variance). If environmental variance changes, the denominator changes, and so does heritability—even if genetic variance stays the same.
 
 Let's look at a few examples:
 
@@ -177,15 +189,15 @@ Here's the key takeaway: **high heritability does not mean environment is unimpo
 
 More than a century after Fisher's 1918 paper, his framework is still the backbone of modern genetics. Let's see how recent findings fit with his model.
 
-**Thousands of common SNPs contribute small additive effects.** The 2022 GWAS on height found 12,111 SNPs spread across 7,209 genomic regions (Yengo et al. 2022, *Nature*). Almost all of these effects are additive, just as Fisher predicted. Each SNP nudges height up or down by a fraction of a centimeter, and together they explain most of the genetic variance.
+**Thousands of common SNPs contribute small additive effects.** The 2022 GWAS on height found 12,111 SNPs spread across 7,209 genomic regions ([Yengo et al. 2022, Nature](https://pmc.ncbi.nlm.nih.gov/articles/PMC9605867/)). Almost all of these effects are additive, just as Fisher predicted. Each SNP nudges height up or down by a fraction of a centimeter, and together they explain most of the genetic variance.
 
-**Dominance effects are rare and weak.** The 2023 UK Biobank study found dominance effects at 183 loci, but they explained less than 1% of the additive variance on average (Palmer et al. 2023, *Science*). Fisher was right to focus on additive variance—it's where most of the action is.
+**Dominance effects are rare and weak.** The 2023 UK Biobank study found dominance effects at 183 loci, but they explained less than 1% of the additive variance on average ([Palmer et al. 2023, Science](https://pmc.ncbi.nlm.nih.gov/articles/PMC10345642/)). Fisher was right to focus on additive variance—it's where most of the action is.
 
-**Epistasis exists but contributes little to population-level variation.** Visscher and colleagues emphasize this point in their 2019 review. Gene-gene interactions happen, but they don't explain much of the trait variance we observe across populations. Additive effects dominate.
+**Epistasis exists but contributes little to population-level variation.** A 2019 review emphasizes this point: gene-gene interactions happen, but they don't explain much of the trait variance we observe across populations ([Visscher et al. 2019, Genetics](https://pmc.ncbi.nlm.nih.gov/articles/PMC6456325/)). Additive effects dominate.
 
 Fisher's model has proven remarkably robust. It underlies everything from **twin studies** to **GWAS** to **polygenic risk scores**—those scores that combine information from thousands of SNPs to predict traits or disease risks.
 
-As Visscher noted in his 2019 review, Fisher's 1918 framework still guides how we study genetic architecture today. It explains **trait variation**, not individual destiny. And that's an important distinction. Knowing that height has high heritability doesn't tell you how tall *you* will be—it tells you why people in a population differ from each other.
+As noted in a 2019 review, Fisher's 1918 framework still guides how we study genetic architecture today ([Visscher et al. 2019, Genetics](https://pmc.ncbi.nlm.nih.gov/articles/PMC6456325/)). It explains **trait variation**, not individual destiny. And that's an important distinction. Knowing that height has high heritability doesn't tell you how tall *you* will be—it tells you why people in a population differ from each other.
 
 ---
 
@@ -195,7 +207,7 @@ Let's recap what we've learned about heritability:
 
 Fisher unified Mendelian genetics with continuous trait variation back in 1918. He showed that many genes, each with small additive effects, could produce the smooth variation we see in traits like height. His insight gave birth to quantitative genetics.
 
-Phenotypic variance can be partitioned into components: **Additive (A)** + **Dominance (D)** + **Epistatic (E)** + **Environment**. Additive variance drives most heritability and evolutionary response. Dominance and epistasis exist, but they explain little variance at the population level.
+Phenotypic variance can be partitioned into components: **Additive (VA)** + **Dominance (VD)** + **Epistatic (VE)** + **Environment (VEnvironment)**. Additive variance drives most heritability and evolutionary response. Dominance and epistasis exist, but they explain little variance at the population level.
 
 **Heritability (h²)** measures variation within a population, not genetic "determination" of individuals. An h² of 0.68 for height means 68% of the differences among people come from genetic differences, not that your height is 68% genetic. Your height is 100% the product of genes and environment working together.
 

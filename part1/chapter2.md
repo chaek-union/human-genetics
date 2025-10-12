@@ -26,11 +26,12 @@ The T2T Consortium combined several cutting-edge technologies:
 
 ### String Graphs: A Tool for Assembly
 
-The assembly process used a **high-resolution string graph**—a powerful computational approach that helped resolve the most complex repetitive regions. 
+The assembly process used a **high-resolution string graph**—a powerful computational approach that helped resolve the most complex repetitive regions (see Figure 2 in Nurk et al., 2022). 
 
-![Nurk et al. 2022, Science - Figure 2: CHM13 String Graph](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/a099/9186530/8b3183e72d46/nihms-1775562-f0002.jpg)
+![Nurk et al. 2021, bioRxiv - Figure 2](../assets/figures/Nurk2022-biorxiv-Figure2.jpg)
 
-**Figure. CHM13 String Graph**. *This diagram shows how the T2T-CHM13 genome was assembled using a string graph approach. Each line represents a DNA sequence, and connections show where sequences overlap. The tangled regions (highlighted) reveal highly repetitive areas like the ribosomal DNA arrays and centromeric satellites.*
+**Figure: CHM13 String Graph**. *This diagram shows how the T2T-CHM13 genome was assembled using a string graph approach. Each line represents a DNA sequence, and connections show where sequences overlap. The tangled regions reveal highly repetitive areas like the ribosomal DNA arrays and centromeric satellites. Source: Nurk, S. et al. (2021). The complete sequence of a human genome. bioRxiv. https://doi.org/10.1101/2021.05.26.445798. License: CC-BY 4.0.*
+
 
 Unlike traditional linear reference genomes that represent a single sequence, a string graph represents DNA as a network where nodes are DNA sequences and edges show how they connect. Think of it like a subway map showing multiple routes between stations—the graph displays all possible connections, then long reads help scientists determine the correct path through repetitive regions.
 
@@ -60,9 +61,9 @@ The research team chose the X chromosome as their first target for several strat
 - **Medical importance**: The X chromosome is disproportionately involved in genetic diseases
 - **Technical advantage**: Using the CHM13 cell line (46,XX), they had two copies of X but no Y, making X more accessible
 
-![Miga et al. 2020, Nature - Figure 1b: X Chromosome Assembly](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-020-2547-7/MediaObjects/41586_2020_2547_Fig1_HTML.png)
+![Miga et al. 2020, Nature - Figure 1b](../assets/figures/Miga2020-Nature-Figure1.png)
 
-**Figure. Initial CHM13 X Chromosome Assembly**. *(Figure 1b) The X chromosome was initially broken at three locations: the centromere (artificially collapsed in the assembly), a 120-kb segmental duplication (DMRTC1B), and a 134-kb segmental duplication with a paralogue on chromosome 2. Black bars indicate gaps in the GRCh38 reference, and red bars show known segmental duplications.*
+**Figure: Initial CHM13 X Chromosome Assembly**. *(See Figure 1b) The X chromosome was initially broken at three locations: the centromere (artificially collapsed in the assembly), a 120-kb segmental duplication (DMRTC1B), and a 134-kb segmental duplication with a paralogue on chromosome 2. Black bars indicate gaps in the GRCh38 reference, and red bars show known segmental duplications. Source: Miga, K.H. et al. (2020). Telomere-to-telomere assembly of a complete human X chromosome. Nature, 585, 79-84. https://doi.org/10.1038/s41586-020-2547-7. License: CC-BY 4.0.*
 
 ### Finishing the Breaks
 
@@ -86,9 +87,9 @@ Longest gap in DXZ1: 42 kb
 
 **3. Iterative polishing**: Multiple rounds of polishing were performed with Nanopore, then PacBio, then Illumina data, each improving accuracy.
 
-![Miga et al. 2020, Nature - Figure 1d: Quality Improvement](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-020-2547-7/MediaObjects/41586_2020_2547_Fig1_HTML.png)
+![Miga et al. 2020, Nature - Figure 1d](../assets/figures/Miga2020-Nature-Figure1.png)
 
-**Figure. Marker-Assisted Polishing Improves Assembly Quality**. *(See Figure 1d) Example from the GAGE locus showing coverage depth before (top) and after (bottom) marker-assisted polishing. Black dots indicate primary allele coverage, red dots show secondary alleles. The uniform coverage and elimination of secondary alleles after polishing demonstrates the dramatic quality improvement achieved by this method.*
+**Figure: Marker-Assisted Polishing Improves Assembly Quality**. *(See Figure 1d) Example from the GAGE locus showing coverage depth before (top) and after (bottom) marker-assisted polishing. Black dots indicate primary allele coverage, red dots show secondary alleles. The uniform coverage and elimination of secondary alleles after polishing demonstrates the dramatic quality improvement achieved by this method. Source: Miga, K.H. et al. (2020). Telomere-to-telomere assembly of a complete human X chromosome. Nature, 585, 79-84. https://doi.org/10.1038/s41586-020-2547-7. License: CC-BY 4.0.*
 
 ### Validating the X Centromere
 
@@ -104,9 +105,9 @@ The 3.1 Mb DXZ1 centromeric array consists of approximately 1,408 copies of a ~2
 - **Ultra-long Nanopore reads**: Many reads spanned >100 kb of the centromere
 - **Completeness check**: All HiFi reads matching DXZ1 were explained by the assembly
 
-![Miga et al. 2020, Nature - Figure 2: X Centromere Structure](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-020-2547-7/MediaObjects/41586_2020_2547_Fig2_HTML.png)
+![Miga et al. 2020, Nature - Figure 2](../assets/figures/Miga2020-Nature-Figure2.png)
 
-**Figure. Complete Structure of the 3.1 Mb X Centromere**. *The DXZ1 array consists of approximately 1,408 copies of a ~2-kb higher-order repeat unit. (a) Predicted restriction map showing the array structure with structural variants marked in color and a single LINE/L1 insertion indicated by an arrowhead. (b) Experimental PFGE Southern blots matching the in silico prediction. (c) ddPCR copy number estimates across multiple cell lines, with CHM13 having approximately 2.8-3.1 Mb. (d) Catalogue of 33 structural variants identified within the array, including their frequencies and sizes.*
+**Figure: Complete Structure of the 3.1 Mb X Centromere**. *The DXZ1 array consists of approximately 1,408 copies of a ~2-kb higher-order repeat unit. (a) Predicted restriction map showing the array structure. (b) Experimental PFGE Southern blots matching the in silico prediction. (c) ddPCR copy number estimates across multiple cell lines. (d) Catalogue of 33 structural variants identified within the array. Source: Miga, K.H. et al. (2020). Telomere-to-telomere assembly of a complete human X chromosome. Nature, 585, 79-84. https://doi.org/10.1038/s41586-020-2547-7. License: CC-BY 4.0.*
 
 The assembly catalogued **33 different structural variants** within the DXZ1 array, including:
 - 1,475 canonical 12-mer units (98% of all units)
@@ -136,9 +137,9 @@ The precisely anchored ultra-long reads enabled **chromosome-wide methylation ma
 - **A 93-kb hypomethylated region within the DXZ1 centromere** (chrX: 59,217,708–59,279,205)—potentially marking the site where kinetochore proteins bind during cell division
 - **Distinct methylation bands within the DXZ4 macrosatellite array**—the repeat that partitions X chromosome topology into two large superdomains
 
-![Miga et al. 2020, Nature - Figure 3: Chromosome-wide Methylation](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-020-2547-7/MediaObjects/41586_2020_2547_Fig3_HTML.png)
+![Miga et al. 2020, Nature - Figure 3](../assets/figures/Miga2020-Nature-Figure3.png)
 
-**Figure. Methylation Patterns Across the Complete X Chromosome**. *Nanopore sequencing captured methylation patterns across the entire chromosome, including complex repeats. (a) Hypomethylation in PAR1, with detailed view showing unmethylated bases (blue) and methylated bases (red). (b) A 93-kb hypomethylated region within the DXZ1 centromere. (c) The DXZ4 macrosatellite array showing a transition from methylated to unmethylated regions, with coverage depth and methylation frequency plotted above.*
+**Figure: Methylation Patterns Across the Complete X Chromosome**. *Nanopore sequencing captured methylation patterns across the entire chromosome. (a) Hypomethylation in PAR1, with detailed view showing unmethylated bases (blue) and methylated bases (red). (b) A 93-kb hypomethylated region within the DXZ1 centromere. (c) The DXZ4 macrosatellite array showing a transition from methylated to unmethylated regions. Source: Miga, K.H. et al. (2020). Telomere-to-telomere assembly of a complete human X chromosome. Nature, 585, 79-84. https://doi.org/10.1038/s41586-020-2547-7. License: CC-BY 4.0.*
 
 The hypomethylated centromeric region was particularly intriguing. To test whether this was unique to the X or a general centromeric feature, the team manually assembled the centromere of chromosome 8 (D8Z2, ~2.02 Mb) and found a **similar hypomethylated region**, suggesting this may be a conserved feature marking functional centromeres.
 
@@ -159,9 +160,9 @@ The complete X chromosome became the foundation for finishing the rest of the hu
 
 Building on the success of the X chromosome, the T2T Consortium completed the remaining chromosomes to produce the full T2T-CHM13 genome. This assembly includes several types of regions that were missing or incomplete in the previous reference genome (GRCh38):
 
-![Nurk et al. 2022, Science - Figure 1: T2T-CHM13 Assembly Ideogram](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/a099/9186530/cf7f0a26f634/nihms-1775562-f0001.jpg)
+![Nurk et al. 2021, bioRxiv - Figure 1](../assets/figures/Nurk2022-biorxiv-Figure1.jpg)
 
-**Figure. T2T-CHM13 Assembly Ideogram**. *This ideogram shows what's new in T2T-CHM13 compared to GRCh38. Red areas highlight newly added regions, including complete centromeres and the short arms of five acrocentric chromosomes (13, 14, 15, 21, and 22). The track at the top shows that CHM13 has primarily European genetic ancestry.*
+**Figure: T2T-CHM13 Assembly Ideogram**. *(See Figure 1a) This ideogram shows what's new in T2T-CHM13 compared to GRCh38. Red areas highlight newly added regions, including complete centromeres and the short arms of five acrocentric chromosomes (13, 14, 15, 21, and 22). The track at the top shows that CHM13 has primarily European genetic ancestry. Source: Nurk, S. et al. (2021). The complete sequence of a human genome. bioRxiv. https://doi.org/10.1101/2021.05.26.445798. License: CC-BY 4.0.*
 
 Let's explore the main types of regions that T2T-CHM13 finally completed. Each was challenging to sequence for different reasons, and each plays an important role in how our cells work.
 
@@ -202,6 +203,7 @@ But structural variants can also cause disease. Certain duplications are linked 
 
 T2T-CHM13 added substantial amounts of segmental duplication sequence and corrected many errors in GRCh38. The complete assembly revealed that about **6.61% of the genome** consists of segmental duplications (201.93 Mb), compared to only 5.00% that could be properly identified in GRCh38. This includes many medically relevant genes that were previously incomplete or incorrectly assembled.
 
+
 ### Region 3: Short Arms of Acrocentric Chromosomes
 
 #### What Are They?
@@ -230,9 +232,9 @@ Although T2T-CHM13 was a major achievement, it had one limitation: CHM13 is a 46
 
 In 2023, the T2T Consortium completed this final piece of the puzzle by sequencing the Y chromosome from a different genome, HG002, which is commonly used for benchmarking ([Rhie et al. 2023, Nature](https://www.nature.com/articles/s41586-023-06457-y)). The resulting assembly, called **T2T-Y**, is 62,460,029 base pairs long with no gaps—adding over 30 million base pairs of sequence compared to GRCh38-Y.
 
-![Rhie et al. 2023, Nature - Figure 1: Structure of a Complete Y Chromosome](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-023-06457-y/MediaObjects/41586_2023_6457_Fig1_HTML.png)
+![Rhie et al. 2022, bioRxiv - Figure 1a](../assets/figures/Rhie2022-biorxiv-Figure1.jpg)
 
-**Figure. Complete Structure of the Human Y Chromosome**. *This comprehensive view shows: (1) alignment of T2T-Y to GRCh38-Y (with gaps and errors in the old version shown), (2) locations of protein-coding genes with clusters of ampliconic genes highlighted, (3) organization of palindromic sequences and inverted repeats, and (4) detailed structure of centromeric and satellite DNA regions. The bottom panel shows a dotplot where similar sequences line up, revealing the highly repetitive nature of this chromosome.*
+**Figure: Complete Structure of the Human Y Chromosome**. *(See Figure 1a) This comprehensive view shows alignment of T2T-Y to GRCh38-Y, locations of protein-coding genes with clusters of ampliconic genes highlighted, organization of palindromic sequences and inverted repeats, and detailed structure of centromeric and satellite DNA regions. The bottom panel shows a dotplot revealing the highly repetitive nature of this chromosome. Source: Rhie, A. et al. (2022). The complete sequence of a human Y chromosome. bioRxiv. https://doi.org/10.1101/2022.12.01.518724. License: CC0 (US Government work).*
 
 ### What Makes the Y Chromosome Special?
 
@@ -251,9 +253,9 @@ The Y chromosome carries genes critical for male development and fertility:
 
 Like other chromosomes, the Y has a centromere, but T2T-Y revealed unique features:
 
-![Rhie et al. 2023, Nature - Figure 3: Structure of the T2T-Y Centromere](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-023-06457-y/MediaObjects/41586_2023_6457_Fig3_HTML.png)
+![Rhie et al. 2022, bioRxiv - Figure 1b](../assets/figures/Rhie2022-biorxiv-Figure1.jpg)
 
-**Figure. Structure of the T2T-Y Centromere**. *The Y centromere spans 366 kb and consists of: (1) the DYZ3 alpha satellite array with three different variants (haplotypes) in red, blue, and green, (2) no transposable elements within the main array (unlike most chromosomes), (3) two regions of hypomethylation where CENP-A proteins bind—this is where the kinetochore assembles, and (4) a dotplot showing that the repeat units are 99.5-100% identical, demonstrating extreme homogeneity.*
+**Figure: Structure of the T2T-Y Centromere**. *(See Figure 1b) The Y centromere spans 366 kb and consists of the DYZ3 alpha satellite array with three different variants, no transposable elements within the main array, two regions of hypomethylation where CENP-A proteins bind, and a dotplot showing that the repeat units are 99.5-100% identical, demonstrating extreme homogeneity. Source: Rhie, A. et al. (2022). The complete sequence of a human Y chromosome. bioRxiv. https://doi.org/10.1101/2022.12.01.518724. License: CC0 (US Government work).*
 
 The centromere spans 366 kb and consists of highly similar alpha satellite repeats. Interestingly, the T2T-Y centromere shows **two distinct hypomethylated regions** where kinetochore proteins bind—a pattern also seen in some other chromosomes.
 
@@ -264,9 +266,9 @@ Perhaps the most mysterious part of the Y chromosome is Yq12, the large heteroch
 - **DYZ1 (HSat3)**: Blocks ranging from 80 kb to 1,600 kb (median 370 kb)
 - **DYZ2 (HSat1B)**: Blocks ranging from 20 kb to 1,200 kb (median 230 kb)
 
-![Rhie et al. 2023, Nature - Figure 5: Heterochromatic Region of Yq12](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-023-06457-y/MediaObjects/41586_2023_6457_Fig5_HTML.png)
+![Rhie et al. 2022, bioRxiv - Figure 1d](../assets/figures/Rhie2022-biorxiv-Figure1.jpg)
 
-**Figure. The Mysterious Yq12 Region Revealed**. *(a) Fluorescence microscopy images show the Y chromosome with different colored probes: centromere (magenta), HSat3/DYZ1 (yellow), and HSat1B/DYZ2 (blue). (b) A map showing 86 large blocks alternating between DYZ2 (blue) and DYZ1 (yellow), with nearly all repeat units being over 98% identical to consensus. (c) Sequence composition of the two repeat types—note that DYZ2 contains an ancient AluY fragment. (d) A phylogenetic tree showing that AluY fragments in HSat1B cluster together, suggesting this satellite family originated on the Y.*
+**Figure: The Mysterious Yq12 Region Revealed**. *(See Figure 1d) Fluorescence microscopy images show the Y chromosome with different colored probes. A map showing 86 large blocks alternating between DYZ2 and DYZ1, with nearly all repeat units being over 98% identical to consensus. Sequence composition shows DYZ2 contains an ancient AluY fragment. A phylogenetic tree shows that AluY fragments in HSat1B cluster together, suggesting this satellite family originated on the Y. Source: Rhie, A. et al. (2022). The complete sequence of a human Y chromosome. bioRxiv. https://doi.org/10.1101/2022.12.01.518724. License: CC0 (US Government work).*
 
 These satellite blocks show evidence of recent duplication events—some duplications span up to 5 megabases and include multiple DYZ1 and DYZ2 blocks. Interestingly, **HSat1B is almost unique to the Y chromosome** and the short arms of acrocentric chromosomes, while HSat3 is found on many chromosomes.
 

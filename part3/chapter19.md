@@ -44,13 +44,13 @@ But here's the thing: even among people with these pathogenic mutations, not eve
 
 ### Polygenic Risk
 
-Zheng and colleagues ran a massive GWAS comparing over **14,000 DCM cases** with more than **a million controls**. They found **80 genomic loci** associated with DCM ([Zheng et al. 2024, Nat Genet](https://pmc.ncbi.nlm.nih.gov/articles/PMC11631752/)). These are common variants with small effects—the kind we've been talking about throughout this chapter.
+A massive GWAS compared over **14,000 DCM cases** with more than **a million controls** and found **80 genomic loci** associated with DCM ([Zheng et al. 2024, Nat Genet](https://pmc.ncbi.nlm.nih.gov/articles/PMC11631752/)). These are common variants with small effects—the kind we've been talking about throughout this chapter.
 
-Individually, each of these 80 loci barely nudges your risk. But collectively, they add up. When the researchers calculated a polygenic score (PGS) for DCM, they found that people in the **top 10% of PGS had about 2.8 times the risk** of those in the bottom 10%—even without any rare pathogenic mutations.
+Individually, each of these 80 loci barely nudges your risk. But collectively, they add up. When a polygenic score (PGS) for DCM was calculated, people in the **top 10% of PGS had about 2.8 times the risk** of those in the bottom 10%—even without any rare pathogenic mutations.
 
 ### The Plot Thickens: Modifiers and Multi-Hit Models
 
-Here's where it gets really interesting. The researchers looked at people who carry rare pathogenic variants *and* checked their polygenic scores. Among mutation carriers, those with high PGS were much more likely to develop DCM than carriers with low PGS.
+Here's where it gets really interesting. Among people who carry rare pathogenic variants, those with high PGS were much more likely to develop DCM than carriers with low PGS.
 
 In other words, your polygenic background modifies the penetrance of rare mutations. The rare mutation doesn't act alone—it's influenced by the cumulative effect of common variants across the genome.
 
@@ -58,7 +58,7 @@ Some DCM patients also carry **multiple rare variants** in different cardiomyopa
 
 ### Limited Yield of Clinical Panels
 
-When Hershberger and colleagues curated the evidence for about 51 candidate genes often tested in clinical genetic panels, they found that only about **19 genes had strong or moderate evidence** for causing monogenic DCM ([Hershberger et al. 2021, Circulation](https://pmc.ncbi.nlm.nih.gov/articles/PMC8158434/)). This means that even our best-known "DCM genes" explain only a fraction of cases.
+When the evidence for about 51 candidate genes often tested in clinical genetic panels was curated, only about **19 genes had strong or moderate evidence** for causing monogenic DCM ([Hershberger et al. 2021, Circulation](https://pmc.ncbi.nlm.nih.gov/articles/PMC8158434/)). This means that even our best-known "DCM genes" explain only a fraction of cases.
 
 The rest? A mix of polygenic risk, rare variants in genes we don't yet fully understand, and environmental factors like viral infections or alcohol use.
 
@@ -88,11 +88,11 @@ APOE ε4 is common—about 15% of people of European ancestry carry at least one
 
 ### Polygenic Background
 
-Large GWAS meta-analyses have identified many additional loci with smaller effects. These variants implicate pathways involved in **immune function** (especially microglia, the brain's immune cells), **lipid metabolism** (how the brain handles cholesterol and other fats), and **synaptic function** (how neurons communicate) (Bellenguez et al. 2022, Nat Genet; Logue et al. 2023, Nat Genet).
+Large GWAS meta-analyses have identified many additional loci with smaller effects. These variants implicate pathways involved in **immune function** (especially microglia, the brain's immune cells), **lipid metabolism** (how the brain handles cholesterol and other fats), and **synaptic function** (how neurons communicate) ([Bellenguez et al. 2022, Nat Genet](https://www.nature.com/articles/s41588-022-01024-z); [Logue et al. 2023, Nat Genet](https://www.nature.com/articles/s41588-023-01559-w)).
 
-![Figure 1. Manhattan plot of Alzheimer's disease GWAS loci.](https://www.thelancet.com/cms/10.1016/j.ebiom.2023.104511/asset/f9570c34-93a4-4146-8bb9-598ece315099/main.assets/gr1_lrg.jpg)  
+![Andrews2023-EBioMed-Fig1](../assets/figures/Andrews2023-EBioMed-Fig1.jpg)
 
-**Figure. Alzheimer's genetic landscape across the genome.** This Manhattan plot shows GWAS results for Alzheimer's disease and dementia. Each dot is a SNP, and tall peaks indicate strong associations. Notice the peaks are scattered across many chromosomes—this is genetic heterogeneity in action. No single gene dominates. Instead, risk is distributed across the genome. (From Andrews et al. 2023, EBioMedicine)
+**Figure: Alzheimer's genetic landscape across the genome**. This Manhattan plot shows GWAS results for Alzheimer's disease and dementia. Each dot represents a SNP, and tall peaks indicate strong associations. Notice the peaks are scattered across many chromosomes—this is genetic heterogeneity in action. No single gene dominates. Instead, risk is distributed across the genome, with multiple loci contributing small effects that collectively shape disease susceptibility. Source: Andrews, S.J. et al. (2023). Interpretation of risk loci from genome-wide association studies of Alzheimer's disease. EBioMedicine. https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(23)00077-0/fulltext. License: CC-BY.
 
 ### Converging Pathways: Microglial Efferocytosis
 
@@ -108,19 +108,20 @@ Here's the problem: many AD risk genes—both rare and common—affect this proc
 
 If this clearance system is impaired, amyloid and other toxic proteins accumulate, driving neurodegeneration.
 
-![Figure 3. Prioritized AD risk genes with roles in microglial efferocytosis.](https://www.thelancet.com/cms/10.1016/j.ebiom.2023.104511/asset/adaa1ae9-2e5a-4644-9f4e-418b8a1cde56/main.assets/gr3_lrg.jpg)  
+![Andrews2023-EBioMed-Fig3](../assets/figures/Andrews2023-EBioMed-Fig3.jpg)
 
-**Figure. Many genes, one key process.** Many Alzheimer's risk genes—both rare and common—converge on microglial efferocytosis, the process by which microglia clear dead cells and debris. Different genes affect different stages: recognizing targets (TREM2), engulfing debris, digesting it (lysosomes), and recycling components (cholesterol metabolism via ABCA1, APOE, LPL). This suggests that impaired microglial clearance is a key hub in Alzheimer's pathology, linking immune dysfunction, lipid metabolism, and neurodegeneration. (From Andrews et al. 2023, EBioMedicine)
+**Figure: Prioritized AD risk genes converge on microglial efferocytosis**. Many Alzheimer's risk genes—both rare and common—converge on microglial efferocytosis, the process by which microglia clear dead cells and debris. Different genes affect different stages: recognizing targets (TREM2), engulfing debris, digesting it (lysosomes), and recycling components (cholesterol metabolism via ABCA1, APOE, LPL). This functional convergence suggests that impaired microglial clearance is a key hub in Alzheimer's pathology, linking immune dysfunction, lipid metabolism, and neurodegeneration. Source: Andrews, S.J. et al. (2023). Interpretation of risk loci from genome-wide association studies of Alzheimer's disease. EBioMedicine. https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(23)00077-0/fulltext. License: CC-BY.
 
 ### Composite Model of Risk
 
 Late-onset Alzheimer's is influenced by a composite model: rare variants (like APOE ε4 homozygosity acts almost like a rare variant in terms of effect size), common polygenic risk, and environmental/vascular factors (hypertension, diabetes, cardiovascular health).
 
-A recent study from the K-ROAD consortium showed that individuals with **multiple genetic risk factors**—for example, APOE ε4 plus high polygenic score plus rare noncoding variants or structural variants—have the highest amyloid burden and the worst cognitive outcomes. Risk accumulates.
+A recent study from the K-ROAD consortium showed that individuals with **multiple genetic risk factors**—for example, APOE ε4 plus high polygenic score plus rare noncoding variants or structural variants—have the highest amyloid burden and the worst cognitive outcomes. Risk accumulates ([K-ROAD consortium 2025, Nat Commun](https://www.nature.com/articles/s41467-025-59949-y)).
 
-![Figure 2. Combined genetic effects on Alzheimer's disease phenotypes (K-ROAD study).](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-025-59949-y/MediaObjects/41467_2025_59949_Fig5_HTML.png?as=webp)  
+![KROAD2025-NatCommun-Fig5](../assets/figures/KROAD2025-NatCommun-Fig5.png)
 
-**Figure. Genetic risk accumulates.** This figure shows how multiple genetic factors jointly influence Alzheimer's disease. (a) Different variant types—common GWAS variants, rare variants (RVs), structural variants (SVs)—each explain additional variance in diagnosis and amyloid-β levels. (b) Many individuals carry multiple risk factors: APOE ε4, high polygenic risk score (top 20%), rare noncoding variants (RNV), or structural variants (SV). (c) As the number of risk factors increases, so does amyloid burden and cognitive impairment (lower K-MMSE, higher CDR-SB scores). (d–e) People with two or more risk components show the highest probability of amyloid positivity and the greatest cognitive decline. This exemplifies composite genetic architecture—common, rare, and structural variants act together to shape disease severity. (From K-ROAD consortium 2025, Nat Commun)
+
+**Figure: Genetic risk accumulates in Alzheimer's disease**. This violin plot shows how the number of genetic risk factors affects Alzheimer's disease outcomes. Individuals are grouped by their risk burden: non-carriers (no risk factors), single-factor carriers (rare noncoding variants only, structural variants only, high polygenic risk score only, or APOE ε4 only), and those with 2 or 3 risk factors combined. As the number of risk factors increases from left to right, several patterns emerge: amyloid-β (Aβ) burden increases, cognitive function declines (lower K-MMSE scores), dementia severity worsens (higher CDR-SB scores), and both verbal and visual memory deteriorate. All comparisons show statistically significant trends (p-values displayed above each panel). This demonstrates that genetic risk is cumulative—having multiple risk factors (whether common variants, rare variants, structural variants, or APOE ε4) compounds disease severity more than any single factor alone. This is composite genetic architecture in action. Source: K-ROAD consortium (2025). Integrated analysis of common and rare genetic variants identifies multiple loci associated with Alzheimer's disease. Nature Communications. https://www.nature.com/articles/s41467-025-59949-y. License: CC-BY.
 
 ---
 
@@ -144,7 +145,7 @@ This is sometimes called the "additive rare-variant model." You inherit a few ri
 
 ### Polygenic Risk
 
-Common SNPs explain about **30–40% of population-level liability** for autism (Al-Beltagi et al. 2024, Nat Genet). These are the typical GWAS variants—thousands of common alleles with tiny effects. As with the other disorders, polygenic risk modulates the impact of rare variants.
+Common SNPs explain about **30–40% of population-level liability** for autism ([Al-Beltagi et al. 2024, World J Clin Pediatr](https://pmc.ncbi.nlm.nih.gov/articles/PMC11514539/)). These are the typical GWAS variants—thousands of common alleles with tiny effects. As with the other disorders, polygenic risk modulates the impact of rare variants.
 
 ### Syndromic Autism
 
@@ -168,15 +169,15 @@ Despite involving hundreds of different genes, autism-associated variants conver
 - **Synaptic signaling** (how neurons communicate at synapses)
 - **Chromatin regulation** (how DNA is packaged and which genes are turned on or off)
 
-Many of these genes are especially active during **mid-fetal cortical development**—the period when the cortex is forming. This suggests that autism often arises from disruptions during a specific developmental window (Yuen et al. 2024, Cell Genomics).
+Many of these genes are especially active during **mid-fetal cortical development**—the period when the cortex is forming. This suggests that autism often arises from disruptions during a specific developmental window ([Yuen et al. 2024, Cell Genom](https://www.cell.com/cell-genomics/fulltext/S2666-979X(24)00227-1)).
 
-![Figure 3. Illustrative models of ASD liability.](https://ars.els-cdn.com/content/image/1-s2.0-S101684782500072X-gr3_lrg.jpg)  
+![Kim2025-MolCells-Fig3](../assets/figures/Kim2025-MolCells-Fig3.jpg)
 
-**Figure. Multiple genetic contributors to autism risk.** This figure shows how different types of genetic variants each contribute to ASD liability. De novo variants (both CNVs and PTVs), inherited rare variants, polygenic risk from common SNPs, and X-linked variants all add to the total genetic burden. No single category explains all cases—autism has a truly composite architecture. (From Kim et al. 2025, Molecules and Cells)
+**Figure: Multiple genetic contributors to autism risk**. This figure shows how different types of genetic variants each contribute to ASD liability. De novo variants (both CNVs and PTVs), inherited rare variants, polygenic risk from common SNPs, and X-linked variants all add to the total genetic burden. No single category explains all cases—autism has a truly composite architecture where multiple variant types combine to determine individual risk. Source: Kim, Y.S. et al. (2025). Autism spectrum disorder: An evolutionary perspective. Molecules and Cells. https://doi.org/10.1016/j.mocell.2025.100248 License: CC-BY.
 
-![Figure 4. Network of ASD-associated genes converging on synaptic and chromatin pathways.](https://www.cell.com/cms/10.1016/j.cell.2019.12.036/asset/9c295865-705d-4b14-9b5f-19064d31bf64/main.assets/gr4_lrg.jpg)  
+![Satterstrom2020-Cell-Fig4](../assets/figures/Satterstrom2020-Cell-Fig4.jpg)
 
-**Figure. Different genes, shared functions.** Despite genetic heterogeneity, most ASD-associated genes interact in common functional networks. The major hubs are synapse formation (how neurons connect), chromatin regulation (how genes are turned on and off), and synaptic transmission (how neurons communicate). Many roads, but they lead to the same core processes. (From Satterstrom et al. 2020, Cell)
+**Figure: Network of ASD-associated genes converging on synaptic and chromatin pathways**. Despite genetic heterogeneity, most ASD-associated genes interact in common functional networks. The major hubs are synapse formation (how neurons connect), chromatin regulation (how genes are turned on and off), and synaptic transmission (how neurons communicate). Different genes disrupt different nodes in these networks, but they all affect the same core processes. Many roads, but they lead to the same destination. Source: Satterstrom, F.K. et al. (2020). Large-scale exome sequencing study implicates both developmental and functional changes in the neurobiology of autism. Cell. https://www.cell.com/cell/fulltext/S0092-8674(19)31398-4. License: CC-BY.
 
 ---
 

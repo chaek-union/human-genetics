@@ -75,7 +75,7 @@ Think of it like using a magnet to pick out just the metal pieces from a mixed p
 
 ![Whole Exome Sequencing Process](https://microbenotes.com/wp-content/uploads/2024/09/Whole-Exome-Sequencing.jpeg)
 
-**Figure: WES Process with Target Capture**. This diagram shows the key step that distinguishes WES from WGS: exome enrichment. After DNA extraction and fragmentation, biotinylated probes (baits) specifically bind to exonic sequences. These are then captured using streptavidin-coated magnetic beads, physically separating exonic fragments from the rest of the genome. This targeted approach concentrates sequencing effort on the ~1-2% of the genome that codes for proteins. Source: MicrobeNotes
+**Figure: WES Process with Target Capture**. *This diagram shows the key step that distinguishes WES from WGS: exome enrichment. After DNA extraction and fragmentation, biotinylated probes (baits) specifically bind to exonic sequences. These are then captured using streptavidin-coated magnetic beads, physically separating exonic fragments from the rest of the genome. This targeted approach concentrates sequencing effort on the ~1-2% of the genome that codes for proteins. Source: [Microbe Notes](https://microbenotes.com/whole-exome-sequencing/)*
 
 **Commercial capture kits** from companies like Agilent SureSelect, Illumina TruSeq, and Twist Bioscience each target slightly different exon sets with different capture efficiencies. Not all exons capture equally well—regions with extreme GC content, repetitive sequences, or complex secondary structures may have coverage gaps.
 
@@ -125,7 +125,7 @@ No target capture step. No enrichment. Just sequence the whole thing.
 
 ![Whole Genome Sequencing Workflow](https://microbenotes.com/wp-content/uploads/2024/07/Whole-Genome-Sequencing.jpeg)
 
-**Figure: Whole-Genome Sequencing (WGS) Workflow**. This diagram illustrates the complete process of WGS from sample to analysis. Unlike WES, this process captures all genomic regions including coding exons, introns, regulatory elements, and intergenic sequences. Source: MicrobeNotes
+**Figure: Whole-Genome Sequencing (WGS) Workflow**. *This diagram illustrates the complete process of WGS from sample to analysis. Unlike WES, this process captures all genomic regions including coding exons, introns, regulatory elements, and intergenic sequences. Source: [Microbe Notes](https://microbenotes.com/whole-genome-sequencing/)*
 
 ### The Power of Seeing Everything: Real Examples
 
