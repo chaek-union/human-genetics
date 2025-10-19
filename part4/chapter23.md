@@ -1,7 +1,3 @@
-아, 인코딩 문제네요! UTF-8 변환 오류로 em dash(—)가 "â€"" 같은 이상한 문자로 표시되고 있습니다. 깨끗하게 수정하겠습니다.
-
----
-
 # Chapter 23. Recombination, Linkage, and Haplotype
 
 Here's a question you've probably wondered about: why do siblings look different? You and your sister both got half your DNA from your mom and half from your dad, just like everyone else. So why don't all siblings look identical?
