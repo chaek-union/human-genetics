@@ -1,12 +1,12 @@
 # Introduction
 
-![Front Cover](assets/front-cover.png)
-
 Welcome to **Human Genetics**
 
-Author: *Joon-Yong An*, Korea University  
+Author: [*Joon-Yong An*, Korea University](https://joonanlab.github.io/team/)
 
-Version: Draft (Under Construction)
+*Last Update: 2025/11/2*
+
+![Front Cover](assets/front-cover.png)
 
 ---
 
@@ -17,8 +17,6 @@ This textbook introduces the foundation and cutting edge of human genetics — f
 The field of genetics has been rapidly transformed by next-generation sequencing, large-scale biobank cohorts, and international data sharing initiatives. These advances now allow us to revisit traditional genetic concepts with fresh perspectives and test long-standing models and principles against comprehensive empirical evidence. This textbook takes a broad approach to cover the essential topics that undergraduate students need to master, integrating classical genetic theory with contemporary discoveries and methodologies.
 
 Rather than focusing primarily on model organisms or molecular genetics from a molecular biology perspective, this book centers on the key concepts and emerging insights specific to human genetics. Students will not only learn the facts of genetics, but also develop the evolving perspectives that have shaped — and continue to reshape — our understanding of human heredity and disease.
-
-**Please note that chapters are currently being written and improved. The complete version is expected to be finished by January 2026.**
 
 ---
 
