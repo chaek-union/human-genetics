@@ -2,7 +2,7 @@
 
 ## The Molecular Basis of "Different"
 
-When Mendel crossed purple and white pea plants, he observed predictable patterns but didn't know what caused the difference. Today, we can answer his question at the molecular level: the difference is a change in DNA sequenceâ€”a **genetic variant**.
+When Mendel crossed purple and white pea plants, he observed predictable patterns but didn't know what caused the difference. Today, we can answer his question at the molecular level: the difference is a change in DNA sequence—a **genetic variant**.
 
 When you sequence a genome, you don't get one string of As, Ts, Gs, and Cs. You get *millions of differences* from the reference genome. Understanding these differences is the foundation of modern genetics. This chapter explains what variants are, how we classify them, and what effects they have.
 
@@ -10,7 +10,7 @@ When you sequence a genome, you don't get one string of As, Ts, Gs, and Cs. You 
 
 ![Figure 8-1](../assets/figures/figure-8-1-genetic-variant.png)
 
-*A genetic variant is a difference in DNA sequence between an individual's genome and the reference genome. The reference genome shows the standard sequence, while the individual's DNA contains a single base change (Gâ†’T) at one positionâ€”this is a variant. Every human genome contains approximately 4-5 million such variants.*
+*A genetic variant is a difference in DNA sequence between an individual's genome and the reference genome. The reference genome shows the standard sequence, while the individual's DNA contains a single base change (G→T) at one position—this is a variant. Every human genome contains approximately 4-5 million such variants.*
 
 ---
 
@@ -20,10 +20,10 @@ The terms **mutation**, **variant**, and **polymorphism** are often used inconsi
 
 | Term | Definition | Connotation | When to Use |
 |------|------------|-------------|-------------|
-| **Variant** | Any DNA sequence difference | Neutral | Default termâ€”safe for any difference |
+| **Variant** | Any DNA sequence difference | Neutral | Default term—safe for any difference |
 | **Mutation** | DNA change, especially rare/new | Often implies disease | Rare changes causing disease |
 | **Polymorphism** | Common variant (>1% frequency) | Usually benign | Common variation like blood types |
-| **SNP** | Single Nucleotide Polymorphism | Common, benign | Pronounced "snip"â€”common single-base changes |
+| **SNP** | Single Nucleotide Polymorphism | Common, benign | Pronounced "snip"—common single-base changes |
 
 **The relationship:**
 ```
@@ -73,13 +73,13 @@ Understanding variants requires multiple perspectives. The same variant can be d
 ```
 Reference: ...ATGCGATCG...
 Your DNA:  ...ATGCTATCG...
-                 â†‘
-              Gâ†’T change
+                 ↑
+              G→T change
 ```
 
 **Frequency:** ~4-5 million per genome (one every 600-800 bases)
 
-**Detection:** Easiest to detect with both WGS and WESâ€”the "bread and butter" of variant calling
+**Detection:** Easiest to detect with both WGS and WES—the "bread and butter" of variant calling
 
 ### Insertions and Deletions (Indels)
 
@@ -97,9 +97,9 @@ Reference: ...ATGCGATCG...
 Variant:   ...ATGCAAAGATCG... (AAA inserted)
 ```
 
-**Critical factorâ€”divisible by 3?**
-- **Yes (3, 6, 9 bp):** In-frame indelâ€”adds/removes whole amino acids
-- **No (1, 2, 4, 5 bp):** Frameshiftâ€”scrambles everything downstream
+**Critical factor—divisible by 3?**
+- **Yes (3, 6, 9 bp):** In-frame indel—adds/removes whole amino acids
+- **No (1, 2, 4, 5 bp):** Frameshift—scrambles everything downstream
 
 **Frequency:** ~400,000-500,000 per genome
 
@@ -124,9 +124,9 @@ Variant:   ...ATGCAAAGATCG... (AAA inserted)
 
 | Technology | SV Detection Capability |
 |------------|------------------------|
-| Short-read (Illumina) | Poorâ€”can infer but not confirm |
-| Long-read (PacBio/Nanopore) | Excellentâ€”reads span breakpoints |
-| WES | Very poorâ€”capture requires intact DNA |
+| Short-read (Illumina) | Poor—can infer but not confirm |
+| Long-read (PacBio/Nanopore) | Excellent—reads span breakpoints |
+| WES | Very poor—capture requires intact DNA |
 | WGS | Good with long reads |
 
 ---
@@ -137,7 +137,7 @@ The genome isn't uniform. A variant's effect depends critically on *where* it la
 
 ### The 98/2 Rule
 
-- **2% coding (exons):** Most known disease variants occur hereâ€”effects on proteins are predictable
+- **2% coding (exons):** Most known disease variants occur here—effects on proteins are predictable
 - **98% non-coding:** Effects on gene regulation are subtle and harder to interpret
 
 **Why coding variants are easier:**
@@ -165,11 +165,11 @@ Protein: Met-His-Ala-Leu-Lys
 
 | Type | DNA Change | Protein Effect | Pathogenicity | Example Disease |
 |------|------------|----------------|---------------|-----------------|
-| **Synonymous** | GAAâ†’GA**G** | Gluâ†’Glu (same) | Usually benign | Rarely disease-causing |
-| **Missense** | GAAâ†’G**C**A | Gluâ†’Ala (different) | **Variable** | Sickle cell (HBB) |
-| **Nonsense** | CAGâ†’**T**AG | Glnâ†’**Stop** | Almost always harmful | Many CFTR variants |
-| **Frameshift** | ATG\|CAT\|GCA â†’ ATG\|CA_\|GCA | Scrambles downstream | Almost always harmful | Duchenne muscular dystrophy |
-| **In-frame indel** | ATG\|CAT\|GCA\|TTG â†’ ATG\|CAT\|TTG | Removes/adds amino acid(s) | Variable | EGFR in lung cancer |
+| **Synonymous** | GAA→GA**G** | Glu→Glu (same) | Usually benign | Rarely disease-causing |
+| **Missense** | GAA→G**C**A | Glu→Ala (different) | **Variable** | Sickle cell (HBB) |
+| **Nonsense** | CAG→**T**AG | Gln→**Stop** | Almost always harmful | Many CFTR variants |
+| **Frameshift** | ATG\|CAT\|GCA → ATG\|CA_\|GCA | Scrambles downstream | Almost always harmful | Duchenne muscular dystrophy |
+| **In-frame indel** | ATG\|CAT\|GCA\|TTG → ATG\|CAT\|TTG | Removes/adds amino acid(s) | Variable | EGFR in lung cancer |
 
 ### Key Insights
 
@@ -198,7 +198,7 @@ Protein: Met-His-Ala-Leu-Lys
 
 ![Figure 8-4](../assets/figures/figure-8-4-frameshift-vs-inframe.png)
 
-*The critical difference between frameshift and in-frame indels. Left panel: A 1-base deletion causes a frameshiftâ€”the reading frame shifts, producing wrong amino acids and often a premature stop codon, resulting in a truncated, non-functional protein. Right panel: A 3-base deletion is in-frameâ€”the reading frame is preserved, removing only one amino acid while keeping the rest of the protein intact. This difference (divisible by 3 or not) determines whether the protein is completely disrupted or partially functional.*
+*The critical difference between frameshift and in-frame indels. Left panel: A 1-base deletion causes a frameshift—the reading frame shifts, producing wrong amino acids and often a premature stop codon, resulting in a truncated, non-functional protein. Right panel: A 3-base deletion is in-frame—the reading frame is preserved, removing only one amino acid while keeping the rest of the protein intact. This difference (divisible by 3 or not) determines whether the protein is completely disrupted or partially functional.*
 
 ```
 Normal:      ATG|CAT|GCA|TTG|AAA
@@ -206,11 +206,11 @@ Normal:      ATG|CAT|GCA|TTG|AAA
 
 Frameshift   ATG|CA_|GCA|TTG|AAA  (1 base deleted)
 (1 bp del):  ATG|CAG|CAT|TGA|AA...
-             Met-Gln-His-STOP â† Wrong amino acids, early stop
+             Met-Gln-His-STOP ← Wrong amino acids, early stop
 
 In-frame     ATG|CAT|___|TTG|AAA  (3 bases deleted)
 (3 bp del):  ATG|CAT|TTG|AAA
-             Met-His-Leu-Lys â† One amino acid missing, frame preserved
+             Met-His-Leu-Lys ← One amino acid missing, frame preserved
 ```
 
 ---
@@ -223,12 +223,12 @@ In-frame     ATG|CAT|___|TTG|AAA  (3 bases deleted)
 - 5' splice site (donor): GT
 - 3' splice site (acceptor): AG
 
-**Canonical splice site variants (GTâ†’AT or AGâ†’AA):**
+**Canonical splice site variants (GT→AT or AG→AA):**
 - Splicing usually fails catastrophically
 - Intron retained, exon skipped, or cryptic sites used
 - Usually causes loss of function
 
-**Example:** BRCA2 splice site mutations â†’ non-functional protein â†’ hereditary breast cancer
+**Example:** BRCA2 splice site mutations → non-functional protein → hereditary breast cancer
 
 **Near-splice variants:**
 - Within ~10-20 bp of splice sites
@@ -241,10 +241,10 @@ In-frame     ATG|CAT|___|TTG|AAA  (3 bases deleted)
 
 | Element | Location | Effect | Example |
 |---------|----------|--------|---------|
-| Promoter | Near gene start | Affects transcription initiation | HFE promoter â†’ hemochromatosis |
-| Enhancer | Can be 100+ kb away | Increases gene expression | MYC enhancer â†’ cancer |
+| Promoter | Near gene start | Affects transcription initiation | HFE promoter → hemochromatosis |
+| Enhancer | Can be 100+ kb away | Increases gene expression | MYC enhancer → cancer |
 | 5' UTR | Before start codon | Affects translation efficiency | Various |
-| 3' UTR | After stop codon | Affects mRNA stability, miRNA binding | TP53 3'UTR â†’ cancer risk |
+| 3' UTR | After stop codon | Affects mRNA stability, miRNA binding | TP53 3'UTR → cancer risk |
 
 **Challenge:** Unlike coding variants (direct amino acid change), regulatory effects are:
 - Tissue-specific
@@ -259,7 +259,7 @@ In-frame     ATG|CAT|___|TTG|AAA  (3 bases deleted)
 - Hidden regulatory elements
 - Long-range chromatin interactions
 
-**Bottom line:** These are hardest to interpretâ€”active research area.
+**Bottom line:** These are hardest to interpret—active research area.
 
 ---
 
@@ -277,25 +277,25 @@ When you sequence a genome and find millions of variants, you need a systematic 
 
 ```
 ~4-5 million variants detected
-         â†“
+         ↓
 Filter 1: Frequency (remove common >1%)
-         â†“
+         ↓
 ~50,000-100,000 rare variants
-         â†“
+         ↓
 Filter 2: Location (focus on coding + splice sites)
-         â†“
+         ↓
 ~5,000-10,000 protein-affecting variants
-         â†“
+         ↓
 Filter 3: Gene relevance (phenotype match)
-         â†“
+         ↓
 ~100-500 candidates
-         â†“
+         ↓
 Filter 4: Effect prediction (LoF, pathogenic missense)
-         â†“
+         ↓
 ~5-20 strong candidates
-         â†“
+         ↓
 Filter 5: Inheritance pattern + family data
-         â†“
+         ↓
 1-3 likely causal variants
 ```
 
@@ -328,25 +328,25 @@ Filter 5: Inheritance pattern + family data
 
 **Case:** Child with developmental delays. WES finds a novel variant in KMT2D gene:
 
-**Step 1â€”Check frequency:**
+**Step 1—Check frequency:**
 - gnomAD: Absent from 140,000+ individuals âœ“ (rare)
 
-**Step 2â€”Check variant type:**
+**Step 2—Check variant type:**
 - Nonsense variant (creates premature stop) âœ“ (loss-of-function)
 
-**Step 3â€”Check gene:**
+**Step 3—Check gene:**
 - KMT2D: Known Kabuki syndrome gene âœ“ (phenotype match)
 - pLI = 1.0 âœ“ (extremely intolerant to LoF)
 
-**Step 4â€”Check inheritance:**
+**Step 4—Check inheritance:**
 - De novo (not in either parent) âœ“ (consistent with dominant disease)
 - Kabuki is autosomal dominant âœ“ (fits pattern)
 
-**Step 5â€”Check databases:**
+**Step 5—Check databases:**
 - ClinVar: Other LoF variants in KMT2D classified as pathogenic âœ“
 - Literature: Many de novo KMT2D LoF variants cause Kabuki âœ“
 
-**Conclusion:** Pathogenic variantâ€”likely explains patient's phenotype
+**Conclusion:** Pathogenic variant—likely explains patient's phenotype
 
 ---
 
@@ -368,7 +368,7 @@ Filter 5: Inheritance pattern + family data
 
 ## Key Takeaways
 
-1. **Variants exist at multiple scales:** SNVs (1 bp), indels (1-50 bp), structural variants (>50 bp)â€”each requires different detection methods
+1. **Variants exist at multiple scales:** SNVs (1 bp), indels (1-50 bp), structural variants (>50 bp)—each requires different detection methods
 
 2. **Location determines interpretability:** Coding variants are easier to interpret than non-coding; 98% of genome is non-coding
 
@@ -376,7 +376,7 @@ Filter 5: Inheritance pattern + family data
 
 4. **Frequency matters:** Common variants (>1%) rarely cause severe disease due to natural selection
 
-5. **Multiple evidence types needed:** No single criterion sufficientâ€”integrate frequency, effect, gene constraint, inheritance, and functional data
+5. **Multiple evidence types needed:** No single criterion sufficient—integrate frequency, effect, gene constraint, inheritance, and functional data
 
 6. **Many variants remain uncertain:** VUS (Variant of Uncertain Significance) is common, especially for missense and non-coding variants
 
@@ -392,4 +392,4 @@ Understanding variant types is foundational. The next sections explore:
 - How population genetics shapes variant frequencies
 - How to use variant data to diagnose genetic diseases
 
-All builds on this framework: variants are the molecular basis of alleles, and alleles follow Mendel's rulesâ€”but now we see them directly in DNA sequence.
+All builds on this framework: variants are the molecular basis of alleles, and alleles follow Mendel's rules—but now we see them directly in DNA sequence.
