@@ -2,9 +2,9 @@
 
 To understand why the T2T project used the CHM13 cell line, we need to understand a fundamental challenge in genome sequencing: **heterozygosity**. 
 
-In a typical human genome, you inherit one set of chromosomes from your mother and another from your father. These two sets are similar but not identicalâ€”they differ at millions of positions, creating what we call **heterozygous variants**. For most of the genome, this isn't a problem. But in highly repetitive regions like centromeres or ribosomal DNA arrays, these small differences create a serious headache for genome assembly.
+In a typical human genome, you inherit one set of chromosomes from your mother and another from your father. These two sets are similar but not identical - they differ at millions of positions, creating what we call **heterozygous variants**. For most of the genome, this isn't a problem. But in highly repetitive regions like centromeres or ribosomal DNA arrays, these small differences create a serious headache for genome assembly.
 
-Here's why: when you sequence DNA, you break it into millions of fragments and then use computers to reassemble them, like putting together a jigsaw puzzle. If you have two slightly different copies of a repetitive regionâ€”one from mom, one from dadâ€”the computer can't always tell which fragments belong to which copy. Should this read go with the maternal chromosome or the paternal one? In repetitive regions where the same sequence appears dozens or hundreds of times, this ambiguity makes accurate assembly nearly impossible.
+Here's why: when you sequence DNA, you break it into millions of fragments and then use computers to reassemble them, like putting together a jigsaw puzzle. If you have two slightly different copies of a repetitive region - one from mom, one from dad - the computer can't always tell which fragments belong to which copy. Should this read go with the maternal chromosome or the paternal one? In repetitive regions where the same sequence appears dozens or hundreds of times, this ambiguity makes accurate assembly nearly impossible.
 
 The earlier human reference genome, GRCh38, was constructed from **bacterial artificial chromosomes (BACs)** - large pieces of DNA (100-200 kb) cloned into bacteria and then sequenced using Sanger technology. These BACs were opportunistically assembled from multiple individuals, creating a **mosaic of haplotypes** (different genetic variants from different people). This approach resulted in about **151 million base pairs of unknown sequence (gaps)**, mostly in repetitive regions where the heterozygous variants and structural differences between individuals made assembly too complex with available technology.
 
@@ -28,15 +28,15 @@ The CHM13 cell line comes from a rare biological phenomenon called a **complete 
 
 ### Normal Fertilization
 
-When a sperm fertilizes an egg, the resulting cellâ€”the zygoteâ€”has 46 chromosomes: 23 from the mother (in the egg) and 23 from the father (in the sperm). Each chromosome from mom pairs with the corresponding chromosome from dad (chromosome 1 from mom with chromosome 1 from dad, and so on). This creates a **diploid** genome with two versions of every chromosome.
+When a sperm fertilizes an egg, the resulting cell - the zygote - has 46 chromosomes: 23 from the mother (in the egg) and 23 from the father (in the sperm). Each chromosome from mom pairs with the corresponding chromosome from dad (chromosome 1 from mom with chromosome 1 from dad, and so on). This creates a **diploid** genome with two versions of every chromosome.
 
-Because mom and dad have different genetic variants, these chromosome pairs aren't identical. You might inherit brown-eye variants from dad and blue-eye variants from mom. At the DNA sequence level, humans typically differ at about **1 in every 1,000 base pairs** (0.1% of the genome), which translates to approximately **4-5 million heterozygous variants** between any two chromosome copies in a diploid genome. This genetic diversity is normal and healthyâ€”it's why siblings look similar but not identical.
+Because mom and dad have different genetic variants, these chromosome pairs aren't identical. You might inherit brown-eye variants from dad and blue-eye variants from mom. At the DNA sequence level, humans typically differ at about **1 in every 1,000 base pairs** (0.1% of the genome), which translates to approximately **4-5 million heterozygous variants** between any two chromosome copies in a diploid genome. This genetic diversity is normal and healthy - it's why siblings look similar but not identical.
 
 ### What Happens in a Complete Hydatidiform Mole
 
 A complete hydatidiform mole occurs when something goes wrong during fertilization. The egg loses its nucleus (and therefore all maternal DNA), leaving essentially an empty egg with cytoplasm but no genetic material. When a sperm fertilizes this empty egg, there's only paternal DNA present. 
 
-To compensate for the missing maternal contribution, **the sperm's DNA duplicates itself** through a process called **endoreduplication**. The single set of 23 paternal chromosomes replicates to create 46 chromosomesâ€”but they're all identical copies from the father.
+To compensate for the missing maternal contribution, **the sperm's DNA duplicates itself** through a process called **endoreduplication**. The single set of 23 paternal chromosomes replicates to create 46 chromosomes - but they're all identical copies from the father.
 
 The result is a cell with 46 chromosomes - a normal number - but all of them are identical copies from the father. There are two copies of dad's chromosome 1, two copies of dad's chromosome 2, and so on. **No maternal DNA at all.**
 
@@ -62,7 +62,7 @@ This creates what geneticists call a **functionally haploid** genome. Let's clar
 
 ### Nearly Uniform Homozygosity
 
-It's important to note that CHM13 is not *perfectly* homozygousâ€”no biological system is perfect. When scientists sequenced CHM13, they found:
+It's important to note that CHM13 is not *perfectly* homozygous - no biological system is perfect. When scientists sequenced CHM13, they found:
 
 - **A few thousand heterozygous variants** scattered across the genome
 - **One megabase-scale heterozygous deletion** within the rDNA array on chromosome 15
@@ -88,7 +88,7 @@ Because both chromosome copies in CHM13 are nearly identical, there are virtuall
 
 Think of it this way: imagine you're assembling two jigsaw puzzles simultaneously. 
 
-**In a normal diploid genome:** You have pieces from two similar but not identical puzzles mixed togetherâ€”some pieces fit only in puzzle A, some only in puzzle B, and in repetitive regions (like a solid blue sky in both puzzles), many pieces might fit in either puzzle. The assembler must figure out which pieces belong to which puzzle, which becomes nearly impossible when you have hundreds of nearly identical pieces.
+**In a normal diploid genome:** You have pieces from two similar but not identical puzzles mixed together - some pieces fit only in puzzle A, some only in puzzle B, and in repetitive regions (like a solid blue sky in both puzzles), many pieces might fit in either puzzle. The assembler must figure out which pieces belong to which puzzle, which becomes nearly impossible when you have hundreds of nearly identical pieces.
 
 **In CHM13:** Both puzzles are essentially identical, so it doesn't matter which piece goes where - they fit the same pattern. This makes the assembly dramatically simpler, especially for the repetitive regions that plagued earlier sequencing efforts.
 
@@ -107,7 +107,7 @@ Normal human cells can only divide a limited number of times - typically **40 to
 
 Every time a cell divides and copies its DNA, the telomeres get slightly shorter. This happens because of the **end-replication problem**: the DNA copying machinery (DNA polymerase) can't fully replicate the very ends of linear chromosomes. Each cell division results in the loss of approximately **50-200 base pairs** from the telomeres.
 
-![Figure 3-5: Telomere Shortening Over Cell Divisions](../assets/figures/figure3-5.png)
+![Figure 3-5: Telomere Shortening Over Cell Divisions](../assets/figures/figure3-4.png)
 
 **Figure 3-5: Telomere Shortening Over Cell Divisions**. *With each cell division, telomeres progressively shorten due to the end-replication problem. Starting with long protective caps, telomeres gradually lose 50-200 base pairs per division. After approximately 40-60 divisions (the Hayflick limit), telomeres become critically short, triggering cellular senescence and preventing further division. This progressive shortening serves as a molecular clock limiting the replicative lifespan of normal somatic cells.*
 
@@ -262,7 +262,7 @@ Other CHM cell lines exist, but CHM13 had the right combination of properties, e
 
 ## Why CHM13 Made T2T Possible
 
-Let's bring all these pieces together. The T2T Consortium needed to sequence regions that had defeated earlier effortsâ€”centromeres (multi-megabase satellite arrays), ribosomal DNA arrays (hundreds of tandem repeats), segmental duplications (>90% sequence identity), and heterochromatic regions like Yq12 (>30 Mb of satellites). These regions are highly repetitive, and in a normal diploid genome, small differences between the two chromosome copies make accurate assembly nearly impossible.
+Let's bring all these pieces together. The T2T Consortium needed to sequence regions that had defeated earlier efforts centromeres (multi-megabase satellite arrays), ribosomal DNA arrays (hundreds of tandem repeats), segmental duplications (>90% sequence identity), and heterochromatic regions like Yq12 (>30 Mb of satellites). These regions are highly repetitive, and in a normal diploid genome, small differences between the two chromosome copies make accurate assembly nearly impossible.
 
 The **CHM13hTERT cell line** solved this problem through three key features:
 
@@ -282,7 +282,7 @@ The hTERT modification allows unlimited cell division, providing a consistent, s
 - **100Ã— Illumina short-read sequencing** (for polishing)
 - **Additional data**: Hi-C (chromatin conformation), Bionano optical mapping (physical map), Strand-seq (detecting inversions)
 
-Generating this much data across multiple technologies over several years required a cell line that could provide unlimited, consistent DNAâ€”which CHM13hTERT delivered.
+Generating this much data across multiple technologies over several years required a cell line that could provide unlimited, consistent DNA - which CHM13hTERT delivered.
 
 ### 3. Genetic Stability
 Karyotype analysis confirmed a **normal 46,XX chromosome structure** with no abnormalities, ensuring the cells remain stable through many passages. Unlike some cancer cell lines (which also divide indefinitely), CHM13hTERT maintains:
@@ -309,8 +309,8 @@ The table below summarizes how CHM13's functionally haploid genome compares to t
 | **Source** | One complete hydatidiform mole (duplicated paternal DNA) | Multiple individuals, BAC clones from different donors |
 | **Chromosome Copies** | Two nearly identical copies from duplicated paternal DNA | Mosaic of sequences from multiple individuals; represents different haplotypes |
 | **Heterozygous Variants** | ~Few thousand (<0.01% of genome) | ~4-5 million per individual; structural differences between BAC clone donors |
-| **Assembly Complexity** | Simpleâ€”minimal ambiguity in repetitive regions | Complexâ€”heterozygous variants and structural differences create ambiguity, especially in repeats |
-| **Gaps in Assembly** | **Zero gaps**â€”complete 3.055 billion bp coverage (with Y from HG002 in v2.0) | ~151 million bp of unknown sequence (N-bases), mostly in repetitive regions |
+| **Assembly Complexity** | Simple - minimal ambiguity in repetitive regions | Complex - heterozygous variants and structural differences create ambiguity, especially in repeats |
+| **Gaps in Assembly** | **Zero gaps** - complete 3.055 billion bp coverage (with Y from HG002 in v2.0) | ~151 million bp of unknown sequence (N-bases), mostly in repetitive regions |
 | **Centromeres** | Fully assembled - all 24 centromeres complete, base-to-base | Largely absent or represented by small consensus sequences (~few kb placeholders) |
 | **Segmental Duplications** | 6.61% of genome (201.93 Mb) accurately assembled | 5.00% - many regions collapsed, incorrectly assembled, or missing |
 | **Acrocentric Short Arms** | Complete - 66.1 Mb including all rDNA arrays | Almost entirely absent - represented as gaps |
@@ -318,9 +318,9 @@ The table below summarizes how CHM13's functionally haploid genome compares to t
 | **Accuracy** | 99.99% (1 error per 10 million bases) in unique regions; ~99.3% in largest satellite arrays | Very high in non-repetitive regions; undefined/not measurable in gaps |
 | **Technology** | Long-read sequencing (PacBio HiFi, ONT ultra-long) + polishing | BAC cloning + Sanger sequencing (technology of early 2000s) |
 | **Assembly Approach** | String graphs, marker-assisted polishing, ultra-long reads | Clone-by-clone BAC sequencing, short-read overlap assembly |
-| **Strengths** | â€¢ Complete structural template<br>â€¢ Enables studies of centromeres, satellites, and complex repeats<br>â€¢ No reference gaps<br>â€¢ High accuracy even in difficult regions | â€¢ Represents some genetic diversity (though limited)<br>â€¢ Historical milestone<br>â€¢ Mosaic includes some variant information<br>â€¢ Well-validated in non-repetitive regions |
-| **Limitations** | â€¢ Single genome source (one duplicated paternal genome)<br>â€¢ Doesn't capture population diversity<br>â€¢ No heterozygosity information<br>â€¢ Chimeric (X from CHM13, Y from HG002) | â€¢ Incomplete in repetitive regions<br>â€¢ Mosaic of different individuals<br>â€¢ Reference bias toward source populations<br>â€¢ Major gaps in functionally important regions |
-| **Best Use Cases** | â€¢ Structural reference for complete genomic architecture<br>â€¢ Centromere and satellite DNA studies<br>â€¢ Complete gene annotations<br>â€¢ Understanding complex repeat organization | â€¢ Standard variant calling in non-repetitive regions<br>â€¢ Clinical diagnostics (with known limitations)<br>â€¢ Many established bioinformatics workflows |
+| **Strengths** | - Complete structural template<br>- Enables studies of centromeres, satellites, and complex repeats<br>- No reference gaps<br>- High accuracy even in difficult regions | - Represents some genetic diversity (though limited)<br>- Historical milestone<br>- Mosaic includes some variant information<br>- Well-validated in non-repetitive regions |
+| **Limitations** | - Single genome source (one duplicated paternal genome)<br>- Doesn't capture population diversity<br>- No heterozygosity information<br>- Chimeric (X from CHM13, Y from HG002) | - Incomplete in repetitive regions<br>- Mosaic of different individuals<br>- Reference bias toward source populations<br>- Major gaps in functionally important regions |
+| **Best Use Cases** | - Structural reference for complete genomic architecture<br>- Centromere and satellite DNA studies<br>- Complete gene annotations<br>- Understanding complex repeat organization | - Standard variant calling in non-repetitive regions<br>- Clinical diagnostics (with known limitations)<br>- Many established bioinformatics workflows |
 
 ---
 
@@ -362,15 +362,15 @@ In normal diploid genomes, the two chromosome copies can have different expressi
 
 ---
 
-## Moving Beyond CHM13
+**Moving Beyond CHM13**
 
-While CHM13 was essential for creating the first complete human genome, it represents only one genome sourceâ€”a single father's duplicated DNA. Human genetic diversity is vast, with populations differing in thousands of structural variants, gene copy numbers, and sequence variations.
+While CHM13 was essential for creating the first complete human genome, it represents only one genome source - a single father's duplicated DNA. Human genetic diversity is vast, with populations differing in thousands of structural variants, gene copy numbers, and sequence variations.
 
 **The key lesson:** The limitation isn't CHM13's specific ancestry, but rather that *any single genome* can't represent all of humanity. Even a complete genome from an African, Asian, or South American individual wouldn't capture human diversity. 
 
-This is why the field is now moving toward **pangenome references**â€”collections of many complete, high-quality genomes that represent human diversity. The Human Pangenome Reference Consortium (HPRC) is building on the T2T foundation by sequencing hundreds of diverse individuals, creating graph-based references that show all the different "paths" through variable regions of the genome. We'll explore this in detail in the next chapter.
+This is why the field is now moving toward **pangenome references** - collections of many complete, high-quality genomes that represent human diversity. The Human Pangenome Reference Consortium (HPRC) is building on the T2T foundation by sequencing hundreds of diverse individuals, creating graph-based references that show all the different "paths" through variable regions of the genome. We'll explore this in detail in the next chapter.
 
-For now, understand that CHM13 provided something essential: the first complete structural template of a human genome. It showed us what was hiding in the 151 million base pairs of gaps. Now we can study how these complex regions vary across populationsâ€”but first, we needed to see the complete structure.
+For now, understand that CHM13 provided something essential: the first complete structural template of a human genome. It showed us what was hiding in the 151 million base pairs of gaps. Now we can study how these complex regions vary across populations but first, we needed to see the complete structure.
 
 Think of it like cartography: Before mapping how every city differs, you first need to know what a complete city map looks like - including the streets that were previously unmapped. CHM13 gave us that complete map.
 
