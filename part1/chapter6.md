@@ -24,7 +24,7 @@ Your genome contains about 20,000 protein-coding genes. But genes aren't continu
 
 When cells make proteins, they transcribe the entire gene into RNA, then cut out the introns and splice the exons together. The final messenger RNA (mRNA) contains only exonic sequence, which is then translated into protein.
 
-The collection of all exons in the genome is called the **exome**. It makes up only 1-2% of your total DNA—about 30-50 million base pairs out of 3.2 billion. But here's why it's important:
+The collection of all exons in the genome is called the **exome**. It makes up only 1-2% of your total DNA about 30-50 million base pairs out of 3.2 billion. But here's why it's important:
 
 **About 85% of known disease-causing mutations occur in exons.**
 
@@ -38,20 +38,24 @@ This high concentration of disease variants in exons created an opportunity: if 
 
 Before diving into details, let's see how these approaches compare:
 
+![Figure 6-1. WES vs WGS: What Do You See?](../assets/figures/chapter6_fig1_wes_vs_wgs.png)
+
+**Figure 6-1. WES vs WGS: What Do You See?** *WES targets only the coding regions (exons), capturing about 1-2% of the genome where most disease-causing variants reside. WGS sequences the entire genome, including exons, introns, and regulatory regions, providing complete coverage but at higher cost and complexity.*
+
 | Feature | Whole-Exome Sequencing (WES) | Whole-Genome Sequencing (WGS) |
 |---------|------------------------------|--------------------------------|
 | **Coverage** | ~1-2% of genome (exons only) | 100% of genome |
 | **Target size** | 30-50 million bases | 3.2 billion bases |
 | **Data per sample** | ~6 GB | ~90-100 GB |
 | **Cost (2024)** | ~$400-500 | ~$600-1,000 |
-| **Typical depth** | 100-150× | 30-40× |
+| **Typical depth** | 100-150X | 30-40X |
 | **SNVs/indels in exons** | ✓ Excellent | ✓ Excellent |
 | **Structural variants** | ✗ Mostly missed | ✓ Detected |
 | **Non-coding variants** | ✗ Missed | ✓ Detected |
 | **Regulatory regions** | ✗ Missed | ✓ Detected |
 | **Repeat expansions** | ✗ Missed | ✓ Detected (especially with long reads) |
-| **Analysis complexity** | Lower—fewer variants | Higher—millions of variants |
-| **Interpretation** | Easier—focus on coding | Harder—non-coding interpretation uncertain |
+| **Analysis complexity** | Lower fewer variants | Higher millions of variants |
+| **Interpretation** | Easier focus on coding | Harder non-coding interpretation uncertain |
 | **Diagnostic yield (rare disease)** | 25-50% | 30-55% (slightly higher) |
 | **Best for** | Known coding disorders, cost-sensitive studies | Complex cases, structural variants, discovery |
 
@@ -61,10 +65,10 @@ Before diving into details, let's see how these approaches compare:
 
 ### How It Works
 
-WES doesn't actually sequence only exons—that would be technically challenging. Instead, it uses a clever trick called **target capture** or **enrichment**:
+WES doesn't actually sequence only exons that would be technically challenging. Instead, it uses a clever trick called **target capture** or **enrichment**:
 
 1. Extract DNA and break it into fragments (just like WGS)
-2. Add special "bait" molecules—short DNA sequences complementary to exons, labeled with biotin
+2. Add special "bait" molecules short DNA sequences complementary to exons, labeled with biotin
 3. These baits bind to exonic fragments through complementary base pairing
 4. Add streptavidin-coated magnetic beads that bind tightly to biotin
 5. Use a magnet to pull down the beads with captured exons attached
@@ -73,15 +77,19 @@ WES doesn't actually sequence only exons—that would be technically challenging
 
 Think of it like using a magnet to pick out just the metal pieces from a mixed pile of materials.
 
-![Whole Exome Sequencing Process](https://microbenotes.com/wp-content/uploads/2024/09/Whole-Exome-Sequencing.jpeg)
+![Figure 6-2. WES Process with Target Capture](https://microbenotes.com/wp-content/uploads/2024/09/Whole-Exome-Sequencing.jpeg)
 
-**Figure: WES Process with Target Capture**. *This diagram shows the key step that distinguishes WES from WGS: exome enrichment. After DNA extraction and fragmentation, biotinylated probes (baits) specifically bind to exonic sequences. These are then captured using streptavidin-coated magnetic beads, physically separating exonic fragments from the rest of the genome. This targeted approach concentrates sequencing effort on the ~1-2% of the genome that codes for proteins. Source: [Microbe Notes](https://microbenotes.com/whole-exome-sequencing/)*
+**Figure 6-2. WES Process with Target Capture.** *After DNA extraction and fragmentation, biotinylated probes (baits) bind specifically to exonic sequences. Streptavidin-coated magnetic beads capture these probe-bound fragments, physically separating exons from introns and intergenic regions. This targeted enrichment concentrates sequencing effort on the protein-coding regions. Source: [Microbe Notes](https://microbenotes.com/whole-exome-sequencing/)*
 
-**Commercial capture kits** from companies like Agilent SureSelect, Illumina TruSeq, and Twist Bioscience each target slightly different exon sets with different capture efficiencies. Not all exons capture equally well—regions with extreme GC content, repetitive sequences, or complex secondary structures may have coverage gaps.
+![Figure 6-3. Why Target Capture Works   and Why It Fails](../assets/figures/chapter6_fig3_target_capture.png)
+
+**Figure 6-3. Why Target Capture Works   and Why It Fails.** *Top: When exons are intact, capture probes bind efficiently and generate high-depth sequencing data. Bottom: Structural variants like deletions or duplications prevent probe binding, leaving these regions undetected in WES data. This fundamental limitation explains why WES misses 5-10% of pathogenic variants that WGS can detect.*
+
+**Commercial capture kits** from companies like Agilent SureSelect, Illumina TruSeq, and Twist Bioscience each target slightly different exon sets with varying capture efficiencies. Not all exons capture equally well regions with extreme GC content, repetitive sequences, or complex secondary structures often have coverage gaps.
 
 ### The Historic Success: Miller Syndrome (2010)
 
-WES made its breakthrough in 2010 with a paper that became a model for the approach. Researchers were studying four siblings with **Miller syndrome**—a rare developmental disorder causing facial abnormalities. Traditional gene-hunting methods had failed.
+WES made its breakthrough in 2010 with a paper that became a model for the approach. Researchers were studying four siblings with **Miller syndrome** a rare developmental disorder causing facial abnormalities. Traditional gene-hunting methods had failed.
 
 The strategy was simple but revolutionary:
 1. Sequence all exons in the four affected siblings
@@ -94,7 +102,7 @@ This paper launched the WES era. Suddenly, researchers could identify disease ge
 
 ### Clinical Impact of WES
 
-WES quickly became the first-line genetic test for diagnosing rare diseases, with a diagnostic yield of 25-50%—meaning for patients with suspected genetic disorders, WES identifies the genetic cause in about one-third to half of cases. This is remarkable considering these patients had often undergone years of testing with no diagnosis.
+WES quickly became the first-line genetic test for diagnosing rare diseases, with a diagnostic yield of 25-50% for patients with suspected genetic disorders, WES identifies the genetic cause in roughly one-third to half of cases. This is remarkable considering these patients often underwent years of inconclusive testing.
 
 **When WES works well:**
 - Rare Mendelian disorders (single-gene diseases)
@@ -114,7 +122,7 @@ WES quickly became the first-line genetic test for diagnosing rare diseases, wit
 
 ### How It Works
 
-WGS is conceptually simpler than WES—you just sequence everything:
+WGS is conceptually simpler than WES you just sequence everything:
 
 1. Extract DNA and break it into fragments
 2. Add adapters for sequencing
@@ -123,13 +131,13 @@ WGS is conceptually simpler than WES—you just sequence everything:
 
 No target capture step. No enrichment. Just sequence the whole thing.
 
-![Whole Genome Sequencing Workflow](https://microbenotes.com/wp-content/uploads/2024/07/Whole-Genome-Sequencing.jpeg)
+![Figure 6-4. Whole-Genome Sequencing (WGS) Workflow](https://microbenotes.com/wp-content/uploads/2024/07/Whole-Genome-Sequencing.jpeg)
 
-**Figure: Whole-Genome Sequencing (WGS) Workflow**. *This diagram illustrates the complete process of WGS from sample to analysis. Unlike WES, this process captures all genomic regions including coding exons, introns, regulatory elements, and intergenic sequences. Source: [Microbe Notes](https://microbenotes.com/whole-genome-sequencing/)*
+**Figure 6-4. Whole-Genome Sequencing (WGS) Workflow.** *WGS captures all genomic regions coding exons, introns, regulatory elements, and intergenic sequences without the selective enrichment step used in WES. This comprehensive approach enables detection of all variant types. Source: [Microbe Notes](https://microbenotes.com/whole-genome-sequencing/)*
 
 ### The Power of Seeing Everything: Real Examples
 
-**Structural variants:** Consider a patient with developmental delay and seizures. WES found nothing. With WGS, researchers discovered a large deletion removing three exons of a neurodevelopmental gene. WES had missed this because target capture requires intact DNA—when exons are deleted, there's nothing for the baits to capture. WGS, by sequencing everything, detected the deletion through absence of reads in that region. This happens in about 5-10% of cases where WES fails.
+**Structural variants:** A patient with developmental delay and seizures tested negative on WES. WGS revealed a large deletion removing three exons of a neurodevelopmental gene. WES missed this because target capture requires intact DNA when exons are deleted, there's nothing for the baits to capture. WGS detected the deletion through absence of reads in that region. This happens in about 5-10% of cases where WES fails.
 
 **Regulatory variants:** Some forms of beta-thalassemia (reduced hemoglobin production) are caused by mutations in the regulatory regions of the HBB gene, not in the coding sequence. These would be missed by WES but are detectable with WGS.
 
@@ -137,15 +145,19 @@ No target capture step. No enrichment. Just sequence the whole thing.
 
 ### Non-Coding Variants: The Frontier
 
-WGS opens up the study of non-coding variants, which make up 98% of the genome. Most non-coding sequence is probably functionally neutral, but some regions are critically important. Enhancers and promoters control when and where genes are expressed—a mutation in an enhancer can affect a gene hundreds of thousands of bases away, causing disease without touching the gene itself.
+WGS opens up the study of non-coding variants, which make up 98% of the genome. While most non-coding sequence is functionally neutral, some regions are critically important. Enhancers and promoters control when and where genes are expressed a mutation in an enhancer can affect a gene hundreds of thousands of bases away, causing disease without touching the gene itself.
 
-**The challenge:** We're still learning which non-coding variants matter. The human genome contains millions of non-coding variants, and distinguishing functional from neutral ones is difficult. This is an active area of research.
+**The challenge:** We're still learning which non-coding variants matter. The human genome contains millions of non-coding variants, and distinguishing functional from neutral ones remains difficult.
 
 ---
 
 ## The Technical Process: From Sample to Variants
 
-Whether you're sequencing a whole genome or just the exome, the basic workflow is similar—with one key difference for WES: an extra step to capture only the exons. This section walks through the laboratory and computational process that transforms a blood sample into a list of genetic variants.
+Whether you're sequencing a whole genome or just the exome, the basic workflow is similar with one key difference for WES: target capture to isolate exons. This section walks through the laboratory and computational steps that transform a blood sample into a list of genetic variants.
+
+![Figure 6-5. From Reads to Variants: The Computational Pipeline](../assets/figures/chapter6_fig5_pipeline.png)
+
+**Figure 6-5. From Reads to Variants: The Computational Pipeline.** *After sequencing generates millions of reads, a series of computational steps transforms raw data into clinically actionable variants: quality control removes low-quality bases, alignment maps reads to the reference genome, variant calling identifies differences, filtering removes artifacts, and annotation adds biological context.*
 
 ---
 
@@ -163,10 +175,10 @@ Illumina library prep is the most common approach for both WGS and WES, optimize
 
 **Overview of the Workflow:**
 
-**1. DNA Extraction and QC**
+**1. DNA Extraction and Quality Control**
 - Input: ~1 μg for WGS, ~200-500 ng for WES
 - Quality matters: degraded DNA leads to poor results
-- Check using spectrophotometry (UV absorbance) and fluorometry
+- Assessed using spectrophotometry (UV absorbance) and fluorometry
 
 **2. Fragmentation**
 - **Why fragment?** Illumina sequencers can't read long molecules
@@ -194,10 +206,10 @@ Illumina library prep is the most common approach for both WGS and WES, optimize
 - Non-exonic DNA is washed away
 - See WES section above for detailed explanation
 
-**6. QC Check**
-- Bioanalyzer/TapeStation: verify fragment size
-- qPCR/fluorometry: measure concentration
-- For WES: confirm exon enrichment
+**6. Quality Control Check**
+- Bioanalyzer/TapeStation: verify fragment size distribution
+- qPCR/fluorometry: measure library concentration
+- For WES: confirm successful exon enrichment
 
 **Key Advantages:** High accuracy (>99.9%), massive throughput (billions of reads), well-established protocols
 
@@ -209,17 +221,17 @@ Illumina library prep is the most common approach for both WGS and WES, optimize
 
 PacBio library prep creates circular DNA templates that enable multiple reads of the same molecule for high-accuracy long reads.
 
-**📺 Video Resource:** For PacBio and Nanopore library preparation workflows, watch this [comparative tutorial](https://www.youtube.com/watch?v=5U57_0SWFr4).
+**ðŸ“º Video Resource:** For PacBio and Nanopore library preparation workflows, watch this [comparative tutorial](https://www.youtube.com/watch?v=5U57_0SWFr4).
 
 **Overview of the Workflow:**
 
-**1. DNA Extraction and QC**
+**1. DNA Extraction and Quality Control**
 - Input: ~500 ng of high-molecular-weight DNA
-- **Critical:** DNA must be high quality and intact—fragmentation ruins long-read potential
+- **Critical:** DNA must be high quality and intact fragmentation ruins long-read potential
 - Use gentle extraction methods to preserve long molecules
 
 **2. Fragmentation (Gentle!)**
-- **Target size:** 15,000-20,000 bp (100× longer than Illumina!)
+- **Target size:** 15,000-20,000 bp (100X longer than Illumina!)
 - Uses **controlled shearing** to maintain longer fragments
 - Can skip fragmentation entirely for ultra-long molecules
 
@@ -234,9 +246,9 @@ PacBio library prep creates circular DNA templates that enable multiple reads of
 - Skipping PCR eliminates bias and preserves DNA modifications (methylation)
 - Enables detection of epigenetic marks
 
-**5. QC Check**
+**5. Quality Control Check**
 - Verify fragment length distribution (critical for long reads)
-- Check SMRTbell integrity
+- Check SMRTbell template integrity
 - Quantify library concentration
 
 **The HiFi Advantage:** The polymerase circles the SMRTbell template 10-20 times, reading the same DNA sequence repeatedly. A consensus is computed from these multiple passes, achieving >99.9% accuracy despite long read lengths.
@@ -251,11 +263,11 @@ PacBio library prep creates circular DNA templates that enable multiple reads of
 
 Nanopore library prep is the simplest and fastest, enabling ultra-long reads and even portable sequencing.
 
-**📺 Video Resource:** See the [comparative tutorial](https://www.youtube.com/watch?v=5U57_0SWFr4) mentioned above for Nanopore workflows.
+**ðŸ“º Video Resource:** See the [comparative tutorial](https://www.youtube.com/watch?v=5U57_0SWFr4) mentioned above for Nanopore workflows.
 
 **Overview of the Workflow:**
 
-**1. DNA Extraction and QC**
+**1. DNA Extraction and Quality Control**
 - Input: Variable (can work with very small amounts)
 - **Goal:** Extract ultra-high-molecular-weight DNA
 - Some protocols achieve >100 kb, even >1 Mb intact molecules
@@ -276,11 +288,11 @@ Nanopore library prep is the simplest and fastest, enabling ultra-long reads and
 - Preserves all biological information including base modifications
 - Fastest library prep among all platforms (~10 minutes possible with Rapid Kit)
 
-**5. Minimal QC**
+**5. Minimal Quality Control**
 - Quick concentration check
 - Ready to load on sequencer
 
-**The Nanopore Advantage:** Simplest library prep, real-time sequencing (see data as it's generated), ultra-long reads (>100 kb, sometimes >1 Mb), portable devices (MinION is USB-sized).
+**The Nanopore Advantage:** Simplest library prep, real-time sequencing (watch data generation live), ultra-long reads (>100 kb, sometimes >1 Mb), portable devices (MinION is USB-sized).
 
 **Key Advantages:** Ultra-long reads, fastest library prep, portable sequencing, real-time results, native DNA sequencing
 
@@ -311,9 +323,9 @@ Nanopore library prep is the simplest and fastest, enabling ultra-long reads and
 
 #### Illumina Sequencing (Most Common for WGS and WES)
 
-The library is loaded onto a **flow cell**—a glass slide with millions of tiny spots where sequencing happens.
+The library is loaded onto a **flow cell** a glass slide with millions of tiny spots where sequencing happens.
 
-**Cluster generation:** Library fragments bind to oligonucleotides on the flow cell surface, then through "bridge amplification" create dense clusters of ~1,000 identical copies. Single molecules don't produce enough signal to detect—clusters amplify the signal.
+**Cluster generation:** Library fragments bind to oligonucleotides on the flow cell surface, then through "bridge amplification" create dense clusters of ~1,000 identical copies. Single molecules don't produce enough signal to detect clusters amplify the signal.
 
 **Sequencing by Synthesis (SBS):**
 1. All four nucleotides (A, C, G, T), each with a different fluorescent dye, are added with DNA polymerase
@@ -322,7 +334,7 @@ The library is loaded onto a **flow cell**—a glass slide with millions of tiny
 4. The fluorescent tag and terminator are chemically removed
 5. Repeat for 150-300 cycles
 
-This produces millions of short reads simultaneously—typically 2×150 bp (paired-end sequencing, reading both ends of each fragment).
+This produces millions of short reads simultaneously typically 2×150 bp (paired-end sequencing, reading both ends of each fragment).
 
 **Typical output:**
 - WES: ~50-100 million reads (~6-10 GB of data)
@@ -353,11 +365,11 @@ After sequencing, you have millions or billions of reads. Now comes the computat
 #### 3.1 Quality Control of Raw Reads
 
 Each base call comes with a quality score (Q score):
-- Q20 = 99% accuracy (1 in 100 chance of error)
-- Q30 = 99.9% accuracy (1 in 1,000 chance of error)
-- Q40 = 99.99% accuracy (1 in 10,000 chance of error)
+- Q20 = 99% accuracy (1 error per 100 bases)
+- Q30 = 99.9% accuracy (1 error per 1,000 bases)
+- Q40 = 99.99% accuracy (1 error per 10,000 bases)
 
-**FastQC** checks per-base quality, sequence duplication levels, adapter contamination, and GC content distribution. Low-quality bases (usually at read ends) and adapter sequences are trimmed.
+**FastQC** checks per-base quality, sequence duplication levels, adapter contamination, and GC content distribution. Low-quality bases (typically at read ends) and adapter sequences are trimmed.
 
 #### 3.2 Alignment to Reference Genome
 
@@ -384,7 +396,7 @@ Sophisticated software tools use statistical models to distinguish real variants
 - **FreeBayes**: Bayesian variant caller
 - **DeepVariant**: Uses deep learning/AI from Google
 
-**How it works:** For each genome position, the caller stacks up all covering reads, counts bases, calculates likelihood of a real variant versus error, considers quality scores, checks depth (20-30+ reads give confidence), and applies filters.
+**How it works:** For each genome position, the variant caller stacks up all covering reads, counts bases, calculates the likelihood of a real variant versus sequencing error, considers quality scores, checks depth (20-30+ reads provide confidence), and applies statistical filters.
 
 **Example:**
 - Position chr1:12345 in reference: G
@@ -395,13 +407,13 @@ Sophisticated software tools use statistical models to distinguish real variants
 
 #### 3.5 Filtering Variants
 
-Initial variant calls contain false positives. Filtering removes these based on:
+Initial variant calls contain false positives. Filtering removes artifacts based on:
 - Minimum depth (≥10-20 reads)
 - Quality threshold (≥20 or ≥30)
-- Strand bias (if all supporting reads come from one DNA strand, likely an artifact)
+- Strand bias (if all supporting reads come from one strand, likely an artifact)
 - Allele balance (for heterozygous variants, expect ~50% of reads showing each allele)
 
-**Result:** A high-confidence variant call set—thousands to millions of variants depending on WGS versus WES.
+**Result:** A high-confidence variant set thousands to millions of variants depending on WGS versus WES.
 
 #### 3.6 Variant Annotation
 
@@ -432,15 +444,19 @@ Initial variant calls contain false positives. Filtering removes these based on:
 
 **Day 4-5:** Sequencing on NovaSeq 6000, generating ~80 million read pairs for WES
 
-**Day 6-7:** Bioinformatics—QC, alignment, duplicate marking, variant calling and filtering
+**Day 6-7:** Bioinformatics QC, alignment, duplicate marking, variant calling and filtering
 
-**Day 8-10:** Interpretation—filter for rare variants, focus on genes related to symptoms, prioritize high-impact variants, check ClinVar, validate with Sanger sequencing
+**Day 8-10:** Interpretation filter for rare variants, focus on genes related to symptoms, prioritize high-impact variants, check ClinVar, validate with Sanger sequencing
 
 **Result:** Genetic diagnosis made in ~10 days, compared to months or years with older approaches.
 
 ---
 
 ## The Clinical Decision Tree: Which Test to Order?
+
+![Figure 6-6. Clinical Decision Tree: WES or WGS?](../assets/figures/chapter6_fig6_decision_tree.png)
+
+**Figure 6-6. Clinical Decision Tree: WES or WGS?** *This flowchart guides clinical decision-making for genetic testing. Start with WES for suspected Mendelian disorders with known coding variants. Move to WGS when WES is negative, structural variants are suspected, or the phenotype is complex or atypical.*
 
 ### Start with WES if:
 
@@ -478,10 +494,10 @@ The cost gap between WES and WGS is shrinking rapidly:
 
 | Year | WES Cost | WGS Cost | Difference |
 |------|----------|----------|------------|
-| 2010 | ~$5,000 | ~$50,000 | 10× |
-| 2015 | ~$1,000 | ~$5,000 | 5× |
-| 2020 | ~$500 | ~$1,000 | 2× |
-| 2024 | ~$400-500 | ~$600-1,000 | 1.5× |
+| 2010 | ~$5,000 | ~$50,000 | 10X |
+| 2015 | ~$1,000 | ~$5,000 | 5X |
+| 2020 | ~$500 | ~$1,000 | 2X |
+| 2024 | ~$400-500 | ~$600-1,000 | 1.5X |
 
 As costs converge, the argument for WES weakens. Soon, WGS may cost the same as WES.
 
@@ -491,16 +507,16 @@ As costs converge, the argument for WES weakens. Soon, WGS may cost the same as 
 - WES: 6 GB per sample (1,000 samples = 6 TB)
 - WGS: 90 GB per sample (1,000 samples = 90 TB)
 
-For large biobanks, this 15× difference matters. The UK Biobank sequenced 500,000 genomes—at 90 GB each, that's 45 petabytes requiring serious infrastructure.
+For large biobanks, this 15X difference matters. The UK Biobank sequenced 500,000 genomes at 90 GB each, that's 45 petabytes requiring serious infrastructure.
 
 ### The Analysis Bottleneck
 
 Sequencing is fast. Interpretation is slow.
 
-- **WES**: ~20,000 variants per person, mostly coding with known functional impact, can analyze in days
-- **WGS**: 4-5 million variants per person including millions of non-coding variants with uncertain interpretation, can take weeks
+- **WES**: ~20,000 variants per person, mostly coding with known functional effects, analyzed in days
+- **WGS**: 4-5 million variants per person including millions of non-coding variants with uncertain interpretation, takes weeks
 
-As one geneticist put it: "We went from being starved for data to drowning in it."
+As one geneticist observed: "We went from being starved for data to drowning in it."
 
 ---
 
@@ -510,7 +526,7 @@ There's an interesting argument emerging: **WES might be a transitional technolo
 
 ### The "WGS Now, Interpret Exome First" Strategy
 
-You can do WGS but initially analyze only the exonic regions—getting WES-equivalent results while keeping the full dataset for later. This gives you:
+You can do WGS but initially analyze only the exonic regions getting WES-equivalent results while keeping the full dataset for later. This gives you:
 1. Immediate WES-level analysis (just look at exons)
 2. Option to expand analysis to non-coding regions if exons are negative
 3. Future-proofing: As we learn more about non-coding variants, reanalyze the same data
@@ -528,7 +544,7 @@ WES still has advantages:
 - Large population studies where storage and cost matter at scale
 - Focused disease studies involving known coding variants
 - Lower-income settings where every dollar counts
-- High coverage needs—WES provides deeper coverage of exons for the same cost
+- High coverage needs WES provides deeper coverage of exons for the same cost
 
 ---
 
@@ -550,13 +566,13 @@ The T2T-CHM13 genome (the first complete human genome) was built using long read
 
 **Whole-Exome Sequencing**:
 - Focused, cost-effective approach targeting disease-rich coding regions
-- Great for known Mendelian disorders
+- Ideal for known Mendelian disorders
 - Misses structural and regulatory variants
-- Still widely used clinically but likely a transitional technology
+- Widely used clinically but likely a transitional technology
 
 **Whole-Genome Sequencing**:
 - Comprehensive, unbiased approach detecting all variant types
-- More expensive and complex but increasingly preferred as costs drop
+- More expensive and complex but increasingly favored as costs decline
 - The future of clinical and research sequencing
 
-**The trend is clear**: We're moving toward universal WGS. But for now, both approaches have their place, and the choice depends on your specific question, resources, and needs. The key insight: WES isn't a subset of WGS in practice—it's a different experimental design with different strengths and weaknesses. Understanding when to use each approach is an essential skill for modern geneticists and clinicians.
+**The trend is clear**: We're moving toward universal WGS. For now, both approaches have their place, and the choice depends on your question, resources, and clinical context. The key insight: WES isn't simply a subset of WGS in practice it's a different experimental design with distinct strengths and limitations. Understanding when to use each approach is essential for modern geneticists and clinicians.
