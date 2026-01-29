@@ -221,7 +221,7 @@ Illumina library prep is the most common approach for both WGS and WES, optimize
 
 PacBio library prep creates circular DNA templates that enable multiple reads of the same molecule for high-accuracy long reads.
 
-**ðŸ“º Video Resource:** For PacBio and Nanopore library preparation workflows, watch this [comparative tutorial](https://www.youtube.com/watch?v=5U57_0SWFr4).
+**📺 Video Resource:** For PacBio and Nanopore library preparation workflows, watch this [comparative tutorial](https://www.youtube.com/watch?v=5U57_0SWFr4).
 
 **Overview of the Workflow:**
 
@@ -263,7 +263,7 @@ PacBio library prep creates circular DNA templates that enable multiple reads of
 
 Nanopore library prep is the simplest and fastest, enabling ultra-long reads and even portable sequencing.
 
-**ðŸ“º Video Resource:** See the [comparative tutorial](https://www.youtube.com/watch?v=5U57_0SWFr4) mentioned above for Nanopore workflows.
+**📺 Video Resource:** See the [comparative tutorial](https://www.youtube.com/watch?v=5U57_0SWFr4) mentioned above for Nanopore workflows.
 
 **Overview of the Workflow:**
 
