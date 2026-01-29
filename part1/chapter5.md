@@ -57,7 +57,7 @@ Two related but distinct concepts measure how thoroughly we've sequenced a genom
 
 **Coverage** tells us what percentage of the target DNA (like a genome or a specific gene region) we've sequenced at all. For example, 95% coverage means we successfully read 95% of the genome, but 5% has no data usually in very repetitive regions that are hard to sequence.
 
-**Depth** (or coverage depth) tells us how many times, on average, each base was sequenced. If we sequence a genome at 30Ã— depth (pronounced "30-times depth"), each base position is covered by an average of 30 different reads.
+**Depth** (or coverage depth) tells us how many times, on average, each base was sequenced. If we sequence a genome at 30× depth (pronounced "30-times depth"), each base position is covered by an average of 30 different reads.
 
 ![Coverage and depth explained](../assets/figures/ch5_fig4.png)
 
@@ -65,7 +65,7 @@ Two related but distinct concepts measure how thoroughly we've sequenced a genom
 
 Why does depth matter? Because sequencing isn't perfect. Every technology makes occasional errors, and biological samples can contain multiple DNA molecules with slight differences. By sequencing each position multiple times, we can distinguish real genetic variants from sequencing errors through statistical confidence. A variant supported by 20 out of 30 reads is much more credible than one supported by 1 out of 2 reads.
 
-For most applications, 30Ã— depth is considered the minimum for reliable variant detection in humans.
+For most applications, 30× depth is considered the minimum for reliable variant detection in humans.
 
 ### Base Quality Scores
 
@@ -86,7 +86,7 @@ Before sequencing, DNA must be prepared into a **library** a collection of fragm
 Once you have millions of reads, you need to figure out where they came from in the genome. This is called **alignment** or **mapping** computationally comparing each read to a reference genome (like GRCh38) to determine its original location.
 
 After alignment, you can identify **variants** positions where the sequenced DNA differs from the reference. Variants include:
-- **Single nucleotide polymorphisms (SNPs)**: one-letter changes (e.g., Aâ†’G)
+- **Single nucleotide polymorphisms (SNPs)**: one-letter changes (e.g., A→G)
 - **Insertions and deletions (indels)**: added or missing bases
 - **Structural variants**: large-scale changes like duplications or rearrangements
 
@@ -120,7 +120,7 @@ This happens simultaneously for millions of clusters, generating billions of bas
 
 **Strengths:**
 - **High throughput**: Can generate hundreds of billions of bases per run
-- **Low cost**: About $600-$1,000 for a complete human genome at 30Ã— coverage
+- **Low cost**: About $600-$1,000 for a complete human genome at 30× coverage
 - **High accuracy**: Error rates around 0.1%, comparable to Sanger sequencing
 - **Well-established**: Widely used with mature analytical tools
 
@@ -262,7 +262,7 @@ When you encounter NGS data in research or the clinic, consider:
 
 **What sequencing platform was used?** This determines read length, error characteristics, and what types of variants can be reliably detected.
 
-**What's the coverage depth?** Higher depth (30Ã—+) gives more confidence in variant calls, especially for rare variants or somatic mutations in cancer.
+**What's the coverage depth?** Higher depth (30×+) gives more confidence in variant calls, especially for rare variants or somatic mutations in cancer.
 
 **What's the target?** Whole-genome, whole-exome, or targeted panels? Each approach has different coverage patterns and sensitivity.
 

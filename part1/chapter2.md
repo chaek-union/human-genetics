@@ -107,8 +107,8 @@ Longest gap in DXZ1: 42 kb
 The 3.1 Mb DXZ1 centromeric array consists of approximately 1,408 copies of a ~2,057-bp "higher-order repeat" (HOR) unit. This canonical repeat is made of 12 divergent alpha satellite monomers (each ~171 bp) arranged in a specific order. The team validated this structure through multiple independent methods:
 
 **Experimental validation:**
-- **Pulsed-field gel electrophoresis (PFGE)**: Confirmed array size of 2.87 Mb Â± 0.16
-- **Droplet digital PCR (ddPCR)**: Counted 1,408 Â± 41 copies of the 2,057-bp repeat unit
+- **Pulsed-field gel electrophoresis (PFGE)**: Confirmed array size of 2.87 Mb ± 0.16
+- **Droplet digital PCR (ddPCR)**: Counted 1,408 ± 41 copies of the 2,057-bp repeat unit
 - **Optical mapping**: Confirmed the restriction enzyme patterns matched predictions
 
 **Sequence-based validation:**

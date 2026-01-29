@@ -55,7 +55,7 @@ This creates what geneticists call a **functionally haploid** genome. Let's clar
 | Term | Number of Chromosomes | Are They Identical? | Heterozygous Variants | Example |
 |------|----------------------|---------------------|----------------------|---------|
 | **True Haploid** | 23 (one copy of each) | N/A (only one copy) | 0 (no pairs to compare) | Sperm, Egg |
-| **Diploid (Normal)** | 46 (two copies of each) | **No** (maternal â‰  paternal) | ~4-5 million | You, Me, Most People |
+| **Diploid (Normal)** | 46 (two copies of each) | **No** (maternal ≠ paternal) | ~4-5 million | You, Me, Most People |
 | **Functionally Haploid (CHM13)** | 46 (two copies of each) | **Yes** (both from duplicated paternal DNA) | ~Few thousand (<0.01%) | CHM13 |
 
 **"Functionally haploid"** means that even though there are two copies of each chromosome (making it diploid in chromosome number), both copies are nearly identical - so it behaves like a haploid genome for sequencing purposes. There are almost no heterozygous variants to complicate assembly.
@@ -200,14 +200,14 @@ The analysis revealed:
 For the **T2T project's goals**, the specific ancestry of CHM13 doesn't significantly limit its usefulness. Here's why:
 
 **What matters about CHM13:**
-- **Lack of heterozygosity** â†’ enables complete assembly of repetitive regions
-- **Complete structural template** â†’ shows where everything is located
-- **Gap-free reference** â†’ resolves previously unsequenced regions
+- **Lack of heterozygosity** → enables complete assembly of repetitive regions
+- **Complete structural template** → shows where everything is located
+- **Gap-free reference** → resolves previously unsequenced regions
 
 **What doesn't matter as much:**
-- **Specific genetic variants** â†’ these vary between individuals anyway
-- **Population-specific alleles** â†’ the pangenome captures these
-- **Ancestry composition** â†’ any single genome has limitations
+- **Specific genetic variants** → these vary between individuals anyway
+- **Population-specific alleles** → the pangenome captures these
+- **Ancestry composition** → any single genome has limitations
 
 Think of it like creating the first complete map of a city's streets. It doesn't matter who drew the map or where the cartographer came from - what matters is that now we can see all the streets, buildings, and landmarks that were previously unmapped. Once we have that complete map, we can study how traffic patterns (genetic variants) differ in different neighborhoods (populations).
 
@@ -277,9 +277,9 @@ The few thousand remaining heterozygous variants (~0.01% of genome) were managea
 
 ### 2. Immortalized Cells
 The hTERT modification allows unlimited cell division, providing a consistent, stable supply of DNA for extensive sequencing. The T2T project required enormous amounts of high-quality DNA:
-- **30Ã— PacBio HiFi sequencing** (~20 kb reads, high accuracy)
-- **50Ã— Oxford Nanopore ultra-long-read sequencing** (>100 kb reads, up to 1+ Mb)
-- **100Ã— Illumina short-read sequencing** (for polishing)
+- **30× PacBio HiFi sequencing** (~20 kb reads, high accuracy)
+- **50× Oxford Nanopore ultra-long-read sequencing** (>100 kb reads, up to 1+ Mb)
+- **100× Illumina short-read sequencing** (for polishing)
 - **Additional data**: Hi-C (chromatin conformation), Bionano optical mapping (physical map), Strand-seq (detecting inversions)
 
 Generating this much data across multiple technologies over several years required a cell line that could provide unlimited, consistent DNA - which CHM13hTERT delivered.

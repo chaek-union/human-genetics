@@ -54,7 +54,7 @@ The HGP was a massive international collaboration involving sequencing centers i
 
 ### Key Milestones
 
-**Early Years (1990â€“1998): Learning by Doing**
+**Early Years (1990–1998): Learning by Doing**
 
 The project didn't jump straight into sequencing human DNA. Instead, scientists first practiced on simpler organisms. They sequenced the genomes of bacteria, yeast, and the roundworm *C. elegans* (completed in 1998) - creatures with much smaller genomes. These projects served as training exercises, helping researchers refine their methods and develop the computational tools needed to assemble millions of short DNA fragments into complete genome sequences.
 
@@ -125,7 +125,7 @@ This cost reduction, far outpacing Moore's Law (which describes the exponential 
 
 ### Open Data Sharing: The Bermuda Principles
 
-Perhaps the HGP's most important legacy was establishing a culture of open data sharing in genomics. In 1996, project leaders met in Bermuda and agreed that all sequence data would be released publicly within 24 hours of generationâ€”no patents, no paywalls, no waiting for publication.
+Perhaps the HGP's most important legacy was establishing a culture of open data sharing in genomics. In 1996, project leaders met in Bermuda and agreed that all sequence data would be released publicly within 24 hours of generation—no patents, no paywalls, no waiting for publication.
 
 This was revolutionary. In most scientific fields, researchers guard their data until they publish papers. The **Bermuda Principles** established a different model: the genome belongs to everyone, and its sequence should be freely available to accelerate discoveries.
 
@@ -144,7 +144,7 @@ Despite its achievements, the HGP left significant gaps. About 8% of the genome 
 
 These regions aren't genetic "junk." Centromeres are essential for cell division. Variations in ribosomal DNA copy number may affect protein synthesis and health. Segmental duplications are hotspots for genetic variation and disease-causing mutations.
 
-The HGP's sequencing technology - which relied on reading short DNA fragments - couldn't reliably distinguish between nearly identical repeats. It's like trying to assemble a book where several pages are identicalâ€”you know those pages exist, but you can't tell where each one goes.
+The HGP's sequencing technology - which relied on reading short DNA fragments - couldn't reliably distinguish between nearly identical repeats. It's like trying to assemble a book where several pages are identical—you know those pages exist, but you can't tell where each one goes.
 
 These limitations were addressed two decades later by the Telomere-to-Telomere project, which used long-read sequencing and the CHM13 cell line to finally complete these challenging regions, producing the first truly gapless human genome in 2022.
 
