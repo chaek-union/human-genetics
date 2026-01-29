@@ -8,7 +8,7 @@ When you sequence a genome, you don't get one string of As, Ts, Gs, and Cs. You 
 
 **Figure 8-1. What Is a Genetic Variant?**
 
-![Figure 8-1](../assets/part2/figure-8-1-genetic-variant.png)
+![Figure 8-1](../assets/figures/figure-8-1-genetic-variant.png)
 
 *A genetic variant is a difference in DNA sequence between an individual's genome and the reference genome. The reference genome shows the standard sequence, while the individual's DNA contains a single base change (Gâ†’T) at one positionâ€”this is a variant. Every human genome contains approximately 4-5 million such variants.*
 
@@ -49,7 +49,7 @@ Understanding variants requires multiple perspectives. The same variant can be d
 
 **Figure 8-2. The Variant Classification Framework**
 
-![Figure 8-2](../assets/part2/figure-8-2-classification-framework.png)
+![Figure 8-2](../assets/figures/figure-8-2-classification-framework.png)
 
 *Genetic variants can be classified from four different perspectives: by size (SNV, indel, or structural variant), by genomic location (coding, non-coding, or regulatory), by functional effect (synonymous, missense, or loss-of-function), and by population frequency (common or rare). The same variant can be described using all four classification systems simultaneously.*
 
@@ -116,7 +116,7 @@ Variant:   ...ATGCAAAGATCG... (AAA inserted)
 - Translocations (DNA moved between chromosomes)
 - Copy number variants (CNVs)
 
-![Figure 8-3](../assets/part2/variant-type.png)
+![Figure 8-3](../assets/figures/variant-type.png)
 
 **Impact:** ~1,000-2,000 SVs per person, affecting more total bases than all SNVs combined
 
@@ -196,7 +196,7 @@ Protein: Met-His-Ala-Leu-Lys
 
 **Figure 8-4. Frameshift vs In-Frame Indel (Protein Consequences)**
 
-![Figure 8-4](../assets/part2/figure-8-4-frameshift-vs-inframe.png)
+![Figure 8-4](../assets/figures/figure-8-4-frameshift-vs-inframe.png)
 
 *The critical difference between frameshift and in-frame indels. Left panel: A 1-base deletion causes a frameshiftâ€”the reading frame shifts, producing wrong amino acids and often a premature stop codon, resulting in a truncated, non-functional protein. Right panel: A 3-base deletion is in-frameâ€”the reading frame is preserved, removing only one amino acid while keeping the rest of the protein intact. This difference (divisible by 3 or not) determines whether the protein is completely disrupted or partially functional.*
 
@@ -271,7 +271,7 @@ When you sequence a genome and find millions of variants, you need a systematic 
 
 **Figure 8-5. The Clinical Variant Filtering Funnel**
 
-![Figure 8-5](../assets/part2/figure-8-5-filtering-funnel.png)
+![Figure 8-5](../assets/figures/figure-8-5-filtering-funnel.png)
 
 *From millions to causality: the systematic approach to identifying disease-causing variants. Starting with 4-5 million detected variants, clinicians apply sequential filters based on population frequency, genomic location, gene relevance, functional effect prediction, and inheritance patterns. Each filter dramatically reduces the number of candidates, ultimately narrowing down to 1-3 likely causal variants that explain the patient's phenotype.*
 
