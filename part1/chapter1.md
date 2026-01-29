@@ -148,7 +148,7 @@ The HGP's sequencing technologyâ€”which relied on reading short DNA fragmen
 
 These limitations were addressed two decades later by the Telomere-to-Telomere project, which used long-read sequencing and the CHM13 cell line to finally complete these challenging regions, producing the first truly gapless human genome in 2022.
 
-![Figure 4. What the HGP Left Unfinishedâ€”and Why It Mattered](../assets/figures/chapter1_figure4.png)
+![Figure 4. What the HGP Left Unfinished”and Why It Mattered](../assets/figures/chapter1_figure4.png)
 
 **Figure 4. What the HGP Left Unfinishedâ€”and Why It Mattered.** Despite its achievements, the HGP left approximately 8% of the genome unsequenced or poorly assembled. Left: In the short-read sequencing era (HGP, 2003), highly repetitive regionsâ€”centromeres, telomeres, and segmental duplicationsâ€”remained as gaps because short DNA fragments couldn't reliably span these repeats. Right: The long-read sequencing era enabled the Telomere-to-Telomere (T2T) Consortium to produce the first truly complete, gapless human genome in 2022. These previously missing regions are not "junk"â€”they play essential roles in cell division, genome stability, and genetic variation.
 
