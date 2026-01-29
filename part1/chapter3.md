@@ -80,7 +80,7 @@ So while CHM13 isn't perfectly homozygous, it's close enough - the assembly is s
 
 ![Miga et al. 2020, Nature - Extended Data Figure 1](../assets/figures/Miga2020-Nature-ExtFig1.png)
 
-**Figure: Karyotyping of CHM13**. *The image shows two types of chromosome analysis: (a) Spectral karyotyping (SKY), where each chromosome type is labeled with a different fluorescent color, and (b) G-banding, which reveals chromosome structure through staining patterns. Both confirm that CHM13 has a normal 46,XX karyotype with no structural abnormalities such as translocations, deletions, or duplications. Source: Miga, K.H. et al. (2020). Telomere-to-telomere assembly of a complete human X chromosome. Nature, 585, 79-84. https://doi.org/10.1038/s41586-020-2547-7. License: CC-BY 4.0.*
+**Figure 3-4: Karyotyping of CHM13**. *The image shows two types of chromosome analysis: (a) Spectral karyotyping (SKY), where each chromosome type is labeled with a different fluorescent color, and (b) G-banding, which reveals chromosome structure through staining patterns. Both confirm that CHM13 has a normal 46,XX karyotype with no structural abnormalities such as translocations, deletions, or duplications. Source: Miga, K.H. et al. (2020). Telomere-to-telomere assembly of a complete human X chromosome. Nature, 585, 79-84. https://doi.org/10.1038/s41586-020-2547-7. License: CC-BY 4.0.*
 
 ### Why This Is Perfect for Sequencing
 
@@ -107,9 +107,9 @@ Normal human cells can only divide a limited number of times - typically **40 to
 
 Every time a cell divides and copies its DNA, the telomeres get slightly shorter. This happens because of the **end-replication problem**: the DNA copying machinery (DNA polymerase) can't fully replicate the very ends of linear chromosomes. Each cell division results in the loss of approximately **50-200 base pairs** from the telomeres.
 
-![Figure 3-4: Telomere Shortening Over Cell Divisions](../assets/figures/figure3-4.png)
+![Figure 3-5: Telomere Shortening Over Cell Divisions](../assets/figures/figure3-5.png)
 
-**Figure 3-4: Telomere Shortening Over Cell Divisions**. *With each cell division, telomeres progressively shorten due to the end-replication problem. Starting with long protective caps, telomeres gradually lose 50-200 base pairs per division. After approximately 40-60 divisions (the Hayflick limit), telomeres become critically short, triggering cellular senescence and preventing further division. This progressive shortening serves as a molecular clock limiting the replicative lifespan of normal somatic cells.*
+**Figure 3-5: Telomere Shortening Over Cell Divisions**. *With each cell division, telomeres progressively shorten due to the end-replication problem. Starting with long protective caps, telomeres gradually lose 50-200 base pairs per division. After approximately 40-60 divisions (the Hayflick limit), telomeres become critically short, triggering cellular senescence and preventing further division. This progressive shortening serves as a molecular clock limiting the replicative lifespan of normal somatic cells.*
 
 Eventually, after many divisions, telomeres become so short that the cell recognizes them as damaged DNA and stops dividing - a state called **senescence** (cellular aging). If cells try to divide past this point, they can undergo programmed cell death (apoptosis).
 
@@ -188,7 +188,7 @@ The CHM13 genome doesn't represent all of humanity - it comes from a single sour
 
 ![Miga et al. 2020, Nature - Extended Data Figure 2](../assets/figures/Miga2020-Nature-ExtFig2.png)
 
-**Figure: Genetic Ancestry Analysis of CHM13**. *Admixture analysis reveals the genetic ancestry composition of the CHM13 cell line. The analysis shows CHM13 has predominantly European ancestry, with smaller contributions from other ancestral populations. This ancestry information is important for understanding potential biases in using CHM13 as a reference genome and for comparative genomic studies across diverse human populations. Source: Miga, K.H. et al. (2020). Telomere-to-telomere assembly of a complete human X chromosome. Nature, 585, 79-84. https://doi.org/10.1038/s41586-020-2547-7. License: CC-BY 4.0.*
+**Figure 3-6: Genetic Ancestry Analysis of CHM13**. *Admixture analysis reveals the genetic ancestry composition of the CHM13 cell line. The analysis shows CHM13 has predominantly European ancestry, with smaller contributions from other ancestral populations. This ancestry information is important for understanding potential biases in using CHM13 as a reference genome and for comparative genomic studies across diverse human populations. Source: Miga, K.H. et al. (2020). Telomere-to-telomere assembly of a complete human X chromosome. Nature, 585, 79-84. https://doi.org/10.1038/s41586-020-2547-7. License: CC-BY 4.0.*
 
 The analysis revealed:
 - **Primarily European ancestry** (approximately 70-80% of the genome)
