@@ -387,14 +387,3 @@ Filter 5: Inheritance pattern + family data
 
 7. **Sequencing strategy matters:** WES excellent for coding variants; WGS needed for comprehensive analysis
 
----
-
-## Looking Ahead
-
-Understanding variant types is foundational. The next sections explore:
-- How variants are transmitted through families
-- Why some variants are dominant and others recessive
-- How population genetics shapes variant frequencies
-- How to use variant data to diagnose genetic diseases
-
-All builds on this framework: variants are the molecular basis of alleles, and alleles follow Mendel's rules—but now we see them directly in DNA sequence.

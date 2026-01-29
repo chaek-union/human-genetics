@@ -270,16 +270,3 @@ When you encounter NGS data in research or the clinic, consider:
 
 Understanding these details will make you a more sophisticated consumer and producer of genomic data critical skills as NGS becomes ubiquitous in modern biology and medicine.
 
----
-
-## Looking Forward
-
-Sequencing technologies continue to improve. Illumina is developing longer reads and more accurate chemistry. PacBio is improving throughput and reducing costs. Oxford Nanopore is dramatically improving accuracy through better machine learning algorithms.
-
-The next frontiers include:
-- **Single-cell sequencing**: Sequencing individual cells to understand tissue heterogeneity
-- **Long-read RNA sequencing**: Capturing full-length transcripts
-- **Epigenetic profiling**: Mapping DNA modifications alongside sequence
-- **Real-time clinical sequencing**: Same-day genome sequencing for critically ill patients
-
-NGS didn't just make sequencing faster and cheaper it fundamentally changed what questions we can ask and answer about genetics, disease, and human diversity. Every chapter that follows in this book builds on the foundation NGS created.

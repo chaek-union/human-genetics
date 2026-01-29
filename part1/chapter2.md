@@ -321,16 +321,3 @@ These advances improve our understanding of:
 
 These insights are already improving **variant calling** (identifying genetic differences) in large-scale studies, supporting **precision medicine** by identifying disease-causing mutations, and helping us understand **male infertility** and other Y-linked conditions.
 
----
-
-## Looking Forward
-
-The T2T assemblies represent major advances, but the work continues. Because these genomes represent specific individuals (CHM13 and HG002), they don't capture the full spectrum of human genetic diversity. That's where projects like the **Human Pangenome Reference Consortium (HPRC)** come in -- by assembling genomes from hundreds of individuals from different populations, researchers are building references that reflect the true diversity of humanity.
-
-The complete human genome isn't an ending -- it's a new beginning. With these complete references, we can now:
-- **Detect variants we previously missed**: Many structural variants in centromeres and segmental duplications were invisible before
-- **Study chromosome function**: Complete centromeres allow us to understand how they work and why they sometimes fail
-- **Improve clinical diagnostics**: Complete gene sequences help identify disease-causing mutations more accurately
-- **Understand human diversity**: Comparing complete genomes from different populations reveals how humans have adapted to different environments
-
-As sequencing technologies continue to improve and become more affordable, we'll be able to study these complex regions in even more detail, uncovering new insights into human health, evolution, and what makes us human.
