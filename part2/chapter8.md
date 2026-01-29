@@ -6,9 +6,10 @@ When Mendel crossed purple and white pea plants, he observed predictable pattern
 
 When you sequence a genome, you don't get one string of As, Ts, Gs, and Cs. You get *millions of differences* from the reference genome. Understanding these differences is the foundation of modern genetics. This chapter explains what variants are, how we classify them, and what effects they have.
 
-**Figure 8-1. What Is a Genetic Variant?**
 
 ![Figure 8-1](../assets/figures/figure-8-1-genetic-variant.png)
+
+**Figure 8-1. What Is a Genetic Variant?**
 
 *A genetic variant is a difference in DNA sequence between an individual's genome and the reference genome. The reference genome shows the standard sequence, while the individual's DNA contains a single base change (G→T) at one position—this is a variant. Every human genome contains approximately 4-5 million such variants.*
 
@@ -47,9 +48,10 @@ In this chapter, we use "variant" as the default neutral term.
 
 Understanding variants requires multiple perspectives. The same variant can be described by its size, location, and effect:
 
-**Figure 8-2. The Variant Classification Framework**
 
 ![Figure 8-2](../assets/figures/figure-8-2-classification-framework.png)
+
+**Figure 8-2. The Variant Classification Framework**
 
 *Genetic variants can be classified from four different perspectives: by size (SNV, indel, or structural variant), by genomic location (coding, non-coding, or regulatory), by functional effect (synonymous, missense, or loss-of-function), and by population frequency (common or rare). The same variant can be described using all four classification systems simultaneously.*
 
@@ -194,9 +196,10 @@ Protein: Met-His-Ala-Leu-Lys
 
 ### Visual: Frameshift vs In-Frame
 
-**Figure 8-4. Frameshift vs In-Frame Indel (Protein Consequences)**
 
 ![Figure 8-4](../assets/figures/figure-8-4-frameshift-vs-inframe.png)
+
+**Figure 8-4. Frameshift vs In-Frame Indel (Protein Consequences)**
 
 *The critical difference between frameshift and in-frame indels. Left panel: A 1-base deletion causes a frameshift—the reading frame shifts, producing wrong amino acids and often a premature stop codon, resulting in a truncated, non-functional protein. Right panel: A 3-base deletion is in-frame—the reading frame is preserved, removing only one amino acid while keeping the rest of the protein intact. This difference (divisible by 3 or not) determines whether the protein is completely disrupted or partially functional.*
 
@@ -269,9 +272,11 @@ When you sequence a genome and find millions of variants, you need a systematic 
 
 ### The Clinical Filtering Pipeline
 
-**Figure 8-5. The Clinical Variant Filtering Funnel**
+
 
 ![Figure 8-5](../assets/figures/figure-8-5-filtering-funnel.png)
+
+**Figure 8-5. The Clinical Variant Filtering Funnel**
 
 *From millions to causality: the systematic approach to identifying disease-causing variants. Starting with 4-5 million detected variants, clinicians apply sequential filters based on population frequency, genomic location, gene relevance, functional effect prediction, and inheritance patterns. Each filter dramatically reduces the number of candidates, ultimately narrowing down to 1-3 likely causal variants that explain the patient's phenotype.*
 
@@ -354,11 +359,11 @@ Filter 5: Inheritance pattern + family data
 
 | Variant Type | WGS | WES | Notes |
 |--------------|-----|-----|-------|
-| **Coding SNVs/indels** | âœ“âœ“ | âœ“âœ“ | Both excellent |
-| **Splice sites (canonical)** | âœ“âœ“ | âœ“âœ“ | WES captures exon boundaries |
-| **Deep intronic** | âœ“âœ“ | âœ— | WES misses most introns |
-| **Regulatory (promoter/enhancer)** | âœ“âœ“ | âœ— | WES misses non-coding |
-| **Structural variants** | âœ“ | âœ—/? | WES poor; WGS with long reads best |
+| Coding SNVs/indels | Yes | Yes | Both excellent |
+| Splice sites (canonical) | Yes | Yes | WES captures exon boundaries |
+| Deep intronic | Yes | No | WES misses most introns |
+| Regulatory (promoter/enhancer) | Yes | No | WES misses non-coding |
+| Structural variants | Limited | Poor | WES poor; WGS with long reads best |
 
 **Clinical decision:**
 - **Start with WES** for suspected Mendelian diseases (coding variants)
