@@ -2,7 +2,7 @@
 
 ## Two Sources of Your Variants
 
-When you were conceived, you received ~3.2 billion base pairs of DNAâ€”half from each parent. Within that DNA are ~4-5 million variants that differ from the reference genome.
+When you were conceived, you received ~3.2 billion base pairs of DNA—half from each parent. Within that DNA are ~4-5 million variants that differ from the reference genome.
 
 Where did they come from?
 
@@ -10,7 +10,7 @@ Where did they come from?
 
 1. **Inherited variants** (~99.98%): Already in your parents' genomes, passed through sperm and egg, traveling through populations for generations
 
-2. **De novo variants** (~0.02%): Brand new mutationsâ€”occurred for the first time in you, not present in either parent
+2. **De novo variants** (~0.02%): Brand new mutations—occurred for the first time in you, not present in either parent
 
 Understanding this distinction is crucial for genetics, medicine, and evolution. This chapter explores both.
 
@@ -25,22 +25,22 @@ Understanding this distinction is crucial for genetics, medicine, and evolution.
 
 You received one chromosome copy from each parent at every position. At heterozygous sites (where a parent has two different alleles), you randomly got one or the other.
 
-**Exampleâ€”CFTR gene position:**
+**Example—CFTR gene position:**
 
 ```
 Mother: A/G (heterozygous)    You inherit: Either A or G (50% each)
 Father: G/G (homozygous)      You inherit: G (100%)
 
 Your possible genotypes:
-â†’ A/G (50% chance)
-â†’ G/G (50% chance)
+→ A/G (50% chance)
+→ G/G (50% chance)
 ```
 
 This is **Mendelian segregation** directly observable in DNA sequences.
 
 ### Identity by Descent (IBD): Relatedness in DNA
 
-When you inherit a DNA segment, you get an exact copyâ€”**identity by descent (IBD)**. This reveals relationships:
+When you inherit a DNA segment, you get an exact copy—**identity by descent (IBD)**. This reveals relationships:
 
 | Relationship | % IBD Shared | Why |
 |--------------|--------------|-----|
@@ -85,7 +85,7 @@ Position 200-250 Mb: From maternal grandmother
 | Feature | Common Variants (>1%) | Rare Variants (<1%) |
 |---------|---------------------|-------------------|
 | **Age** | Ancient (thousands-millions of years) | Recent (hundreds-thousands of years) |
-| **Selection** | Survived selection â†’ usually benign | May be deleterious, not yet eliminated |
+| **Selection** | Survived selection → usually benign | May be deleterious, not yet eliminated |
 | **Clinical** | Complex trait risk factors | Often cause Mendelian diseases |
 | **Example** | ApoE4 (~15% frequency, Alzheimer's risk) | Family-specific BRCA1 nonsense mutations |
 
@@ -95,11 +95,11 @@ Position 200-250 Mb: From maternal grandmother
 
 ### What Are They?
 
-**De novo variants** are mutations that occurred for the first time in youâ€”not present in either parent.
+**De novo variants** are mutations that occurred for the first time in you—not present in either parent.
 
 **Where they arise:**
 - **Mostly in gametogenesis:** During sperm/egg formation
-- **Sometimes postzygotic:** In early embryonic divisions (â†’ mosaicism)
+- **Sometimes postzygotic:** In early embryonic divisions (→ mosaicism)
 
 **How many:** ~50-200 per person, depending on sequencing technology and what's counted
 
@@ -111,7 +111,7 @@ All diversity started as de novo mutations. Evolution in action.
 **2. Cause genetic diseases**  
 Many severe developmental disorders:
 - Autism (often de novo in neurodevelopmental genes)
-- Achondroplasia (almost always de novoâ€”affected individuals rarely reproduce)
+- Achondroplasia (almost always de novo—affected individuals rarely reproduce)
 - Schizophrenia (increased risk with older fathers)
 
 **3. Reveal DNA replication biology**  
@@ -155,7 +155,7 @@ Direct mutation counting in 78 Icelandic families revealed fundamental insights 
 
 **Core findings:**
 
-1. **Mutation rate:** 1.20 Ã— 10â»â¸ per base per generation
+1. **Mutation rate:** 1.20 × 10â»â¸ per base per generation
    - Translates to ~63 de novo SNVs per child (father age ~30)
 
 2. **Paternal age effect:** **+2 mutations per year of father's age**
@@ -171,13 +171,13 @@ Direct mutation counting in 78 Icelandic families revealed fundamental insights 
    - Mother: ~14.2 mutations (appeared age-independent in this study)
 
 4. **Mutation spectrum:**
-   - CpG sites: 18Ã— higher mutation rate
+   - CpG sites: 18× higher mutation rate
    - Transitions (Aâ†”G, Câ†”T): 67.8%
    - Transversions: 32.2%
 
 5. **Disease associations:**
-   - Schizophrenia risk â†‘ with paternal age (P = 2Ã—10â»âµ)
-   - Autism risk â†‘ with paternal age (P = 5.4Ã—10â»â´)
+   - Schizophrenia risk ↑ with paternal age (P = 2×10â»âµ)
+   - Autism risk ↑ with paternal age (P = 5.4×10â»â´)
 
 ### JÃ³nsson et al. (2017): Expanded Analysis with 1,548 Families
 
@@ -185,11 +185,11 @@ A more comprehensive study from the same Icelandic research group analyzed **1,5
 
 **Updated findings:**
 
-1. **Paternal mutations:** +1.51 per year of father's age (95% CI 1.45â€“1.57)
+1. **Paternal mutations:** +1.51 per year of father's age (95% CI 1.45–1.57)
    - Slightly lower than Kong 2012's estimate of +2 per year, but consistent within confidence intervals
 
-2. **Maternal mutations:** +0.37 per year of mother's age (95% CI 0.32â€“0.43)
-   - **Important discovery:** Maternal age effect exists but is ~4Ã— weaker than paternal effect
+2. **Maternal mutations:** +0.37 per year of mother's age (95% CI 0.32–0.43)
+   - **Important discovery:** Maternal age effect exists but is ~4× weaker than paternal effect
    - Kong 2012 reported maternal mutations as age-independent, but this larger study revealed a small but significant maternal age effect
 
 3. **Mutation spectrum changes with maternal age:**
@@ -208,7 +208,7 @@ A more comprehensive study from the same Icelandic research group analyzed **1,5
 
 **Key implications:**
 
-The discovery of maternal age effects and regional mutation hotspots fundamentally changed our understanding of human mutation. While paternal age remains the dominant factor (due to continuous cell divisions in spermatogenesis), maternal age also contributesâ€”particularly for certain mutation types and in specific genomic regions. The regional C>G enrichment suggests distinctive mutational processes in aging oocytes, possibly related to double-strand break repair mechanisms.
+The discovery of maternal age effects and regional mutation hotspots fundamentally changed our understanding of human mutation. While paternal age remains the dominant factor (due to continuous cell divisions in spermatogenesis), maternal age also contributes—particularly for certain mutation types and in specific genomic regions. The regional C>G enrichment suggests distinctive mutational processes in aging oocytes, possibly related to double-strand break repair mechanisms.
 
 ### Porubsky et al. (2025): Long-Read Revolution
 
@@ -236,7 +236,7 @@ Recent study measured the most accurate rate of de novo variants (including all 
 
 5. **No recombination-mutation link** (independent processes)
 
-![Figure 9-5: De novo mutations in CEPH 1463 pedigree](https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=12240836_41586_2025_8922_Fig2_HTML.jpg)
+![Figure 9-5: De novo mutations in CEPH 1463 pedigree](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-025-08922-2/MediaObjects/41586_2025_8922_Fig2_HTML.png)
 
 **Figure 9-5: De novo mutations in CEPH 1463 pedigree**. *The figure shows: (a) Number of de novo germline mutations, postzygotic mutations (PZMs), and indels in G2 parents and G3 children, (b) Allele balance comparison showing germline SNVs cluster near 0.50 while postzygotic SNVs show lower allele balance (<0.25), (c) Strong paternal age effect for germline de novo SNVs (+1.55 DNMs per year) but not for PZMs, (d) Estimated SNV DNM rates by genomic region, showing significant excess in repetitive regions including centromeres and segmental duplications. Source: Porubsky, D. et al. (2025). Human de novo mutation rates from a four-generation pedigree reference. Nature. https://doi.org/10.1038/s41586-025-08922-2. License: CC-BY 4.0.*
 
@@ -264,11 +264,11 @@ Recent study measured the most accurate rate of de novo variants (including all 
 **1. Look for de novo mutations:**
 ```
 Sequence trio (child + both parents)
-         â†“
+         ↓
 Identify variants in child absent from both parents
-         â†“
+         ↓
 Prioritize: LoF or damaging missense in disease genes
-         â†“
+         ↓
 Validate: Check for mosaicism in parents
 ```
 
@@ -312,7 +312,7 @@ De novo candidates:
 
 | Filter | Purpose | Typical Threshold |
 |--------|---------|------------------|
-| Read depth | Ensure reliable calls | >20Ã— coverage |
+| Read depth | Ensure reliable calls | >20× coverage |
 | Allele balance | Check heterozygous ratio | 30-70% variant reads |
 | Mapping quality | Avoid mismapped reads | MAPQ >30 |
 | Parental absence | Confirm not inherited | 0 variant reads in parents |
@@ -356,7 +356,7 @@ The common SNPs distinguishing populations were once de novo mutations in indivi
 **Consequence:** Population-wide mutation rate fluctuates with demographics.
 
 **Debate:** Does delayed reproduction increase disease burden? 
-- Pro: More mutations â†’ more genetic disease
+- Pro: More mutations → more genetic disease
 - Con: Most mutations harmless; modern medicine compensates
 
 ---
@@ -370,7 +370,7 @@ The common SNPs distinguishing populations were once de novo mutations in indivi
 | **Age** | Can be ancient (millions of years) | Brand new (this generation) |
 | **Detection** | Standard variant calling | Trio sequencing required |
 | **Inheritance** | Follow Mendelian segregation | Not inherited (absent in parents) |
-| **Clinical** | Common â†’ complex traits<br>Rare â†’ Mendelian diseases | Severe developmental disorders<br>Dominant de novo conditions |
+| **Clinical** | Common → complex traits<br>Rare → Mendelian diseases | Severe developmental disorders<br>Dominant de novo conditions |
 | **Selection** | Already filtered by selection | Haven't faced selection yet |
 
 ---
@@ -414,7 +414,7 @@ The same replication errors causing your de novo variants, accumulated over mill
 
 **2. Gene duplication creating new functions**
 
-Genes can be duplicated by unequal crossing-over or retrotransposition. Usually the duplicate copy degrades, but occasionally it evolves a new function. Classic example: the globin gene family (myoglobin, Î±-globin, Î²-globin, fetal Î³-globin) all arose from ancient duplications of a single ancestral gene. Each duplication allowed functional specializationâ€”fetal hemoglobin has higher oxygen affinity for placental transfer, while adult hemoglobin optimizes oxygen delivery to tissues.
+Genes can be duplicated by unequal crossing-over or retrotransposition. Usually the duplicate copy degrades, but occasionally it evolves a new function. Classic example: the globin gene family (myoglobin, Î±-globin, Î²-globin, fetal Î³-globin) all arose from ancient duplications of a single ancestral gene. Each duplication allowed functional specialization—fetal hemoglobin has higher oxygen affinity for placental transfer, while adult hemoglobin optimizes oxygen delivery to tissues.
 
 **3. De novo gene birth from non-coding DNA**
 
@@ -440,18 +440,4 @@ Recent work identified additional speech-related genes (CHD3, SETD1A, WDR5) thro
 - Some created new genes through duplication
 - Some enabled uniquely human traits like speech
 
-The DNA replication errors adding ~1.5 mutations per year of your father's age (and ~0.4 per year of your mother's age) are the same molecular process that, over evolutionary time, created all genetic diversityâ€”from individual differences to the origin of new species.
-
----
-
-## Looking Ahead: From Transmission to Pattern
-
-You now understand where variants come fromâ€”inherited or arising de novoâ€”and how they connect to evolution across all timescales. The next chapters explore:
-
-**Chapter 10â€”Dominant Inheritance:** Why does one mutant copy sometimes cause disease? You'll see three molecular mechanisms explaining dominance.
-
-**Chapter 11â€”Haploinsufficiency:** Why are some genes sensitive to losing one copy? Population-scale metrics predict gene constraint.
-
-**Chapter 12â€”Recessive Inheritance:** What happens when both copies are mutated? How does family structure reveal recessive alleles?
-
-Understanding transmission is the foundation. Now we examine the patterns those transmitted variants createâ€”the dominant and recessive inheritance that Mendel observed, now explained at the molecular level.
+The DNA replication errors adding ~1.5 mutations per year of your father's age (and ~0.4 per year of your mother's age) are the same molecular process that, over evolutionary time, created all genetic diversity—from individual differences to the origin of new species.
