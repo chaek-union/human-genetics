@@ -155,7 +155,7 @@ Direct mutation counting in 78 Icelandic families revealed fundamental insights 
 
 **Core findings:**
 
-1. **Mutation rate:** 1.20 × 10â»â¸ per base per generation
+1. **Mutation rate:** 1.20 x 10^-8 per base per generation
    - Translates to ~63 de novo SNVs per child (father age ~30)
 
 2. **Paternal age effect:** **+2 mutations per year of father's age**
@@ -172,16 +172,16 @@ Direct mutation counting in 78 Icelandic families revealed fundamental insights 
 
 4. **Mutation spectrum:**
    - CpG sites: 18× higher mutation rate
-   - Transitions (Aâ†”G, Câ†”T): 67.8%
+   - Transitions (A->G, C->T): 67.8%
    - Transversions: 32.2%
 
 5. **Disease associations:**
    - Schizophrenia risk ↑ with paternal age (P = 2×10â»âµ)
    - Autism risk ↑ with paternal age (P = 5.4×10â»â´)
 
-### JÃ³nsson et al. (2017): Expanded Analysis with 1,548 Families
+### Jonsson et al. (2017): Expanded Analysis with 1,548 Families
 
-A more comprehensive study from the same Icelandic research group analyzed **1,548 parent-child trios** (20-fold larger than Kong 2012), identifying 108,778 de novo mutations ([JÃ³nsson et al. 2017, Nature](https://doi.org/10.1038/nature24018)). This larger dataset confirmed the paternal age effect and revealed important new findings about maternal contributions.
+A more comprehensive study from the same Icelandic research group analyzed **1,548 parent-child trios** (20-fold larger than Kong 2012), identifying 108,778 de novo mutations ([Jonsson et al. 2017, Nature](https://doi.org/10.1038/nature24018)). This larger dataset confirmed the paternal age effect and revealed important new findings about maternal contributions.
 
 **Updated findings:**
 
