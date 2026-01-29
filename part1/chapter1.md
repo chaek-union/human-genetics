@@ -1,12 +1,12 @@
 # Chapter 1. The Human Genome Project
 
-Imagine trying to understand how a car works by only looking at individual partsâ€”a spark plug here, a piston thereâ€”without ever seeing the complete engine or having a manual. This was essentially how genetics worked before 1990.
+Imagine trying to understand how a car works by only looking at individual parts - a spark plug here, a piston there - without ever seeing the complete engine or having a manual. This was essentially how genetics worked before 1990.
 
 Scientists knew about individual genes. They could identify genes responsible for specific diseases, like the gene for cystic fibrosis or sickle cell anemia. They understood that DNA carried genetic information. But they had no comprehensive map showing where all the genes were located, how many genes humans had, or what most of our DNA actually did.
 
 Each discovery required years of painstaking work to isolate and characterize a single gene. If you wanted to study a new gene, you had to start almost from scratch, using indirect methods to figure out roughly which chromosome it was on, then narrowing down its location bit by bit. It was like searching for a specific house in a city without having a map or knowing the address.
 
-The **Human Genome Project (HGP)**, launched in 1990, aimed to change this fundamentally. The goal was audacious: sequence all 3 billion DNA base pairs in the human genome and create a complete reference map that any scientist could use. This would be biology's equivalent of the periodic table in chemistry or the standard model in physicsâ€”a foundational resource that would accelerate all future research.
+The **Human Genome Project (HGP)**, launched in 1990, aimed to change this fundamentally. The goal was audacious: sequence all 3 billion DNA base pairs in the human genome and create a complete reference map that any scientist could use. This would be biology's equivalent of the periodic table in chemistry or the standard model in physics - a foundational resource that would accelerate all future research.
 
 ![Figure 1. From Gene-by-Gene to Genome-Wide Biology](../assets/figures/chapter1_figure1.png)
 
@@ -20,15 +20,15 @@ The Human Genome Project had several interconnected goals:
 
 ### 1. Sequence the Entire Genome
 
-The primary objective was to determine the exact order of all ~3 billion nucleotides (A, T, G, C) in human DNA. This would create a reference sequenceâ€”a standard "text" that scientists could use to locate genes, compare individual genomes, and understand genetic variation.
+The primary objective was to determine the exact order of all ~3 billion nucleotides (A, T, G, C) in human DNA. This would create a reference sequence - a standard "text" that scientists could use to locate genes, compare individual genomes, and understand genetic variation.
 
 Think of it like creating the first complete, accurate map of an unexplored continent. Once you have that map, every future explorer can use it to navigate, mark new discoveries, and share their findings with others.
 
 ### 2. Identify All Human Genes
 
-Scientists wanted to catalog every gene in the human genome. At the time, estimates ranged wildlyâ€”some predicted 50,000 genes, others guessed as many as 100,000. The thinking was simple: humans are complex organisms, so we must have many more genes than simpler creatures like worms or flies.
+Scientists wanted to catalog every gene in the human genome. At the time, estimates ranged wildly - some predicted 50,000 genes, others guessed as many as 100,000. The thinking was simple: humans are complex organisms, so we must have many more genes than simpler creatures like worms or flies.
 
-This assumption turned out to be spectacularly wrongâ€”and that surprise taught us something profound about how biology works.
+This assumption turned out to be spectacularly wrong - and that surprise taught us something profound about how biology works.
 
 ### 3. Develop New Technologies
 
@@ -38,25 +38,25 @@ The HGP needed to drive innovation in sequencing technology, robotics, and compu
 
 ### 4. Map Genetic Variation
 
-Beyond the reference sequence, the HGP aimed to create genetic and physical maps showing landmarks along chromosomesâ€”like mile markers on a highway. These landmarks, particularly **single nucleotide polymorphisms (SNPs)**â€”single-letter DNA differences between individualsâ€”would help scientists link specific genes to diseases or traits.
+Beyond the reference sequence, the HGP aimed to create genetic and physical maps showing landmarks along chromosomes - like mile markers on a highway. These landmarks, particularly **single nucleotide polymorphisms (SNPs)** - single-letter DNA differences between individuals - would help scientists link specific genes to diseases or traits.
 
 This mapping laid the groundwork for understanding how humans differ genetically, which became crucial for personalized medicine.
 
 ![Figure 2. What the Human Genome Project Aimed to Build](../assets/figures/chapter1_figure2.png)
 
-**Figure 2. What the Human Genome Project Aimed to Build.** The HGP was not just a sequencing projectâ€”it was an integrated effort to build the foundational infrastructure for modern genomics. Four interconnected goals worked together: (1) generating a complete reference sequence of 3 billion base pairs, (2) cataloging all human genes (~20,000), (3) driving technological innovation to reduce costs and increase speed, and (4) mapping genetic landmarks (SNPs) for comparative studies. Together, these created a public resource that accelerated all subsequent genetic research.
+**Figure 2. What the Human Genome Project Aimed to Build.** The HGP was not just a sequencing project - it was an integrated effort to build the foundational infrastructure for modern genomics. Four interconnected goals worked together: (1) generating a complete reference sequence of 3 billion base pairs, (2) cataloging all human genes (~20,000), (3) driving technological innovation to reduce costs and increase speed, and (4) mapping genetic landmarks (SNPs) for comparative studies. Together, these created a public resource that accelerated all subsequent genetic research.
 
 ---
 
 ## How Did They Do It? The HGP Journey
 
-The HGP was a massive international collaboration involving sequencing centers in the United States, United Kingdom, France, Germany, Japan, China, and other countries. It was originally planned to take 15 years (1990â€“2005), but technological advances and intense collaborationâ€”plus some competitive pressureâ€”accelerated the timeline significantly.
+The HGP was a massive international collaboration involving sequencing centers in the United States, United Kingdom, France, Germany, Japan, China, and other countries. It was originally planned to take 15 years (1990-2005), but technological advances and intense collaboration - plus some competitive pressure - accelerated the timeline significantly.
 
 ### Key Milestones
 
 **Early Years (1990â€“1998): Learning by Doing**
 
-The project didn't jump straight into sequencing human DNA. Instead, scientists first practiced on simpler organisms. They sequenced the genomes of bacteria, yeast, and the roundworm *C. elegans* (completed in 1998)â€”creatures with much smaller genomes. These projects served as training exercises, helping researchers refine their methods and develop the computational tools needed to assemble millions of short DNA fragments into complete genome sequences.
+The project didn't jump straight into sequencing human DNA. Instead, scientists first practiced on simpler organisms. They sequenced the genomes of bacteria, yeast, and the roundworm *C. elegans* (completed in 1998) - creatures with much smaller genomes. These projects served as training exercises, helping researchers refine their methods and develop the computational tools needed to assemble millions of short DNA fragments into complete genome sequences.
 
 **First Success (1999): Chromosome 22**
 
@@ -70,11 +70,11 @@ This created both rivalry and synergy. In June 2000, both groups announced they 
 
 **Publication (2001): Two Versions**
 
-In February 2001, both the HGP and Celera published their draft sequencesâ€”the public consortium in *Nature* and Celera in *Science*. These weren't finished sequences; they contained gaps and errors, particularly in repetitive regions. But they represented enormous progress: for the first time, scientists had a working draft of the entire human genome.
+In February 2001, both the HGP and Celera published their draft sequences - the public consortium in *Nature* and Celera in *Science*. These weren't finished sequences; they contained gaps and errors, particularly in repetitive regions. But they represented enormous progress: for the first time, scientists had a working draft of the entire human genome.
 
 **Completion (2003): The "Finished" Genome**
 
-In April 2003â€”exactly 50 years after Watson and Crick published the structure of DNAâ€”the HGP announced completion of the human genome sequence. About 99% of the gene-containing portions (called **euchromatic regions**) had been sequenced to high accuracy, with an error rate of less than 1 mistake per 100,000 bases.
+In April 2003 - exactly 50 years after Watson and Crick published the structure of DNA - the HGP announced completion of the human genome sequence. About 99% of the gene-containing portions (called **euchromatic regions**) had been sequenced to high accuracy, with an error rate of less than 1 mistake per 100,000 bases.
 
 This "finished" genome, later refined and released as **GRCh37** (also called hg19) and then **GRCh38** (hg38), became the reference that researchers worldwide would use for the next two decades.
 
@@ -82,28 +82,28 @@ This "finished" genome, later refined and released as **GRCh37** (also called hg
 
 ## The Big Surprise: Only 20,000 Genes?
 
-One of the HGP's most striking discoveries was how few genes humans actually have. The final count came to approximately **20,000â€“25,000 protein-coding genes**â€”fewer than many scientists expected, and not dramatically more than much simpler organisms:
+One of the HGP's most striking discoveries was how few genes humans actually have. The final count came to approximately **20,000-25,000 protein-coding genes** - fewer than many scientists expected, and not dramatically more than much simpler organisms:
 
 - Humans: ~20,000 genes
 - Roundworms (*C. elegans*): ~20,000 genes  
 - Fruit flies: ~14,000 genes
 - Rice plants: ~40,000 genes
 
-Waitâ€”rice has more genes than humans? How can that be?
+Wait - rice has more genes than humans? How can that be?
 
-This discovery forced scientists to rethink what makes organisms complex. It's not just the number of genes, but how those genes are regulated, combined, and expressed. Human genes can produce multiple proteins through processes like **alternative splicing** (where one gene can be read in different ways to make different proteins). Gene regulationâ€”when and where genes are turned on or offâ€”is also far more sophisticated in humans than in simpler organisms.
+This discovery forced scientists to rethink what makes organisms complex. It's not just the number of genes, but how those genes are regulated, combined, and expressed. Human genes can produce multiple proteins through processes like **alternative splicing** (where one gene can be read in different ways to make different proteins). Gene regulation - when and where genes are turned on or off - is also far more sophisticated in humans than in simpler organisms.
 
 The HGP also revealed that only about 1.5% of the human genome actually codes for proteins. The remaining ~98.5% includes regulatory sequences, structural elements, and repetitive DNA. Much of this "non-coding" DNA, once dismissed as "junk DNA," is now recognized as functionally important for controlling gene expression.
 
 ![Figure 3. The Big Surprise: Gene Number vs Biological Complexity](../assets/figures/chapter1_figure3.png)
 
-**Figure 3. The Big Surprise: Gene Number vs Biological Complexity.** One of the HGP's most striking discoveries was that humans have only ~20,000 protein-coding genesâ€”similar to roundworms (~20,000), fewer than rice plants (~40,000), and not dramatically more than fruit flies (~14,000). This counterintuitive finding revealed that biological complexity does not arise from gene count alone, but rather from sophisticated regulatory mechanisms including alternative splicing (one gene producing multiple proteins) and intricate gene regulatory networks that control when, where, and how genes are expressed.
+**Figure 3. The Big Surprise: Gene Number vs Biological Complexity.** One of the HGP's most striking discoveries was that humans have only ~20,000 protein-coding genes - similar to roundworms (~20,000), fewer than rice plants (~40,000), and not dramatically more than fruit flies (~14,000). This counterintuitive finding revealed that biological complexity does not arise from gene count alone, but rather from sophisticated regulatory mechanisms including alternative splicing (one gene producing multiple proteins) and intricate gene regulatory networks that control when, where, and how genes are expressed.
 
 ---
 
 ## How the HGP Changed Genetics
 
-The Human Genome Project didn't just produce a reference sequenceâ€”it fundamentally transformed how biological research is conducted. As geneticist Richard Gibbs observed, *"Its success should be measured by how this project transformed the rules of research, the way of practicing biological discovery, and the ubiquitous digitization of biological science."*
+The Human Genome Project didn't just produce a reference sequence - it fundamentally transformed how biological research is conducted. As geneticist Richard Gibbs observed, *"Its success should be measured by how this project transformed the rules of research, the way of practicing biological discovery, and the ubiquitous digitization of biological science."*
 
 These transformations include:
 
@@ -113,7 +113,7 @@ Before the HGP, genetics meant studying one gene at a time. Researchers would sp
 
 ### A Common Reference for Comparing Genomes
 
-The reference genome provided a standard coordinate systemâ€”like longitude and latitude for the genome. Now when scientists discover a genetic variant associated with a disease, they can specify its exact location: "chromosome 7, position 117,559,593." Other researchers can immediately look up that location, see what genes are nearby, and replicate the finding.
+The reference genome provided a standard coordinate system - like longitude and latitude for the genome. Now when scientists discover a genetic variant associated with a disease, they can specify its exact location: "chromosome 7, position 117,559,593." Other researchers can immediately look up that location, see what genes are nearby, and replicate the finding.
 
 This standardization accelerated disease gene discovery. Before the HGP, finding a disease gene could take a decade or more. After the HGP, researchers could conduct **genome-wide association studies (GWAS)**, comparing DNA from thousands of people with and without a disease to identify genetic risk factors. This has led to discoveries of genetic contributions to diabetes, heart disease, schizophrenia, and countless other conditions.
 
@@ -135,7 +135,7 @@ This open-access approach became a hallmark of modern genomics, influencing proj
 
 ## What the HGP Couldn't Do: The 8% That Remained
 
-Despite its achievements, the HGP left significant gaps. About 8% of the genomeâ€”roughly 240 million base pairsâ€”remained unsequenced or poorly sequenced. These gaps occurred mainly in highly repetitive regions:
+Despite its achievements, the HGP left significant gaps. About 8% of the genome - roughly 240 million base pairs - remained unsequenced or poorly sequenced. These gaps occurred mainly in highly repetitive regions:
 
 - **Centromeres**: The repetitive DNA at chromosome centers
 - **Telomeres**: The repetitive caps at chromosome ends  
@@ -144,25 +144,25 @@ Despite its achievements, the HGP left significant gaps. About 8% of the genome�
 
 These regions aren't genetic "junk." Centromeres are essential for cell division. Variations in ribosomal DNA copy number may affect protein synthesis and health. Segmental duplications are hotspots for genetic variation and disease-causing mutations.
 
-The HGP's sequencing technologyâ€”which relied on reading short DNA fragmentsâ€”couldn't reliably distinguish between nearly identical repeats. It's like trying to assemble a book where several pages are identicalâ€”you know those pages exist, but you can't tell where each one goes.
+The HGP's sequencing technology - which relied on reading short DNA fragments - couldn't reliably distinguish between nearly identical repeats. It's like trying to assemble a book where several pages are identicalâ€”you know those pages exist, but you can't tell where each one goes.
 
 These limitations were addressed two decades later by the Telomere-to-Telomere project, which used long-read sequencing and the CHM13 cell line to finally complete these challenging regions, producing the first truly gapless human genome in 2022.
 
-![Figure 4. What the HGP Left Unfinished”and Why It Mattered](../assets/figures/chapter1_figure4.png)
+![Figure 4. What the HGP Left Unfinished - and Why It Mattered](../assets/figures/chapter1_figure4.png)
 
-**Figure 4. What the HGP Left Unfinishedâ€”and Why It Mattered.** Despite its achievements, the HGP left approximately 8% of the genome unsequenced or poorly assembled. Left: In the short-read sequencing era (HGP, 2003), highly repetitive regionsâ€”centromeres, telomeres, and segmental duplicationsâ€”remained as gaps because short DNA fragments couldn't reliably span these repeats. Right: The long-read sequencing era enabled the Telomere-to-Telomere (T2T) Consortium to produce the first truly complete, gapless human genome in 2022. These previously missing regions are not "junk"â€”they play essential roles in cell division, genome stability, and genetic variation.
+**Figure 4. What the HGP Left Unfinished - and Why It Mattered.** Despite its achievements, the HGP left approximately 8% of the genome unsequenced or poorly assembled. Left: In the short-read sequencing era (HGP, 2003), highly repetitive regions - centromeres, telomeres, and segmental duplications - remained as gaps because short DNA fragments couldn't reliably span these repeats. Right: The long-read sequencing era enabled the Telomere-to-Telomere (T2T) Consortium to produce the first truly complete, gapless human genome in 2022. These previously missing regions are not "junk" - they play essential roles in cell division, genome stability, and genetic variation.
 
 ---
 
 ## The Foundation for Everything That Followed
 
-The Human Genome Project created the infrastructure for modern genetics. Every genetic discovery since 2003â€”from identifying disease genes to understanding human evolution to developing personalized cancer treatmentsâ€”builds on the reference genome the HGP produced.
+The Human Genome Project created the infrastructure for modern genetics. Every genetic discovery since 2003 - from identifying disease genes to understanding human evolution to developing personalized cancer treatments - builds on the reference genome the HGP produced.
 
 It transformed genetics from a science focused on individual genes into a data-driven discipline where researchers routinely work with billions of data points. It established that genomic data should be a public resource, freely shared to benefit all of humanity.
 
 And perhaps most importantly, it showed us that humans are far more complex than the simple sum of our genes. Those ~20,000 genes, working together in intricate regulatory networks, create all the diversity and complexity of human life.
 
-The HGP asked: What does our genome say? The projects that followedâ€”like T2T-CHM13 and the Human Pangenomeâ€”are asking: How does it vary? What does that variation mean? These questions continue to drive genomics forward, building on the foundation the HGP laid more than two decades ago.
+The HGP asked: What does our genome say? The projects that followed - like T2T-CHM13 and the Human Pangenome - are asking: How does it vary? What does that variation mean? These questions continue to drive genomics forward, building on the foundation the HGP laid more than two decades ago.
 
 ---
 
@@ -171,10 +171,10 @@ The HGP asked: What does our genome say? The projects that followedâ€”like 
 | **Year** | **Milestone** |
 |----------|---------------|
 | 1990 | Human Genome Project officially launches with 15-year timeline |
-| 1995â€“1998 | Practice sequencing: model organism genomes completed (*E. coli*, yeast, *C. elegans*) |
+| 1995-1998 | Practice sequencing: model organism genomes completed (*E. coli*, yeast, *C. elegans*) |
 | 1999 | First complete human chromosome sequenced (chromosome 22) |
 | 2000 | Draft genome announced by both public HGP and private Celera Genomics (~90% coverage) |
 | 2001 | Draft sequences published in *Nature* and *Science* |
-| 2003 | "Finished" sequence released: 99% of gene-containing regions sequenced with <1/100,000 error rate; ~20,000â€“25,000 genes identified |
-| 2003â€“2013 | Reference genome refined (GRCh37/hg19, then GRCh38/hg38), but ~8% gaps remain |
+| 2003 | "Finished" sequence released: 99% of gene-containing regions sequenced with <1/100,000 error rate; ~20,000-25,000 genes identified |
+| 2003-2013 | Reference genome refined (GRCh37/hg19, then GRCh38/hg38), but ~8% gaps remain |
 | 2022 | T2T-CHM13 completes the remaining gaps, producing first truly gapless human genome |
