@@ -23,7 +23,7 @@ Finding those needle-in-a-haystack variants requires **annotation** (adding mean
 3. **POPULATION**: Common or rare?
 4. **CLINICAL**: Known disease association?
 
-![Figure 7-1. The four core questions of variant annotation. Each variant must be evaluated across four dimensions: genomic location, functional consequence, population frequency, and clinical relevance.](../assets/figures/chapter7_fig1.jpg)
+![Figure 7-1. The four core questions of variant annotation. Each variant must be evaluated across four dimensions: genomic location, functional consequence, population frequency, and clinical relevance.](../assets/figures/chapter7_fig1.png)
 
 ## Annotation Tools
 
@@ -86,7 +86,7 @@ Variants are classified on a five-tier scale: **Pathogenic** (causes disease) â†
 
 **The VUS challenge:** Many variants lack sufficient evidence for classification. As data accumulates, VUSs get reclassifiedâ€”patients often recheck results annually.
 
-![Figure 7-2. The three-tier variant database system. dbSNP catalogs known variants, gnomAD provides population frequencies, and ClinVar offers clinical interpretations.](../assets/figures/chapter7_fig2.jpg)
+![Figure 7-2. The three-tier variant database system. dbSNP catalogs known variants, gnomAD provides population frequencies, and ClinVar offers clinical interpretations.](../assets/figures/chapter7_fig2.png)
 
 ## Predicting Variant Pathogenicity
 
@@ -100,7 +100,7 @@ For variants not yet in ClinVar, computational tools predict likely effects:
 
 **Important limitation:** These are *predictions*, not proof. Functional studies or clinical evidence are required for confirmation.
 
-![Figure 7-3. Integration of multiple evidence sources for variant interpretation. Clinical interpretation requires convergence of population data, databases, computational predictions, and patient phenotype.](../assets/figures/chapter7_fig3.jpg)
+![Figure 7-3. Integration of multiple evidence sources for variant interpretation. Clinical interpretation requires convergence of population data, databases, computational predictions, and patient phenotype.](../assets/figures/chapter7_fig3.png)
 
 ## Genomic Annotation: The Reference Framework
 
@@ -138,7 +138,7 @@ Biobanks are large collections of DNA samples linked to detailed health informat
 
 **Patient:** 4-year-old with developmental delays, seizures, abnormal brain MRI.
 
-![Figure 7-4. The variant filtering funnel. Starting from millions of variants, sequential filtering through annotation, population frequency, clinical databases, computational prediction, and phenotype matching narrows down to the causal variant.](../assets/figures/chapter7_fig4.jpg)
+![Figure 7-4. The variant filtering funnel. Starting from millions of variants, sequential filtering through annotation, population frequency, clinical databases, computational prediction, and phenotype matching narrows down to the causal variant.](../assets/figures/chapter7_fig4.png)
 
 **Diagnostic workflow:**
 
