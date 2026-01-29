@@ -8,7 +8,7 @@ Each discovery required years of painstaking work to isolate and characterize a 
 
 The **Human Genome Project (HGP)**, launched in 1990, aimed to change this fundamentally. The goal was audacious: sequence all 3 billion DNA base pairs in the human genome and create a complete reference map that any scientist could use. This would be biology's equivalent of the periodic table in chemistry or the standard model in physicsâ€”a foundational resource that would accelerate all future research.
 
-![Figure 1. From Gene-by-Gene to Genome-Wide Biology](../assets/figures/chapter1_figure1.jpg)
+![Figure 1. From Gene-by-Gene to Genome-Wide Biology](../assets/figures/chapter1_figure1.png)
 
 **Figure 1. From Gene-by-Gene to Genome-Wide Biology.** The HGP fundamentally transformed the scale and approach of genetic research. Pre-HGP: Scientists studied individual genes in isolation, without a comprehensive map of the genome (left). Post-HGP: Researchers can perform genome-wide analyses using a shared reference coordinate system, examining all genes simultaneously (right). This shift is analogous to moving from searching for addresses without a city map to having GPS coordinates for every location.
 
@@ -42,7 +42,7 @@ Beyond the reference sequence, the HGP aimed to create genetic and physical maps
 
 This mapping laid the groundwork for understanding how humans differ genetically, which became crucial for personalized medicine.
 
-![Figure 2. What the Human Genome Project Aimed to Build](../assets/figures/chapter1_figure2.jpg)
+![Figure 2. What the Human Genome Project Aimed to Build](../assets/figures/chapter1_figure2.png)
 
 **Figure 2. What the Human Genome Project Aimed to Build.** The HGP was not just a sequencing projectâ€”it was an integrated effort to build the foundational infrastructure for modern genomics. Four interconnected goals worked together: (1) generating a complete reference sequence of 3 billion base pairs, (2) cataloging all human genes (~20,000), (3) driving technological innovation to reduce costs and increase speed, and (4) mapping genetic landmarks (SNPs) for comparative studies. Together, these created a public resource that accelerated all subsequent genetic research.
 
@@ -95,7 +95,7 @@ This discovery forced scientists to rethink what makes organisms complex. It's n
 
 The HGP also revealed that only about 1.5% of the human genome actually codes for proteins. The remaining ~98.5% includes regulatory sequences, structural elements, and repetitive DNA. Much of this "non-coding" DNA, once dismissed as "junk DNA," is now recognized as functionally important for controlling gene expression.
 
-![Figure 3. The Big Surprise: Gene Number vs Biological Complexity](../assets/figures/chapter1_figure3.jpg)
+![Figure 3. The Big Surprise: Gene Number vs Biological Complexity](../assets/figures/chapter1_figure3.png)
 
 **Figure 3. The Big Surprise: Gene Number vs Biological Complexity.** One of the HGP's most striking discoveries was that humans have only ~20,000 protein-coding genesâ€”similar to roundworms (~20,000), fewer than rice plants (~40,000), and not dramatically more than fruit flies (~14,000). This counterintuitive finding revealed that biological complexity does not arise from gene count alone, but rather from sophisticated regulatory mechanisms including alternative splicing (one gene producing multiple proteins) and intricate gene regulatory networks that control when, where, and how genes are expressed.
 
@@ -148,7 +148,7 @@ The HGP's sequencing technologyâ€”which relied on reading short DNA fragmen
 
 These limitations were addressed two decades later by the Telomere-to-Telomere project, which used long-read sequencing and the CHM13 cell line to finally complete these challenging regions, producing the first truly gapless human genome in 2022.
 
-![Figure 4. What the HGP Left Unfinishedâ€”and Why It Mattered](../assets/figures/chapter1_figure4.jpg)
+![Figure 4. What the HGP Left Unfinishedâ€”and Why It Mattered](../assets/figures/chapter1_figure4.png)
 
 **Figure 4. What the HGP Left Unfinishedâ€”and Why It Mattered.** Despite its achievements, the HGP left approximately 8% of the genome unsequenced or poorly assembled. Left: In the short-read sequencing era (HGP, 2003), highly repetitive regionsâ€”centromeres, telomeres, and segmental duplicationsâ€”remained as gaps because short DNA fragments couldn't reliably span these repeats. Right: The long-read sequencing era enabled the Telomere-to-Telomere (T2T) Consortium to produce the first truly complete, gapless human genome in 2022. These previously missing regions are not "junk"â€”they play essential roles in cell division, genome stability, and genetic variation.
 
