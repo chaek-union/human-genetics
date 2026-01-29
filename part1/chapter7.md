@@ -18,18 +18,12 @@ Finding those needle-in-a-haystack variants requires **annotation** (adding mean
 
 **Variant annotation** adds biological and clinical context to each variant. For every difference you find, annotation helps answer four key questions:
 
-```
-┌─────────────────────────────────────────────────┐
-│  THE FOUR ANNOTATION QUESTIONS                  │
-├─────────────────────────────────────────────────┤
-│  1. LOCATION: Gene? Exon? Regulatory region?    │
-│  2. FUNCTION: Protein change? Splicing effect?  │
-│  3. POPULATION: Common or rare?                 │
-│  4. CLINICAL: Known disease association?        │
-└─────────────────────────────────────────────────┘
-```
+1. **LOCATION**: Gene? Exon? Regulatory region?
+2. **FUNCTION**: Protein change? Splicing effect?
+3. **POPULATION**: Common or rare?
+4. **CLINICAL**: Known disease association?
 
----
+![Figure 7-1. The four core questions of variant annotation. Each variant must be evaluated across four dimensions: genomic location, functional consequence, population frequency, and clinical relevance.](../assets/figures/chapter7_fig1.jpg)
 
 ## Annotation Tools
 
@@ -41,12 +35,10 @@ Three major tools automate variant annotation. Each has distinct strengths:
 | **ANNOVAR** | Multi-database integration, flexible filtering | Prioritizing variants from large datasets | Adds gnomAD frequencies, conservation scores, disease links |
 | **SnpEff** | Automatic impact classification | Quick screening for disease-causing variants | HIGH (stop-gain), MODERATE (missense), LOW (synonymous) |
 
-**In practice**, researchers often use multiple tools for cross-validation. For example, finding a CFTR stop-gain mutation:
+In practice, researchers often use multiple tools for cross-validation. For example, when analyzing a CFTR stop-gain mutation:
 - VEP identifies the precise location and protein change
 - ANNOVAR adds population frequency data
 - SnpEff flags it as HIGH impact for prioritization
-
----
 
 ## Variant Databases: The Three-Tier System
 
@@ -84,11 +76,7 @@ Variant databases form a hierarchical information structure: known variants → 
 
 **Classification system:**
 
-```
-Pathogenic ←→ Likely Pathogenic ←→ VUS ←→ Likely Benign ←→ Benign
-    ▲                                  ▲                       ▲
-Causes disease            Uncertain significance      Harmless
-```
+Variants are classified on a five-tier scale: **Pathogenic** (causes disease) ← **Likely Pathogenic** ← **VUS** (Variant of Uncertain Significance) ← **Likely Benign** ← **Benign** (harmless).
 
 **Clinical workflow:**
 1. Patient with suspected genetic disease → sequence relevant genes
@@ -98,7 +86,7 @@ Causes disease            Uncertain significance      Harmless
 
 **The VUS challenge:** Many variants lack sufficient evidence for classification. As data accumulates, VUSs get reclassified—patients often recheck results annually.
 
----
+![Figure 7-2. The three-tier variant database system. dbSNP catalogs known variants, gnomAD provides population frequencies, and ClinVar offers clinical interpretations.](../assets/figures/chapter7_fig2.jpg)
 
 ## Predicting Variant Pathogenicity
 
@@ -110,9 +98,9 @@ For variants not yet in ClinVar, computational tools predict likely effects:
 | **REVEL** | 0-1 scale | >0.5 = likely pathogenic | Missense variants in Mendelian diseases |
 | **AlphaMissense** | AI-based classification | Benign/Ambiguous/Pathogenic | Structure-based predictions for 71M variants |
 
-**Important limitation:** These are *predictions*, not proof. Functional studies or clinical evidence needed for confirmation.
+**Important limitation:** These are *predictions*, not proof. Functional studies or clinical evidence are required for confirmation.
 
----
+![Figure 7-3. Integration of multiple evidence sources for variant interpretation. Clinical interpretation requires convergence of population data, databases, computational predictions, and patient phenotype.](../assets/figures/chapter7_fig3.jpg)
 
 ## Genomic Annotation: The Reference Framework
 
@@ -130,8 +118,6 @@ Before annotating variants, we need a map of the genome showing where genes, exo
 
 **Clinical example:** BRCA1 founder mutation reported as "NM_007294.3:c.5266dup" using RefSeq coordinates—the standard in clinical settings.
 
----
-
 ## Biobanks: Connecting Genotype to Phenotype
 
 Biobanks are large collections of DNA samples linked to detailed health information. They answer: "Do people with this variant have higher disease rates?"
@@ -148,39 +134,24 @@ Biobanks are large collections of DNA samples linked to detailed health informat
 
 **Clinical impact:** Population-specific databases prevent misclassification. A variant common in East Asians but absent from European databases could be wrongly labeled pathogenic without appropriate reference data.
 
----
-
 ## Clinical Case: Integrating All Resources
 
 **Patient:** 4-year-old with developmental delays, seizures, abnormal brain MRI.
 
+![Figure 7-4. The variant filtering funnel. Starting from millions of variants, sequential filtering through annotation, population frequency, clinical databases, computational prediction, and phenotype matching narrows down to the causal variant.](../assets/figures/chapter7_fig4.jpg)
+
 **Diagnostic workflow:**
 
-```
-25,000 variants found (whole-exome sequencing)
-         ↓
-    [Annotation: VEP + ANNOVAR]
-         ↓
-    ~200 rare variants affecting protein function
-         ↓
-    [Filter: ClinVar (remove benign) + gnomAD (<0.5%)]
-         ↓
-    40 candidate variants
-         ↓
-    [Prioritize: Genes causing similar symptoms]
-         ↓
-    3 variants in relevant genes
-         ↓
-    [Predict: CADD, REVEL, AlphaMissense]
-         ↓
-    SCN1A variant identified:
-    • CADD: 32 (top 0.1%)
-    • REVEL: 0.89 (pathogenic)
-    • gnomAD: Not in 140,000+ people
-    • De novo (new mutation, not inherited)
-         ↓
-    DIAGNOSIS: Dravet syndrome
-```
+1. **25,000 variants found** (whole-exome sequencing)
+2. **Annotation** (VEP + ANNOVAR) → ~200 rare variants affecting protein function
+3. **Filtering** (ClinVar + gnomAD <0.5%) → 40 candidate variants
+4. **Prioritization** (genes causing similar symptoms) → 3 variants in relevant genes
+5. **Prediction** (CADD, REVEL, AlphaMissense) → SCN1A variant identified:
+   - CADD: 32 (top 0.1%)
+   - REVEL: 0.89 (pathogenic)
+   - gnomAD: Not in 140,000+ people
+   - De novo (new mutation, not inherited)
+6. **DIAGNOSIS**: Dravet syndrome
 
 **Outcome:**
 - Diagnostic odyssey ended
@@ -188,11 +159,9 @@ Biobanks are large collections of DNA samples linked to detailed health informat
 - Low recurrence risk for future children
 - Family connected to support resources
 
----
-
 ## Why This Matters
 
-These databases and tools enable:
+Variant annotation databases and tools enable:
 
 **Research:**
 - Discover new disease genes
@@ -211,8 +180,6 @@ These databases and tools enable:
 - Understand that most genetic variation is benign—diversity is normal
 
 As sequencing becomes widespread, every genome sequenced adds to our collective knowledge, making the next diagnosis faster and more accurate.
-
----
 
 ## Key Takeaways
 
