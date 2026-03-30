@@ -1,5 +1,7 @@
 # Chapter 14. Additive and Dominant Alleles
 
+> **[Interactive Experience: From Alleles to the Polygenic Model](../interactive/ch14-15.html)** — Text flows around a bell curve and FGFR3 receptor. Explore how 1 locus (1:2:1) becomes a bell curve, compare additive vs dominant effects, and visualize orthogonalized dominance.
+
 So far, we've talked about how mutations can disrupt genes and cause disease. But here's something interesting: not all genetic variants work the same way. Some variants are like a light switch—flip it once, and the whole room changes. Others are more like dimmer switches—you need to adjust many of them to see a real difference.
 
 Let's use height as our example. Height is something we can all relate to, and it turns out genetics influences it in two very different ways. We'll look at **dominant alleles**—the "light switch" kind—that cause dramatic changes with just one mutated copy. Then we'll explore **additive alleles**—the "dimmer switch" kind—where hundreds or even thousands of genetic variants each nudge your height up or down by tiny amounts.

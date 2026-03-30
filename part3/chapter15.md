@@ -1,5 +1,7 @@
 # Chapter 15. Polygenic Model in Traits
 
+> **[Interactive Experience: From Alleles to the Polygenic Model](../interactive/ch14-15.html)** — Text flows around a bell curve and FGFR3 receptor. Explore genotype patterns, orthogonalized dominance, and the polygenic model.
+
 In the last section, we saw how dominant alleles like those causing achondroplasia and Marfan syndrome can dramatically alter height with just one mutated copy. But we also learned that most people's height comes from thousands of additive alleles, each nudging the trait up or down by tiny amounts.
 
 Now let's zoom out and ask: Is height unusual, or do most human traits work this way? And how do scientists actually measure whether a trait is shaped more by additive effects or dominant effects?

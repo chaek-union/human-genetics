@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chapters 14–15: Additive & Dominant Alleles and the Polygenic Model — Interactive editorial experience.">
+  <title>Ch 14–15 — From Alleles to the Polygenic Model</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    html { background: #0a0a0c; color: #e8e4dc; scroll-behavior: smooth; }
+    body {
+      font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      background: #0a0a0c;
+    }
+
+    /* ── PreText editorial section ── */
+    #stage {
+      position: relative; width: 100vw; overflow: hidden;
+      background: radial-gradient(ellipse at 50% 40%, #0f0f14 0%, #0a0a0c 100%);
+    }
+    .line {
+      position: absolute; white-space: pre; z-index: 1; color: #e8e4dc;
+      user-select: text; -webkit-user-select: text;
+    }
+    .headline-line {
+      position: absolute; white-space: pre;
+      font-weight: 700; color: #fff; letter-spacing: -0.5px; z-index: 2;
+      user-select: text; -webkit-user-select: text;
+    }
+    .drop-cap {
+      position: absolute; pointer-events: none; z-index: 2;
+      font-weight: 700; color: #c4a35a;
+    }
+    .pullquote-box {
+      position: absolute; pointer-events: none; z-index: 3;
+      border-left: 3px solid #6b5a3d; padding-left: 14px;
+    }
+    .pullquote-line {
+      position: absolute; white-space: pre;
+      font-style: italic; color: #b8a070;
+      user-select: text; -webkit-user-select: text;
+    }
+
+    /* ── Scroll indicator ── */
+    #scroll-hint {
+      position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+      z-index: 10; text-align: center;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    #scroll-hint span {
+      font: 400 13px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: rgba(255,255,255,0.25);
+    }
+    #scroll-hint .arrow {
+      display: block; margin: 6px auto 0; width: 16px; height: 16px;
+      border-right: 2px solid rgba(255,255,255,0.2);
+      border-bottom: 2px solid rgba(255,255,255,0.2);
+      transform: rotate(45deg);
+    }
+    @keyframes pulse { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
+
+    /* ── Simulator sections ── */
+    .sim-section {
+      max-width: 1100px; margin: 0 auto;
+      padding: 80px 48px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .sim-section h2 {
+      font: 700 30px/1.2 "Iowan Old Style", Palatino, serif;
+      color: #fff; margin-bottom: 8px;
+    }
+    .sim-section .subtitle {
+      font: 400 16px/1.6 "Iowan Old Style", Palatino, serif;
+      color: rgba(255,255,255,0.4); margin-bottom: 36px; max-width: 640px;
+    }
+    .sim-content {
+      display: flex; flex-direction: column; gap: 24px;
+    }
+    .sim-chart { width: 100%; }
+    .sim-chart canvas {
+      display: block; width: 100%; height: 420px; border-radius: 8px;
+      background: rgba(255,255,255,0.02);
+    }
+    .sim-explain {
+      font: 400 17px/1.75 "Iowan Old Style", Palatino, serif;
+      color: rgba(255,255,255,0.6); max-width: 720px;
+    }
+    .sim-explain strong { color: #c4a35a; }
+    .sim-explain em { color: #b8a070; }
+
+    /* Controls */
+    .sim-controls { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 24px; }
+    .sim-btn {
+      font: 500 13px/1 "Helvetica Neue", sans-serif;
+      color: rgba(255,255,255,0.45); background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1); padding: 8px 18px;
+      border-radius: 8px; cursor: pointer; transition: all 0.2s;
+    }
+    .sim-btn.active { background: rgba(196,163,90,0.2); color: #c4a35a; border-color: rgba(196,163,90,0.3); }
+    .sim-btn[data-dom="achondroplasia"].active { background: rgba(255,107,74,0.15); color: #ff6b4a; border-color: rgba(255,107,74,0.3); }
+    .sim-btn[data-dom="marfan"].active { background: rgba(74,158,255,0.15); color: #4a9eff; border-color: rgba(74,158,255,0.3); }
+
+    .slider-row {
+      display: flex; align-items: center; gap: 14px; margin-bottom: 14px;
+    }
+    .slider-row label {
+      font: 400 14px/1 "Helvetica Neue", sans-serif;
+      color: rgba(255,255,255,0.45); min-width: 130px;
+    }
+    .slider-row input[type=range] { flex: 1; max-width: 240px; accent-color: #c4a35a; }
+    .slider-row .val {
+      font: 700 15px/1 "Helvetica Neue", sans-serif;
+      color: #c4a35a; min-width: 50px; text-align: right;
+    }
+    .encoding-box {
+      font: 400 14px/1.6 "Helvetica Neue", sans-serif;
+      color: rgba(255,255,255,0.35); margin-top: 20px;
+      padding: 12px 16px; background: rgba(255,255,255,0.03);
+      border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);
+    }
+    .encoding-box strong { color: rgba(196,163,90,0.7); }
+
+    .result-box {
+      margin-top: 20px; padding: 16px;
+      background: rgba(255,255,255,0.03); border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .result-height {
+      font: 700 28px/1 "Iowan Old Style", Palatino, serif;
+      color: #c4a35a;
+    }
+    .result-desc {
+      font: 400 13px/1.4 "Helvetica Neue", sans-serif;
+      color: rgba(255,255,255,0.35); margin-top: 6px;
+    }
+
+    .credit {
+      text-align: center; padding: 48px 0;
+      font: 400 12px/1 "Helvetica Neue", sans-serif;
+    }
+    .credit a { color: rgba(255,255,255,0.2); text-decoration: none; }
+
+    @media (max-width: 760px) {
+      .sim-section { padding: 48px 20px; }
+      .sim-section h2 { font-size: 22px; }
+      .sim-content { flex-direction: column; gap: 24px; }
+      .sim-chart { min-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── PreText editorial ─── -->
+  <div id="stage">
+    <div id="scroll-hint">
+      <span>Scroll to explore simulations</span>
+      <div class="arrow"></div>
+    </div>
+  </div>
+
+  <!-- ─── Sim 1: Loci Distribution ─── -->
+  <section class="sim-section" id="sec-loci">
+    <h2>From Discrete to Continuous</h2>
+    <p class="subtitle">As the number of loci increases, a discrete ratio converges to the bell curve of a continuous trait.</p>
+    <div class="slider-row">
+      <label>Number of Loci</label>
+      <input type="range" id="loci-slider" min="0" max="7" value="0" step="1">
+      <span class="val" id="loci-value">1</span>
+      <span class="val" id="dist-label" style="min-width:120px; font-weight:400; font-size:12px; color:rgba(255,255,255,0.35);">1 : 2 : 1</span>
+    </div>
+    <div class="sim-content">
+      <div class="sim-chart"><canvas id="loci-canvas" ></canvas></div>
+      <div class="sim-explain" id="loci-explain"></div>
+    </div>
+  </section>
+
+  <!-- ─── Sim 2: Individual Position ─── -->
+  <section class="sim-section" id="sec-indiv">
+    <h2>Where Do You Fall?</h2>
+    <p class="subtitle">Additive alleles nudge by fractions of a millimeter. A single dominant mutation shifts by tens of centimeters.</p>
+    <div class="slider-row">
+      <label>Additive alleles</label>
+      <input type="range" id="additive-slider" min="-50" max="50" value="0" step="1">
+      <span class="val" id="additive-value">0</span>
+    </div>
+    <div class="sim-controls" id="dom-toggles">
+      <button class="sim-btn active" data-dom="none">No mutation</button>
+      <button class="sim-btn" data-dom="achondroplasia">FGFR3 (Achondroplasia)</button>
+      <button class="sim-btn" data-dom="marfan">FBN1 (Marfan)</button>
+    </div>
+    <div class="sim-content">
+      <div class="sim-chart"><canvas id="indiv-canvas"></canvas></div>
+      <div class="result-box">
+        <div class="result-height" id="result-height">175.0 cm</div>
+        <div class="result-desc" id="result-desc">population mean</div>
+      </div>
+      <div class="sim-explain" id="indiv-explain"></div>
+    </div>
+  </section>
+
+  <!-- ─── Sim 3: Genotype Effects ─── -->
+  <section class="sim-section" id="sec-genotype">
+    <h2>Genotype Effects: AA / AB / BB</h2>
+    <p class="subtitle">Three patterns of how alleles influence traits — and why additive dominates.</p>
+    <div class="sim-controls" id="gt-tabs">
+      <button class="sim-btn active" data-pattern="additive">Additive</button>
+      <button class="sim-btn" data-pattern="dominant">Dominant</button>
+      <button class="sim-btn" data-pattern="overdominant">Overdominant</button>
+    </div>
+    <div class="sim-content">
+      <div class="sim-chart"><canvas id="genotype-canvas" ></canvas></div>
+      <div class="sim-explain" id="gt-explain"></div>
+    </div>
+  </section>
+
+  <!-- ─── Sim 4: Orthogonalized Dominance ─── -->
+  <section class="sim-section" id="sec-equalizer">
+    <h2>Orthogonalized Dominance</h2>
+    <p class="subtitle">When you adjust volume and bass boost simultaneously, how do you know which one changed the sound? Orthogonalization separates the additive signal (allele dosage: 0→1→2) from the dominance signal (heterozygote deviation: 0→1→0) so each can be measured independently.</p>
+    <div class="slider-row">
+      <label>Volume (additive)</label>
+      <input type="range" id="eq-additive" min="0" max="100" value="50" step="1">
+      <span class="val" id="eq-add-val">50</span>
+    </div>
+    <div class="slider-row">
+      <label>Bass boost (dom.)</label>
+      <input type="range" id="eq-dominance" min="0" max="100" value="0" step="1">
+      <span class="val" id="eq-dom-val">0</span>
+    </div>
+    <div class="sim-content">
+      <div class="sim-chart"><canvas id="equalizer-canvas" ></canvas></div>
+      <div class="sim-explain" id="eq-explain"></div>
+    </div>
+    <div class="encoding-box" id="eq-encoding"></div>
+  </section>
+
+  <div class="credit">
+    <a href="https://chaek.org/books/human-genetics/part3/chapter14" target="_blank">chaek.org &middot; Human Genetics Ch.14–15</a>
+  </div>
+
+  <script type="module" src="./ch14-15.js"></script>
+</body>
+</html>
