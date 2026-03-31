@@ -1,5 +1,7 @@
 # Chapter 16. Heritability
 
+> **[Interactive Experience: Heritability](../interactive/ch16.html)** — Partition phenotypic variance, explore the two-fields analogy, simulate twin studies, and compare heritability across traits.
+
 We've been talking about how thousands of genetic variants shape traits like height. Each variant nudges the trait up or down by a tiny amount, and the cumulative effect determines where you land on the spectrum. But here's a question: if we add up all these genetic effects, how much of the variation we see between people is actually due to genetics versus environment?
 
 This question leads us to one of the most important—and most misunderstood—concepts in genetics: **heritability**. It's a number that tells us what proportion of trait variation in a population comes from genetic differences. But it doesn't tell us whether a trait is "fixed" by genes or how much environment matters. We'll get to why that distinction is so important.

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chapter 16: Heritability — Interactive editorial experience.">
+  <title>Chapter 16 — Heritability</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    html { background: #0a0a0c; color: #e8e4dc; scroll-behavior: smooth; }
+    body { font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif; background: #0a0a0c; }
+
+    /* ── PreText editorial ── */
+    #stage {
+      position: relative; width: 100vw; overflow: hidden;
+      background: radial-gradient(ellipse at 50% 40%, #0f0f14 0%, #0a0a0c 100%);
+    }
+    .line { position: absolute; white-space: pre; z-index: 1; color: #e8e4dc; user-select: text; -webkit-user-select: text; }
+    .headline-line { position: absolute; white-space: pre; font-weight: 700; color: #fff; letter-spacing: -0.5px; z-index: 2; user-select: text; -webkit-user-select: text; }
+    .drop-cap { position: absolute; pointer-events: none; z-index: 2; font-weight: 700; color: #c4a35a; }
+    .pullquote-box { position: absolute; pointer-events: none; z-index: 3; border-left: 3px solid #6b5a3d; padding-left: 14px; }
+    .pullquote-line { position: absolute; white-space: pre; font-style: italic; color: #b8a070; user-select: text; -webkit-user-select: text; }
+
+    #scroll-hint {
+      position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+      z-index: 10; text-align: center; animation: pulse 2s ease-in-out infinite;
+    }
+    #scroll-hint span { font: 400 13px/1 "Helvetica Neue", sans-serif; color: rgba(255,255,255,0.25); }
+    #scroll-hint .arrow { display: block; margin: 6px auto 0; width: 16px; height: 16px; border-right: 2px solid rgba(255,255,255,0.2); border-bottom: 2px solid rgba(255,255,255,0.2); transform: rotate(45deg); }
+    @keyframes pulse { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
+
+    /* ── Simulator sections ── */
+    .sim-section { max-width: 1100px; margin: 0 auto; padding: 80px 48px; border-top: 1px solid rgba(255,255,255,0.06); }
+    .sim-section h2 { font: 700 30px/1.2 "Iowan Old Style", Palatino, serif; color: #fff; margin-bottom: 8px; }
+    .sim-section .subtitle { font: 400 16px/1.6 "Iowan Old Style", Palatino, serif; color: rgba(255,255,255,0.4); margin-bottom: 36px; max-width: 720px; }
+    .sim-content { display: flex; flex-direction: column; gap: 24px; }
+    .sim-chart { width: 100%; }
+    .sim-chart canvas { display: block; width: 100%; height: 420px; border-radius: 8px; background: rgba(255,255,255,0.02); }
+    .sim-explain { font: 400 17px/1.75 "Iowan Old Style", Palatino, serif; color: rgba(255,255,255,0.6); max-width: 720px; }
+    .sim-explain strong { color: #c4a35a; }
+    .sim-explain em { color: #b8a070; }
+
+    .sim-controls { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 24px; }
+    .sim-btn {
+      font: 500 13px/1 "Helvetica Neue", sans-serif; color: rgba(255,255,255,0.45);
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+      padding: 8px 18px; border-radius: 8px; cursor: pointer; transition: all 0.2s;
+    }
+    .sim-btn.active { background: rgba(196,163,90,0.2); color: #c4a35a; border-color: rgba(196,163,90,0.3); }
+
+    .slider-row { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+    .slider-row label { font: 400 14px/1 "Helvetica Neue", sans-serif; color: rgba(255,255,255,0.45); min-width: 160px; }
+    .slider-row input[type=range] { flex: 1; max-width: 240px; accent-color: #c4a35a; }
+    .slider-row .val { font: 700 15px/1 "Helvetica Neue", sans-serif; color: #c4a35a; min-width: 50px; text-align: right; }
+
+    .result-box {
+      margin-top: 12px; padding: 16px; background: rgba(255,255,255,0.03);
+      border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);
+    }
+    .result-big { font: 700 28px/1 "Iowan Old Style", Palatino, serif; color: #c4a35a; }
+    .result-sub { font: 400 13px/1.4 "Helvetica Neue", sans-serif; color: rgba(255,255,255,0.35); margin-top: 6px; }
+
+    .credit { text-align: center; padding: 48px 0; font: 400 12px/1 "Helvetica Neue", sans-serif; }
+    .credit a { color: rgba(255,255,255,0.2); text-decoration: none; }
+
+    @media (max-width: 760px) {
+      .sim-section { padding: 48px 20px; }
+      .sim-section h2 { font-size: 22px; }
+      .sim-chart canvas { height: 320px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="stage">
+    <div id="scroll-hint">
+      <span>Scroll to explore simulations</span>
+      <div class="arrow"></div>
+    </div>
+  </div>
+
+  <!-- Sim 1: Variance Partitioning -->
+  <section class="sim-section" id="sec-variance">
+    <h2>Partitioning Phenotypic Variance</h2>
+    <p class="subtitle">Fisher showed that total trait variation can be decomposed: VP = VA + VD + VE + VEnvironment. Adjust each component and watch heritability change.</p>
+    <div class="slider-row">
+      <label>VA (Additive)</label>
+      <input type="range" id="va-slider" min="0" max="100" value="55" step="1">
+      <span class="val" id="va-val">55</span>
+    </div>
+    <div class="slider-row">
+      <label>VD (Dominance)</label>
+      <input type="range" id="vd-slider" min="0" max="100" value="5" step="1">
+      <span class="val" id="vd-val">5</span>
+    </div>
+    <div class="slider-row">
+      <label>VI (Epistasis)</label>
+      <input type="range" id="vi-slider" min="0" max="100" value="2" step="1">
+      <span class="val" id="vi-val">2</span>
+    </div>
+    <div class="slider-row">
+      <label>VEnv (Environment)</label>
+      <input type="range" id="ve-slider" min="0" max="100" value="38" step="1">
+      <span class="val" id="ve-val">38</span>
+    </div>
+    <div class="sim-content">
+      <div class="sim-chart"><canvas id="variance-canvas"></canvas></div>
+      <div class="result-box">
+        <div class="result-big" id="h2-result">h² = 0.55</div>
+        <div class="result-sub" id="h2-sub">Narrow-sense heritability</div>
+      </div>
+      <div class="sim-explain" id="variance-explain"></div>
+    </div>
+  </section>
+
+  <!-- Sim 2: Two Fields -->
+  <section class="sim-section" id="sec-fields">
+    <h2>The Two Fields</h2>
+    <p class="subtitle">Same seeds, different soil. Heritability is high in both fields — but the difference between fields is entirely environmental.</p>
+    <div class="slider-row">
+      <label>Field A nutrition</label>
+      <input type="range" id="fieldA-slider" min="0" max="100" value="90" step="1">
+      <span class="val" id="fieldA-val">90</span>
+    </div>
+    <div class="slider-row">
+      <label>Field B nutrition</label>
+      <input type="range" id="fieldB-slider" min="0" max="100" value="30" step="1">
+      <span class="val" id="fieldB-val">30</span>
+    </div>
+    <div class="sim-content">
+      <div class="sim-chart"><canvas id="fields-canvas"></canvas></div>
+      <div class="sim-explain" id="fields-explain"></div>
+    </div>
+  </section>
+
+  <!-- Sim 3: Twin Study -->
+  <section class="sim-section" id="sec-twins">
+    <h2>Twin Study</h2>
+    <p class="subtitle">Identical twins share 100% of DNA. Fraternal twins share 50%. The difference in similarity reveals genetic influence.</p>
+    <div class="slider-row">
+      <label>True heritability (h²)</label>
+      <input type="range" id="twin-h2-slider" min="0" max="100" value="68" step="1">
+      <span class="val" id="twin-h2-val">0.68</span>
+    </div>
+    <div class="sim-content">
+      <div class="sim-chart"><canvas id="twins-canvas"></canvas></div>
+      <div class="sim-explain" id="twins-explain"></div>
+    </div>
+  </section>
+
+  <!-- Sim 4: Trait Comparison -->
+  <section class="sim-section" id="sec-traits">
+    <h2>Heritability Across Traits</h2>
+    <p class="subtitle">Height, BMI, blood pressure — the same concept, very different numbers. Why?</p>
+    <div class="sim-content">
+      <div class="sim-chart"><canvas id="traits-canvas"></canvas></div>
+      <div class="sim-explain" id="traits-explain"></div>
+    </div>
+  </section>
+
+  <div class="credit">
+    <a href="https://chaek.org/books/human-genetics/part3/chapter16" target="_blank">chaek.org · Human Genetics Ch.16</a>
+  </div>
+
+  <script type="module" src="./ch16.js"></script>
+</body>
+</html>
