@@ -1,5 +1,7 @@
 # Chapter 19. Genetic Architecture of Traits and Disorders
 
+> **[Interactive Experience: Genetic Architecture](../interactive/ch19.html)** — Explore composite architecture, risk accumulation, and how genetic heterogeneity converges on shared pathways.
+
 We've learned that GWAS can identify hundreds or even thousands of genetic variants associated with a trait. But here's a question that might be puzzling you: if we've found all these variants, why can't we fully predict who will get a disease? Why do some people with "high-risk" genes stay healthy, while others with seemingly lower genetic risk develop the condition?
 
 The answer lies in something called **genetic architecture**—the full structure of genetic influences on a trait or disorder. It's not just about counting up risk alleles. It's about understanding how different types of variants—rare and common, large-effect and small-effect—work together. It's about recognizing that genes act in specific tissues, at specific times, and in specific contexts. And it's about appreciating that the same disease can arise through many different genetic routes.

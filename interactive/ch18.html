@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chapter 18: GWAS — Interactive editorial experience.">
+  <title>Chapter 18 — GWAS</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    html { background: #0a0a0c; color: #e8e4dc; scroll-behavior: smooth; }
+    body { font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif; background: #0a0a0c; }
+
+    /* ── PreText editorial ── */
+    #stage {
+      position: relative; width: 100vw; overflow: hidden;
+      background: radial-gradient(ellipse at 50% 40%, #0f0f14 0%, #0a0a0c 100%);
+    }
+    .line { position: absolute; white-space: pre; z-index: 1; color: #e8e4dc; user-select: text; -webkit-user-select: text; }
+    .headline-line { position: absolute; white-space: pre; font-weight: 700; color: #fff; letter-spacing: -0.5px; z-index: 2; user-select: text; -webkit-user-select: text; }
+    .drop-cap { position: absolute; pointer-events: none; z-index: 2; font-weight: 700; color: #c4a35a; }
+    .pullquote-box { position: absolute; pointer-events: none; z-index: 3; border-left: 3px solid #6b5a3d; padding-left: 14px; }
+    .pullquote-line { position: absolute; white-space: pre; font-style: italic; color: #b8a070; user-select: text; -webkit-user-select: text; }
+
+    #scroll-hint {
+      position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+      z-index: 10; text-align: center; animation: pulse 2s ease-in-out infinite;
+    }
+    #scroll-hint span { font: 400 13px/1 "Helvetica Neue", sans-serif; color: rgba(255,255,255,0.25); }
+    #scroll-hint .arrow { display: block; margin: 6px auto 0; width: 16px; height: 16px; border-right: 2px solid rgba(255,255,255,0.2); border-bottom: 2px solid rgba(255,255,255,0.2); transform: rotate(45deg); }
+    @keyframes pulse { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
+
+    /* ── Simulator sections ── */
+    .sim-section { max-width: 1100px; margin: 0 auto; padding: 80px 48px; border-top: 1px solid rgba(255,255,255,0.06); }
+    .sim-section h2 { font: 700 30px/1.2 "Iowan Old Style", Palatino, serif; color: #fff; margin-bottom: 8px; }
+    .sim-section .subtitle { font: 400 16px/1.6 "Iowan Old Style", Palatino, serif; color: rgba(255,255,255,0.4); margin-bottom: 36px; max-width: 720px; }
+    .sim-content { display: flex; flex-direction: column; gap: 24px; }
+    .sim-chart { width: 100%; }
+    .sim-chart canvas { display: block; width: 100%; height: 420px; border-radius: 8px; background: rgba(255,255,255,0.02); }
+    .sim-explain { font: 400 17px/1.75 "Iowan Old Style", Palatino, serif; color: rgba(255,255,255,0.6); max-width: 720px; }
+    .sim-explain strong { color: #c4a35a; }
+    .sim-explain em { color: #b8a070; }
+
+    .sim-controls { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 24px; }
+    .sim-btn {
+      font: 500 13px/1 "Helvetica Neue", sans-serif; color: rgba(255,255,255,0.45);
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+      padding: 8px 18px; border-radius: 8px; cursor: pointer; transition: all 0.2s;
+    }
+    .sim-btn.active { background: rgba(196,163,90,0.2); color: #c4a35a; border-color: rgba(196,163,90,0.3); }
+
+    .slider-row { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+    .slider-row label { font: 400 14px/1 "Helvetica Neue", sans-serif; color: rgba(255,255,255,0.45); min-width: 200px; }
+    .slider-row input[type=range] { flex: 1; max-width: 280px; accent-color: #c4a35a; }
+    .slider-row .val { font: 700 15px/1 "Helvetica Neue", sans-serif; color: #c4a35a; min-width: 80px; text-align: right; }
+
+    .result-box {
+      margin-top: 12px; padding: 16px; background: rgba(255,255,255,0.03);
+      border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);
+    }
+    .result-big { font: 700 28px/1 "Iowan Old Style", Palatino, serif; color: #c4a35a; }
+    .result-sub { font: 400 13px/1.4 "Helvetica Neue", sans-serif; color: rgba(255,255,255,0.35); margin-top: 6px; }
+
+    /* PGS sim: SNP toggles */
+    .snp-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .snp-chip {
+      font: 500 12px/1 "Helvetica Neue", sans-serif; color: rgba(255,255,255,0.4);
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+      padding: 7px 12px; border-radius: 6px; cursor: pointer; transition: all 0.2s;
+      user-select: none;
+    }
+    .snp-chip.active { background: rgba(196,163,90,0.15); color: #c4a35a; border-color: rgba(196,163,90,0.25); }
+
+    .credit { text-align: center; padding: 48px 0; font: 400 12px/1 "Helvetica Neue", sans-serif; }
+    .credit a { color: rgba(255,255,255,0.2); text-decoration: none; }
+
+    @media (max-width: 760px) {
+      .sim-section { padding: 48px 20px; }
+      .sim-section h2 { font-size: 22px; }
+      .sim-chart canvas { height: 320px; }
+      .slider-row label { min-width: 130px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="stage">
+    <div id="scroll-hint">
+      <span>Scroll to explore simulations</span>
+      <div class="arrow"></div>
+    </div>
+  </div>
+
+  <!-- Sim 1: Multiple Testing Problem -->
+  <section class="sim-section" id="sec-multiple-testing">
+    <h2>The Multiple Testing Problem</h2>
+    <p class="subtitle">GWAS tests millions of SNPs simultaneously. With a standard threshold of p &lt; 0.05, most "hits" would be noise. Adjust the parameters to see how many false positives you'd expect.</p>
+    <div class="slider-row">
+      <label>Number of SNPs tested</label>
+      <input type="range" id="snps-slider" min="0" max="100" value="50" step="1">
+      <span class="val" id="snps-val">100,000</span>
+    </div>
+    <div class="slider-row">
+      <label>Significance threshold</label>
+      <input type="range" id="thresh-slider" min="0" max="100" value="50" step="1">
+      <span class="val" id="thresh-val">0.05</span>
+    </div>
+    <div class="sim-content">
+      <div class="sim-chart"><canvas id="multiple-testing-canvas"></canvas></div>
+      <div class="result-box">
+        <div class="result-big" id="fp-result">~5,000 false positives</div>
+        <div class="result-sub" id="fp-sub">Expected under the null hypothesis</div>
+      </div>
+      <div class="sim-explain" id="multiple-testing-explain"></div>
+    </div>
+  </section>
+
+  <!-- Sim 2: Manhattan Plot -->
+  <section class="sim-section" id="sec-manhattan">
+    <h2>Reading a Manhattan Plot</h2>
+    <p class="subtitle">Each dot is one SNP. The x-axis is chromosomal position. The y-axis is &minus;log&#8321;&#8320;(p-value). Click peaks to learn about associated loci.</p>
+    <div class="sim-content">
+      <div class="sim-chart"><canvas id="manhattan-canvas" style="cursor:crosshair;"></canvas></div>
+      <div class="result-box">
+        <div class="result-big" id="manhattan-hit" style="font-size:18px;">Click a peak above the threshold line to explore it</div>
+        <div class="result-sub" id="manhattan-hit-sub"></div>
+      </div>
+      <div class="sim-explain" id="manhattan-explain"></div>
+    </div>
+  </section>
+
+  <!-- Sim 3: QQ Plot -->
+  <section class="sim-section" id="sec-qq">
+    <h2>The QQ Plot</h2>
+    <p class="subtitle">A quantile-quantile plot compares observed p-values to what we'd expect by chance. Deviation only in the tail = real signal. Early deviation = systematic inflation (confounding).</p>
+    <div class="sim-controls">
+      <button class="sim-btn active" id="qq-good-btn">Well-controlled GWAS</button>
+      <button class="sim-btn" id="qq-bad-btn">Confounded GWAS</button>
+    </div>
+    <div class="sim-content">
+      <div class="sim-chart"><canvas id="qq-canvas"></canvas></div>
+      <div class="sim-explain" id="qq-explain"></div>
+    </div>
+  </section>
+
+  <!-- Sim 4: Polygenic Score -->
+  <section class="sim-section" id="sec-pgs">
+    <h2>Building a Polygenic Score</h2>
+    <p class="subtitle">A polygenic score (PGS) sums up thousands of small genetic effects. Toggle risk alleles on or off to see your cumulative score — and corresponding disease risk for dilated cardiomyopathy (DCM).</p>
+    <p class="subtitle" style="margin-top:-20px;">DCM study: 14,256 cases, 1,199,156 controls, 80 loci identified.</p>
+    <div id="snp-grid-container">
+      <div class="snp-grid" id="snp-grid"></div>
+    </div>
+    <div class="sim-content">
+      <div class="sim-chart"><canvas id="pgs-canvas"></canvas></div>
+      <div class="result-box">
+        <div class="result-big" id="pgs-result">PGS = 0.00</div>
+        <div class="result-sub" id="pgs-sub">Select risk alleles above to build your score</div>
+      </div>
+      <div class="sim-explain" id="pgs-explain"></div>
+    </div>
+  </section>
+
+  <div class="credit">
+    <a href="https://chaek.org/books/human-genetics/part3/chapter18" target="_blank">chaek.org · Human Genetics Ch.18</a>
+  </div>
+
+  <script type="module" src="./ch18.js"></script>
+</body>
+</html>

@@ -1,5 +1,7 @@
 # Chapter 18. Introduction to Genome-Wide Association Studies
 
+> **[Interactive Experience: GWAS](../interactive/ch18.html)** — Explore Manhattan plots, understand the multiple testing problem, and build a polygenic score.
+
 We've been building up the theory of complex traits for several sections now. We know that most traits are polygenic—shaped by thousands of genetic variants, each with a small additive effect. We know how to partition variance into genetic and environmental components. But here's the practical question: how do we actually *find* those thousands of variants?
 
 That's where **Genome-Wide Association Studies (GWAS)** come in. GWAS is the workhorse method for discovering genetic variants associated with complex traits. Whether you're studying height, heart disease, autism, or anything else, GWAS is usually the first step. It's like a genome-wide search, scanning millions of positions in the DNA to find which ones correlate with the trait you care about.
