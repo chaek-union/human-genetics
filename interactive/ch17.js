@@ -2914,49 +2914,67 @@ function drawMicro(cv) {
     ctx.fillText("Yap et al. (2021, Cell) \u2014 247 children with and without ASD", w / 2, h * 0.72);
     ctx.fillText("Measured: autism diagnosis, dietary patterns, gut microbiome composition", w / 2, h * 0.72 + 22);
   } else if (microStep === 2) {
-    const barX = w * 0.15, barW = w * 0.7, barTop = h * 0.15, barH = h * 0.65;
+    const barX = w * 0.22, barW = w * 0.34, barTop = h * 0.14, barH = h * 0.7;
+    const gap = 12;
+    ctx.fillStyle = "rgba(196,163,90,0.7)";
+    ctx.font = 'bold 14px "Helvetica Neue", sans-serif';
+    ctx.textAlign = "center";
+    ctx.fillText("h\xB2 (Host Genetics)", barX + barW / 2, barTop - 24);
+    const barX2 = w * 0.58, barW2 = barW;
+    ctx.fillStyle = "rgba(80,200,140,0.7)";
+    ctx.fillText("b\xB2 (Microbiome)", barX2 + barW2 / 2, barTop - 24);
+    ctx.fillStyle = "rgba(255,255,255,0.2)";
+    ctx.font = '11px "Helvetica Neue", sans-serif';
+    ctx.fillText("Yap et al. 2021, Cell \u2014 247 children", w / 2, barTop - 6);
     const traits = [
-      { name: "ASD diagnosis", b2: 0.07, color: "rgba(200,140,80,0.8)", note: "0\u20137% (n.s.)" },
-      { name: "Dietary diversity", b2: 0.58, color: "rgba(80,200,140,0.8)", note: "13\u201358%" },
-      { name: "Stool consistency", b2: 0.64, color: "rgba(100,180,220,0.8)", note: "5\u201364%" },
-      { name: "Age (benchmark)", b2: 0.35, color: "rgba(196,163,90,0.8)", note: "35\u201399%" },
-      { name: "BMI (benchmark)", b2: 0.47, color: "rgba(150,150,150,0.7)", note: "~47%" }
+      { name: "ASD diagnosis", h2: 0.8, b2: 0.07, hNote: "~80%", bNote: "0\u20137%" },
+      { name: "Dietary diversity", h2: 0.15, b2: 0.58, hNote: "~15%", bNote: "13\u201358%" },
+      { name: "Stool consistency", h2: 0.1, b2: 0.64, hNote: "~10%", bNote: "5\u201364%" }
     ];
-    const rowH = barH / traits.length, gap = 16;
-    ctx.fillStyle = "rgba(255,255,255,0.5)";
-    ctx.font = 'bold 15px "Helvetica Neue", sans-serif';
-    ctx.textAlign = "left";
-    ctx.fillText("b\xB2 \u2014 How much does the microbiome explain?", barX, barTop - 16);
-    ctx.fillStyle = "rgba(255,255,255,0.25)";
-    ctx.font = '12px "Helvetica Neue", sans-serif';
-    ctx.fillText("(Yap et al. 2021, Cell \u2014 247 children)", barX, barTop);
+    const rowH = barH / traits.length;
     for (let i = 0; i < traits.length; i++) {
-      const t = traits[i], y = barTop + 20 + i * rowH, bH = rowH - gap;
+      const t = traits[i], y = barTop + 10 + i * rowH, bH = rowH - gap;
       ctx.fillStyle = "rgba(255,255,255,0.6)";
-      ctx.font = '14px "Helvetica Neue", sans-serif';
+      ctx.font = '13px "Helvetica Neue", sans-serif';
       ctx.textAlign = "right";
       ctx.fillText(t.name, barX - 10, y + bH / 2 + 4);
       ctx.fillStyle = "rgba(255,255,255,0.03)";
       ctx.beginPath();
       ctx.roundRect(barX, y, barW, bH, 4);
       ctx.fill();
-      const vW = t.b2 * barW;
-      const g = ctx.createLinearGradient(barX, y, barX + vW, y);
-      g.addColorStop(0, t.color);
-      g.addColorStop(1, t.color.replace(/[\d.]+\)$/, "0.3)"));
-      ctx.fillStyle = g;
+      const hW = t.h2 * barW;
+      const g1 = ctx.createLinearGradient(barX, y, barX + hW, y);
+      g1.addColorStop(0, "rgba(196,163,90,0.8)");
+      g1.addColorStop(1, "rgba(196,163,90,0.25)");
+      ctx.fillStyle = g1;
       ctx.beginPath();
-      ctx.roundRect(barX, y, Math.max(vW, 4), bH, 4);
+      ctx.roundRect(barX, y, Math.max(hW, 4), bH, 4);
       ctx.fill();
-      ctx.fillStyle = t.color;
-      ctx.font = 'bold 16px "Helvetica Neue", sans-serif';
+      ctx.fillStyle = "#c4a35a";
+      ctx.font = 'bold 15px "Helvetica Neue", sans-serif';
       ctx.textAlign = "left";
-      ctx.fillText(t.note, barX + vW + 10, y + bH / 2 + 5);
+      ctx.fillText(t.hNote, barX + hW + 8, y + bH / 2 + 5);
+      ctx.fillStyle = "rgba(255,255,255,0.03)";
+      ctx.beginPath();
+      ctx.roundRect(barX2, y, barW2, bH, 4);
+      ctx.fill();
+      const bW = t.b2 * barW2;
+      const g2 = ctx.createLinearGradient(barX2, y, barX2 + bW, y);
+      g2.addColorStop(0, "rgba(80,200,140,0.8)");
+      g2.addColorStop(1, "rgba(80,200,140,0.25)");
+      ctx.fillStyle = g2;
+      ctx.beginPath();
+      ctx.roundRect(barX2, y, Math.max(bW, 4), bH, 4);
+      ctx.fill();
+      ctx.fillStyle = "rgba(80,200,140,0.8)";
+      ctx.font = 'bold 15px "Helvetica Neue", sans-serif';
+      ctx.fillText(t.bNote, barX2 + bW + 8, y + bH / 2 + 5);
     }
     ctx.fillStyle = "rgba(196,163,90,0.6)";
     ctx.font = 'bold 14px "Helvetica Neue", sans-serif';
     ctx.textAlign = "center";
-    ctx.fillText("The microbiome explains DIET \u2014 not AUTISM.", w / 2, h * 0.92);
+    ctx.fillText("ASD: high genetic heritability, near-zero microbiome contribution.", w / 2, h * 0.9);
+    ctx.fillText("Diet: low heritability, high microbiome contribution.", w / 2, h * 0.9 + 20);
   } else {
     const cx = w / 2, rowY = h * 0.18;
     const boxes = [
@@ -3030,11 +3048,11 @@ function updateMicroExp() {
     stepEl.textContent = "Step 1 of 3 \u2014 The b\xB2 metric";
     el.innerHTML = `Just as <strong>h\xB2</strong> (heritability) measures the fraction of trait variance explained by genetic differences, <strong>b\xB2</strong> measures the fraction explained by <em>microbiome</em> composition.<br><br>This is variance partitioning extended beyond genetics. Instead of asking "how much is genetic vs environmental?", Yap et al. asked: "how much of each trait's variation can be attributed to differences in gut bacteria?"<br><br>The answer depends entirely on <em>which trait</em> you measure.`;
   } else if (microStep === 2) {
-    stepEl.textContent = "Step 2 of 3 \u2014 b\xB2 across traits";
-    el.innerHTML = `The microbiome explains <strong>very different amounts of variance</strong> depending on the trait:<br><br>\u2022 <strong>ASD diagnosis</strong>: b\xB2 = 0\u20139% \u2014 the microbiome contributes almost nothing<br>\u2022 <strong>Dietary diversity</strong>: b\xB2 \u2248 52% \u2014 the microbiome captures diet-related variance strongly<br>\u2022 <strong>Stool consistency</strong>: b\xB2 \u2248 64% \u2014 digestive traits are closely tied to microbial composition<br><br>This is the power of partitioned variance: the same biological factor (microbiome) can be a major source of variance for one trait and negligible for another.`;
+    stepEl.textContent = "Step 2 of 3 \u2014 h\xB2 vs b\xB2: genetics vs microbiome";
+    el.innerHTML = `Compare the two columns. For <strong>ASD</strong>, host genetics explains ~80% of variance (h\xB2 from twin studies), while the microbiome explains 0\u20137% (b\xB2). Genetics is the dominant contributor; the microbiome adds essentially nothing.<br><br>For <strong>diet and stool</strong>, the pattern reverses: heritability is low, but microbiome contribution is high (b\xB2 = 13\u201364%). The microbiome is a significant source of variance \u2014 but only for traits it directly interacts with.<br><br>The <strong>ASD PGS</strong> (polygenic score) also predicted dietary behavior \u2014 meaning the genes that increase autism risk also drive the restricted eating patterns that reshape the microbiome. Genetics is upstream of everything.`;
   } else {
-    stepEl.textContent = "Step 3 of 3 \u2014 Layered variance structure";
-    el.innerHTML = `The variance structure is <strong>layered</strong>. Each biological layer partitions variance differently:<br><br>1. <strong>Genetic factors (A)</strong> explain neurodevelopment \u2192 high contribution to ASD variance<br>2. <strong>Behavioral factors</strong> mediate between genes and environment \u2192 selective eating in ASD<br>3. <strong>Diet</strong> is shaped by behavior \u2192 high microbiome contribution (b\xB2 = 40\u201364%)<br>4. <strong>Microbiome</strong> sits at the end of the chain \u2192 captures diet variance, not ASD variance<br><br>VP can be decomposed not just into A + D + E, but across <em>biological layers</em>. Each layer has its own variance contribution, and they connect through mediating pathways.`;
+    stepEl.textContent = "Step 3 of 3 \u2014 Genetics is upstream";
+    el.innerHTML = `The variance flows <strong>downstream</strong> from genetics:<br><br>1. <strong>Genetic factors (A)</strong>: h\xB2 \u2248 0.80 for ASD. The primary source of ASD variance. ASD PGS predicts both the diagnosis and the behavioral traits.<br>2. <strong>Behavior</strong>: ASD genes affect sensory processing \u2192 restricted/repetitive behaviors (RRB) \u2192 selective eating. Genetics drives behavior.<br>3. <strong>Diet</strong>: Selective eating reduces dietary diversity. Behavior drives diet.<br>4. <strong>Microbiome</strong>: Limited diet \u2192 less diverse gut bacteria. b\xB2 is high for diet but <strong>zero for ASD</strong> once genetics is accounted for.<br><br>The microbiome is not an independent contributor \u2014 it's the <em>downstream reflection</em> of a genetic cascade. Remove the genetic component, and the microbiome has nothing left to explain about ASD.`;
   }
 }
 var tylenolStep = 1;
