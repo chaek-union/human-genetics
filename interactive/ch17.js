@@ -3105,10 +3105,13 @@ function drawTylenol(cv) {
     ctx.fillStyle = "rgba(255,107,74,0.5)";
     ctx.font = 'italic 14px "Iowan Old Style", serif';
     ctx.textAlign = "center";
-    ctx.fillText('"Children exposed to acetaminophen had 5\u20137% higher risk"', w / 2, h * 0.78);
-    ctx.fillStyle = "rgba(255,255,255,0.25)";
+    ctx.fillText(`Sep 2025 \u2014 White House: "Tylenol causes autism. Don't take Tylenol."`, w / 2, h * 0.73);
+    ctx.fillStyle = "rgba(255,255,255,0.3)";
     ctx.font = '13px "Helvetica Neue", sans-serif';
-    ctx.fillText("Looks concerning... but is it the drug?", w / 2, h * 0.78 + 24);
+    ctx.fillText("FDA ordered warning labels based on this unpartitioned association.", w / 2, h * 0.73 + 22);
+    ctx.fillStyle = "rgba(255,255,255,0.2)";
+    ctx.font = '12px "Helvetica Neue", sans-serif';
+    ctx.fillText("But this is VP before decomposition \u2014 genetics, family, and environment all mixed together.", w / 2, h * 0.73 + 44);
   } else if (tylenolStep === 2) {
     ctx.fillStyle = "rgba(255,255,255,0.5)";
     ctx.font = 'bold 15px "Helvetica Neue", sans-serif';
@@ -3160,9 +3163,12 @@ function drawTylenol(cv) {
       }
     }
     ctx.fillStyle = "rgba(80,200,140,0.6)";
-    ctx.font = 'bold 18px "Helvetica Neue", sans-serif';
+    ctx.font = 'bold 16px "Helvetica Neue", sans-serif';
     ctx.textAlign = "center";
-    ctx.fillText("The association VANISHES in sibling comparison.", w / 2, h * 0.8);
+    ctx.fillText("After partitioning out familial variance \u2192 HR = 0.98.  No association.", w / 2, h * 0.78);
+    ctx.fillStyle = "rgba(255,255,255,0.25)";
+    ctx.font = '13px "Helvetica Neue", sans-serif';
+    ctx.fillText(`The paper's own conclusion: "no causal relationship" \u2014 the opposite of the White House claim.`, w / 2, h * 0.78 + 22);
   } else {
     const cx = w / 2, topY = h * 0.1;
     drawBox(ctx, cx - 120, topY, 240, 55, "Shared Family Factors", "rgba(196,163,90,0.8)", 14);
@@ -3219,14 +3225,14 @@ function updateTylenolExp() {
   const el = document.getElementById("tylenol-explain");
   const stepEl = document.getElementById("tylenol-step");
   if (tylenolStep === 1) {
-    stepEl.textContent = "Step 1 of 3 \u2014 Total variance (population level)";
-    el.innerHTML = `At the population level, total phenotypic variance (VP) includes <strong>everything mixed together</strong>: additive genetic factors (A), shared family environment, and unique environmental exposures like medication use.<br><br>In <strong>2,480,797 Swedish children</strong> (185,909 exposed to acetaminophen), the association with ASD showed HR = 1.05 (95% CI: 1.02\u20131.08), and ADHD showed HR = 1.07 (95% CI: 1.05\u20131.10). But this total variance hasn't been partitioned yet \u2014 we can't tell which component drives the association.`;
+    stepEl.textContent = "Step 1 of 3 \u2014 The unpartitioned association";
+    el.innerHTML = `In September 2025, President Trump announced at a White House press conference that Tylenol taken during pregnancy causes autism, stating <em>"Don't take Tylenol."</em> The FDA was directed to add warning labels. The administration cited observational studies showing a link.<br><br>Indeed, in <strong>2,480,797 Swedish children</strong>, the population-level analysis showed HR = 1.05 (95% CI: 1.02\u20131.08) for autism and HR = 1.07 (1.05\u20131.10) for ADHD. At this level, <strong>variance is unpartitioned</strong> \u2014 genetic factors (A), shared family environment, and unique exposures are all tangled together.`;
   } else if (tylenolStep === 2) {
-    stepEl.textContent = "Step 2 of 3 \u2014 Subtract familial variance";
-    el.innerHTML = `The <strong>sibling control design</strong> uses <strong>1,773,747 siblings</strong> to apply Fisher's variance decomposition directly. Siblings share ~50% of additive genetic variance (A) and nearly all shared environmental variance.<br><br>By comparing within families (stratified Cox regression), the study <strong>subtracts out</strong> the shared components. Result: Autism HR = <strong>0.98</strong> (95% CI: 0.93\u20131.04), ADHD HR = <strong>0.98</strong> (95% CI: 0.94\u20131.02). Both cross the null. Even at the highest dose (\u2265430 mg/day), the sibling HR remained null.`;
+    stepEl.textContent = "Step 2 of 3 \u2014 Partition: subtract familial variance";
+    el.innerHTML = `But the very study the administration cited \u2014 <strong>Ahlqvist et al. (2024, JAMA)</strong> \u2014 went further. They compared <strong>1,773,747 siblings</strong>: same parents, same household, but different pregnancies with different acetaminophen exposure.<br><br>This sibling control subtracts shared familial variance (A + E<sub>shared</sub>). Result: Autism HR = <strong>0.98</strong> (95% CI: 0.93\u20131.04), ADHD HR = <strong>0.98</strong> (0.94\u20131.02). <strong>Both cross the null.</strong> Even at the highest dose (\u2265430 mg/day), the sibling HR remained null. The paper's own conclusion: <em>no causal relationship</em>.`;
   } else {
-    stepEl.textContent = "Step 3 of 3 \u2014 What remains (unique environment)";
-    el.innerHTML = `After partitioning out shared familial variance, the unique environmental contribution of acetaminophen = <strong>zero</strong> (HR = 1.0).<br><br>The initial association was entirely attributable to <strong>shared familial factors</strong> \u2014 the same genetics and family environment that influenced both medication use and child neurodevelopment. This demonstrates why Fisher's decomposition matters: VP = <strong>A</strong> + D + <strong>E<sub>shared</sub></strong> + E<sub>unique</sub>. Without separating the components, the shared familial variance (A + E<sub>shared</sub>) masked the true unique environmental effect.`;
+    stepEl.textContent = "Step 3 of 3 \u2014 Why variance partitioning matters";
+    el.innerHTML = `The White House read the population-level HR of 1.05 and concluded causation. But that number contained <strong>unpartitioned variance</strong> \u2014 familial genetic factors (A) and shared environment were mixed into the association.<br><br>When the study partitioned VP into familial vs unique components, the unique environmental effect of acetaminophen = <strong>zero</strong>. The initial association was entirely driven by shared familial factors \u2014 the same genetics and family environment that influenced both medication use and child neurodevelopment.<br><br>This is why Fisher's framework matters beyond the classroom. <strong>Without variance partitioning, a policy decision affecting millions of pregnant people was based on a confounded association.</strong> The AAP, ACOG, APA, and Autism Science Foundation all rejected the White House claim.`;
   }
 }
 function drawPrinciple(cv) {
