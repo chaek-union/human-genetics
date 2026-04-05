@@ -2916,10 +2916,11 @@ function drawMicro(cv) {
   } else if (microStep === 2) {
     const barX = w * 0.15, barW = w * 0.7, barTop = h * 0.15, barH = h * 0.65;
     const traits = [
-      { name: "ASD diagnosis", b2: 0.05, color: "rgba(200,140,80,0.8)", note: "0\u20139%" },
-      { name: "Dietary diversity", b2: 0.52, color: "rgba(80,200,140,0.8)", note: "~52%" },
-      { name: "Food selectivity", b2: 0.48, color: "rgba(80,200,140,0.8)", note: "~48%" },
-      { name: "Stool consistency", b2: 0.64, color: "rgba(100,180,220,0.8)", note: "~64%" }
+      { name: "ASD diagnosis", b2: 0.07, color: "rgba(200,140,80,0.8)", note: "0\u20137% (n.s.)" },
+      { name: "Dietary diversity", b2: 0.58, color: "rgba(80,200,140,0.8)", note: "13\u201358%" },
+      { name: "Stool consistency", b2: 0.64, color: "rgba(100,180,220,0.8)", note: "5\u201364%" },
+      { name: "Age (benchmark)", b2: 0.35, color: "rgba(196,163,90,0.8)", note: "35\u201399%" },
+      { name: "BMI (benchmark)", b2: 0.47, color: "rgba(150,150,150,0.7)", note: "~47%" }
     ];
     const rowH = barH / traits.length, gap = 16;
     ctx.fillStyle = "rgba(255,255,255,0.5)";
@@ -3061,8 +3062,8 @@ function drawTylenol(cv) {
     ctx.textAlign = "right";
     ctx.fillText("HR = 1.0 (no effect)", barX - 10, cy + 4);
     const outcomes = [
-      { name: "Autism", hr: 1.05, color: "rgba(200,140,80,0.8)" },
-      { name: "ADHD", hr: 1.07, color: "rgba(100,140,255,0.8)" }
+      { name: "Autism", hr: 1.05, ci: "1.02\u20131.08", color: "rgba(200,140,80,0.8)" },
+      { name: "ADHD", hr: 1.07, ci: "1.05\u20131.10", color: "rgba(100,140,255,0.8)" }
     ];
     const segW = barW / 3;
     for (let i = 0; i < outcomes.length; i++) {
@@ -3110,7 +3111,7 @@ function drawTylenol(cv) {
     ctx.fillText("HR = 1.0", barX - 6, cy + 4);
     const groups = [
       { label: "POPULATION", items: [{ name: "Autism", hr: 1.05, color: "rgba(200,140,80,0.7)" }, { name: "ADHD", hr: 1.07, color: "rgba(100,140,255,0.7)" }] },
-      { label: "SIBLINGS", items: [{ name: "Autism", hr: 1, color: "rgba(200,140,80,0.7)" }, { name: "ADHD", hr: 1, color: "rgba(100,140,255,0.7)" }] }
+      { label: "SIBLINGS", items: [{ name: "Autism", hr: 0.98, color: "rgba(200,140,80,0.7)" }, { name: "ADHD", hr: 0.98, color: "rgba(100,140,255,0.7)" }] }
     ];
     const halfW = barW / 2 - 20;
     for (let gi = 0; gi < 2; gi++) {
@@ -3201,10 +3202,10 @@ function updateTylenolExp() {
   const stepEl = document.getElementById("tylenol-step");
   if (tylenolStep === 1) {
     stepEl.textContent = "Step 1 of 3 \u2014 Total variance (population level)";
-    el.innerHTML = `At the population level, total phenotypic variance (VP) includes <strong>everything mixed together</strong>: additive genetic factors (A), shared family environment, and unique environmental exposures like medication use.<br><br>In 2.48 million Swedish children, the association between prenatal acetaminophen and ASD showed HR = 1.05\u20131.07. But this total variance hasn't been partitioned yet \u2014 we can't tell which component drives the association.`;
+    el.innerHTML = `At the population level, total phenotypic variance (VP) includes <strong>everything mixed together</strong>: additive genetic factors (A), shared family environment, and unique environmental exposures like medication use.<br><br>In <strong>2,480,797 Swedish children</strong> (185,909 exposed to acetaminophen), the association with ASD showed HR = 1.05 (95% CI: 1.02\u20131.08), and ADHD showed HR = 1.07 (95% CI: 1.05\u20131.10). But this total variance hasn't been partitioned yet \u2014 we can't tell which component drives the association.`;
   } else if (tylenolStep === 2) {
     stepEl.textContent = "Step 2 of 3 \u2014 Subtract familial variance";
-    el.innerHTML = `The <strong>sibling control design</strong> is a direct application of Fisher's variance decomposition. Siblings share ~50% of additive genetic variance (A) and nearly all shared environmental variance.<br><br>By comparing within families, the study <strong>subtracts out</strong> the shared components: VP<sub>sibling</sub> = VP<sub>total</sub> \u2212 A<sub>shared</sub> \u2212 E<sub>shared</sub>. What remains is only the <strong>unique environmental variance</strong> \u2014 factors that differ between pregnancies for the same mother.`;
+    el.innerHTML = `The <strong>sibling control design</strong> uses <strong>1,773,747 siblings</strong> to apply Fisher's variance decomposition directly. Siblings share ~50% of additive genetic variance (A) and nearly all shared environmental variance.<br><br>By comparing within families (stratified Cox regression), the study <strong>subtracts out</strong> the shared components. Result: Autism HR = <strong>0.98</strong> (95% CI: 0.93\u20131.04), ADHD HR = <strong>0.98</strong> (95% CI: 0.94\u20131.02). Both cross the null. Even at the highest dose (\u2265430 mg/day), the sibling HR remained null.`;
   } else {
     stepEl.textContent = "Step 3 of 3 \u2014 What remains (unique environment)";
     el.innerHTML = `After partitioning out shared familial variance, the unique environmental contribution of acetaminophen = <strong>zero</strong> (HR = 1.0).<br><br>The initial association was entirely attributable to <strong>shared familial factors</strong> \u2014 the same genetics and family environment that influenced both medication use and child neurodevelopment. This demonstrates why Fisher's decomposition matters: VP = <strong>A</strong> + D + <strong>E<sub>shared</sub></strong> + E<sub>unique</sub>. Without separating the components, the shared familial variance (A + E<sub>shared</sub>) masked the true unique environmental effect.`;
