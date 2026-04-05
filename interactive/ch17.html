@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chapter 17: Partitioned Variance — Interactive editorial experience.">
+  <title>Chapter 17 — Partitioned Variance</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    html { background: #0a0a0c; color: #e8e4dc; scroll-behavior: smooth; }
+    body { font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif; background: #0a0a0c; }
+
+    #stage {
+      position: relative; width: 100vw; overflow: hidden;
+      background: radial-gradient(ellipse at 50% 40%, #0f0f14 0%, #0a0a0c 100%);
+    }
+    .line { position: absolute; white-space: pre; z-index: 1; color: #e8e4dc; user-select: text; -webkit-user-select: text; }
+    .headline-line { position: absolute; white-space: pre; font-weight: 700; color: #fff; letter-spacing: -0.5px; z-index: 2; user-select: text; }
+    .drop-cap { position: absolute; pointer-events: none; z-index: 2; font-weight: 700; color: #c4a35a; }
+    .pullquote-box { position: absolute; pointer-events: none; z-index: 3; border-left: 3px solid #6b5a3d; padding-left: 14px; }
+    .pullquote-line { position: absolute; white-space: pre; font-style: italic; color: #b8a070; user-select: text; }
+
+    #scroll-hint {
+      position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+      z-index: 10; text-align: center; animation: pulse 2s ease-in-out infinite;
+    }
+    #scroll-hint span { font: 400 13px/1 "Helvetica Neue", sans-serif; color: rgba(255,255,255,0.25); }
+    #scroll-hint .arrow { display: block; margin: 6px auto 0; width: 16px; height: 16px; border-right: 2px solid rgba(255,255,255,0.2); border-bottom: 2px solid rgba(255,255,255,0.2); transform: rotate(45deg); }
+    @keyframes pulse { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
+
+    .sim-section { max-width: 1100px; margin: 0 auto; padding: 80px 48px; border-top: 1px solid rgba(255,255,255,0.06); }
+    .sim-section h2 { font: 700 28px/1.2 "Iowan Old Style", Palatino, serif; color: #fff; margin-bottom: 8px; }
+    .sim-section .subtitle { font: 400 16px/1.6 "Iowan Old Style", Palatino, serif; color: rgba(255,255,255,0.4); margin-bottom: 36px; max-width: 720px; }
+    .sim-content { display: flex; flex-direction: column; gap: 24px; }
+    .sim-chart { width: 100%; }
+    .sim-chart canvas { display: block; width: 100%; height: 420px; border-radius: 8px; background: rgba(255,255,255,0.02); }
+    .sim-explain { font: 400 17px/1.75 "Iowan Old Style", Palatino, serif; color: rgba(255,255,255,0.6); max-width: 720px; }
+    .sim-explain strong { color: #c4a35a; }
+    .sim-explain em { color: #b8a070; }
+
+    .sim-controls { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+    .sim-btn {
+      font: 500 14px/1 "Helvetica Neue", sans-serif; color: rgba(255,255,255,0.45);
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+      padding: 10px 20px; border-radius: 8px; cursor: pointer; transition: all 0.25s;
+    }
+    .sim-btn.active { background: rgba(196,163,90,0.2); color: #c4a35a; border-color: rgba(196,163,90,0.3); }
+    .sim-btn.reveal { background: rgba(255,107,74,0.15); color: #ff6b4a; border-color: rgba(255,107,74,0.3); }
+
+    .step-indicator {
+      font: 600 13px/1 "Helvetica Neue", sans-serif; color: rgba(196,163,90,0.6);
+      margin-bottom: 16px; letter-spacing: 0.5px; text-transform: uppercase;
+    }
+
+    .credit { text-align: center; padding: 48px 0; font: 400 12px/1 "Helvetica Neue", sans-serif; }
+    .credit a { color: rgba(255,255,255,0.2); text-decoration: none; }
+
+    @media (max-width: 760px) {
+      .sim-section { padding: 48px 20px; }
+      .sim-section h2 { font-size: 22px; }
+      .sim-chart canvas { height: 360px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="stage">
+    <div id="scroll-hint"><span>Scroll to explore</span><div class="arrow"></div></div>
+  </div>
+
+  <!-- Sim 1: Microbiome & ASD — Variance partitioning across biological layers -->
+  <section class="sim-section" id="sec-microbiome">
+    <h2>Partitioning Variance Across Biological Layers</h2>
+    <p class="subtitle">Yap et al. (2021, Cell) measured how much trait variance the microbiome explains — using b², the microbiome analog of heritability. The answer depends entirely on which trait you ask about.</p>
+    <div class="step-indicator" id="micro-step">Step 1 of 3 — The b² metric</div>
+    <div class="sim-controls" id="micro-controls">
+      <button class="sim-btn active" data-step="1">1. What is b²?</button>
+      <button class="sim-btn" data-step="2">2. b² Across Traits</button>
+      <button class="sim-btn" data-step="3">3. Layered Variance</button>
+    </div>
+    <div class="sim-content">
+      <div class="sim-chart"><canvas id="micro-canvas"></canvas></div>
+      <div class="sim-explain" id="micro-explain"></div>
+    </div>
+  </section>
+
+  <!-- Sim 2: Tylenol & ASD — Familial vs unique environmental variance -->
+  <section class="sim-section" id="sec-tylenol">
+    <h2>Familial vs Unique Environmental Variance</h2>
+    <p class="subtitle">Ahlqvist et al. (2024, JAMA) decomposed variance into shared familial components (A + shared E) and unique environmental exposure, using a sibling control design with 2.48 million children.</p>
+    <div class="step-indicator" id="tylenol-step">Step 1 of 3 — Population-level variance</div>
+    <div class="sim-controls" id="tylenol-controls">
+      <button class="sim-btn active" data-step="1">1. Total Variance</button>
+      <button class="sim-btn" data-step="2">2. Subtract Familial</button>
+      <button class="sim-btn" data-step="3">3. What Remains</button>
+    </div>
+    <div class="sim-content">
+      <div class="sim-chart"><canvas id="tylenol-canvas"></canvas></div>
+      <div class="sim-explain" id="tylenol-explain"></div>
+    </div>
+  </section>
+
+  <!-- Sim 3: The General Principle -->
+  <section class="sim-section" id="sec-principle">
+    <h2>Two Studies, One Framework</h2>
+    <p class="subtitle">Both studies extend Fisher's VP = A + D + E + Environment to real-world biomedical questions — partitioning variance across different layers to identify what genuinely contributes to trait variation.</p>
+    <div class="sim-content">
+      <div class="sim-chart"><canvas id="principle-canvas"></canvas></div>
+      <div class="sim-explain" id="principle-explain"></div>
+    </div>
+  </section>
+
+  <div class="credit">
+    <a href="https://chaek.org/books/human-genetics/part3/chapter17" target="_blank">chaek.org · Human Genetics Ch.17</a>
+  </div>
+
+  <script type="module" src="./ch17.js"></script>
+</body>
+</html>

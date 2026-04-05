@@ -1,5 +1,7 @@
 # Chapter 17. Partitioned Variance: Learn from Real-World Examples
 
+> **[Interactive Experience: Partitioned Variance](../interactive/ch17.html)** — Explore how variance is partitioned across biological layers (microbiome b² study) and between familial vs unique environmental components (sibling control study).
+
 We've spent the last few sections building up theory—Fisher's model, heritability, additive versus dominant effects. Now let's see how all of this actually works in real biomedical research. How do scientists use the concept of **partitioned variance** to answer messy, complicated questions about health and disease?
 
 The idea is simple but powerful. When you measure a trait in a population, the variation you see comes from multiple sources: genes, environment, behavior, and their interactions. If you can statistically separate these sources—partition the variance—you can figure out what's really driving the trait. More importantly, you can avoid mistaking correlation for causation.
